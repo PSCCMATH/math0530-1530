@@ -285,13 +285,87 @@
    <h4>Calculating and Comparing Z Scores:</h4> 
     
 
+        <h5>z-score:</h5>
+       <p>: the number of standard deviations a given value of x is above or below the mean.  </p>
         
+       <p><strong>Sample:</strong>  &nbsp; \(z=\frac{x-\overline{x}}{s}\)</p>
        
-        
+       <p><strong>Population:</strong> &nbsp;  \(Z=\frac{x-\mu}{\sigma}\)</p>
+
+       <li><strong>Comparing z scores:</strong>  The mean ACT score in the US is 24 with a standard deviation of 4.  The mean SAT score in the US is 1100 with a standard deviation of 80.  If Alice scores 32 on the ACT and Bob scores 1200 on the SAT, which has a better score, relative to the sample data?
+      <ol>
+        <li> Alice
+          <ol>
+            <li>Alice's z-score:
+                <p class="solution"> \(\mu=24 ; \quad \sigma=4 ;\quad  x=32 ;\quad  Z=\frac{x-\mu}{\sigma}\)</p>
+                <p class="solution"> \(Z_{32}=\frac{32-24}{4}=2.00\)</p>
+               </li>
+            <li>What does this z score mean (in words)?
+                <p class="solution"> Alice’s ACT score of 32 is 2 standard.deviations above the population mean of 24.</p>
+            </li>
+            <li>Sketch a bell curve and mark the score on the curve
+                <p class="solution"><img src="images/u1s8p4ak.png" alt="A bell curve with a mean of 24.  The left and right halves of the curve are symmetric with the highest point of the curve at 24 marked on the x-axis.  Three standard deviations above and below the mean are also marked   Alice's z-score of 32 is marked with a vertical line that is 2 standard deviations above the mean. ">  </p>
+            </li>
+          </ol>
+        </li>
+        <li> Bob
+          <ol>
+            <li>Bob's z-score: <p class="solution"></p>\(\mu=1100 ; \quad \sigma=80 ; \quad x=1200\)<p>
+                <p class="solution"> \(Z_{1200}=\frac{1200-1100}{80}=1.25\)</p>
+            </li>
+            <li>What does this z score mean (in words)?
+                <p class="solution">  Bob’s SAT score of 1200 is 1.25 standard deviations above the population mean of 1100.</p>
+            </li>
+            <li>Sketch a bell curve and mark the score on the curve
+                <p class="solution"><img src="images/u1s8p4bk.png" alt="A bell curve with a mean of 1100.  The left and right halves of the curve are symmetric with the highest point of the curve at 1100 marked on the x-axis.  Three standard deviations above and below the mean are also marked   Bob's z-score of 1.25 is marked with a vertical line that is 1.25 standard deviations above the mean. ">  </p>
+            </li>
+          </ol>
+        </li>
+        <li>Relative to other students in the population, which score is better?
+            <p class="solution"> Alice’s relative score is better. She is 2 standard deviations above the mean. Bob’s score is only 1.25 standard deviations above the mean.</p> </li>
+      </ol>      
+      </li>
+
+      <li><strong>Compare the following z scores and interpret the results.  </strong>
+         <p>Two common indicators of the health of a population are life expectancy and infant mortality (the number of deaths before age 5 per 1000 children born).  In 2018, the mean life expectancy was 72.66 years, with a standard deviation of 7.25.  For the same year, the mean infant mortality rate was 29.47 with a standard deviation of 29.22.   The life expectancy in South Korea is 81.3 years, and the infant mortality rate in the U.S. is 6.06.  Which of these indicators represents a better health outcome?  </p> 
+         <p class="solution">\(z_{81.3}=\frac{81.3-72.66}{7.25}=1.192\)</p>
+         <p class="solution">\(z_{6.06}=\frac{6.06-29.47}{29.22}=-0.801\)</p>
+         <p class="solution"> The life expectancy in South Korea is 1.192 standard deviations above the mean, and the infant mortality rate in the U.S. is 0.801 standard deviations below the mean.  South Korea’s life expectancy indicates a better health outcome because it is further from the mean. Note that a negative z-score for infant mortality is positive, it is just not as much better than average as the life expectancy. </p>
+      </li>
        
-       
-       
-       
+
+
+<h4>The Range Rule of Thumb for Unusual Values</h4>
+<br>
+<strong>According to the range rule of thumb, most values should lie within 2 standard deviations of the mean.</strong>
+<p>We can therefore identify “unusual” values by determining if they lie outside these limits:</p>
+<p>&nbsp;&nbsp;Maximum usual value = \(\mu+2 \sigma\)</p>
+<p>&nbsp;&nbsp;Minimum usual value = \(\mu-2 \sigma\)</p>
+<strong>When defining unusual events, why do we use 2 standard deviations as our distance from the mean?</strong>
+<br>
+<p>According to the Empirical Rule, we identified the area between z=-2 and z=2 as 0.95 or 95% probability.
+</p>
+
+<img src="images/u1s8p5a.png" alt="A bell curve with the mean and three standard deviations above and below the mean labeled.  The mean is labeled as 0 with the standard deviations above the mean labeled with 1, 2, and 3 and the standard deviations below the mean labeled with -1, -2, and -3.  The area from -2 (2 standard deviations below the mean) to 2 (2 standard deviations above the mean) is shaded. "> 
+<br>
+<p>This leaves a total probability of .05 or 5% in the two areas outside the region between z=-2 and z=2.</p>
+<img src="images/u1s8p5b.png" alt="A bell curve with the mean and three standard deviations above and below the mean labeled.  The mean is labeled as 0 with the standard deviations above the mean labeled with 1, 2, and 3 and the standard deviations below the mean labeled with -1, -2, and -3.  The area less than 2 standard deviations below the mean and the are more than 2 standard deviations above the mean are shaded. "> 
+<br>
+<p>In this section, we have defined an unusual event as one having a less than 5% probability of occurring.  Therefore, based on the Empirical Rule, events that fall more than 2 standard deviations away from the mean are considered unusual.  </p>
+<br>
+<p>Later, we will refine our definition of unusual and use tools to more precisely calculate the max and min cutoffs for unusual values.  We will no longer use the estimations of the Empirical Rule.</p>
+
+<li>Review of Frequency Distributions
+<ol>
+  <li>Use the data to construct a Frequency Distribution Table:  Begin with a lower class limit of 30 and a class width of 15.</li>
+  <li></li>
+  <li></li>
+</ol>
+</li>
+
+
+
+
         </ol>
 
      
