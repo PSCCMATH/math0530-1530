@@ -122,258 +122,223 @@
 <h2>Unit 2 Probability</h2>
   
 
-<h3>2.3 The Addition Rule</h3>
+<h3>2.5 Binomial Distributions</h3>
 
-<h5>Disjoint Events</h5>
+<h5>Binomial Probability Distributions and Random Variables</h5>
 
-<p><b>Compound Events:</b> Combining two or more simple events.</p>
+<p>Binomial Probability Distributions result from a procedure that meets all the following requirements:</p>
 
-<p><b>Mutually Exclusive (or Disjoint) events:</b> Compound events that CANNOT OCCUR at the same time</p>
-
-<img src="images/u2s3example1.png" alt="A picture of two Venn Diagrams. In the first Venn Diagram, titled Venn Diagram for events that are not disjoint, there are two intersecting circles. One circle represents P(A) and the other represents P(B). The intersection of the two circles represents P(A and B). In the second Venn Diagram, titled Venn Diagram for disjoint events, one circle represents P(A) and the other circle represents P(B). The two circles are not intersectimg each other.">
-
-<h5>The Addition Rule</h5>
-
-<p>The Addition Rule:  Probability of Event A <b>OR</b> Event B occurring.</p>
-
-<p>\(P(A \text { or } B)=P(A)+P(B)-P(A \text { and } B)\)</p>
-
-<p><b>Example:</b> In our bag of poker chips, what was P(B)?&nbsp;&nbsp; P(1)?&nbsp;&nbsp; What is P(<i>Blue or</i> 1)?</p>
-
-<p class="solution">\(P(B)=\frac{4}{9}\)</p>
-<p class="solution">\(P(1)=\frac{3}{9}\)</p>
-
-<p>To calculate P(<i>Blue or</i> 1), we will need P(<i>Blue and</i> 1):  </p>
-
-<p class="solution">\(P(\text {Blue } \text {and} 1)=\frac{1}{9}\)</p>
-<p class="solution">\(P(B \text { or } 1)=P(B)+P(1)-P(B \text { and } 1)=\frac{4}{9}+\frac{3}{9}-\frac{1}{9}=\frac{6}{9}\)</p>
-
-<p><b>Example:</b> In a deck of cards, what is the probability of drawing a King or a Diamond?  P(K or ◊) =</p>
-<p class="solution">P(K or ◊) = P(K) + P(◊) – P(K and ◊) = 13/52 + 4/52 – 1/52 = 16/52 = 4/13 or 0.3077</p>
-
-<p><b>Example:</b> Let's roll 2 six-sided dice.</p>
+<ul>
+<li>The procedure has a FIXED number of trials</li>
+<li>The trials are INDEPENDENT <i>(the outcome of any individual trial does not affect the probabilities in the other trials.)</i></li>
+<li>All trial outcomes can be classified into TWO CATEGORIES (success and failure).</li>
+<li>The probability of success REMAINS THE SAME throughout the trials.</li>
+</ul>
 
 <style type="text/css">
     .tg  {border-collapse:collapse;border-spacing:0;}
     .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
     .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-    .tg .tg-s268{text-align:left}
-    .tg .tg-0lax{text-align:left;vertical-align:top}
+    .tg .tg-s6z2{text-align:center}
+    .tg .tg-baqh{text-align:center;vertical-align:top}
+    .tg .tg-hgcj{font-weight:bold;text-align:center}
+    .tg .tg-xk68{font-weight:bold;color:#fe0000;text-align:center}
     </style>
     <table class="tg">
       <tr>
-        <th class="tg-s268">1 1</th>
-        <th class="tg-s268">1 2</th>
-        <th class="tg-s268">1 3</th>
-        <th class="tg-s268">1 4</th>
-        <th class="tg-s268">1 5</th>
-        <th class="tg-0lax">1 6</th>
+        <th class="tg-hgcj">Calculating Binomial Probabilities</th>
       </tr>
       <tr>
-        <td class="tg-s268">2 1</td>
-        <td class="tg-s268">2 2</td>
-        <td class="tg-s268">2 3</td>
-        <td class="tg-s268">2 4</td>
-        <td class="tg-s268">2 5</td>
-        <td class="tg-0lax">2 6</td>
+        <td class="tg-xk68">Flip coin 5 times   Probability of 4 tails</td>
       </tr>
       <tr>
-        <td class="tg-s268">3 1</td>
-        <td class="tg-s268">3 2</td>
-        <td class="tg-s268">3 3</td>
-        <td class="tg-s268">3 4</td>
-        <td class="tg-s268">3 5</td>
-        <td class="tg-0lax">3 6</td>
+        <td class="tg-s6z2">\(P(x)=_{n} C_{x} \cdot p^{x} \cdot q^{n-x}\)</td>
       </tr>
       <tr>
-        <td class="tg-s268">4 1</td>
-        <td class="tg-s268">4 2</td>
-        <td class="tg-s268">4 3</td>
-        <td class="tg-s268">4 4</td>
-        <td class="tg-s268">4 5</td>
-        <td class="tg-0lax">4 6</td>
+        <td class="tg-s6z2">\(P(x=4)=_{5} C_{4} \times\left(\frac{1}{2}\right)^{4} \times\left(\frac{1}{2}\right)^{1}=.15625\)</td>
       </tr>
       <tr>
-        <td class="tg-0lax">5 1</td>
-        <td class="tg-0lax">5 2</td>
-        <td class="tg-0lax">5 3</td>
-        <td class="tg-0lax">5 4</td>
-        <td class="tg-0lax">5 5</td>
-        <td class="tg-0lax">5 6</td>
+        <td class="tg-s6z2">p = probability of one success = <inline class = "solution">\(\frac{1}{2}\)</inline></td>
       </tr>
       <tr>
-        <td class="tg-0lax">6 1</td>
-        <td class="tg-0lax">6 2</td>
-        <td class="tg-0lax">6 3</td>
-        <td class="tg-0lax">6 4</td>
-        <td class="tg-0lax">6 5</td>
-        <td class="tg-0lax">6 6</td>
+        <td class="tg-s6z2">q = probability of one failure&nbsp;&nbsp;q = 1 - p = <inline class="solution">\(\frac{1}{2}\)</inline></td>
+      </tr>
+      <tr>
+        <td class="tg-s6z2">n = number of trials = <inline class="solution">5</inline> </td>
+      </tr>
+      <tr>
+        <td class="tg-baqh">x = number of success&nbsp;&nbsp;WE ARE LOOKING FOR = <inline class="solution">4</inline></td>
       </tr>
     </table>
-
-    <p class="solution">n(S) = 36</p>
-
-    <ol>
-<li>P (sum of 3) 
-    <p class="solution">\(\frac{2}{36}=.056\)</p>
-</li>
-
-<li>  P (sum of 7) 
-    <p class="solution">\(\frac{6}{36}=.167\)</p>
-</li>
-
-<li>P (sum of 1) 
-    <p class="solution">\(\frac{0}{36}=0\)</p>
-</li>
-
-<li>P (sum &lt; 13 ) 
-<p class="solution">\(\frac{36}{36}=1\)</p>
-</li>
-
-<li> P (first die is 3) 
-    <p class="solution">\(\frac{6}{36}=.167\)</p>
-</li>
-
-<li>P(second die is 5) 
-<p class="solution">\(\frac{6}{36}=.167\)</p>
-</li>
-
-<li>P (first is a 3 or second is a 5) 
-    <p class="solution">\(\frac{6}{36}+\frac{6}{36}-\frac{1}{36}=\frac{11}{36}\)</p>
-</li>
-
-    </ol>
-
-<p><b>You Try One:</b> In a bag, you have</p>
-
-<div class="row">
-    <div class="col-sm-6">
-<p>4 blue chips numbered 1, 2, 3,and 4	</p>
-<p>3 red chips numbered 1, 2, and 3</p>
-<p>2 green chips numbered 1 and 2.  </p>
-</div>
-<div class="col-sm-6">
-    <img src="images/u2s1example1.png" alt="A rectangle with 4 blue circles, three red circles and 2 green circles inside it.">
-    </div>
-</div>
-
-<p>You randomly select one chip from the bag.  Find:</p>
+<ol>
+<li>Are the following binomial? If not, explain why not.
 
 <ol>
-<li>P (blue or red) 
-    <p class="solution">\(P(B)+P(R)-P(B a n d R)=\frac{4}{9}+\frac{3}{9}-\frac{0}{9}=\frac{7}{9}=.7778 \text{ B} \text { and } \text{R}\) are disjoint events.</p>
+
+<li>Tossing a coin 20 times to see how many tails occur.
+    <p class="solution">Binomial.  Fixed number of trials (20).  Independent.  Two categories (H, T), Probability of success remains the same.</p>
 </li>
 
-<li>P (blue or 3) 
-    <p class="solution">\(P(B)+P(3)-P(B a n d 3)=\frac{4}{9}+\frac{2}{9}-\frac{1}{9}=\frac{5}{9}=.5556\)</p>
+<li>Asking 200 people if they have watched ABC news in the past week.
+    <p class="solution">Binomial.  Fixed number of trials (200).  Independent.  Two categories (Y, N), Probability of success remains the same.</p>
 </li>
 
-<li> P (red or 3) 
-    <p class="solution">\(P(R)+P(3)-P(R a n d 3)=\frac{3}{9}+\frac{2}{9}-\frac{1}{9}=\frac{4}{9}=.4444\)</p>
+<li>Asking 20 people how old they are.
+    <p class="solution">No:  More than 2 possible outcomes.</p>
 </li>
 
-<li>P (green or 3) 
-    <p class="solution">\(P(G)+P(3)-P(G a n d 3)=\frac{2}{9}+\frac{2}{9}-\frac{0}{9}=\frac{4}{9}=.4444\)</p>
+<li>Rolling a die to see if you roll a 5.
+    <p class="solution">Binomial.  Fixed number of trials (1).  Independent.  Two categories (Y, N), Probability of success remains the same.</p>
+</li>
+
+<li>Rolling a die until a 5 appears.
+    <p class="solution">No:  Not a fixed number of trials </p>
 </li>
 
 </ol>
 
-<h5>Using the Addition Rule with a Contingency Table</h5>
+</li>
 
-<p>The following table gives the number of people with health insurance coverage in the U.S. in 2018.  Note that the numbers are in millions of people.  </p>
+<h5>Probabilities in a Binomial Distribution</h5>
 
-<a href="https://www.cdc.gov/nchs/data/nhis/earlyrelease/insur201905.pdf" target="_blank">Source of data</a>
+<li>Assume that a procedure yields a binomial distribution with a trial repeated n times.  Find the probability of x successes given the probability of success (p) on a given trial.
+
+<ol>
+
+<li>n = 14 trials&nbsp;&nbsp;&nbsp;&nbsp;x = 4 successes&nbsp;&nbsp;&nbsp;&nbsp;p = .60 probability of success
+<p class="solution">\(P(x=4)=_{14} C_{4}(.60)^{4}(.40)^{10}=1001(.6)^{4}(.4)^{10}=.0136\)</p>
+<p class="solution">\(q=.40=\) Probability of Failure</p>
+</li>
+
+<li>n = 15 trials&nbsp;&nbsp;&nbsp;&nbsp;x = 13 successes&nbsp;&nbsp;&nbsp;&nbsp;p = 1/3 probability of success
+    <p class="solution">\(q=\frac{2}{3}\)</p>
+    <p class="solution">\(P(x=13)=_{15} C_{13}\left(\frac{1}{3}\right)^{13}\left(\frac{2}{3}\right)^{2}=.0000293\)</p>
+</li>
+
+<li>n = 23 trials&nbsp;&nbsp;&nbsp;&nbsp;x = 12 successes&nbsp;&nbsp;&nbsp;&nbsp;p = .4 probability of success
+    <p class="solution">\(q=1-0.4=0.6\)</p>
+    <p class="solution">\(P(x=12)=_{23} C_{12}(0.4)^{12}(0.6)^{11}=.082297\)</p>
+</li>
+
+</ol>
+
+</li>
+
+<li>You toss a fair coin 3 times.  
+
+<ol>
+
+<li>Create a probability distribution function (in table form) for the outcomes.
+    <p>n = <inline class="solution">3</inline>&nbsp;&nbsp;&nbsp;&nbsp;p = <inline class="solution">0.5</inline>&nbsp;&nbsp;&nbsp;&nbsp;q = <inline class="solution">0.5</inline></p>
+
+<p><i> Note:  x is the number of heads out of the three tosses.  We will need to find P(x) for all possible outcomes to create the table.</i></p>
+
+    <div class="row">
+            <div class="col-sm-6">
+
+<p>P(x = 0) = <inline class="solution">\(_{3} C_{0}(.5)^{0}(.5)^{3}=.125\)</inline></p>
+
+<p>P(x = 1) = <inline class="solution">\(_{3} C_{1}(.5)^{1}(.5)^{2}=.375\)</inline></p>
+
+<p>P(x = 2) = <inline class="solution">\(_{3} C_{0}(.5)^{2}(.5)^{1}=.375\)</inline></p>
+
+<p>P(x = 3) = <inline class="solution">\(_{3} C_{0}(.5)^{3}(.5)^{0}=.125\)</inline></p>
+
+</div>
+<div class="col-sm-6">
+        <style type="text/css">
+            .tg  {border-collapse:collapse;border-spacing:0;}
+            .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+            .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+            .tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+            .tg .tg-5ua9{font-weight:bold;text-align:left}
+            .tg .tg-0lax{text-align:left;vertical-align:top}
+            </style>
+            <table class="tg">
+              <tr>
+                <th class="tg-5ua9">x</th>
+                <th class="tg-1wig">P(x)</th>
+              </tr>
+              <tr>
+                <td class="tg-0lax">0</td>
+                <td class="tg-0lax"><p class="solution">.125</p></td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">1</td>
+                <td class="tg-0lax"><p class="solution">.375</p></td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">2</td>
+                <td class="tg-0lax"><p class="solution">.375</p></td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">3</td>
+                <td class="tg-0lax"><p class="solution">.125</p></td>
+              </tr>
+            </table>
+            </div>
+            </div>
+
+
+</li>
+
+<li>What is the probability of tossing AT MOST 2 heads?
+    <p class="solution">\(P(x \leq 2)=.125+.375+.375=.875\)</p>
+</li>
+
+<li>What is the probability of tossing AT LEAST 2 heads?
+    <p class="solution">\(P(x \geq 2)=.375+.125=.5\)</p>
+</li>
+
+</ol>
+
+</li>
+
+<li>Create a probability distribution function table for 2 multiple choice questions on a quiz with four answer choices.
+
+<p>n = 2&nbsp;&nbsp;&nbsp;&nbsp;p = <inline class="solution">\(\frac{1}{4}=.25\)</inline>&nbsp;&nbsp;&nbsp;&nbsp;q = <inline class="solution">\(\frac{3}{4}=.75\)</inline>&nbsp;&nbsp;&nbsp;&nbsp;x = number correct</p>
 
 <style type="text/css">
     .tg  {border-collapse:collapse;border-spacing:0;}
     .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
     .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-    .tg .tg-5ztr{font-weight:bold;background-color:#cbcefb;border-color:inherit;text-align:left;vertical-align:top}
-    .tg .tg-fymr{font-weight:bold;border-color:inherit;text-align:left;vertical-align:top}
-    .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-    .tg .tg-61xu{background-color:#cbcefb;border-color:inherit;text-align:left;vertical-align:top}
+    .tg .tg-5ua9{font-weight:bold;text-align:left}
+    .tg .tg-s268{text-align:left}
     </style>
     <table class="tg">
       <tr>
-        <th class="tg-fymr">(In millions)</th>
-        <th class="tg-fymr">Private insurance</th>
-        <th class="tg-fymr">Private insurance (Marketplace)</th>
-        <th class="tg-fymr">Public Insurance</th>
-        <th class="tg-fymr">Uninsured</th>
-        <th class="tg-5ztr">TOTALS</th>
+        <th class="tg-5ua9">x</th>
+        <th class="tg-5ua9">P(x)</th>
       </tr>
       <tr>
-        <td class="tg-fymr">Adults age 18-64</td>
-        <td class="tg-0pky">128.2</td>
-        <td class="tg-0pky">8.4</td>
-        <td class="tg-0pky">38.5</td>
-        <td class="tg-0pky">26.4</td>
-        <td class="tg-61xu"><p class="solution">201.5</p></td>
+        <td class="tg-s268">0</td>
+        <td class="tg-s268"><p class="solution">.5625</p></td>
       </tr>
       <tr>
-        <td class="tg-fymr">Children age 0-17</td>
-        <td class="tg-0pky">38.5</td>
-        <td class="tg-0pky">1.7</td>
-        <td class="tg-0pky">30.7</td>
-        <td class="tg-0pky">3.8</td>
-        <td class="tg-61xu"><p class="solution">74.7</p></td>
+        <td class="tg-s268">1</td>
+        <td class="tg-s268"><p class="solution">.375</p></td>
       </tr>
       <tr>
-        <td class="tg-5ztr">TOTALS</td>
-        <td class="tg-61xu"><p class="solution">166.7</p></td>
-        <td class="tg-61xu"><p class="solution">10.1</p></td>
-        <td class="tg-61xu"><p class="solution">69.2</p></td>
-        <td class="tg-61xu"><p class="solution">30.2</p></td>
-        <td class="tg-61xu"><p class="solution">276.2</p></td>
+        <td class="tg-s268">2</td>
+        <td class="tg-s268"><p class="solution">.0625</p></td>
       </tr>
     </table>
 
-    <p>Find the probabilities if you randomly select one person:</p>
+<ol>
 
-    <ol>
-<li>P(Adult) 
-    <p class="solution">\(\frac{n(E)}{n(S)}=\frac{201.5}{276.2}=.7395\)</p>
+<li>What is the probability you get NO MORE THAN 1 correct?  <inline class="solution">\(P(x \leq 1)=.9375\)</inline>
 </li>
 
-<li>P(Uninsured) 
-    <p class="solution">\(\frac{30.2}{276.2}=.1093\)</p>
+<li>What is the probability you get AT LEAST 1 correct?<inline class="solution">\(P(x \geq 1)=.4375\)</inline>
 </li>
 
-<li>P(Adult and Uninsured) 
-    <p class="solution">\(\frac{26.4}{276.2}=.0956 ; P(\text { child } A N D \text { uninsured })=\frac{3.8}{276.2}=.0138\)</p>
+</ol>
+
 </li>
 
-<li>P(Adult or Uninsured)
-    <p class="solution">\(P(a d u l t)+P(u m i n s u r e d)-P(\text { adult } A N D \text { uninsured })=\frac{201.5}{276.2}+\frac{30.2}{276.2}-\frac{26.4}{276.2}=\frac{205.3}{276.2}=.7433\)</p>
-</li>
+<li></li>
 
-<p><b>Group Discussion:</b></p>
-
-<li>P(Child) 
-    <p class="solution">\(\frac{74.7}{276.2}=.2705\)</p>
-</li>
-
-<li>P(public insurance) 
-    <p class="solution">\(\frac{69.2}{276.2}=.2505\)</p>
-</li>
-
-<li>P(private insurance) 
-    <p class="solution">\(\frac{166.7}{276.2}+\frac{10.1}{276.2}=\frac{176.8}{276.2}=.6401\)</p>
-</li>
-
-<li>P(Child or private insurance) 
-    <p class="solution">\(\frac{74.7}{276.2}+\frac{176.8}{276.2}-\frac{38.5}{276.2}-\frac{1.7}{276.2}=\frac{211.3}{276.2}=.7650\)</p>
-</li>
-
-<li>P(Child or no private insurance) 
-    <p class="solution">P(child) + P(private insurance) - P(child AND private insurance) =\(\frac{74.7}{276.2}+\frac{99.4}{276.2}-\frac{34.5}{276.2}=\frac{139.6}{276.2}=.5054\)</p>
-</li>
-
-
-
-    </ol>
-
-
+</ol>
 
    </main>
 
