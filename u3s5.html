@@ -99,7 +99,6 @@
             <a class="dropdown-item" href="u4review.html" target="_blank">Unit 4 Review</a>
           
         
-        
           </div>
         </li>
     </ul>
@@ -121,83 +120,136 @@
 
 
     <main>
-      <h2>Unit 1 Describing Data</h2>
-  
+      <h2>Unit 3 Normal Distributions and Confidence Intervals</h2>
+<h3>6.2 Confidence Intervals for the Mean</h3>
 
-      <h3>1.2 Data Classifications</h3>
-<br>
-      <h4>Types of Data</h4>
-      <br>
-     
-     <p><h5>Quantitative Data:  </h5> measures of values or counts expressed as numbers  .</p>
-    
-     <ul>
-   <li><em>Discrete</em> data result when the number of possible values is countable.  
-    <inline class="solution">0, 1, 2, 3...</inline></p>
-<p>example:  The number of eggs a hen lays</p></li>
-    <li><em>Continuous</em> data has an infinite number of possible values within a selected range
-    <p>example:  The amount of milk that a cow produces eg 2.343115 gallons per day</p>
-    </li>
+<h5>Constructing a Confidence Interval for a Population Mean</h5>
+
+<p><i>When constructing a confidence interval, use data from a sample to estimate the mean of the population.  We will use a student-t distribution for our confidence intervals because we do not know the standard deviation of the population.  If we knew the standard deviation of the population, we would use a standard z score distribution instead. </i></p>
+
+<p><b>Given</b> the mean of the <b>sample, \(\overline{x}\)</b> </p>
+
+<p><b>Estimate</b> the mean for the <b>population, \(\mu\)</b> </p>
+
+<h5>Variables/Symbols used in Confidence Interval Calculations</h5>
+
+<style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+    .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+    .tg .tg-s6z2{text-align:center}
+    .tg .tg-5ua9{font-weight:bold;text-align:left}
+    .tg .tg-s268{text-align:left}
+    </style>
+    <table class="tg">
+      <tr>
+        <td class="tg-5ua9">Population Mean</td>
+        <td class="tg-s6z2">\(\mu \)</td>
+        <td class="tg-s268">An unknown. The actual mean for the entire population.</td>
+      </tr>
+      <tr>
+        <td class="tg-5ua9">Sample Mean</td>
+        <td class="tg-s6z2">\( \overline{x} \)</td>
+        <td class="tg-s268">Known. Your measured mean for your sample.</td>
+      </tr>
+      <tr>
+        <td class="tg-5ua9">Best Point Estimate</td>
+        <td class="tg-s6z2">\( \overline{x} \)</td>
+        <td class="tg-s268">The value you use to approximate the population mean.</td>
+      </tr>
+      <tr>
+        <td class="tg-5ua9">Alpha</td>
+        <td class="tg-s6z2">\(\alpha\)</td>
+        <td class="tg-s268">The total area in the two tails beyond the critical values.</td>
+      </tr>
+      <tr>
+        <td class="tg-5ua9">Critical Values</td>
+        <td class="tg-s6z2">\(t _\frac{\alpha}{2}\)</td>
+        <td class="tg-s268">The lower/upper cutoffs for usual values on the student t curve.</td>
+      </tr>
+      <tr>
+        <td class="tg-5ua9">Margin of Error</td>
+        <td class="tg-s6z2">E</td>
+        <td class="tg-s268">Padding you will use on either side of \( \overline{x} \) when you build your interval.</td>
+      </tr>
+    </table>
+
+    <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg .tg-s6z2{text-align:center}
+        .tg .tg-hgcj{font-weight:bold;text-align:center}
+        </style>
+        <table class="tg">
+          <tr>
+            <th class="tg-hgcj">Most Common<br>Confidence Intervals</th>
+            <th class="tg-hgcj">Corresponding<br>Value of Alpha</th>
+            <th class="tg-hgcj">Corresponding<br>Critical Value</th>
+          </tr>
+          <tr>
+            <td class="tg-hgcj">90%</td>
+            <td class="tg-s6z2">\( \alpha \) = 0.10</td>
+            <td class="tg-s6z2">\( t_\frac{\alpha}{2}\) depends on n</td>
+          </tr>
+          <tr>
+            <td class="tg-hgcj">95%</td>
+            <td class="tg-s6z2">\( \alpha \) = 0.05</td>
+            <td class="tg-s6z2">\( t_\frac{\alpha}{2}\) depends on n</td>
+          </tr>
+          <tr>
+            <td class="tg-hgcj">99%</td>
+            <td class="tg-s6z2">\( \alpha \) = 0.01</td>
+            <td class="tg-s6z2">\( t_\frac{\alpha}{2}\) depends on n</td>
+          </tr>
+          <tr>
+            <td class="tg-hgcj">Any other CL</td>
+            <td class="tg-s6z2">\( \alpha&nbsp;&nbsp;= 1 - \frac{CL}{100} \)</td>
+            <td class="tg-s6z2">\( t_\frac{\alpha}{2}\) depends on n</td>
+          </tr>
+        </table>
+
+<img src="images/u3s5intro1.png" alt="">
+
+<h5>Overview of Estimating an Interval for a Population Mean </h5>
+
+<p><b>Requirements:</b></p>
+<ul>
+
+<li>Random Sample</li>
+<li>Normally Distributed Population or \( (n \gt 30 \)</li>
+
 </ul>
-     <p><h5>Qualitative  Data </h5>(Categorical Data):  names or labels representing categories
-        </p>
-        <ul>
-<li>Example:  The color of a cat’s fur</li>
-<li>Example:  The number on an athletic jersey</li>
-<li>Example:  Customer satisfaction ratings</li>
 
-            </ul>
-  
-      
-<br>
-   <h4>Levels of Measurement</h4>
-   <br>
-
-   <p><h5>Nominal: </h5>Put in a category.  
-   </p>
-   <ul>
-       <li>Qualitative data.  Cannot be arranged in an ordering scheme (low to high). </li>
-       <li>No arithmetic can be carried out on the data.</li>
-       <li>Example:  survey responses:  yes, no, undecided</li>
-   </ul>
-
-
-<p><h5>Ordinal:  </h5>Put in a category and put in order.  
+<div class="row">
+        <div class="col-sm-6">
+<p><b>Margin of Error: </b></p>
+<p>\(E=t_{\alpha / 2} * \frac{s}{\sqrt{n}}\)
+&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  \(  d f=n-1\) 
 </p>
-<ul>
-        <li>Qualitative or Quantitative data.  Can be arranged in some order.   </li>
-        <li>Differences between data values cannot be determined or are meaningless.</li>
-        <li>Example:  Course grades:  A, B, C, D, F</li>
-    </ul>
 
-<p><h5>Interval: </h5>Put in a category, put in order, and find differences between values.  
+<p><b>Confidence Interval </b></p>
+<p>\( \overline{x} \) = sample MEAN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\mu\) = population MEAN</p>
+<p>\(\overline{x}-\mathrm{E} \lt \mu \lt \overline{x}+\mathrm{E}\)</p>
+<p>\((\overline{x}-E, \overline{x}+E)\)</p>
+<p>\(\overline{x} \pm E\)</p>
+</div>
+<div class="col-sm-6">
+        <img src="images/u3s5intro2.png" alt="">
+</div>
+</div>
+
+<p><b>Minimum Sample Size:</b></p>
+<p>To Estimate Population Mean:  
+    <inline>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(n=\left[\frac{z_{\alpha / 2} \sigma}{E}\right]^{2}\)</inline>
 </p>
-<ul>
-        <li>Quantitative data.  Can be arranged in some order.   </li>
-        <li>Differences between data values can be determined and are meaningful.  </li>
-        <li>There is no natural zero (does not make sense to say you have none)</li>
-        <li>Example:  Years:  1000, 2014, 1776</li>
-    </ul>
-
-<p><h5>Ratio:   </h5>Put in a category, put in order, find differences between values, and find ratios of values.
-</p>
-<ul>
-        <li>Quantitative data.  Can be arranged in some order.   </li>
-        <li>Differences between data values can be determined and are meaningful.  </li>
-        <li>There is a natural zero (it makes sense to say you have none). </li>
-        <li>Division makes sense: You can say one is twice as much as another.</li>
-        <li>Example:  Price of textbooks.  $100, $25, $0</li>
-    </ul>
 
 
-     
-
-     
-     
+   </main>
 
 
 
-    </main>
+
 
 
 

@@ -99,7 +99,6 @@
             <a class="dropdown-item" href="u4review.html" target="_blank">Unit 4 Review</a>
           
         
-        
           </div>
         </li>
     </ul>
@@ -121,83 +120,102 @@
 
 
     <main>
-      <h2>Unit 1 Describing Data</h2>
-  
+      <h2>Unit 3 Normal Distributions and Confidence Intervals</h2>
 
-      <h3>1.2 Data Classifications</h3>
-<br>
-      <h4>Types of Data</h4>
-      <br>
-     
-     <p><h5>Quantitative Data:  </h5> measures of values or counts expressed as numbers  .</p>
-    
-     <ul>
-   <li><em>Discrete</em> data result when the number of possible values is countable.  
-    <inline class="solution">0, 1, 2, 3...</inline></p>
-<p>example:  The number of eggs a hen lays</p></li>
-    <li><em>Continuous</em> data has an infinite number of possible values within a selected range
-    <p>example:  The amount of milk that a cow produces eg 2.343115 gallons per day</p>
-    </li>
-</ul>
-     <p><h5>Qualitative  Data </h5>(Categorical Data):  names or labels representing categories
-        </p>
-        <ul>
-<li>Example:  The color of a cat’s fur</li>
-<li>Example:  The number on an athletic jersey</li>
-<li>Example:  Customer satisfaction ratings</li>
+<h3>5.3 Normal Distributions: Finding Values</h3>
 
-            </ul>
-  
-      
-<br>
-   <h4>Levels of Measurement</h4>
-   <br>
+<h5>Finding a z-Score given a Percentile</h5>
 
-   <p><h5>Nominal: </h5>Put in a category.  
-   </p>
-   <ul>
-       <li>Qualitative data.  Cannot be arranged in an ordering scheme (low to high). </li>
-       <li>No arithmetic can be carried out on the data.</li>
-       <li>Example:  survey responses:  yes, no, undecided</li>
-   </ul>
+<ol>
+
+<li>IQ scores are normally distributed with a mean of 100 and a standard deviation of 15. 
+
+<ol>
+
+<li>What IQ score separates the bottom 20% from the top 80%?  
+    <p class="solution">20% cumulative area to the left</p>
+    <p class="solution">\(z=-0.84162\)</p>
+    <p class="solution">\(P_{20}=87.38\)</p>
+<p class="solution"><img src="images/u3s3p1ak.png" alt="A normal curve with the mean of 100 at the highest point of the curve. The horizontal axis is labeled with 3 standard deviations to the left and to the right of the mean. The labels are 55, 70, 85, 100, 115, 130, and 145. In the left margin of the graph it is stated that p=.2, mean = 100 and standard deviation = 15. The calculated z value is -0.84162. The calculated x value is 87.38. The area under the curve is shaded to the left of the x value. "></p>
+</li>
+
+<li>What IQ score separates the top 15% from the bottom 85%?  
+    <p class="solution">85% cumulative area to the left.</p>
+    <p class="solution">\(z=1.036433\)</p>
+    <p class="solution">\(P_{85}=115.55\)</p>
+    <p class="solution"><img src="images/u3s3p1bk.png" alt="A normal curve with the mean of 100 at the highest point of the curve. The horizontal axis is labeled with 3 standard deviations to the left and to the right of the mean. The labels are 55, 70, 85, 100, 115, 130, and 145. In the left margin of the graph it is stated that p=.85, mean = 100 and standard deviation = 15. The calculated z value is 1.036433. The calculated x value is 115.15. The area under the curve is shaded to the left of the x value."></p>
+</li>
+
+</ol>    
+
+</li>
+
+<li>Weights of a breed of dog are normally distributed with a mean of 73 lbs and a standard deviation of 8 lbs.
+
+<ol>
+
+<li>What weight separates the smallest 60% of the dogs from the heavier 40%?  
+    <p class="solution">60% cumulative area to the left.</p>
+    <p class="solution">\(z=0.253347\)</p>
+    <p class="solution">\(P_{60}=75.03 \mathrm{lbs}\)</p>
+    <p class="solution"><img src="images/u3s3p2ak.png" alt="A normal curve with the mean of 73 at the highest point of the curve. The horizontal axis is labeled with 3 standard deviations to the left and to the right of the mean. The labels are 49, 57, 65, 73, 81, 89, and 97. In the left margin of the graph it is stated that p=.6, mean = 73 and standard deviation = 8. The calculated z value is 0.253347. The calculated x value is 75.03 pounds. The area under the curve is shaded to the left of the x value."></p>
+</li>
+
+<li>What weight separates the heavier 55% from the lightest 45%?  
+    <p class="solution">45% cumulative area to the left.</p>
+    <p class="solution">\(z=-0.125661\)</p>
+    <p class="solution">\(P_{45}=71.991 \mathrm{bs}\)</p>
+    <p class="solution"><img src="images/u3s3p2bk.png" alt="A normal curve with the mean of 100 at the highest point of the curve. The horizontal axis is labeled with 3 standard deviations to the left and to the right of the mean. The labels are 49, 57, 65, 73, 81, 89, and 97. In the left margin of the graph it is stated that p=.45, mean = 73 and standard deviation = 8. The calculated z value is -0.125661. The calculated x value is 71.99 pounds. The area under the curve is shaded to the left of the x value."></p>
+</li>
+
+</ol>
+
+</li>
+
+<h5>Finding a z-Score given an Area</h5>
+
+<li>The distribution of IQ scores is normally distributed with a mean of 100 and a standard deviation of 15.  If the probability of randomly selecting someone with a score less than d is equal to 0.6026, what is d? 
+    <p class="solution">For point d, the cumulative area from the left is equal to 0.6026.  </p>
+    <p class="solution">\(z_{d}=.2601\)</p>
+    <p class="solution">\(d=100+(0.2601)(15)=103.9\)</p>
+    <p class="solution">The probability of randomly selecting someone with an IQ score less than 103.9 (104) is approximately 0.6026 or 60.26%</p>
+</li>
+
+<li>The distribution of IQ scores is normally distributed with a mean of 100 and a standard deviation of 15.  If the probability of getting a score less than d is equal to 0.0793, what is d?
+    <p class="solution">For point d, the cumulative area from the left is equal to 0.0793.  </p>
+    <p class="solution">\(z_{d}=-1.4098\)</p>
+    <p class="solution">\(d=100+(-1.4098)(15)=78.85\)</p>
+    <p class="solution">The probability of randomly selecting someone with an IQ score less than 78.85 (79) is approximately 0.0793 or 7.93%</p>
+</li>
+
+<li>IQ scores are normally distributed with a mean of 100 and a standard deviation of 15.  If the probability of getting a score greater than d is equal to 0.9345, what is d? 
+    <p class="solution">Area to the right is 0.9345</p>
+    <p class="solution">Area to the left is \(1-0.9345=0.0655\)</p>
+    <p class="solution">\(z_{d}=-1.5102\)</p>
+    <p class="solution">\(d=100+(-1.5102)(15)=77.3\)</p>
+    <p class="solution">
+            The probability of randomly selecting someone with an IQ score greater than 77.3 (round to 77 or 78) is approximately 0.9345 or 93.45%
+            </p>
+</li>
+
+<li>Pulse Rates of adults are normally distributed with a mean of 73 bpm and a standard deviation of 8 bpm.  According to one company’s health screening criteria, 8%of adults would be rejected because they have readings that are too high and 2% would be rejected because they have readings that are too low.  Find the two readings that are the cutoff values separating the rejected applicants from the others.
+    <p class="solution">\(z_{d_{MIN}}=-2.0537\)</p>
+    <p class="solution">\(d_{M I N}=73+(-2.0537)(8)=56.6 \mathrm{bpm}\)</p>
+    <p class="solution">\(z_{d_{M A X}}=1.4051\)</p>
+    <p class="solution">\(d_{M A X}=73+(1.4051)(8)=84.2 \mathrm{bpm}\)</p>
+    <p class="solution">The applicants with pulse rates between 56.6 bpm and 84.2 bpm will not be rejected on the basis of pulse rate.</p>
+</li>
+
+</ol>
 
 
-<p><h5>Ordinal:  </h5>Put in a category and put in order.  
-</p>
-<ul>
-        <li>Qualitative or Quantitative data.  Can be arranged in some order.   </li>
-        <li>Differences between data values cannot be determined or are meaningless.</li>
-        <li>Example:  Course grades:  A, B, C, D, F</li>
-    </ul>
-
-<p><h5>Interval: </h5>Put in a category, put in order, and find differences between values.  
-</p>
-<ul>
-        <li>Quantitative data.  Can be arranged in some order.   </li>
-        <li>Differences between data values can be determined and are meaningful.  </li>
-        <li>There is no natural zero (does not make sense to say you have none)</li>
-        <li>Example:  Years:  1000, 2014, 1776</li>
-    </ul>
-
-<p><h5>Ratio:   </h5>Put in a category, put in order, find differences between values, and find ratios of values.
-</p>
-<ul>
-        <li>Quantitative data.  Can be arranged in some order.   </li>
-        <li>Differences between data values can be determined and are meaningful.  </li>
-        <li>There is a natural zero (it makes sense to say you have none). </li>
-        <li>Division makes sense: You can say one is twice as much as another.</li>
-        <li>Example:  Price of textbooks.  $100, $25, $0</li>
-    </ul>
 
 
-     
-
-     
-     
+   </main>
 
 
 
-    </main>
+
 
 
 
