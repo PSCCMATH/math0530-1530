@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="Description" content="Math 1010, pscc, pellissippi state, pscc">
+  <meta name="Description" content="Math 1530, pscc, pellissippi state, pscc">
   <meta name="theme-color" content="#001cb8" />
-  <title>Math 1010</title>
+  <title>Math 1530</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/styles.css">
@@ -126,7 +126,7 @@
 
 <h3>3.2 Conditional Probability and the Multiplication Rule</h3>
 
-<p>Open the Global Health Capstone data set, and use it to complete the table below with the correct number of countries for each cell:</p>
+<p>Open the Global Health data set, and use it to complete the table below with the correct number of countries for each cell:</p>
 
 <style type="text/css">
     .tg  {border-collapse:collapse;border-spacing:0;}
@@ -225,49 +225,58 @@
         <td class="tg-0pky"><p class="solution">46</p></td>
       </tr>
     </table>
+<ol>
+<li> If you randomly select one country, what is the probability of ...?
+<ol>
+<li>P(Life Expectancy >79) = 
+<inline class="solution">25/46 = 0.543</inline></li>
 
-<p><b>Example:</b> If you randomly selected one country, what is the probability of ...?</p>
+<li>P(Life Expectancy ≤ 79 and Average Income > $28000) =  
+<inline class="solution">2/46 = 0.043</inline></li>
+</ol>
+</li>
 
-<p>P(Life Expectancy >79) = 
-<inline class="solution">25/46 = 0.543</inline></p>
+<li><b>Independent Compound Events:</b> If you randomly select two countries, <b>with replacement</b>, what is the probability of ...?
+<ol>
+<li>P(Both Average Income > $28000) =  
+<inline class="solution">(22/46)(22/46) = 0.229</inline></li>
 
-<p>P(Life Expectancy ≤ 79 and Average Income > $28000) =  
-<inline class="solution">2/46 = 0.043</inline></p>
+<li>P(Average Income > $28000, and then Life Expectancy >79) = 
+<inline class="solution">(22/46)(25/46) = 0.260</inline></li>
+</ol>
+</li>
 
-<p><b>Example of Independent Compound Events:</b> If you randomly selected two countries, <b>with replacement</b>, what is the probability of ...?</p>
+<li><b>Dependent Compound Events:</b> If you randomly selected two countries, <b>without replacement</b>, what is the probability of ...?
+<ol>
+<li>P(Both Average Income > $28000) =  
+<inline class="solution">(22/46)(21/45) = 0.223</inline></li>
 
-<p>P(Both Average Income > $28000) =  
-<inline class="solution">(22/46)(22/46) = 0.229</inline></p>
+<li>P(Average Income > $28000, and then Life Expectancy >79) = 
+<inline class="solution">(22/46)(25/45) = 0.266</inline></li>
+</ol>
+</li>
 
-<p>P(Average Income > $28000, and then Life Expectancy >79) = 
-<inline class="solution">(22/46)(25/46) = 0.260</inline></p>
-
-<p><b>Example of Dependent Compound Events:</b> If you randomly selected two countries, <b>without replacement</b>, what is the probability of ...?</p>
-
-<p>P(Both Average Income > $28000) =  
-<inline class="solution">(22/46)(21/45) = 0.223</inline></p>
-
-<p>P(Average Income > $28000, and then Life Expectancy >79) = 
-<inline class="solution">(22/46)(25/45) = 0.266</inline></p>
-
-<p><b>Conditional Probability</b></p>
+<li><b>Conditional Probability</b>
+  
 <p>What is the percentage breakdown by Life Expectancy if we separate the wealthier and poorer countries?</p>
-<p>P(Life Expectancy ≤ 79, given that Average Income > $28000) = 
-<inline class="solution">2/22=0.091</inline></p>
+<ol>
+<li>P(Life Expectancy ≤ 79, given that Average Income > $28000) = 
+<inline class="solution">2/22=0.091</inline></li>
 
-<p>Another notation for this :  P(Life Expectancy ≤ 79 ǀ Average Income > $28000) = 
-<inline class="solution">2/22 = 0.091</inline></p>
+<li>Another notation for this :  P(Life Expectancy ≤ 79 ǀ Average Income > $28000) = 
+<inline class="solution">2/22 = 0.091</inline></li>
 
-<p>P(Life Expectancy ≤ 79, given that Average Income ≤ $28000) = 
-<inline class="solution">19/24 = 0.792</inline></p>
+<li>P(Life Expectancy ≤ 79, given that Average Income ≤ $28000) = 
+<inline class="solution">19/24 = 0.792</inline></li>
 
-<p>Another notation for this :  P(Life Expectancy ≤ 79 ǀ Average Income ≤ $28000) =  
-<inline class="solution">19/24 = 0.792</inline></p>
+<li>Another notation for this :  P(Life Expectancy ≤ 79 ǀ Average Income ≤ $28000) =  
+<inline class="solution">19/24 = 0.792</inline></li>
 
-<p>When we limit ourselves to a specific column or row, so that we can explore the distribution of one variable based on whether they meet the criteria of another variable, we have created a conditional distribution.  Why do you think it got the name “conditional”?</p>
+<li>When we limit ourselves to a specific column or row, so that we can explore the distribution of one variable based on whether they meet the criteria of another variable, we have created a conditional distribution.  Why do you think it got the name “conditional”?</li>
+</ol>
+</li>
 
-<p><b>Example: Medical tests</b></p>
-<p>Consider an illness that has a prevalence of about 1 in 1000, and the test for this illness has a 95% accuracy (meaning that patients who have the illness test positive 95% of the time). The results for a large number of patients tested would look something like this:</p>
+<li>Consider an illness that has a prevalence of about 1 in 1000, and the test for this illness has a 95% accuracy (meaning that patients who have the illness test positive 95% of the time). The results for a large number of patients tested would look something like this:
 
 <style type="text/css">
     .tg  {border-collapse:collapse;border-spacing:0;}
@@ -311,7 +320,7 @@
     <li>If someone tests negative, what is the probability that they actually have the illness?
         <p class="solution">P(have illness, given tested negative) = 1/18982 = 0.000053 = 0.0053%</p>
     </li>
-
+ 
 <li>If someone tests positive, what is the probability they DO NOT have the illness?
     <p class="solution">P(does not have illness, given tested positive) = 999/1018 = 0.9813 = 98.13%</p>
 </li>
@@ -320,9 +329,9 @@
     <p class="solution">So they can give patients accurate information about the results of tests…it would be very wrong to tell a patient who tested positive, for example that there is a 95% chance they have this illness because the test is 95% accurate.</p>
 </li>
 </ol>
+</li>
 
-<p><b>Example:</b></p>
-<p>The following contingency table represents a bowl full of M&Ms and Skittles.  Find the probabilities:</p>
+<li>The following contingency table represents a bowl full of M&Ms and Skittles.  Find the probabilities:
 
 <style type="text/css">
     .tg  {border-collapse:collapse;border-spacing:0;}
@@ -374,10 +383,11 @@
       </tr>
     </table>
 
-<p>One randomly selected a piece of candy:</p>
+
 
 <ol>
-
+    <li>One randomly selected a piece of candy:
+      <ol>
 <li>\(P(\mathrm{m} \& \mathrm{m} | \mathrm{Red})\)
 <inline class="solution">\(\frac{109}{311}=0.3505\)</inline>
 </li>
@@ -393,9 +403,10 @@
 <li>\(P(\mathrm{Yellow} | \mathrm{Skittle})\)
     <inline class="solution">\(\frac{188}{845}=0.2225\)</inline>
 </li>
-
-<p>Two randomly selected pieces of candy:</p>
-
+</ol>
+</li>
+<li>Two randomly selected pieces of candy:
+<ol>
 <li>\(P(\text { Both Blue })\) with replacement
 <inline class="solution">\(\left(\frac{183}{1673}\right)\left(\frac{183}{1673}\right)=0.011965\) independent events</inline>
 </li>
@@ -411,10 +422,12 @@
 <li>\(P(\text { Both Orange Skittles} )\) without replacement 
     <inline class="solution">\(\left(\frac{154}{1673}\right)\left(\frac{153}{1672}\right)=0.008423\) dependent events</inline>
 </li>
-
 </ol>
+</li>
+</ol>
+</li>
 
-<p><b>You Try One:</b></p>
+<li>
 
 <style type="text/css">
     .tg  {border-collapse:collapse;border-spacing:0;}
@@ -453,8 +466,8 @@
         <td class="tg-0lax">100</td>
       </tr>
     </table>
-
-<p>Randomly select 1 person</p>
+    <ol>
+<li>Randomly select 1 person
 
 <ol>
     <li>P (Female | Democrat) 
@@ -464,9 +477,10 @@
 <li>P (Republican | Female) 
     <inline class="solution">\(\frac{5}{14}=.3571\)</inline>
 </li>
-
-<p>Randomly select 2 people:</p>
-
+</ol>
+</li>
+<li>Randomly select 2 people:
+<ol>
 <li> P (Both Female) with replacement 
     <inline class="solution">\(\frac{14}{100} \times \frac{14}{100}=.0196\)</inline>
 </li>
@@ -490,21 +504,27 @@
 <li>P(Democrat then Republican) with replacement 
     <inline class="solution">\(\frac{48}{100} \times \frac{51}{100}=.2448\)</inline>
 </li>
-
 </ol>
+</li>
+</ol>
+</li>
 
-<p><b>EXAMPLE with Scientific Notation</b></p>
-<p>You have 20,000 CD’s in a warehouse.  2% are defective.  You choose 3 CD’s from the 20,000. </p>
-<p class="solution">.02(20000) = 400; 2% of the 20000 are defective</p>
+<li><b>Example with Scientific Notation:</b>\
+  <ol>
+<li>You have 20,000 CD’s in a warehouse.  2% are defective.  You choose 3 CD’s from the 20,000. 
+<p class="solution">.02(20000) = 400; 2% of the 20000 are defective</li>
 
-<p>P (3 CD’s are defective) with replacement = 
-<inline class="solution">\(\frac{400}{20000} \times \frac{400}{20000} \times \frac{400}{20000}=8 E-6=8 \times 10^{-6}=.000008\)</inline></p>
+<li>P (3 CD’s are defective) with replacement = 
+<inline class="solution">\(\frac{400}{20000} \times \frac{400}{20000} \times \frac{400}{20000}=8 E-6=8 \times 10^{-6}=.000008\)</inline>
 
-<p class="solution">Another notation when you have an independent multiplication probability:  (.02)3 = 0.0000008\)</p>
+<p class="solution">Another notation when you have an independent multiplication probability:  (.02)3 = 0.0000008\)</li>
 
-<p>P (3 CD’s are defective) without replacement = 
+<li>P (3 CD’s are defective) without replacement = 
 <inline class="solution">\(\frac{400}{20000} \times \frac{399}{19999} \times \frac{398}{19998}=7.94 \times 10^{-6}=0.00000794\)</inline>
-
+</li>
+</ol>
+</li>
+</ol>
 <p>Some calculations are cumbersome, but they can be made manageable by using the common practice of treating events as independent when small samples are drawn from large populations. In such cases, it is rare to select the same item twice.</p>
 
 <p><b>The 5% Guideline for Cumbersome Calculations:</b> If a sample size is no more than 5% of the size of the population, treat the selections as being independent (even if the selections are made without replacement, so they are technically dependent).  </p>
