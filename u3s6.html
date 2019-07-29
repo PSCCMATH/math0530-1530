@@ -216,11 +216,165 @@
 
 <ol>
 
-<li>Requirements: Random Sample</li>
+<li>Random Sample</li>
 <li>Binomial Distribution:  Fixed n, Independent trials, 2 outcomes, Constant Probability</li>
 <li>Number of successes \((n \widehat{p})\) and number of failures \((n \widehat{q})\) are both greater than 5</li>
 
 </ol>
+
+<p><b>Best Point Estimate for the Population Proportion: </b></p>
+
+<p>The proportion of your sample, \( \widehat{p} \)</p>
+
+<div class="row">
+  <div class="col-sm-6">
+
+<p><b>Margin of Error: </b></p>
+
+<p>\(E=z_{\alpha / 2}\left(\sqrt{\frac{\hat{p} \hat{q}}{n} }\right)\)</p>
+
+<p><b>Confidence Interval</b>
+<inline class="solution">&nbsp;&nbsp;Add and subtract E from \( \hat{p} \)</inline>
+</p>
+<p>\(\hat{p}-\mathrm{E} \lt \mathrm{p} \lt \hat{p}+\mathrm{E}\)</p>
+
+<p>\((\hat{p}-E, \hat{p}+E)\)
+<inline class="solution">&nbsp;&nbsp;Min of interval = \( \hat{p} - E \)</inline>
+<p class="solution">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max of interval = \( \hat{p} + E \)</p>
+</p>
+<p>\(\hat{p} \pm E\)</p>
+
+</div>
+<div class="col-sm-6">
+
+<img src="images/u3s6intro2.png" alt="">
+</div>
+</div>
+
+<p><b>Minimum Sample Size:</b></p>
+<p>To Estimate Population Proportion:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\( n=(\hat{p})(\hat{q})\left[\frac{z_{\alpha / 2}}{E}\right]^{2}\)</p>
+
+<ol>
+
+<li>In a 2017 study of 50 countries, 85% of the children received one dose of measles vaccination by their first birthday.  Construct a 95% confidence interval estimate of the proportion of all children in the world who receive at least one dose of the vaccination before their first birthday.  
+
+<ol>
+
+<li>Calculate the Margin of Error
+  <p>CL = 
+    <inline class="solution">95%</inline>
+    <inline>&nbsp;&nbsp;&nbsp;&nbsp;\( \alpha = \)</inline>
+    <inline class="solution">.05</inline>
+    <inline>&nbsp;&nbsp;&nbsp;&nbsp;\( z_\frac{\alpha}{2} = \)</inline>
+    <inline class="solution">1.96</inline>
+  </p>
+<p>\( \hat{p} = \)
+  <inline class="solution">.85</inline>
+  <inline>&nbsp;&nbsp;&nbsp;&nbsp;\( \hat{q} = \)</inline>
+  <inline class="solution">.15</inline>
+  <inline>&nbsp;&nbsp;&nbsp;&nbsp; n = </inline>
+  <inline class="solution">50</inline>
+</p>
+<p>Critical value: 
+  <inline class="solution">1.96</inline>
+</p>
+<p>\(E=z_{\alpha / 2}\left(\sqrt{\frac{\hat{p} \hat{q}}{n}}\right)=\)
+  <inline class="solution">\(1.96 \sqrt{\frac{(.85)(.15)}{50}}=.0990\)</inline>
+</p>
+</li>
+
+<li>Calculate the Confidence Interval
+  <p class="solution">Lower limit = \(\hat{p}-E=.85-.0990=.7510\)</p>
+  <p class="solution">Upper limit = \(\hat{p}+\mathrm{E}=.85+.0990=.9490\)</p>
+  <p class="solution">Sample&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\hat{p}=.85\)</p>
+  <p class="solution">Population&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(.7510 \lt \mathrm{p} \lt .9490\)</p>
+  <p class="solution">\(.85 \pm .0990\)</p>
+  <p class="solution">\((.7510, .9490)\)</p>
+</li>
+
+<li>Write your statement:
+  <p>We are
+    <inline class="solution"> 95%</inline>
+    <inline> confident that the true proportion of</inline>
+    <inline class="solution"> all children who receive at least one dose of the measles vaccine</inline>
+    <inline> is between</inline>
+    <inline class="solution"> .7510</inline>
+    <inline> and</inline>
+    <inline class="solution"> .9490</inline>
+    <inline> or</inline>
+    <inline class="solution"> 75.1%</inline>
+    <inline> and</inline>
+    <inline class="solution"> 94.9%.</inline>
+  </p>
+</li>
+<li>Analyze your results - Compare a population percentage with the Confidence Interval:
+    Is it correct for a newspaper reporter to report that “over 95% of children in the world are vaccinated against measles”?  Why or why not? 
+  <inline class="solution">It is not correct to report it because .95 is not in the interval (.7510, .9490) </inline>
+  </li>
+
+</ol>
+
+</li>
+
+<li>In a survey of 150 senior executives, 47% said that the most common job interview mistake is to have little or no knowledge of the company.  Construct a 99% confidence interval estimate of the proportion of all senior executives who have that same opinion.  Is it possible that exactly half of all senior executives believe that the most common job interview mistake is to have little or no knowledge of the company”?  Why or why not?
+
+<ol>
+
+<li>Calculate the Margin of Error:
+    <p>CL = 
+        <inline class="solution">99%</inline>
+        <inline>&nbsp;&nbsp;&nbsp;&nbsp;\( \alpha = \)</inline>
+        <inline class="solution">.01</inline>
+        <inline>&nbsp;&nbsp;&nbsp;&nbsp;\( z_\frac{\alpha}{2} = \)</inline>
+        <inline class="solution">2.575</inline>
+      </p>
+    <p>\( \hat{p} = \)
+      <inline class="solution">.47</inline>
+      <inline>&nbsp;&nbsp;&nbsp;&nbsp;\( \hat{q} = \)</inline>
+      <inline class="solution">.53</inline>
+      <inline>&nbsp;&nbsp;&nbsp;&nbsp; n = </inline>
+      <inline class="solution">150</inline>
+    </p>
+    <p>Critical value: 
+      <inline class="solution">2.575</inline>
+    </p>
+    <p>\(E=z_{\alpha / 2}\left(\sqrt{\frac{\hat{p} \hat{q}}{n}}\right)=\)
+      <inline class="solution">\(2.575 \sqrt{\frac{(.47)(.53)}{150}}=.1050\)</inline>
+    </p>
+</li>
+
+<li>Construct the Confidence Interval:
+    <p class="solution">Lower limit = \(\hat{p}-E=.47-.1050=.365\)</p>
+    <p class="solution">Upper limit = \(\hat{p}+\mathrm{E}=.47+.1050=.575\)</p>
+    <p class="solution">Sample&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\hat{p}=.47\)</p>
+    <p class="solution">Population&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(.365 \lt \mathrm{p} \lt .575\)</p>
+    <p class="solution">\(.47 \pm .1050\)</p>
+    <p class="solution">\((.365, .575)\)</p> 
+</li>
+
+<li>We are
+    <inline class="solution"> 99%</inline>
+    <inline> confident that the true proportion of</inline>
+    <inline class="solution"> all senior executives who have the opinion that the most common interview mistake is lack of knowledge about the company</inline>
+    <inline> is between</inline>
+    <inline class="solution"> .365</inline>
+    <inline> and</inline>
+    <inline class="solution"> .575</inline>
+    <inline> or</inline>
+    <inline class="solution"> 36.5%</inline>
+    <inline> and</inline>
+    <inline class="solution"> 57.5%.</inline>
+
+</li>
+
+</ol>
+
+</li>
+
+</ol>
+
+
+
 
    </main>
 
