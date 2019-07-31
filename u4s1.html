@@ -128,14 +128,14 @@
 
       <h4>Basic Steps of a P-value Hypothesis Test:</h4>
       <br>
-     <p>Step 1:	  Write the claim as a mathematical statement.</p>
-     <p>Step 2:	  Identify the Null Hypothesis and the Alternative Hypothesis.</p>
+     <h4>Step 1:	  Write the claim as a mathematical statement.</h4>
+     <h4>Step 2:	  Identify the Null Hypothesis and the Alternative Hypothesis.</h4>
      <ul>
    <li><h5><b>Null Hypothesis:  </b>  </h5> 
     <p>What we assume is true about the population parameter</p>
     <p>Will be the same as the claim if the claim contains an equal sign.</p>	
 
-    <p>\( \left[H_{0}\right] \leq \quad \geq \quad =\)</p>
+    <p>\( \left[H_{0}\right] \quad \leq \quad \geq \quad =\)</p>
 
 <p><b>Always Contains Equality</b></p>
 </li>
@@ -149,7 +149,197 @@
 
 <p><b>Never Contains Equality</b></p>  
 </li>
-</ul>S
+</ul>
+
+<h4>Step 3:	  Determine the type of test and shade the graph.</h4>
+<br>
+<br>
+
+<p>
+<img src="images/u4s1step3a.png" alt="A normal curve with a critical value marked with a vertical line alpha units from the left end of the graph.  The area to the left of the critical value is shaded and labeled critical region.  The area to the right of the critical value is not shaded and is labeled non-critical region."></p>
+
+<p class="solution">Left- tail: HA contains the following symbol: < </p> 
+
+
+<p>
+<img src="images/u4s1step3b.png" alt="A normal curve with a critical value marked with a vertical line alpha units from the right end of the graph.  The area to the right of the critical value is shaded and labeled critical region.  The area to the left of the critical value is not shaded and is labeled non-critical region.">
+</p>
+<p class="solution">Right-tail: HA contains the following symbol:  > </p> 
+<p>
+<img src="images/u4s1step3c.png" alt="A normal curve with two critical values marked with  vertical lines alpha divided by 2 units from each end of the graph.  The area to the left and right of the 2 critical values are shaded to the ends of the curve and labeled critical regions.  The area between the critical values is not shaded and is labeled non-critical region."></p>
+
+<p class="solution">2-tail: HA contains the following symbol: ≠ </p> 
+
+<b>Rejection area (critical region) is the area beyond your Critical Value and has area α (the significance level of your hypothesis test).  In a right or left tail test, that area is in one tail.  In a two tail test, the area in each side of the critical region is α/2.</b>
+<br>
+<br>
+
+<h4>Step 4:	 Calculate the test statistic from sample data.   </h4>
+
+<p>A Test Statistic is the value computed from sample data and used in making a decision about rejection of the Null Hypothesis.</p>
+<h5>Test statistic for proportion:</h5>
+<ul>
+  <li>p = population proportion   q = 1 – p</li>
+  <li>n = sample size</li>
+  <li>\(\hat{p}=\frac{x}{n}\) sample proportion  </li>
+  <li>\(z=\frac{\hat{p}-p}{\sqrt{\frac{p q}{n}}}\)</li>
+</ul>
+
+<h5>Test statistic for mean:	</h5>
+<ul>
+  <li>s = sample standard deviation</li>
+  <li>n = sample size</li>
+  <li>\(\mu\) = population mean</li>
+  <li>\(\overline{x}\) = sample mean</li>
+  <li>\(t=\frac{\overline{x}-\mu}{\frac{s}{\sqrt{n}}}\)</li>
+</ul>
+
+
+<br>
+<br>
+
+<h4>Step 5:  Calculate the p-value for your test statistic. </h4>
+<p><b>P-value:</b> the probability of being as extreme, or more extreme, than your data, assuming  is correct.</p>
+
+<ul>
+  <li>Left tail test:	  contains “< ”.  P-value = area to the left of the test statistic.
+   <p> <img src="images/u4s1step3a.png" alt="A normal curve with a critical value marked with a vertical line alpha units from the left end of the graph.  The area to the left of the critical value is shaded and labeled critical region.  The area to the right of the critical value is not shaded and is labeled non-critical region."></p>
+  </li>
+  <li>Right tail test:	 contains “ >”.  P-value = area to the right of the test statistic.
+      <p><img src="images/u4s1step3b.png" alt="A normal curve with a critical value marked with a vertical line alpha units from the right end of the graph.  The area to the right of the critical value is shaded and labeled critical region.  The area to the left of the critical value is not shaded and is labeled non-critical region."></p>
+  </li>
+  <li>Two tail test:	  contains “≠”.  P-value = twice the area in the tail beyond the test statistic
+      <p><img src="images/u4s1step3c.png" alt="A normal curve with two critical values marked with  vertical lines alpha divided by 2 units from each end of the graph.  The area to the left and right of the 2 critical values are shaded to the ends of the curve and labeled critical regions.  The area between the critical values is not shaded and is labeled non-critical region."></p>
+  </li>
+</ul>
+
+<br>
+<br>
+
+<h4>Step 6:  Determine the rejection criteria.</h4>
+
+<ul>
+  <li>Using probability:		Reject \(H_0\)  if the p-value \(\leq\alpha\) .  
+       	
+      </li>
+  <li>Using test statistics:		Reject \(H_0\)  if the test statistic is in the rejection region. </li>
+</ul>
+
+<br>
+<br>
+<h4>Step 7:	  Make One of Two Decisions About the Null Hypothesis</h4>
+
+<ol>
+  <li>Reject the Null:</li>
+  <ul>
+    <li>If  P-value \(\leq\alpha\)  ,  reject \(H_0\).	</li>
+    <li>Type I error: rejecting \(H_0\)  when it is actually true</li>
+  </ul>
+  <li>Fail to Reject the Null:
+    <ul>
+      <li>If  P-value \(> \alpha\),  fail to reject \(H_0\). </li>
+      <li>Type II error: failing to reject \(H_0\)  when it is actually false</li>
+    </ul>
+  </li>
+</ol>
+
+<h4>Step 8:  Make A Statement About The Claim Based On Your Decision About the Null Hypothesis.</h4>
+
+<style type="text/css">
+  .tg  {border-collapse:collapse;border-spacing:0;}
+  .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+  .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+  .tg .tg-0lax{text-align:left;vertical-align:top}
+  </style>
+  <table class="tg">
+    <tr>
+      <th class="tg-0lax"></th>
+      <th class="tg-0lax">\(H_0\) is the claim</th>
+      <th class="tg-0lax">\(H_A\) is the claim</th>
+    </tr>
+    <tr>
+      <td class="tg-0lax">Reject \(H_0\)</td>
+      <td class="tg-0lax">“There is sufficient sample evidence to reject the claim that…”</td>
+      <td class="tg-0lax">“There is sufficient sample evidence to support the claim that…”</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">Fail to reject \(H_0\)</td>
+      <td class="tg-0lax">“There is not sufficient sample evidence to reject the claim that…”</td>
+      <td class="tg-0lax">“There is not sufficient sample evidence to support the claim that…”</td>
+    </tr>
+  </table>
+
+<br>
+<br>
+<h4>Introduction to Hypothesis Testing: Steps 1-3</h4>
+
+<p><b></b>Remember to use the correct symbols.</b> </p>
+  <ul>
+    <li>Mean: \(\mu\)</li>
+    <li>Proportion: p</li>
+    <li>Standard deviation: \(\sigma\)</li>
+  </ul>   
+  
+  
+
+
+
+  <ol>
+    <li>The mean IQ of statistic students is at least 110.
+      <ol>
+        <li>Claim:<inline class="solution"> \( \mu \geq 110 \)</inline></li>
+        <li>\(H_0\):<inline class="solution"> \( \mu \geq 110 \)  (Assume \(H_0: \mu = 110 \))</inline></li>
+        <li>\(H_A\):<inline class="solution"> \( \mu < 110 \)</inline></li>
+        <li>The significant area (rejection area) is located where <inline class="solution"> \( \mu \) is significantly less than 110</inline> , therefore, this is a <inline class="solution">Left-Tailed</inline> test.</li>
+
+        <p class="solution"> <img src="images/u4left.png" alt="A normal curve with a critical value marked with a vertical line mu units from the left end of the graph.  The area to the left of the critical value is shaded and labeled reject H sub 0.  The area to the right of the critical value is shaded a diffent color and is labeled fail to reject H sub 0."></p>
+      </ol>
+    </li>
+    <li>The mean wait time for a GrubHub delivery is more than 40 minutes. 
+      <ol>
+        <li>Claim:<inline class="solution"> \( \mu > 40 \)</inline></li>
+        <li>\(H_0\):<inline class="solution"> \( \mu \leq 40 \)  (Assume \(H_0: \mu = 40 \))</inline></li>
+        <li>\(H_A\):<inline class="solution"> \( \mu > 40 \)</inline></110></li>
+        <li>The significant area (rejection area) is located where <inline class="solution">the mean wait time is significantly greater than 40 minutes</inline>  , therefore, this is a <inline class="solution">Right-Tailed</inline> test.</li>
+    </ol>
+    <p class="solution"> <img src="images/u4right.png" alt="A normal curve with a critical value marked with a vertical line mu units from the right end of the graph.  The area to the right of the critical value is shaded and labeled reject H sub 0.  The area to the left of the critical value is shaded a diffent color and is labeled fail to reject H sub 0."></p>
+  </li>
+    <li>The percentage of people who prefer milk chocolate over dark chocolate is 70% as claimed by Madison advertising agency.
+      <ol>
+        <li>Claim:<inline class="solution"> \(p=0.7\)</inline></li>
+        <li>\(H_0\):<inline class="solution"> \(p=0.7\)  (Assume \(H_0: p=0.7 \))</inline></li>
+        <li>\(H_A\):<inline class="solution"> \(p \neq 0.7\)</inline></li>
+        <li>The significant area (rejection area) is located where <inline class="solution">\(p\) is significantly different than 0.7</inline> , therefore, this is a <inline class="solution">Two-Tailed</inline> test.</li>
+      </ol>
+      <p><img src="images/u4two.png" alt="A normal curve with two critical values marked with vertical lines on each end of the graph.  The area to the left and right of the 2 critical values are shaded to the ends of the curve and labeled reject H sub 0.  The area between the critical values is  shaded a different color and is labeled fail to reject H sub 0."></p></li>
+    <li>The percentage of all students who eat sushi at least once per week is less than 27%.
+      <ol>
+        <li>Claim:<inline class="solution"> \(p < 0.27\)</inline></li>
+        <li>\(H_0\):<inline class="solution"> \(p \geq 0.27\)  (Assume \(H_0: p=0.27 \))</inline></li>
+        <li>\(H_A\):<inline class="solution"> \(p < 0.27\)</inline></li>
+        <li>The significant area (rejection area) is located where <inline class="solution">the proportion of all students who eat sushi is significantly less than 27%, </inline>, therefore, this is a <inline class="solution">Left-Tailed</inline> test.</li>
+      </ol>
+      <p class="solution"> <img src="images/u4left.png" alt="A normal curve with a critical value marked with a vertical line mu units from the left end of the graph.  The area to the left of the critical value is shaded and labeled reject H sub 0.  The area to the right of the critical value is shaded a diffent color and is labeled fail to reject H sub 0."></p>
+    </li>
+    <li>The mean IQ of statistic students is at most 110. 
+      <ol>
+        <li>Claim:<inline class="solution"> \( \mu \leq 110 \)</inline></li>
+        <li>\(H_0\):<inline class="solution"> \( \mu \leq 110 \)  (Assume \(H_0: \mu = 110  \))</inline></li>
+        <li>\(H_A\):<inline class="solution"> \( \mu > 110 \)</inline></li>
+        <li>The significant area (rejection area) is located where <inline class="solution"> \( \mu \) is significantly less than 110</inline> , therefore, this is a <inline class="solution">Right-Tailed</inline> test.</li>
+      </ol>
+      <p class="solution"> <img src="images/u4right.png" alt="A normal curve with a critical value marked with a vertical line mu units from the right end of the graph.  The area to the right of the critical value is shaded and labeled reject H sub 0.  The area to the left of the critical value is shaded a diffent color and is labeled fail to reject H sub 0."></p>
+    </li>
+    <li>The percentage of all men who prefer milk chocolate over dark chocolate is different than 70% as claimed by Madison advertising agency.
+      <ol>
+        <li>Claim:<inline class="solution"> \(p \neq 0.7\)</inline></li>
+        <li>\(H_0\):<inline class="solution"> \(p = 0.7\)</inline></li>
+        <li>\(H_A\):<inline class="solution"> \(p \neq 0.7\) (this can be translated ar \(p<0.7\) or \(p>0.7\))</inline></li>
+        <li>The significant area (rejection area) is located where <inline class="solution">\(p\) is significantly different than 0.7</inline> , therefore, this is a <inline class="solution">Two-Tailed</inline> test.</li>
+      </ol>
+      <p><img src="images/u4two.png" alt="A normal curve with two critical values marked with vertical lines on each end of the graph.  The area to the left and right of the 2 critical values are shaded to the ends of the curve and labeled reject H sub 0.  The area between the critical values is  shaded a different color and is labeled fail to reject H sub 0."></p>
+    </li>
+  </ol>
 
     </main>
 
