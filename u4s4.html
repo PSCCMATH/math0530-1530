@@ -215,60 +215,143 @@
     </li>
     <li>Run the Regression and Correlation Test    
         <p>There are two ways to look at Test Statistics and Critical Values, using the T-distribution AND using the Pearson Correlation Coefficient.  We will look at both:</p>
+        <p><img src="images/u4s4p2.png" alt=""></p>
         <ol>
             <li>Identify the information you will use to shade your graph: </li>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>The two Critical Values from the T-distribution</li>
+                <li>The Critical Values for the correlation coefficient from the TABLE on your formula sheet</li>
+               
             </ul>
-            <li>Identify the information about your sample:</li>
+            <li>Identify the information about your sample:
+                <ul>
+                    <li>Stat -  Regression - Simple Linear: x-variable, y-variable, Hypothesis Test</li>
+                    <li>Correlation Coefficient (r), </li>
+                    <li>Test Statistic (T-Stat), and </li>
+                    <li>the P-value for the “SLOPE”    </li>
+                </ul>
+            </li>
         </ol>
 
        
     </li>
-    <li><b>Flu:</b>  In a clinical trial, 28 out of 800 patients taking a prescription drug complained of flulike symptoms.  Suppose that it is known that 2.2% of patients taking competing drugs complain of flulike symptoms.  Test the claim that more than 2.2% of this drug’s users experience flulike symptoms as a side effect at the 0.1 significance level.
-        <ol>
-                <li>Design the Study
-                <ol>
-                    <li>The original Claim: <inline class="solution"> \(p > 0.022\)</inline> </li>
-                    <li>\(H_0\): <inline class="solution"> \(p \leq 0.022\)</inline>< &nbsp;&nbsp;&nbsp; assume \(H_0\): <inline class="solution">\(p = 0.022\)</inline> </li>
-                    <li>\(H_A\): <inline class="solution">\(p > 0.022\)</inline></li>
-                    <li>Type of Test: <inline class="solution">Right-tailed test</inline></li>
-                    <li>Level of Significance: <inline class="solution">\(\alpha =0.01\)</inline> </li>
-                   
-                    <li>Critical Value(s):  <inline class="solution">\(z=1.282\) (Determines shaded area(s))</inline></li>
-                </ol>
-                <p class="solution"><img src="images/u4s3p3ak.png" alt=""></p>
-            </li>
-                <li>Results
-        
-                    <ol>
-                        <li>Test Statistic: A standardized value based on the sample data, assuming the null is true.
-                            <p class="solution">  \(z=\frac{\hat{p}-p}{\sqrt{\frac{p q}{n}}} = \frac{.035-.022}{\sqrt{\frac{(.022)(.978)}{800}}}=2.5067\)</p> 
-                        </li>
-                        <li>p-value: <inline class="solution">0.0061</inline></li>
-                        <li>Rejection Criteria: Reject \(H_0\) if <inline class="solution">p value \(< \alpha\)  and the test statistic (z) is in the rejection region.</inline> </li>
-                        <li>Decision about the null: <inline class="solution">Reject \(H_0\) </inline>
-                        <p class="solution">Reason 1:  0.0061 < .01   </p>
-                        <p class="solution">Reason 2: 2.5067 is in the rejection region</p>
-                        </li>
-                        <li>Concluding statement about the claim: <inline class="solution">There is sufficient evidence to support the claim more than 2.2% of the drug’s users experience flu like symptoms. </inline> </li>
-                    </ol>
-                    <p class="solution"><img src="images/u4s3p3bk.png" alt=""></p>
-                    <p class="solution"><img src="images/u4s3p3ck.png" alt=""></p>
-                </li>
-            </ol>
+    <li>Draw the Graph: 
+        <p>Shade the Critical Areas of Rejection </p>
+        <p>Indicate the Test Statistic and Critical Values </p>
     </li>
    
+    <li>Make Your Decision About the Null Hypothesis:
+        <p>Reject \(H_0\)	&nbsp;	p value < α	&nbsp;T-stat is in the Critical Rejection Region </p>
+        <p>&nbsp;&nbsp;(The population must have some linear correlation)</p>
+        <p>Fail to Reject \(H_0\) &nbsp;	p value> α	&nbsp;	T-stat is not in the Critical Rejection Region</p>
+        <p>&nbsp;&nbsp;(The population doesn’t appear to have a linear correlation)</p>
+    </li> 
+
+    <li>Make Your Statement: 
+<ol>
+    <li><b>If you Reject \(H_0\): </b>There is sufficient evidence to support the claim a linear correlation exists between _______ and _________  </li>
+    <li><b>If you Fail to Reject \(H_0\):</b> There is NOT sufficient evidence to support the claim a linear correlation exists between _______ and _________ </li>
+</ol>
+    </li>
+
+<li>Identify your regression equation: \(\hat y=b+mx\) 
+
+</li>
+
+<li>Use your hypothesis test conclusions to calculate a value of y, given a value of x.
+<p>You must have a linear correlation in order to use the regression equation to predict a y value.  If you do not have a good correlation, the only option you have for predicting a y value is to find the mean of the y values in your set of points. </p>
+<p><b>If you Rejected \(H_0\),</b> you have a linear correlation and will use your regression equation.</p>
+<p><b>If you Failed To Reject \(H_0\),</b> you do not appear to have a linear correlation so you will not use your regression equation.  You will have to find another method to predict your y value.  </p>
+<p>&nbsp;&nbsp;&nbsp;Given an x, average the y values in your data to predict y. \(\overline{y}=\frac{\Sigma y}{n}\)	</p>
+</li>
+
+<p><b>The Test Statistic </b> (T-stat) for a regression test is calculated using: \(t=\frac{r}{\sqrt{\frac{1-r^{2}}{n-2}}}\)</p>
+
+<p><b>The Critical Values for the Correlation Coefficient </b> are found in Table 11 on the Unit 4 Formula Sheet</p>
+
 </ol>
 
 
 
+<h4>Problems</h4>
+<ol>
+    <li><b>Cricket Chirping Frequency and Temperature:</b>  Below is set of chirping frequency data for the striped ground cricket at various ground temperatures.  Construct a scatterplot, and run a Regression and Correlation Test using α = 0.01.  Determine whether there is sufficient evidence to support a claim of a linear correlation between chirping frequency and ground temperature.
+    <br>
+    <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 8px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 8px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg .tg-0lax{text-align:left;vertical-align:top}
+        </style>
+        <table class="tg">
+          <tr>
+            <td class="tg-0lax">Frequency</th>
+            <td class="tg-0lax">20.2</td>
+            <td class="tg-0lax">16.0</td>
+            <td class="tg-0lax">19.8</td>
+            <td class="tg-0lax">18.4</td>
+            <td class="tg-0lax">17.1</td>
+            <td class="tg-0lax">15.5</td>
+            <td class="tg-0lax">14.7</td>
+            <td class="tg-0lax">17.1</td>
+            <td class="tg-0lax">15.4</td>
+            <td class="tg-0lax">16.2</td>
+            <td class="tg-0lax">15.0</td>
+            <td class="tg-0lax">17.2</td>
+            <td class="tg-0lax">16.0</td>
+            <td class="tg-0lax">17.0</td>
+            <td class="tg-0lax">14.4</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Temperature</td>
+            <td class="tg-0lax">88.6</td>
+            <td class="tg-0lax">71.6</td>
+            <td class="tg-0lax">93.3</td>
+            <td class="tg-0lax">84.3</td>
+            <td class="tg-0lax">80.6</td>
+            <td class="tg-0lax">75.2</td>
+            <td class="tg-0lax">69.7</td>
+            <td class="tg-0lax">82.0</td>
+            <td class="tg-0lax">69.4</td>
+            <td class="tg-0lax">83.3</td>
+            <td class="tg-0lax">79.6</td>
+            <td class="tg-0lax">82.6</td>
+            <td class="tg-0lax">80.6</td>
+            <td class="tg-0lax">83.5</td>
+            <td class="tg-0lax">76.3</td>
+          </tr>
+        </table>
+        <p>Chirping Frequency (chirps/sec) and Temperature °F  for the Striped Ground Cricket</p>
 
-
-
-
+        <ol>
+            <li>The original claim: </li>
+            <li>\(H_0\) : </li>
+            <li>\(H_A\) :</li>
+            <li>\(\alpha\)</li>
+            <li>Rejection Criteria using r: </li>
+            <li>Correlation Coefficient: </li>
+            <li>Correlation Critical Values: </li>
+            <li>Decision: </li>
+            <li>Rejection Criteria using T- dist: Reject if T-Stat is in shaded region.
+            <ol>
+            <li>Critical Values:</li>
+            <li>Test Statistics: </li>
+        </ol>
+    </li>
+            <li>Rejection Criteria using p-value: Reject \(H_0\  if 
+                <ol>
+                    <li>p-value:  </li>
+                    <li>Decision: </li>
+                </ol> 
+           
+    </li>
+    <li>Concluding Statement: </li>
+    <li>Regression Equation:   </li>
+    <li>Good predictor?  </li>
+</ol>
+<p>If you listened in the morning when you woke up and measured a striped ground cricket chirping at a rate of 18 chirps per second, how warm would you say the ground temperature is? </p>
+<p>Good Predictor, use equation:  x = 18 chirps per second	\(\hat{y}=26.30789+3.22393(18)  = 84.4\) °F</p>
+</li>
 
 
 
