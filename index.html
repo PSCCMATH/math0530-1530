@@ -1,309 +1,268 @@
+
+    
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-<head>
-
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+    <!-- Needs a Title -->
     <title>MATH 1530</title>
+    <!-- Mobile Friendly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Internal bootstrap themed CSS. Reference: https://bootswatch.com/flatly/#typography-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-+ENW/yibaokMnme+vBLnHMphUYxHs34h9lpdbSLuAwGkOKFRl4C34WkjazBtb7eT" crossorigin="anonymous">
+    <!-- External CSS - un-comment out the line below and create a main.css in a styles folder -->
+    <!-- <link rel="stylesheet" href="styles/main.css"/> -->
+    <!-- For menus and common javascript things that use jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- For Math Formulas - Basic Configuration -->
+<script type="text/javascript" src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="index/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="index/css/stylish-portfolio.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="index/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-        type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick=$( "#menu-close").click();>MATH 1530</a>
-            </li>
-            <!-- <li>
-                <a href="#top" onclick=$( "#menu-close").click();>Home</a>
-            </li> -->
-            <li>
-                <a href="./jump/index.html" onclick=$( "#menu-close").click();>Resources</a>
-            </li>
-            <!-- <li>
-                <a href="./slides/slides-template.html" onclick=$("#menu-close").click();>Presentations</a>
-            </li> -->
-            <li>
-                <a href="https://www.myopenmath.com/index.php" onclick=$( "#menu-close").click();>MyOpenMath</a>
-            </li>
-            <li>
-                <a href="./apps/index.html" onclick=$( "#menu-close").click();>Calculators</a>
-            </li>
-
-        </ul>
-    </nav>
-
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>MATH 1530 Introductory Statistics </h1>
-            <h3>Pellissippi State Community College</h3>
-            <br>
-
-            <a href="./jump/index.html" target="_blank" class="btn btn-dark btn-lg">Resources</a>
-            <a href="https://www.myopenmath.com/index.php" target="_blank" class="btn btn-dark btn-lg">MyOpenMath</a>
-
-            <!-- <a href="./slides/slides-template.html" class="btn btn-dark btn-lg">Presentations</a> -->
-
-            <a href="./apps/index.html" target="_blank" class="btn btn-dark btn-lg">Calculators</a>
-            
-            <p>Notes for Instructors -
-                <ul>
-                    <li> The content organization can be found: <a href="./1530organization.docx" target="_blank"> here</a>. </li>
-                    <li> The MyOpenMath course ID is: 24870 </li>
-                </ul>
-            </p>
-            <!-- <p>The enrollment key is: OERdemo1530</p> -->
-        </div>
-    </header>
-
-
-
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Our Team</h2>
-                    <hr class="small">
-                    <div class="row">
-
-                        <div class="col-md-2 col-sm">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-bolt fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Josh Dean</strong>
-                                </h4>
-                                <p>Instructional Technology Specialist (Emerging and Mobile)</p>
-                                <a href="mailto:jmdean1@pstcc.edu" class="btn btn-light">Contact</a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-2 col-sm">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-line-chart fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Christina Elliott</strong>
-                                </h4>
-                                <p>Instructor of Mathematics</p>
-                                <a href="mailto:crelliott@pstcc.edu" class="btn btn-light">Contact</a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-2 col-sm">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-file-text-o fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Marilyn McClanahan</strong>
-                                </h4>
-                                <p>Assistant Professor of Mathematics</p>
-                                <a href="mailto:msmcclanahan@pstcc.edu" class="btn btn-light">Contact</a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-2 col-sm">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-desktop fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Brittany Mosby</strong>
-                                </h4>
-                                <p>Associate Professor of Mathematics</p>
-                                <a href="mailto:blmosby@pstcc.edu" class="btn btn-light">Contact</a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-2 col-sm">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-group fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Susan Mosteller</strong>
-                                </h4>
-                                <p>Assistant Professor of Mathematics</p>
-                                <a href="https://susanmosteller.github.io" target = "_blank" class="btn btn-light">Contact</a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-2 col-sm">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-desktop fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Paula Sawyer</strong>
-                                </h4>
-                                <p>Instructor of Mathematics</p>
-                                <a href="mailto:pjsawyer@pstcc.edu" class="btn btn-light">Contact</a>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Pellissippi State Community College </strong>
-                    </h4>
-                    <p>10915 Hardin Valley Road
-                        <br>Knoxville, TN 37933</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (865) 694-6400</li>
-                        <li><i class="fa fa-link fa-fw"></i> <a href="http://www.pstcc.edu/" target="_blank"> www.pstcc.edu</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="https://www.facebook.com/pellissippi/" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/ps" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; 2017</p>
-                </div>
-            </div>
-        </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="index/js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="index/js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Ready-to-go icons - check out this site for a reference http://fontawesome.io/icons/ -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Google analytics -->
     <script>
-        // Closes the sidebar menu
-        $("#menu-close").click(function (e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-        // Opens the sidebar menu
-        $("#menu-toggle").click(function (e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-        // Scrolls to the selected menu item on the page
-        $(function () {
-            $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function () {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
-                }
-            });
-        });
-        //#to-top button appears after scrolling
-        var fixed = false;
-        $(document).scroll(function () {
-            if ($(this).scrollTop() > 250) {
-                if (!fixed) {
-                    fixed = true;
-                    // $('#to-top').css({position:'fixed', display:'block'});
-                    $('#to-top').show("slow", function () {
-                        $('#to-top').css({
-                            position: 'fixed',
-                            display: 'block'
-                        });
-                    });
-                }
-            } else {
-                if (fixed) {
-                    fixed = false;
-                    $('#to-top').hide("slow", function () {
-                        $('#to-top').css({
-                            display: 'none'
-                        });
-                    });
-                }
-            }
-        });
-        // Disable Google Maps scrolling
-        // See http://stackoverflow.com/a/25904582/1607849
-        // Disable scroll zooming and bind back the click event
-        var onMapMouseleaveHandler = function (event) {
-            var that = $(this);
-            that.on('click', onMapClickHandler);
-            that.off('mouseleave', onMapMouseleaveHandler);
-            that.find('iframe').css("pointer-events", "none");
-        }
-        var onMapClickHandler = function (event) {
-            var that = $(this);
-            // Disable the click handler until the user leaves the map area
-            that.off('click', onMapClickHandler);
-            // Enable scrolling zoom
-            that.find('iframe').css("pointer-events", "auto");
-            // Handle the mouse leave event
-            that.on('mouseleave', onMapMouseleaveHandler);
-        }
-        // Enable map zooming with mouse scroll when the user clicks the map
-        $('.map').on('click', onMapClickHandler);
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-82640741-1', 'auto');
+      ga('send', 'pageview');
     </script>
 
-</body>
+
+  </head>
+
+  <body>
+    <!-- Keep the DIV container to add the margins and make it scalable for mobile -->
+    <nav class="navbar navbar-default">
+
+      <div class="container-fluid">
+
+        <!-- <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button> <a class="navbar-brand" href="#">Brand</a> </div> -->
+
+        <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div> -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="jumbotron">
+
+        <div class="row">
+
+          <div class="col-md-8">
+            <h1>PSCC Math</h1>
+
+            <p><a href="https://psccmath.github.io/math1530" class="btn btn-primary btn-lg">MATH 1530</a></p>
+          </div>
+
+          <div class="col-md-4"> <img src="images/bluecurves.jpg" alt="Decorative abstract curves" class="img-rounded" width="275" height="183"> </div>
+        </div>
+      </div>
+      <!-- begin row 1 -->
+
+      <div class="row">
+
+        <div class="col-md-3">
+
+          <div class="panel panel-primary">
+
+            <div class="panel-heading">
+              <h3 class="panel-title">Unit 1 Describing Data</h3> </div>
+
+            <div class="panel-body">
+              <p> <strong> </strong> </p>
+              <p> <strong>  <a class="dropdown-item" href="u1s1.html" target="_blank">1.1 An Overview of Statistics</a>
+                <p> <strong> <a class="dropdown-item" href="u1s2.html" target="_blank">1.2 Data Classifications</a></strong> </p>
+                <p> <strong><a class="dropdown-item" href="u1s3.html" target="_blank">1.3 Data Collection and Experimental Design</a></strong> </p>
+                <p> <strong><a class="dropdown-item" href="u1s4.html" target="_blank">2.1 Frequency Distributions and Their Graphs</a></strong> </p>
+                <p> <strong><a class="dropdown-item" href="u1s5.html" target="_blank">2.2 More Graphs and Displays</a></strong> </p>
+                <p> <strong> <a class="dropdown-item" href="u1s6.html" target="_blank">2.3 Measures of Central Tendency</a>
+                
+                <p> <strong> <a class="dropdown-item" href="u1s7.html" target="_blank">2.4 Measures of Variation</a></strong> </p>
+                <p> <strong>  <a class="dropdown-item" href="u1s8.html" target="_blank">2.5 Measures of Position</a></strong> </p>
+                <p> <strong> <a class="dropdown-item" href="u1review.html" target="_blank">Unit 1 Review</a></strong> </p>
+                
+
+
+              <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">StackEdit Template Code</h4>
+                      </div>
+                      <div class="modal-body">
+                        <input class="form-control" type="text" id="foo" value="&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt; &lt;!-- Needs a Title --&gt; &lt;title&gt;&lt;%= documentTitle %&gt;&lt;/title&gt; &lt;!-- Mobile Friendly --&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt; &lt;!-- Internal bootstrap themed CSS. Reference: https://bootswatch.com/flatly/#typography--&gt; &lt;link href=&quot;https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-+ENW/yibaokMnme+vBLnHMphUYxHs34h9lpdbSLuAwGkOKFRl4C34WkjazBtb7eT&quot; crossorigin=&quot;anonymous&quot;&gt; &lt;!-- External CSS - un-comment out the line below and create a main.css in a styles folder --&gt; &lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;styles/main.css&quot;/&gt; --&gt; &lt;!-- Ready-to-go icons - check out this site for a reference http://fontawesome.io/icons/ --&gt; &lt;link href=&quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot;&gt; &lt;!-- For menus and common javascript things that use jquery --&gt; &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt; &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt; &lt;!-- For Math Formulas - Basic Configuration --&gt; &lt;script type=&quot;text/x-mathjax-config&quot;&gt; MathJax.Hub.Config({ extensions: [&quot;tex2jax.js&quot;], jax: [&quot;input/TeX&quot;, &quot;output/HTML-CSS&quot;], tex2jax: { inlineMath: [ ['$','$'], [&quot;\\(&quot;,&quot;\\)&quot;] ], displayMath: [ ['$$','$$'], [&quot;\\[&quot;,&quot;\\]&quot;] ], processEscapes: true }, &quot;HTML-CSS&quot;: { availableFonts: [&quot;TeX&quot;] } }); &lt;/script&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&quot;&gt;&lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;!-- Keep the DIV container to add the margins and make it scalable for mobile --&gt; &lt;div class=&quot;container&quot;&gt; &lt;%= documentHTML %&gt; &lt;!-- Ending for DIV Container --&gt; &lt;/div&gt; &lt;/body&gt; &lt;/html&gt;">
+
+<!-- Trigger -->
+<br><button class="btn center-block" data-clipboard-target="#foo">
+    Copy
+</button>
+<p style="color: green;	display: none;" class="text-center copied">Copied!</p>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+<!-- ending of panel -->
+            </div>
+          </div>
+          <!-- ending of panel 1 of row-->
+        </div>
+
+        <div class="col-md-3">
+
+          <div class="panel panel-primary">
+
+            <div class="panel-heading">
+              <h3 class="panel-title">Unit 2 Probability</h3> </div>
+
+            <div class="panel-body">
+                <p> <strong><a class="dropdown-item"href="u2s1.html" target="_blank">3.1 Basic Concepts of Probability and Counting</a></strong> </p>
+                <p> <strong> <a class="dropdown-item" href="u2s2.html" target="_blank">3.2 Conditional Probability and the Multiplication Rule</a></strong> </p>
+                <p> <strong><a class="dropdown-item" href="u2s3.html" target="_blank">3.3 The Addition Rule</a></strong> </p>
+                <p> <strong> <a class="dropdown-item" href="u2s4.html" target="_blank">4.1 Probability Distributions</a></strong> </p>
+                <p> <strong><a class="dropdown-item" href="u2s5.html" target="_blank">4.2 Binomial Distributions</a></strong> </p>
+                <p> <strong><a class="dropdown-item" href="u2review.html" target="_blank">Unit 2 Review</a></strong> </p>
+                
+
+
+
+          </div>
+          <!-- ending of panel 2 of row-->
+        </div>
+</div>
+
+<div class="col-md-3">
+
+    <div class="panel panel-primary">
+
+      <div class="panel-heading">
+        <h3 class="panel-title">Unit 3 Normal Distributions and Confidence Intervals </h3> </div>
+
+      <div class="panel-body">
+          <p> <strong> <a class="dropdown-item" href="u3s1.html" target="_blank">5.1 Introduction to Normal Distributions and the Standard Normal Distribution</a></strong> </p>
+          <p> <strong><a class="dropdown-item" href="u3s2.html" target="_blank">5.2 Normal Distributions: Finding Probabilities</a></strong> </p>
+          <p> <strong><a class="dropdown-item" href="u3s3.html" target="_blank">5.3 Normal Distributions: Finding Values</a></strong> </p>
+          <p> <strong><a class="dropdown-item" href="u3s4.html" target="_blank">5.4 Sampling Distributions and the Central Limit Theorem</a></strong> </p>
+          <p> <strong><a class="dropdown-item" href="u3s6.html" target="_blank">6.3 Confidence Intervals for Population Proportions</a></strong> </p>
+          
+          <p> <strong><a class="dropdown-item" href="u3review.html" target="_blank">Unit 3 Review</a></strong> </p>
+          
+
+        
+    </div>
+    <!-- ending of panel 1 of row 2-->
+  </div>
+
+</div>
+      <!-- begin 2nd row -->
+
+
+
+        <div class="col-md-3">
+
+          <div class="panel panel-primary">
+
+            <div class="panel-heading">
+              <h3 class="panel-title">Unit 4 Hypothesis Testing </h3> </div>
+
+            <div class="panel-body">
+                <p> <strong> <a class="dropdown-item" href="u4s1.html" target="_blank">7.1 Introduction to Hypothesis Testing</a></strong> </p>
+                <p> <strong><a class="dropdown-item" href="u4s2.html" target="_blank">7.3 Hypothesis Testing for the Mean</a></strong> </p>
+                <p> <strong><a class="dropdown-item" href="u4s3.html" target="_blank">7.4 Hypothesis Testing for Proportions</a></strong> </p>
+                <p> <strong><a class="dropdown-item" href="u4s4.html" target="_blank">9.1 Correlation</a></strong> </p>
+                <p> <strong><a class="dropdown-item" href="u4s5.html" target="_blank">9.2 Linear Regression</a></strong> </p>
+                <p> <strong><a class="dropdown-item" href="u4s6.html" target="_blank">10.1 Goodness-of-Fit Test</a></strong> </p>
+                <p> <strong><a class="dropdown-item" href="u4s7.html" target="_blank">10.2 Independence</a></strong> </p>
+                <p> <strong><a class="dropdown-item" href="u4review.html" target="_blank">Unit 4 Review</a></strong> </p>
+                
+
+              
+          </div>
+          <!-- ending of panel 1 of row 2-->
+        </div>
+
+    </div>
+</div>
+
+        <div class="col-md-12">
+
+          <div class="panel panel-primary">
+
+            <div class="panel-heading">
+              <h3 class="panel-title">Additional Resources</h3> </div>
+
+            <div class="panel-body">
+              <div class="btn-toolbar pull-right">
+                <a class="btn btn-default" role="button" href="https://www.desmos.com/calculator"  target="_blank">Desmos Graphing Calculator</a>
+                <!-- <a class="btn btn-default" role="button" href="http://www.pstcc.edu/math/help.php"  target="_blank">Pellissippi State Math Help Page</a>
+                <a class="btn btn-default" role="button" href="http://www.calculus.org/"  target="_blank">Online Calculus Resources</a>
+                <a class="btn btn-default" role="button" href="pdfs/ziegler.pdf"  target="_blank">Ziegler Textbook Resource</a> -->
+                <!-- ending of btn toolbar -->
+              </div>
+            </div>
+          </div>
+          <!-- ending of panel 2 of row 2-->
+        </div>
+
+
+</div>
+
+      <!-- Ending for DIV Container -->
+
+
+
+    <script>
+    var clip = new Clipboard('.btn');
+    clip.on('success', function(e) {
+      $('.copied').show();
+      $('.copied').fadeOut(1000);
+    });
+    </script>
+
+  </body>
 
 </html>
+
