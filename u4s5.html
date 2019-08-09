@@ -302,79 +302,173 @@
 
 
 <li><b> Ice-Cream Store  (Different Expected Values for Each Category)</b>  
-    <p>An ice-cream store manager predicts the following distribution for the daily sale of the 6 flavors offered at his store in the month of January.  
-        Strawberry:  	10% 			Vanilla:  		30%
-        Cookie Dough:     	20% 			Mint Chocolate Chip:  	10%
-        Orange Sherbet:  	10% 			Chocolate:  		20%
-        </p>
+    <p>An ice-cream store manager predicts the following distribution for the daily sale of the 6 flavors offered at his store in the month of January.   </p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>Strawberry:  	10% </p>
+                <p>Cookie Dough:     	20%</p>
+                <p>Orange Sherbet:  	10% </p>
+            </div>
+            <div class="col-md-6">
+                <p>Vanilla:  		30%</p>
+                <p>Mint Chocolate Chip:  	10%</p>
+                <p>Chocolate:  		20%</p>
+            </div> 			
+    </div>
+    <br>
+
+<p>On January 10, his store sold the following scoops of ice-cream.  </p>
+
+<div class="row">
+        <div class="col-md-6">
+            <p>Strawberry: 25 scoops </p>
+            <p>Cookie Dough: 35 scoops</p>
+            <p>Orange Sherbet:  20 scoops</p>
+        </div>
+        <div class="col-md-6">
+            <p>Vanilla:  50 scoops</p>
+            <p>Mint Chocolate Chip: 30 scoops</p>
+            <p>Chocolate:  40 scoops</p>
+        </div> 			
+</div>
+
     <br>
    
+    
+<p>Test the store manager’s claim that the distribution of sales of the six flavors are his predicted values. </p>
+
+
+<style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{font-family:Arial, sans-serif;font-size:14px;padding:12px 10px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+    .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:12px 10px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+    .tg .tg-0lax{text-align:left;vertical-align:top}
+    </style>
+    <table class="tg">
+      <tr>
+        <th class="tg-0lax"></th>
+        <th class="tg-0lax">Flavor 1 Strawberry</th>
+        <th class="tg-0lax">Flavor 2 Cookie Dough</th>
+        <th class="tg-0lax">Flavor 3 Orange Sherbet</th>
+        <th class="tg-0lax">Flavor 4 Vanilla</th>
+        <th class="tg-0lax">Flavor 5 Mint Choc Chip</th>
+        <th class="tg-0lax">Flavor 6 Chocolate</th>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Observed</td>
+        <td class="tg-0lax">25</td>
+        <td class="tg-0lax">35</td>
+        <td class="tg-0lax">20</td>
+        <td class="tg-0lax">50</td>
+        <td class="tg-0lax">30</td>
+        <td class="tg-0lax">40</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Expected</td>
+        <td class="tg-0lax">20</td>
+        <td class="tg-0lax">40</td>
+        <td class="tg-0lax">20</td>
+        <td class="tg-0lax">60</td>
+        <td class="tg-0lax">20</td>
+        <td class="tg-0lax">40</td>
+      </tr>
+    </table>
+
+
+
+
+        <ol>
+            <li>The original claim:  <inline class="solution">The distribution of sales in the month of January is 10% Strawberry, 20% Cookie dough, 10% Orange Sherbet, 30% Vanilla, 10% Mint Chocolate chip, and 20% Chocolate.</inline> </li>
+            <li>\(H_0\) : <inline class="solution">The distribution of flavors is the same as the expected distribution. \($p_{1}=.10, \quad p_{2}=.20,\quad p_{3}=.10,\quad p_{4}=.30,\quad p_{5}=.10, \quadp_{6}=.20$\)	</inline></li>
+            <li>\(H_A\) :<inline class="solution">The distribution of flavors differs from the expected distribution.</inline></li>
+            <li>\(\alpha\)<inline class="solution"> = 0.05	</inline></li>
+
+            
+            
+            <li>\({\chi^2}_{CV}\):<inline class="solution"> = 11.1	</inline> </li>
+            <li>\({\chi^2}_{TS}\): <inline class="solution"> = 8.54 	</inline></li>
+            <li>p-value: <inline class="solution"> 0.1288	</inline></li>
+            <li>Rejection Criteria: Reject \(H_0\)  if <inline class="solution" >p-value < 0.05</inline>
+            
+    </li>
+            <li>Decision: <inline class="solution"> Fail to reject  \(H_0\)</inline>	 
+              
+           
+    </li>
+    <p class="solution"><img src="images/u4s5p2k.png" alt=""></p>
+    <li>Concluding Statement:<inline class="solution"> There is not sufficient evidence to reject the claimed distribution of ice cream sales.	</inline> </li>
+  
+</ol>
+
+</li>
+
+<br>
+
+<li><b> Blood Type: </b>  The proportions of blood types O, A, B, AB in the general population of a particular country are known to be in the ratio 49:38:9:4, respectively.  A research team investigating a small isolated community in the country, obtained the frequencies of blood type given below.  Test the hypothesis that the proportions in this community do not differ significantly from those in the country’s general population.  Use a 0.05 significance level.
+
     <style type="text/css">
         .tg  {border-collapse:collapse;border-spacing:0;}
-        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:16px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:16px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-        .tg .tg-nrix{text-align:center;vertical-align:middle}
+        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:15px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:15px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg .tg-0lax{text-align:left;vertical-align:top}
         </style>
         <table class="tg">
           <tr>
-            <th class="tg-nrix">Entree</th>
-            <th class="tg-nrix">Pizza</th>
-            <th class="tg-nrix">Cheeseburger</th>
-            <th class="tg-nrix">Chicken Strips</th>
-            <th class="tg-nrix">Salad</th>
+            <th class="tg-0lax">Blood Type</th>
+            <th class="tg-0lax">O</th>
+            <th class="tg-0lax">A</th>
+            <th class="tg-0lax">B</th>
+            <th class="tg-0lax">AB</th>
           </tr>
           <tr>
-            <td class="tg-nrix">Number OBSERVED</td>
-            <td class="tg-nrix">61</td>
-            <td class="tg-nrix">49</td>
-            <td class="tg-nrix">54</td>
-            <td class="tg-nrix">36</td>
+            <td class="tg-0lax"># selected OBSERVED</td>
+            <td class="tg-0lax">87</td>
+            <td class="tg-0lax">59</td>
+            <td class="tg-0lax">20</td>
+            <td class="tg-0lax">4</td>
           </tr>
           <tr>
-            <td class="tg-nrix">Number EXPECTED</td>
-            <td class="tg-nrix"><p class="solution">50</p></td>
-            <td class="tg-nrix"><p class="solution">50</p></td>
-            <td class="tg-nrix"><p class="solution">50</p></td>
-            <td class="tg-nrix"><p class="solution">50</p></td>
+            <td class="tg-0lax"># selected EXPECTED</td>
+            <td class="tg-0lax"><p class="solution"> 83</p></td>
+            <td class="tg-0lax"><p class="solution"> 65</p></td>
+            <td class="tg-0lax"><p class="solution"> 15</p></td>
+            <td class="tg-0lax"><p class="solution"> 7</p></td>
           </tr>
         </table>
 
-
-
+    <br>
+   
+    
 
 
 
 
 
         <ol>
-            <li>The original claim:  <inline class="solution">There is no difference in student preferences among the four entrees—the preferences follow a uniform distribution.</inline> </li>
-            <li>\(H_0\) : <inline class="solution">\(p_{1}=p_{2}=p_{3}=p_{4}\) The distribution of the four entrees is the same as the expected uniform distribution.	</inline></li>
-            <li>\(H_A\) :<inline class="solution">The distribution of the four entrees differs from the expected uniform distribution.</inline></li>
-            <li>\(\alpha\)<inline class="solution"> = 0.10	</inline></li>
+            <li>The original claim:  <inline class="solution">The distribution of blood types in the community will be O (49%), A (38%), B (9%) and AB (4%).</inline> </li>
+            <li>\(H_0\) : <inline class="solution">The distribution of the community sample is the same as the expected distribution. \(p_{1}=.49, p_{2}=.38, p_{3}=.09, p_{4}=.04\)	</inline></li>
+            <li>\(H_A\) :<inline class="solution">The distribution of the community sample differs from the expected distribution.</inline></li>
+            <li>\(\alpha\)<inline class="solution"> = 0.05	</inline></li>
 
             
             
-            <li>\({\chi^2}_{CV}\):<inline class="solution"> = 6.251	</inline> </li>
-            <li>\({\chi^2}_{TS}\): <inline class="solution"> = 0.641 	</inline></li>
-            <li>p-value: <inline class="solution"> 0.0828	</inline></li>
-            <li>Rejection Criteria: Reject \(H_0\)  if <inline class="solution" >p-value < 0.10</inline>
+            <li>\({\chi^2}_{CV}\):<inline class="solution"> = 7.81	</inline> </li>
+            <li>\({\chi^2}_{TS}\): <inline class="solution"> = 3.25 	</inline></li>
+            <li>p-value: <inline class="solution"> 0.3552	</inline></li>
+            <li>Rejection Criteria: Reject \(H_0\)  if <inline class="solution" >p-value < 0.05</inline>
             
     </li>
-            <li>Decision: <inline class="solution"> Reject \(H_0\)</inline>	 
+            <li>Decision: <inline class="solution"> Fail to reject  \(H_0\)</inline>	 
               
            
     </li>
-    <p class="solution"><img src="images/u4s5p1k.png" alt=""></p>
-    <li>Concluding Statement:<inline class="solution">There is sufficient evidence to reject the claim that there is no difference in student preference between pizza, cheeseburgers, chicken strips, and salad.	</inline> </li>
-    <li>Describe the claimed distribution:    <inline class="solution">Uniform	</inline> </li>
-    <li>Was it a good fit?  <inline class="solution"> NO </inline></li>
+    <p class="solution"><img src="images/u4s5p3k.png" alt=""></p>
+    <li>Concluding Statement:<inline class="solution"> There is not sufficient evidence to reject the claim of a 49:38:9:4 distribution of blood types in the studied community.	</inline> </li>
+  
 </ol>
 
 </li>
-
-
-
-
 
 
 
