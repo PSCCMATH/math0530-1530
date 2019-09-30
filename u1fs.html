@@ -126,69 +126,97 @@
      <h2>Unit 1 Formula Sheet  </h2>
      
      <h3>Chapter 2</h3>
-     <b>Most Commonly Used Formulas</b>
+    <br>
 
-<h4>Sample Standard Deviation:</h4>  
-<p style="margin-left:10%;">\(\mathrm{S}=\sqrt{\frac{\sum(x-\overline{x})^{2}}{n-1}}\)</p>
+<h4>Standard Deviation:</h4>  
 
+    <div class="row">
+      <div class="col-md-4">Population
+        <p>\(\sigma=\sqrt{\frac{\Sigma\left(x-\mu\right)^2}N}\)</p>
+      </div>
+      <div class="col-md-4">Sample
+        <p>\(s=\sqrt{\frac{\Sigma\left(x-{\displaystyle\overset-x}\right)^2}{n-1}}\)</p>
+      </div>
+      <div class="col-md-4">Frequency Distribution
+        <p>\(s=\sqrt{\frac{\Sigma\left(x-{\displaystyle\overset-x}\right)^2f}{n-1}}\)</p>
+      </div>
+    </div>
+  <br>
+    <h4>z-Score:</h4>
+    <div class="row">
+        <div class="col-md-6">
+          <p>Population</p>
+          <p>\(z=\frac{x-\mu}\sigma\)</p>
+        </div>
+        <div class="col-md-6">
+            <p>Sample</p>
+            <p>\(z=\frac{x-\overline{x}}{s}\)</p>
+        </div>
+      </div>
+    <!-- <p style="margin-left:10%;">\(\)</p> -->
+<br>
 <h4>Empirical Rule:</h4>
+<h5>(68-95-99.7 Rule) For symmetric, bell-shaped data sets</h5>
 <p ><img src="images/u1empiricalrule.png" alt="A normal curve with the x-axis labeled by integers from -3 to 3.  The mean is labeled in the center of the x-axis at 0.  The negative numbers to the left of the mean (-3 to -1) represent the standard deviations below the mean.  The positive numbers to the right of the mean (1 to 3) represent the standard deviations above the mean.  There are 8 shaded areas on the graph--four on each side of the mean.  The graph is symmetric so the 4 areas to the left and right of the mean are mirror images of each other.  From the left to the right of the graph the shaded areas represent the following percentages under the curve: 0.15%, 2.35%, 13.5%, 34%, 34%, 13.5%, 2.35%, and 0.15%"></p>
 
-<h4>z-Score:</h4>
-<p style="margin-left:10%;">\(z=\frac{x-\overline{x}}{s}\)</p>
-
-<h3>Less Commonly Used Formulas</h3>
-<ul>
-    <li>Range: <i>Range = Maximum - Minimum</i></li>
-    <li>Class Width: 
-        <ul>
-            <li>From raw data: <i>\(\frac{Range}{Number\;of\;Classes}\) (round up)</i></li>
-            <li>From table:  <i>Class Width = \(LCL_2-LCL_1\)</i> </li>
-        </ul>
-    </li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
-<h4>Probability of occurrence of both events A <b>and</b> B:</h4>
-<p style="margin-left:10%;">\(P(A\;and\;B)=P(A)\cdot P(\left.B\right|A)\)</p>
-<p style="margin-left:10%;">\(P(A\;and\;B)=P(A)\cdot P(B)\;if\;A\;and\;B\;are\;independent\)</p>
-
-<h4>Probability of occurrence of either A <b>or</b> B:</h4>
-<p style="margin-left:10%;">\(P(A\;or\;B)=P(A)\;+\;P(B)\;-\;P(A\;and\;B)\)</p>
-<p style="margin-left:10%;">\(P(A\;or\;B)=P(A)\;+\;P(B)\;if\;A\;and\;B\;are\;mutually\;exclusive\)</p>
- 
-
-<br>
-<h3>Chapter 4</h3>
-
-<h4>Mean of a Discrete Random Variable:</h4>
-
-<p style="margin-left:10%;">\(\mu={\textstyle\sum_{}^{}}x\;P(x)\)</p>
-
-<h4>Variance and Standard Deviation of a Discrete Random Variable:</h4>
-
-<p style="margin-left:10%;"> Variance: \(\sigma^2={\textstyle\sum_{}^{}}\left(x-\mu\right)^2\;P(x)\)</p>
-
-
-<p style="margin-left:10%;"> Standard Deviation: \(\sigma=\sqrt{\sigma^2}=\sqrt{{\textstyle\sum_{}^{}}\left(x-\mu\right)^2\;P(x)}\)</p>
-
-<h4>Expected Value:</h4>
-<p style="margin-left:10%;">\(E(x)=\mu={\textstyle\sum_{}^{}}x\;P(x)\)</p>
-
-<h4>Binomial Probability of x successes in n trials:</h4>
-<p style="margin-left:10%;">\(P(x)={}_nC_x\;p^xq^{n-x}=\frac{n!}{(n-x)!x!}p^xq^{n-x}\)</p>
-
-<h4>Population Parameters of a Binomial Distribution:</h4>
 
 <div class="row">
-        <div class="col-sm-1"></div>
-    <div class="col-sm-3">Mean: \(\mu=np\)</div>
-    <div class="col-sm-3">Variance: \(\sigma^2=npq\)</div>
-    <div class="col-sm-3">Standard Deviation: \(\sigma=\sqrt{npq}\)</div>
+    <div class="col-md-6">
+        <h4>Range:</h4>  Range = Maximum - Minimum
+    </div>
+    <div class="col-md-6">
+        <h4>Class Midpoint:</h4> Class Midpoint = \(\frac{LCL+UCL}2\) 
+    </div>
   </div>
+
+
+    <br>
+
+
+
+    <h4>Class Width:</h4> 
+
+        <div class="row">
+            <div class="col-md-6">
+                From raw data: \(\frac{ \text {Range} }{ \text {Number of Classes} }\) (round up)
+            </div>
+            <div class="col-md-6">From table:  \( \text {Class Width} = LCL_2-LCL_1\)
+
+            </div>
+          </div>
+      <br>
+          <div class="row">
+              <div class="col-md-6">
+                  <h4>Relative Frequency:</h4> \( \text {Relative Frequency} = \frac{ \text {Class Frequency} }{ \text {Sample Size} } = \frac fn \) 
+              </div>
+              <div class="col-md-6">
+                <h4>Variance:</h4> \( \text {variance} = \left( \text {standard deviation} \right)^2\)</div>
+            </div>
+  
+   <br>
+    <h4>Mean</h4>
+      <div class="row">
+        <div class="col-md-3">Population
+          <p>\(\mu=\frac{\Sigma x}N\)</p>
+        </div>
+        <div class="col-md-3">Sample
+          <p>\(\overset-x=\frac{\Sigma x}n\)</p>
+        </div>
+        <div class="col-md-3">Weighted
+          <p>\(\overset-x=\frac{\Sigma xw}{\Sigma w}\)</p>
+        </div>
+        <div class="col-md-3">Frequency Distribution
+          <p>\(\overset-x=\frac{\Sigma xf}n\)</p>
+        </div>
+      </div>
+    
+ 
+    
+
+
+ 
+
+
 
 
 
