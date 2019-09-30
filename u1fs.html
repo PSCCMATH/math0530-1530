@@ -123,49 +123,99 @@
 
 
     <main>
-     <h2>Unit 3 Formula Sheet  </h2>
+     <h2>Unit 1 Formula Sheet  </h2>
      
-     <h3>Chapter 5</h3>
+     <h3>Chapter 2</h3>
+    <br>
 
-<h4>Standard Score or z-Score:</h4>  
-<p style="margin-left:10%;">\(z=\frac{ \text {Value-Mean} }{ \text {Standard Deviation} }=\frac{x-\mu}\sigma\)</p>
+<h4>Standard Deviation:</h4>  
 
-<h4>Transforming a z-Score to an x-Value:</h4>
-<p style="margin-left:10%;">\(x=\mu+z\sigma\)</p>
+    <div class="row">
+      <div class="col-md-4">Population
+        <p>\(\sigma=\sqrt{\frac{\Sigma\left(x-\mu\right)^2}N}\)</p>
+      </div>
+      <div class="col-md-4">Sample
+        <p>\(s=\sqrt{\frac{\Sigma\left(x-{\displaystyle\overset-x}\right)^2}{n-1}}\)</p>
+      </div>
+      <div class="col-md-4">Frequency Distribution
+        <p>\(s=\sqrt{\frac{\Sigma\left(x-{\displaystyle\overset-x}\right)^2f}{n-1}}\)</p>
+      </div>
+    </div>
+  <br>
+    <h4>z-Score:</h4>
+    <div class="row">
+        <div class="col-md-6">
+          <p>Population</p>
+          <p>\(z=\frac{x-\mu}\sigma\)</p>
+        </div>
+        <div class="col-md-6">
+            <p>Sample</p>
+            <p>\(z=\frac{x-\overline{x}}{s}\)</p>
+        </div>
+      </div>
+    <!-- <p style="margin-left:10%;">\(\)</p> -->
+<br>
+<h4>Empirical Rule:</h4>
+<h5>(68-95-99.7 Rule) For symmetric, bell-shaped data sets</h5>
+<p ><img src="images/u1empiricalrule.png" alt="A normal curve with the x-axis labeled by integers from -3 to 3.  The mean is labeled in the center of the x-axis at 0.  The negative numbers to the left of the mean (-3 to -1) represent the standard deviations below the mean.  The positive numbers to the right of the mean (1 to 3) represent the standard deviations above the mean.  There are 8 shaded areas on the graph--four on each side of the mean.  The graph is symmetric so the 4 areas to the left and right of the mean are mirror images of each other.  From the left to the right of the graph the shaded areas represent the following percentages under the curve: 0.15%, 2.35%, 13.5%, 34%, 34%, 13.5%, 2.35%, and 0.15%"></p>
 
-<h4>Central Limit Theorem:</h4>
-<p>(\(n\geq30\) or population is normally distributed)</p>
-<p>Mean of the Sampling Distribution: \(\mu_x=\mu\)</p>
 
-<p>Standard Deviation of the Sampling Distribution (Standard Error):</p>
-<p style="margin-left:10%;"> \(\sigma_x=\frac\sigma{\sqrt n}\)</p>
+<div class="row">
+    <div class="col-md-6">
+        <h4>Range:</h4>  Range = Maximum - Minimum
+    </div>
+    <div class="col-md-6">
+        <h4>Class Midpoint:</h4> Class Midpoint = \(\frac{LCL+UCL}2\) 
+    </div>
+  </div>
 
-<p style="margin-left:10%;"> z-Score \(=\frac{{\displaystyle\overset\_x}-\mu_x}{\sigma_x}=\frac{\displaystyle\overset\_x-\mu}{\sigma/\sqrt n}\)</p>
+
+    <br>
+
+
+
+    <h4>Class Width:</h4> 
+
+        <div class="row">
+            <div class="col-md-6">
+                From raw data: \(\frac{ \text {Range} }{ \text {Number of Classes} }\) (round up)
+            </div>
+            <div class="col-md-6">From table:  \( \text {Class Width} = LCL_2-LCL_1\)
+
+            </div>
+          </div>
+      <br>
+          <div class="row">
+              <div class="col-md-6">
+                  <h4>Relative Frequency:</h4> \( \text {Relative Frequency} = \frac{ \text {Class Frequency} }{ \text {Sample Size} } = \frac fn \) 
+              </div>
+              <div class="col-md-6">
+                <h4>Variance:</h4> \( \text {variance} = \left( \text {standard deviation} \right)^2\)</div>
+            </div>
+  
+   <br>
+    <h4>Mean</h4>
+      <div class="row">
+        <div class="col-md-3">Population
+          <p>\(\mu=\frac{\Sigma x}N\)</p>
+        </div>
+        <div class="col-md-3">Sample
+          <p>\(\overset-x=\frac{\Sigma x}n\)</p>
+        </div>
+        <div class="col-md-3">Weighted
+          <p>\(\overset-x=\frac{\Sigma xw}{\Sigma w}\)</p>
+        </div>
+        <div class="col-md-3">Frequency Distribution
+          <p>\(\overset-x=\frac{\Sigma xf}n\)</p>
+        </div>
+      </div>
+    
+ 
+    
+
 
  
 
-<br>
-<h3>Chapter 6</h3>
-
-<h4>Confidence Interval for \(\mu\):</h4>
-
-<p style="margin-left:10%;">\(\overset-x-E<\mu<\overset-x+E\)</p>
-<p style="margin-left:10%;">\(E=t_c\frac s{\sqrt n}\)</p>
-
-<h4>Minimum Sample Size to Estimate \(\mu\):</h4>
-
-<p style="margin-left:10%;">\(n=\left(\frac{z_c\sigma}E\right)^2\)</p>
-
-
-<h4>Population Proportion:</h4>
-<p style="margin-left:10%;">\(\widehat p=\frac xn\)</p>
-
-<h4>Confidence Interval for Population Proportion \(p\):</h4>
-<p style="margin-left:10%;">\(\widehat p-E\;&lt;\;p\;&lt;\;\widehat p+E\)</p>	 
-    <p style="margin-left:10%;"> \(E=z_c\sqrt{\frac{\displaystyle\widehat p\widehat q}n}\)</p>
-
-<h4>Minimum Sample Size to Estimate \(p\):</h4>
-<p style="margin-left:10%;">\(n=\widehat p\widehat q\left(\frac{z_c}E\right)^2\)</p>
 
 
 
