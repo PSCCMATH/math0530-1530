@@ -16,6 +16,9 @@ html{
  .solution, .answer, nav{
       visibility: hidden;
   }
+  .solutioncollapse{
+    display: none;
+}
   /* .unit, .section{
       page-break-after: always;
   } */
