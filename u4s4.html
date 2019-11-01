@@ -144,7 +144,7 @@
          </li>
      </ul>
      
-
+     <p style="page-break-before: always"></p>
      <h4>Correlation  </h4>
      <b>Correlation</b> is the relationship between 2 variables. 
 <p>The data can be represented by the ordered pairs (x, y), where x is the independent variable and y is the dependent variable.</p>
@@ -173,7 +173,7 @@
 
 
 
-
+<p style="page-break-before: always"></p>
 
 <h4>Linear Regression</h4>
 
@@ -185,7 +185,7 @@
             <li>b = y-intercept</li>
         </ol> 
     </li>
-    <li>In Statictics:
+    <li>In Statistics:
         <ol>
             <li>\(\hat y=b+mx\)</li>
             <li>m = slope</li>
@@ -203,7 +203,7 @@
 
 <p><img src="images/u4s4intro7.png" alt="Scatterplot with high school GPA on the x-axis (labeled from 2 to 4) and University GPA on the y-axis (labeled from 2 to 4)  Data are scattered across the graph with many clustered in the bottom left, but overall with a clear trend of rising from left to right.  The line of best fit is drawn starting slightly below (0,2.5) and rising to the right. "></p>
 <br>
-
+<p style="page-break-before: always"></p>
 <h4>Strategy for Predicting Values of Y</h4>
 
 <p>Is the regression equation a good model?</p>
@@ -212,20 +212,17 @@
   <li>\(r\) indicates that there is a linear correlation.</li>
   <li>The prediction is not too much beyone the scope of the available sample data.</li>
 </ul>
-<div class="row">
-<div class="col-md-6">
-  <p>YES</p>
-  <p>The regression equation is a good model.</p>
-  <p>Substitute the given value of x into the regression equation \(\hat{y}=b + mx\)</p>
-</div>
 
-<div class="col-md-6">
-  <p>NO</p>
-  <p>The regression equation is a NOT good model.</p>
-  <p>Regardless of the value of x, the best predicted value of y is the mean of the y values. </p>
-</div>
-</div>
-<br>
+  <p>IF YES: The regression equation is a good model.
+  Substitute the given value of x into the regression equation \(\hat{y}=b + mx\)</p>
+
+
+
+  <p>IF NO:
+  The regression equation is a NOT good model.
+  Regardless of the value of x, the best predicted value of y is the mean of the y values. </p>
+
+
 
 <h4>Steps for Regression and Correlation Test:  </h4>
 
@@ -240,11 +237,12 @@
     </li>
     <li>Run the Regression and Correlation Test    
         <p>There are two ways to look at Test Statistics and Critical Values, using the T-distribution AND using the Pearson Correlation Coefficient.  We will look at both:</p>
-        <p><img src="images/u4s4p2.png" alt="Normal curve shaded underneath and divided into 3 areas.  The middle of the curve (approximately 50%) is labeled Fail to reject H_0 on top and Sign used in H_1 not equal to.  Both the left and the right side of the curve are shaded a different color and labeled Reject H_0"></p>
+        <p><img src="images/u4s4p2.png" alt="Normal curve shaded underneath and divided into 3 areas.  The middle of the curve (approximately 50%) is labeled Fail to reject H_0 on top and Sign used in H_1 not equal to.  Both the left and the right side of the curve are shaded a different color and labeled Reject H_0" width="35%" height="35%"></p>
         <ol>
             <li>Identify the information you will use to shade your graph: </li>
             <ul>
                 <li>The two Critical Values from the T-distribution</li>
+                <li>df=n-2, area between tails \(= 1-\alpha\)</li>
                 <li>The Critical Values for the correlation coefficient from the TABLE on your formula sheet</li>
                
             </ul>
@@ -266,9 +264,9 @@
     </li>
    
     <li>Make Your Decision About the Null Hypothesis:
-        <p>Reject \(H_0\)	&nbsp;	p value < α	&nbsp;T-stat is in the Critical Rejection Region </p>
+        <p>Reject \(H_0\)	&nbsp;	p value < α	&nbsp;T-stat or correlation coefficient is in the Critical Rejection Region </p>
         <p>&nbsp;&nbsp;(The population must have some linear correlation)</p>
-        <p>Fail to Reject \(H_0\) &nbsp;	p value> α	&nbsp;	T-stat is not in the Critical Rejection Region</p>
+        <p>Fail to Reject \(H_0\) &nbsp;	p value> α	&nbsp;	T-stat or correlation coefficient is not in the Critical Rejection Region</p>
         <p>&nbsp;&nbsp;(The population doesn’t appear to have a linear correlation)</p>
     </li> 
 
@@ -292,61 +290,89 @@
 
 <p><b>The Test Statistic </b> (T-stat) for a regression test is calculated using: \(t=\frac{r}{\sqrt{\frac{1-r^{2}}{n-2}}}\)</p>
 
-<p><b>The Critical Values for the Correlation Coefficient </b> are found in Table 11 on the Unit 4 Formula Sheet</p>
+<p><b>The Critical Values for the Correlation Coefficient </b> are found on the Unit 4 Formula Sheet</p>
 
 </ol>
 
-
+<p style="page-break-before: always"></p>
 
 <h4>Problems</h4>
 <ol>
     <li><b>Cricket Chirping Frequency and Temperature:</b>  Below is set of chirping frequency data for the striped ground cricket at various ground temperatures.  Construct a scatterplot, and run a Regression and Correlation Test using α = 0.01.  Determine whether there is sufficient evidence to support a claim of a linear correlation between chirping frequency and ground temperature.
     <br>
     <style type="text/css">
-        .tg  {border-collapse:collapse;border-spacing:0;}
-        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 8px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 8px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-        .tg .tg-0lax{text-align:left;vertical-align:top}
-        </style>
-        <table class="tg">
-          <tr>
-            <td class="tg-0lax">Frequency</th>
-            <td class="tg-0lax">20.2</td>
-            <td class="tg-0lax">16.0</td>
-            <td class="tg-0lax">19.8</td>
-            <td class="tg-0lax">18.4</td>
-            <td class="tg-0lax">17.1</td>
-            <td class="tg-0lax">15.5</td>
-            <td class="tg-0lax">14.7</td>
-            <td class="tg-0lax">17.1</td>
-            <td class="tg-0lax">15.4</td>
-            <td class="tg-0lax">16.2</td>
-            <td class="tg-0lax">15.0</td>
-            <td class="tg-0lax">17.2</td>
-            <td class="tg-0lax">16.0</td>
-            <td class="tg-0lax">17.0</td>
-            <td class="tg-0lax">14.4</td>
-          </tr>
-          <tr>
-            <td class="tg-0lax">Temperature</td>
-            <td class="tg-0lax">88.6</td>
-            <td class="tg-0lax">71.6</td>
-            <td class="tg-0lax">93.3</td>
-            <td class="tg-0lax">84.3</td>
-            <td class="tg-0lax">80.6</td>
-            <td class="tg-0lax">75.2</td>
-            <td class="tg-0lax">69.7</td>
-            <td class="tg-0lax">82.0</td>
-            <td class="tg-0lax">69.4</td>
-            <td class="tg-0lax">83.3</td>
-            <td class="tg-0lax">79.6</td>
-            <td class="tg-0lax">82.6</td>
-            <td class="tg-0lax">80.6</td>
-            <td class="tg-0lax">83.5</td>
-            <td class="tg-0lax">76.3</td>
-          </tr>
-        </table>
-        <p>Chirping Frequency (chirps/sec) and Temperature °F  for the Striped Ground Cricket</p>
+      .tg  {border-collapse:collapse;border-spacing:0;}
+      .tg td{font-family:Arial, sans-serif;font-size:12px;padding:6px 13px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+      .tg th{font-family:Arial, sans-serif;font-size:12px;font-weight:normal;padding:6px 13px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+      .tg .tg-baqh{text-align:center;vertical-align:top}
+      </style>
+      <table class="tg">
+        <tr>
+          <th class="tg-baqh"scope="col">Chirping Frequency (chirps/sec)</th>
+          <th class="tg-baqh"scope="col">Temperature °F </th>
+        </tr>
+        <tr>
+          <td class="tg-baqh">20.2</td>
+          <td class="tg-baqh">88.6</td>
+        </tr>
+        <tr>
+          <td class="tg-baqh">16</td>
+          <td class="tg-baqh">71.6</td>
+        </tr>
+        <tr>
+          <td class="tg-baqh">19.8</td>
+          <td class="tg-baqh">93.3</td>
+        </tr>
+        <tr>
+          <td class="tg-baqh">18.4</td>
+          <td class="tg-baqh">84.3</td>
+        </tr>
+        <tr>
+          <td class="tg-baqh">17.1</td>
+          <td class="tg-baqh">80.6</td>
+        </tr>
+        <tr>
+          <td class="tg-baqh">15.5</td>
+          <td class="tg-baqh">75.2</td>
+        </tr>
+        <tr>
+          <td class="tg-baqh">14.7</td>
+          <td class="tg-baqh">69.7</td>
+        </tr>
+        <tr>
+          <td class="tg-baqh">17.1</td>
+          <td class="tg-baqh">82</td>
+        </tr>
+        <tr>
+          <td class="tg-baqh">15.4</td>
+          <td class="tg-baqh">69.4</td>
+        </tr>
+        <tr>
+          <td class="tg-baqh">16.2</td>
+          <td class="tg-baqh">83.3</td>
+        </tr>
+        <tr>
+          <td class="tg-baqh">15</td>
+          <td class="tg-baqh">79.6</td>
+        </tr>
+        <tr>
+          <td class="tg-baqh">17.2</td>
+          <td class="tg-baqh">82.6</td>
+        </tr>
+        <tr>
+          <td class="tg-baqh">16</td>
+          <td class="tg-baqh">80.6</td>
+        </tr>
+        <tr>
+          <td class="tg-baqh">17</td>
+          <td class="tg-baqh">83.5</td>
+        </tr>
+        <tr>
+          <td class="tg-baqh">14.4</td>
+          <td class="tg-baqh">76.3</td>
+        </tr>
+      </table>
+     
 
         <ol>
             <li>The original claim:  <inline class="solution">\(\rho \neq 0\) There exists a linear correlation between chirping frequency and ground temperature.</inline> </li>
@@ -365,7 +391,7 @@
             <li>Test Statistics:<inline class="solution">: \(t = 5.404\)	</inline> </li>
         </ol>
     </li>
-            <li>Rejection Criteria using p-value: Reject \(H_0\  if <inline class="solution">p-value < 0.01</inline>
+            <li>Rejection Criteria using p-value: Reject \(H_0\)  if <inline class="solution">p-value < 0.01</inline>
                 <ol>
                     <li>p-value:  <inline class="solution">p-value < 0.01	</inline></li>
                     <li>Decision:<inline class="solution"> \(0.00012 < 0.01\)   Reject \(H_0\)	</inline> </li>
@@ -380,11 +406,12 @@
     <li>Good predictor? <inline class="solution">Yes, rejected \(H_0\).	</inline></li>
 </ol>
 <p>If you listened in the morning when you woke up and measured a striped ground cricket chirping at a rate of 18 chirps per second, how warm would you say the ground temperature is? </p>
-<inline class="solution">	Good Predictor,</inline> use equation:  x = 18 chirps per second	\(\hat{y}=26.30789+3.22393\) <inline class="solution">\((18)  = 84.4\) °F</inline>
+<p class="solution">	Good Predictor, use the equation above with x = 18 chirps per second</p>
+<p class="solution">\(\hat{y}=26.30789+3.22393\) \((18)  = 84.4\) °F</p>
 </li>
 
 
-
+<p style="page-break-before: always"></p>
 <li><b>Measuring Seals from Photos:   </b>  Listed below are the overhead widths (in cm) of seals measured from photographs and the weights (in kg) of the seals. The purpose of the study was to determine if weights of seals could be determined from overhead photographs. Construct a scatterplot and run a Regression and Correlation Test using α = 0.05. Determine whether there is sufficient evidence to support a claim of a linear correlation between overhead widths of seals from photographs and the weights of the seals.
   <br>
  
@@ -392,11 +419,11 @@
     .tg  {border-collapse:collapse;border-spacing:0;}
     .tg td{font-family:Arial, sans-serif;font-size:14px;padding:15px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
     .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:15px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-    .tg .tg-0lax{text-align:left;vertical-align:top}
+    .tg .tg-0lax{text-align:center;vertical-align:top}
     </style>
     <table class="tg">
       <tr>
-        <td class="tg-0lax">Overhead Width</td>
+        <th class="tg-0lax" scope="row">Overhead Width</th>
         <td class="tg-0lax">7.2</td>
         <td class="tg-0lax">7.4</td>
         <td class="tg-0lax">9.8</td>
@@ -405,7 +432,7 @@
         <td class="tg-0lax">9.4</td>
       </tr>
       <tr>
-        <td class="tg-0lax">Weight</td>
+        <th class="tg-0lax"scope="row">Weight</th>
         <td class="tg-0lax">116</td>
         <td class="tg-0lax">154</td>
         <td class="tg-0lax">245</td>
@@ -436,7 +463,7 @@
           <li>Test Statistics:<inline class="solution"> : \(t = 5.986\)	</inline> </li>
       </ol>
   </li>
-          <li>Rejection Criteria using p-value: Reject \(H_0\  if <inline class="solution">p-value < 0.05</inline>
+          <li>Rejection Criteria using p-value: Reject \(H_0\)  if <inline class="solution">p-value < 0.05</inline>
               <ol>
                   <li>p-value:  <inline class="solution">  = 0.00391	</inline></li>
                   <li>Decision:<inline class="solution"> \(0.00391 < 0.05   \)   Reject \(H_0\)	</inline> </li>
@@ -460,7 +487,7 @@
 
 
 
-
+<p style="page-break-before: always"></p>
 
 
 <li><b>Lemon Imports And Crash Fatality Rates  :   </b>  Listed below are annual data for various years.  The data are weights (metric tons) of lemons imported from Mexico and US car crash fatality rates per 100,000 population.  Construct a scatterplot, and run a Regression and Correlation Test using α = 0.05. Determine whether there is sufficient evidence to support a claim of a linear correlation between weights of lemon imports from Mexico and US car fatality rates?  Source:  “The trouble with QSAR (or How I Learned to Stop Worrying and Embrace Fallacy)” by Stephen Johnson, Journal of Chemical Information and Modeling. Vol. 48, No 1).
@@ -470,11 +497,11 @@
     .tg  {border-collapse:collapse;border-spacing:0;}
     .tg td{font-family:Arial, sans-serif;font-size:14px;padding:15px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
     .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:15px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-    .tg .tg-0lax{text-align:left;vertical-align:top}
+    .tg .tg-0lax{text-align:center;vertical-align:top}
     </style>
     <table class="tg">
       <tr>
-        <td class="tg-0lax">LEMON IMPORTS  (metric tons)</td>
+        <th class="tg-0lax" scope="row">LEMON IMPORTS  (metric tons)</th>
         <td class="tg-0lax">230</td>
         <td class="tg-0lax">266</td>
         <td class="tg-0lax">359</td>
@@ -482,7 +509,7 @@
         <td class="tg-0lax">534</td>
       </tr>
       <tr>
-        <td class="tg-0lax">US CRASH FATALITY RATE (per 100,000 population)</td>
+        <th class="tg-0lax"scope="row">US CRASH FATALITY RATE (per 100,000 population)</th>
         <td class="tg-0lax">15.9</td>
         <td class="tg-0lax">15.7</td>
         <td class="tg-0lax">15.5</td>
@@ -512,7 +539,7 @@
           <li>Test Statistics:<inline class="solution"> : \(t = -5.6\)	</inline> </li>
       </ol>
   </li>
-          <li>Rejection Criteria using p-value: Reject \(H_0\  if <inline class="solution">p-value < 0.05</inline>
+          <li>Rejection Criteria using p-value: Reject \(H_0\)  if <inline class="solution">p-value < 0.05</inline>
               <ol>
                   <li>p-value:  <inline class="solution">  = 0.01125	</inline></li>
                   <li>Decision:<inline class="solution"> \(0.01125 < 0.05     \)   Reject \(H_0\)	</inline> </li>
@@ -521,7 +548,7 @@
   </li>
   <p class="solution"><img src="images/u4s4p3k.png" alt="image with 5 scatter plots all in first quadrant coordinate planes with correlation labeled underneath.  1st: dots are basically in a straight line sloping down from left to right--strong negative correlation .  2nd: Random scattering of points but still largely decreasing from left to right--weak negative correlation  3rd: randomly scattered points with no clear direction--no correlation.  4th: Random scattering of points but  largely increasing from left to right--weak positive correlation.   5th: The dots are basically in a straight line sloping up from left to right--strong positive correlation. 
     In the scatterplots with either weak or strong correlation, there is a line of best fit drawn on the graph.
-    Underneath the 5 scatterplots is a number line from -1 to 1. The far left of the number line is labeled r=-1, r=0 is in the middle, and r=1 is on the far right of the number line.  There are shaded rectangles at each end of the graph designating the area between the ends of the number line and the critical values.  The critical values are also marked with dotted vertical lines that separate the strong correlations on each end from the weak and no correlation scatterplots in the middle.  The shaded rectangle on the left side of the graph goes from r=-1 to -0.878.  The shaded rectangle on the right of the graph goes from +0.878to r=1."></p>
+    Underneath the 5 scatterplots is a number line from -1 to 1. The far left of the number line is labeled r=-1, r=0 is in the middle, and r=1 is on the far right of the number line.  There are shaded rectangles at each end of the graph designating the area between the ends of the number line and the critical values.  The critical values are also marked with dotted vertical lines that separate the strong correlations on each end from the weak and no correlation scatterplots in the middle.  The shaded rectangle on the left side of the graph goes from r=-1 to -0.878.  The shaded rectangle on the right of the graph goes from +0.878to r=1." width="25%" height="25%"></p>
 
   <li>Concluding Statement:<inline class="solution">There is sufficient evidence to support the claim of linear correlation between weights of lemon imports from Mexico and US car fatality rates.	</inline> </li>
   <li>Regression Equation:  <inline class="solution">\(\hat{y}=16.6-0.003 x\)	</inline> </li>
