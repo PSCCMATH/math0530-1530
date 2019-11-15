@@ -1,6 +1,9 @@
 .solution{
     list-style-type: none;
 }
+.solutioncollapse{
+    list-style-type: none;
+}
 ol li ol{
     
     list-style-type:lower-alpha;
