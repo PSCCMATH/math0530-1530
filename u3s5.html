@@ -149,32 +149,32 @@
           <th class="tg-60hs" scope="col">Description</th>
         </tr>
     <tr>
-      <th class="tg-60hs">Population Mean</th>
+      <th class="tg-60hs" scope="row">Population Mean</th>
       <td class="tg-13pz">μ</td>
       <td class="tg-13pz">An unknown.&nbsp;&nbsp;The actual mean for the entire population.</td>
     </tr>
     <tr>
-      <th class="tg-60hs">Sample Mean</th>
+      <th class="tg-60hs" scope="row">Sample Mean</th>
       <td class="tg-13pz">\(\overset-x\)</td>
       <td class="tg-13pz">Known. Your measured mean for your sample.</td>
     </tr>
     <tr>
-      <th class="tg-60hs">Best Point Estimate</th>
+      <th class="tg-60hs" scope="row">Best Point Estimate</th>
       <td class="tg-13pz">\(\overset-x\)</td>
       <td class="tg-13pz">The value you use to approximate the population mean.</td>
     </tr>
     <tr>
-      <th class="tg-60hs">Alpha</th>
+      <th class="tg-60hs" scope="row">Alpha</th>
       <td class="tg-13pz">α</td>
       <td class="tg-13pz">The total area in the two tails beyond the critical values.</td>
     </tr>
     <tr>
-      <th class="tg-60hs">Critical Values</th>
+      <th class="tg-60hs" scope="row">Critical Values</th>
       <td class="tg-13pz">\( t_\frac{\alpha}{2}\)</td>
       <td class="tg-13pz">The lower/upper cutoffs for usual values on the student t curve.</td>
     </tr>
     <tr>
-      <th class="tg-60hs">Margin of Error</th>
+      <th class="tg-60hs" scope="row">Margin of Error</th>
       <td class="tg-13pz">E</td>
       <td class="tg-13pz">Padding you will use on either side of \(\overset-x\) when you build your interval.</td>
     </tr>
@@ -200,27 +200,27 @@
   
   
     <tr>
-      <th class="tg-60hs">Most Common Confidence Levels</th>
-      <th class="tg-60hs">Corresponding Value of Alpha</th>
-      <th class="tg-60hs">Corresponding Critical Value</th>
+      <th class="tg-60hs" scope="col">Common Confidence Levels</th>
+      <th class="tg-60hs" scope="col">Corresponding Value of Alpha</th>
+      <th class="tg-60hs" scope="col">Corresponding Critical Value</th>
     </tr>
     <tr>
-      <th class="tg-60hs">90%</th>
+      <th class="tg-60hs" scope="row">90%</th>
       <td class="tg-13pz">\( \alpha \)=0.10</td>
       <td class="tg-13pz">\( t_\frac{\alpha}{2}\) depends on n</td>
     </tr>
     <tr>
-      <th class="tg-60hs">95%</th>
+      <th class="tg-60hs" scope="row">95%</th>
       <td class="tg-13pz">\( \alpha \)=0.05</td>
       <td class="tg-13pz">\( t_\frac{\alpha}{2}\) depends on n</td>
     </tr>
     <tr>
-      <th class="tg-60hs">99%</th>
+      <th class="tg-60hs" scope="row">99%</th>
       <td class="tg-13pz">\( \alpha \)=0.01</td>
       <td class="tg-13pz">\( t_\frac{\alpha}{2}\) depends on n</td>
     </tr>
     <tr>
-      <th class="tg-60hs">Any other CL</th>
+      <th class="tg-60hs" scope="row">Any other CL</th>
       <td class="tg-13pz">\( \alpha =1-(CL/100) \)</td>
       <td class="tg-13pz">\( t_\frac{\alpha}{2}\) depends on n</td>
     </tr>
@@ -494,9 +494,10 @@
 
 <li>We want to estimate the mean weight loss of people one year after using the Atkins weight loss program. How many people on that program must be surveyed if we want to be 95% confident that the sample mean is within 0.25 lbs of the true population mean? Assume that the population standard deviation is known to be 10.6 lb.
 <p>Use the formula to evaluate the minimum sample size . </p>
-<p>\(n=\left[\frac{z_{\alpha / 2} \sigma}{E}\right]^{2} = \)
-  <inline class="solution">\(\left[\frac{(1.96)(10.6)}{0.25}\right]^{2}=6906.27\) <i>always round up</i></inline>
+<p>\(n=\left[\frac{z_{\alpha / 2} \sigma}{E}\right]^{2} \)</p>
+  <p class="solution">\(=\left[\frac{(1.96)(10.6)}{0.25}\right]^{2}=6906.27\) <i>always round up</i>
 </p>
+<br>
 <p>n = 
   <inline  class="solution">6907 people</inline>
 </p>
@@ -505,9 +506,9 @@
 
 <li>We want to estimate the mean weight loss of people one year after using the Atkins weight loss program. How many people on that program must be surveyed if we want to be 90% confident that the sample mean is within 0.5 lbs of the true population mean? Assume that the population standard deviation is known to be 10.6 lb.
 <p>Use the formula to evaluate the minimum sample size . 	</p>
-<p>\(n=\left[\frac{z_{\alpha / 2} \sigma}{E}\right]^{2}=\)
-  <inline class="solution">\(\left[\frac{(1.644852)(10.6)}{0.5}\right]^{2}=1215.977\)</inline>
-</p>
+<p>\(n=\left[\frac{z_{\alpha / 2} \sigma}{E}\right]^{2}\)</p>
+  <p class="solution">\(=\left[\frac{(1.644852)(10.6)}{0.5}\right]^{2}=1215.977\)</p>
+<br>
 <p>n = 
   <inline class="solution">1216 people</inline>
 </p>
