@@ -77,8 +77,9 @@
           <a class="dropdown-item" href="u3s2.html" target="_blank">5.2 Normal Distributions: Finding Probabilities</a>
           <a class="dropdown-item" href="u3s3.html" target="_blank">5.3 Normal Distributions: Finding Values</a>
           <a class="dropdown-item" href="u3s4.html" target="_blank">5.4 Sampling Distributions and the Central Limit Theorem</a>
-          <a class="dropdown-item" href="u3s5.html" target="_blank">6.2 Confidence Intervals for the Mean</a>
-          <a class="dropdown-item" href="u3s6.html" target="_blank">6.3 Confidence Intervals for Population Proportions</a>
+          <a class="dropdown-item" href="u3s5.html" target="_blank">6.3 Confidence Intervals for Population Proportions</a>
+          
+          <a class="dropdown-item" href="u3s6.html" target="_blank">6.2 Confidence Intervals for the Mean</a>
          
           <a class="dropdown-item" href="u3review.html" target="_blank">Unit 3 Review</a>
         
@@ -107,6 +108,7 @@
     </ul>
   </div>
 </nav>
+
 <body>
 
 
@@ -123,24 +125,75 @@
 
     <main>
       <h2>Unit 3 Normal Distributions and Confidence Intervals</h2>
-<h3>6.2 Confidence Intervals for the Mean</h3>
+<h3>6.3 Confidence Intervals for Population Proportions</h3>
+<br>
+<br>
+<h4>WHAT IS THE PROPORTION OF Land on the Earth’s Surface? </h4>
+<br>
+<p>We are going to generate random latitude and longitude coordinates using the site: 
+  <a href="https://www.random.org/geographic-coordinates/">Random.org</a>
+  </p>
+<br>
+<b>SAMPLE DATA (YOUR RANDOM COORDINATES)</b>
+<br>
+<ol>
+<li>Count the total number of COORDINATE SETS in your sample.  &nbsp;     n = ________</li>
+<li>Count the number of LAND COORDINATES in your sample.  &nbsp; 	  x = __________
+  <p>(how many of the sets of coordinates corresponded to land?)</p>
+</li>
+<li>	Calculate the proportion of LAND in your sample. 	&nbsp;	\(\hat{p}=\frac{x}{n}=\) ___________</li>
+<li>	Calculate the proportion of WATER in your sample 	&nbsp;	\(\hat{q}=1-\hat{p}=\) ___________</li>
 
-<h5>Constructing a Confidence Interval for a Population Mean</h5>
 
-<p><i>When constructing a confidence interval, use data from a sample to estimate the mean of the population.  We will use a student-t distribution for our confidence intervals because we do not know the standard deviation of the population.  If we knew the standard deviation of the population, we would use a standard z score distribution instead. </i></p>
+<b>POPULATION DATA (THE WHOLE EARTH SURFACE)</b>
+<li>Would you be willing to bet money that your sample proportion exactly equals the proportion of land on Earth’s surface (population)? _______  What if we estimated a range of values in which this proportion may fall? ________Let’s look at calculating two different intervals that allow for a margin of error. </li>
 
-<p><b>Given</b> the mean of the <b>sample, \(\overline{x}\)</b> </p>
+<li><b>FIRST INTERVAL: </b>
+  <p>Margin of Error for a 99% confidence interval \(=E=2.576(\sqrt{\frac{\hat{p} \hat{q}}{n}})=\) _________________ < p < __________________</p>
+  <p>Use  \(\widehat{p}-E \quad<\mathrm{p}<\hat{p}+E\)to calculate the interval:_________________ < \hat{p} < __________________ </p>
+  <b>"I am confident the proportion of land on Earth’s surface is between ________ and _________”</b>
+</li>
+<li>
+  Does this confidence interval contain the true population proportion of 29%?  __________
+</li>
+<li>
+  What percentage of students in your class have confidence intervals that contain the true population proportion of 29%?  __________
+</li>
 
-<p><b>Estimate</b> the mean for the <b>population, \(\mu\)</b> </p>
+<li><b>SECOND INTERVAL:</b>
+  <p>Margin of Error for a 90% confidence interval \(=E=1.645(\sqrt{\frac{\hat{p} \hat{q}}{n}})=\) _________________ < p < __________________</p>
+  <p>Use  \(\widehat{p}-E \quad<\mathrm{p}<\hat{p}+E\)to calculate the interval:_________________ < \hat{p} < __________________ </p>
+  <b>"I am confident the proportion of land on Earth’s surface is between ________ and _________”</b>
+</li>
+<li>
+  Does this confidence interval contain the true population proportion of 29%?  __________
+</li>
+<li>
+  What percentage of students in your class have confidence intervals that contain the true population proportion of 29%?  __________
+</li>
+
+<li>
+  If your grade depended on the <b>true proportion of land on Earth’s surface</b> actually being within the interval given in your statement, which statement would you submit?  Put a check beside your statement choice.
+</li>
+
+</ol>
+
+
+<h4>Constructing a Confidence Interval for a Population Proportion</h4>
+
+<p><i>When constructing a confidence interval, use data from a sample to estimate information about the population.  With large enough samples, we can use the binomial theorem to approximate a continuous normal distribution and therefore use z-scores when constructing the confidence interval.</i></p>
+
+<p><b>Given</b> the percentage of success in the <b>sample, \(\widehat{p}\),</b></p>
+<p><b>Estimate</b> the percentage of success in the <b>population, p</b></p>
 
 <h5>Variables/Symbols used in Confidence Interval Calculations</h5>
-
 
 <style type="text/css">
   .tg  {border-collapse:collapse;border-spacing:0;}
   .tg td{font-family:Arial, sans-serif;font-size:14px;padding:11px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
   .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:11px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-  .tg .tg-13pz{text-align:center;vertical-align:top}
+  .tg .tg-13pz{text-align:center;vertical-align:center}
+  .tg .tg-60hs{font-size:14px;text-align:center;vertical-align:center}
   </style>
   <table class="tg" summary = "Table with 7 rows and 3 columns. Column headers are Variable, Symbol and Description.  Row headers are the 6 Variables included in the table.">
       <tr>
@@ -149,44 +202,41 @@
           <th class="tg-60hs" scope="col">Description</th>
         </tr>
     <tr>
-      <th class="tg-60hs" scope="row">Population Mean</th>
-      <td class="tg-13pz">μ</td>
-      <td class="tg-13pz">An unknown.&nbsp;&nbsp;The actual mean for the entire population.</td>
+      <th class="tg-60hs" scope="row">Population Proportion</th>
+      <td class="tg-13pz">p</td>
+      <td class="tg-13pz">An unknown. The actual proportion for the entire population.</td>
     </tr>
     <tr>
-      <th class="tg-60hs" scope="row">Sample Mean</th>
-      <td class="tg-13pz">\(\overset-x\)</td>
-      <td class="tg-13pz">Known. Your measured mean for your sample.</td>
+      <th class="tg-60hs" scope="row">Sample Proportion</th>
+      <td class="tg-13pz">\(\widehat p\)</td>
+      <td class="tg-13pz">Known. Your measured proportion for your sample.</td>
     </tr>
     <tr>
       <th class="tg-60hs" scope="row">Best Point Estimate</th>
-      <td class="tg-13pz">\(\overset-x\)</td>
-      <td class="tg-13pz">The value you use to approximate the population mean.</td>
+      <td class="tg-13pz">\(\widehat p\)</td>
+      <td class="tg-13pz">The value you use to approximate the population proportion.</td>
     </tr>
     <tr>
       <th class="tg-60hs" scope="row">Alpha</th>
       <td class="tg-13pz">α</td>
-      <td class="tg-13pz">The total area in the two tails beyond the critical values.</td>
+      <td class="tg-13pz">The total area in the two tails beyond the critical values</td>
     </tr>
     <tr>
       <th class="tg-60hs" scope="row">Critical Values</th>
-      <td class="tg-13pz">\( t_\frac{\alpha}{2}\)</td>
-      <td class="tg-13pz">The lower/upper cutoffs for usual values on the student t curve.</td>
+      <td class="tg-13pz">\( z_\frac{\alpha}{2}\)</td>
+      <td class="tg-13pz">The lower/upper cutoffs for usual values on the standard normal curve.</td>
     </tr>
     <tr>
       <th class="tg-60hs" scope="row">Margin of Error</th>
       <td class="tg-13pz">E</td>
-      <td class="tg-13pz">Padding you will use on either side of \(\overset-x\) when you build your interval.</td>
+      <td class="tg-13pz">Padding you will use on either side of \(\widehat p\) when you build your interval.</td>
     </tr>
   </table>
 
 
 
 
-
-
-
-
+<br>
 <br>
 
 <style type="text/css">
@@ -197,325 +247,315 @@
   .tg .tg-13pz{text-align:center;vertical-align:center}
   </style>
   <table class="tg" summary="Table of the most common confidence levels and their corresponding alpha values and critical values.  Column headers for Level, Alpha and Critical Value.  Row headers for 4 confidence levels including, 90%, 95%, 99%, and a generic row for any other confidence level.">
-  
-  
     <tr>
-      <th class="tg-60hs" scope="col">Common Confidence Levels</th>
+      <th class="tg-60hs" scope="col" >Most Common Confidence Levels</th>
       <th class="tg-60hs" scope="col">Corresponding Value of Alpha</th>
       <th class="tg-60hs" scope="col">Corresponding Critical Value</th>
     </tr>
     <tr>
       <th class="tg-60hs" scope="row">90%</th>
       <td class="tg-13pz">\( \alpha \)=0.10</td>
-      <td class="tg-13pz">\( t_\frac{\alpha}{2}\) depends on n</td>
+      <td class="tg-13pz">\( z_\frac{\alpha}{2}=1.645\)</td>
     </tr>
     <tr>
       <th class="tg-60hs" scope="row">95%</th>
       <td class="tg-13pz">\( \alpha \)=0.05</td>
-      <td class="tg-13pz">\( t_\frac{\alpha}{2}\) depends on n</td>
+      <td class="tg-13pz">\( z_\frac{\alpha}{2}=1.96\)</td>
     </tr>
     <tr>
       <th class="tg-60hs" scope="row">99%</th>
       <td class="tg-13pz">\( \alpha \)=0.01</td>
-      <td class="tg-13pz">\( t_\frac{\alpha}{2}\) depends on n</td>
+      <td class="tg-13pz">\( z_\frac{\alpha}{2}=2.575\)</td>
     </tr>
     <tr>
       <th class="tg-60hs" scope="row">Any other CL</th>
-      <td class="tg-13pz">\( \alpha =1-(CL/100) \)</td>
-      <td class="tg-13pz">\( t_\frac{\alpha}{2}\) depends on n</td>
+      <td class="tg-13pz">\( \alpha \)=1-(CL/2)</td>
+      <td class="tg-13pz">\( z_\frac{\alpha}{2}\) use technology</td>
     </tr>
   </table>
 
 
 
+
 <br>
 
 
+<img src="images/u3s5intro1.png" alt="A normal curve with three blanks at the bottom along the horizontal axis representing the mean and one standard deviation to the right and to the left of the mean. CL = blank is written above the curve and alpha divided by 2 equals blank is written to the left and to the right of the curve. So, this is just a sample of the types of curves and labeling that you will construct in this section.">
 
-<img src="images/u3s5intro1.png" alt="A normal curve whose area under the curve is shaded between 2 standard deviations to the left and 2 standard deviations to the right of the mean. CL equals blank, Alpha divided by 2 equals blank are written to the side of the graph."  >
-
-<h5>Overview of Estimating an Interval for a Population Mean </h5>
+<h5>Overview of Estimating an Interval for a Population Proportion </h5>
 
 <p><b>Requirements:</b></p>
-<ul>
+
+<ol>
 
 <li>Random Sample</li>
-<li>Normally Distributed Population or \( (n \gt 30) \)</li>
+<li>Binomial Distribution:  Fixed n, Independent trials, 2 outcomes, Constant Probability</li>
+<li>Number of successes \((n \widehat{p})\) and number of failures \((n \widehat{q})\) are both greater than 5</li>
 
+</ol>
+
+<p><b>Best Point Estimate for the Population Proportion: </b></p>
+
+<p>The proportion of your sample, \( \widehat{p} \)</p>
+
+
+
+<p><b>Margin of Error: </b></p>
+
+<p>\(E=z_{\alpha / 2}\left(\sqrt{\frac{\hat{p} \hat{q}}{n} }\right)\)</p>
+
+<p><b>Confidence Interval</b>
+<inline class="solution">&nbsp;&nbsp;Add and subtract E from \( \hat{p} \)</inline>
+</p>
+<p>Three ways to represent the Confidence Interval:</p>
+<ul>
+<li>\(\hat{p}-\mathrm{E} \lt \mathrm{p} \lt \hat{p}+\mathrm{E}\)</li>
+
+<li>\((\hat{p}-E, \hat{p}+E)\)</li>
+<p class="solution">Min of interval = \( \hat{p} - E \)</p>
+<p class="solution">Max of interval = \( \hat{p} + E \)</p>
+</li>
+<li>\(\hat{p} \pm E\)</li>
 </ul>
 
-<div class="row">
-        <div class="col-sm-6">
-<p><b>Margin of Error: </b></p>
-<p>\(E=t_{\alpha / 2} * \frac{s}{\sqrt{n}}\)
-&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  \(  d f=n-1\) 
-</p>
 
-<p><b>Confidence Interval </b></p>
-<p>\( \overline{x} \) = sample MEAN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\mu\) = population MEAN</p>
-<p>\(\overline{x}-\mathrm{E} \lt \mu \lt \overline{x}+\mathrm{E}\)</p>
-<p>\((\overline{x}-E, \overline{x}+E)\)</p>
-<p>\(\overline{x} \pm E\)</p>
-</div>
-<div class="col-sm-6">
-        <img src="images/u3s5intro2.png" alt="A standard normal curve is pictured at the top of the illustration with the population mean being the highest point of the curve. There are intervals of data for 20 samples listed below the curve. The interval for sample number 11 is circled to indicate that the interval does not include the mean of the population.">
-</div>
-</div>
-
-<p><b>Minimum Sample Size:</b></p>
-<p>To Estimate Population Mean:  
-    <inline>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(n=\left[\frac{z_{\alpha / 2} \sigma}{E}\right]^{2}\)</inline>
-</p>
 <p style="page-break-before: always"></p>
 
-<b>Does the Central Limit Theorem Apply?</b>
-<br>
+<ol>
+   
+<li>In a 2017 study of 50 countries, 85% of the children received one dose of measles vaccination by their first birthday.  Construct a 95% confidence interval estimate of the proportion of all children in the world who receive at least one dose of the vaccination before their first birthday.  
 
 <ol>
 
-<li>	Are The Requirements Met To Use The \( t_\frac{\alpha}{2}\) Distribution?  If Yes, Find \( t_\frac{\alpha}{2}\).
-
-<ol>
-
-<li>95%:  n=23;  σ is unknown;  population appears to be normally distributed 
-  <p class="solution">Yes.  Population is normally distributed.</p>
-  <p class="solution">Area to right: \( \frac{\alpha}{2}\) &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; 	Degrees of Freedom: \(\begin{equation}
-    d f=n-1=23-1=22
-    \end{equation}\)   </p>
-  <p class="solution">Critical Value: \(\begin{equation}
-    t_{\alpha / 2}=t_{0.025(22)}=2.073871=2.0739
-    \end{equation}\)</p>
-  <p class="solution"><i>You must use a t distribution to find your critical value.  If you forget and use z, your critical value will be 1.96</i></p>
-</li>
-
-<li>99%:  n=6;  σ is unknown;  population appears to be very skewed 
-  <p class="solution">No.  Population is not normally distributed and sample size is not greater than 30.</p>
-</li>
-
-<li>90%:  n=200;  σ is unknown;  population appears to be very skewed 
-  <p class="solution">Yes.  Sample size is greater than 30.</p>
-  <p class="solution">Area to right: \( t_\frac{\alpha}{2} \) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 	Degrees of Freedom:  \(\begin{equation}
-    d f=n-1=200-1=199
-    \end{equation}\) </p>
-  <p class="solution">Critical Value: \(\begin{equation}
-    t_{\alpha / 2}=t_{0.05(199)}=1.6525
-    \end{equation} \)</p>
-  <p class="solution"><i>Note:  If you forget and use z, your critical value will be 1.645</i></p>
-</li>
-
-<li>99%:  n=25;  σ is unknown;  population appears to be normally distributed 
-  <p class="solution">Yes.  Population is normally distributed.</p>
-  <p class="solution">Area to the right: \(\begin{equation}
-    \alpha / 2=0.005
-    \end{equation}\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Degrees of Freedom: \(\begin{equation}
-    d f=n-1=25-1=24
-    \end{equation}\)</p>
-  <p class="solution">\(\begin{equation}
-    t_{\alpha / 2}=t_{0.005(24)}=2.7969
-    \end{equation}\)</p>
-  <p class="solution"><i>Note:  If you forget and use z, your critical value will be 2.576</i></p>
-</li>
-
-<li>95%:  n=12;  σ is unknown;  population appears to be normally distributed 
-  <p class="solution">Yes.  Population is normally distributed.	</p>
-  <p class="solution">Area to the right: \(\begin{equation}
-    \alpha / 2=0.025
-    \end{equation}\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Degrees of Freedom: \(\begin{equation}
-    d f=n-1=12-1=11
-    \end{equation}\)</p> 
-  <p class="solution">\(\begin{equation}
-    t_{\alpha / 2}=t_{0.025(11)}=2.2010
-    \end{equation}\)</p>
-  <p class="solution"><i>Note:  If you forget and use z, your critical value will be 1.96 </i></p>
-</li>
-
-</ol>  
-
-</li>
-<p style="page-break-before: always"></p>
-<b>Constructing a Confidence Interval</b>
-<br>
-
-<li>Randomly selected statistics students participated in an experiment to test their ability to determine when 1 minute (or 60 seconds) passed.  Forty students yielded a sample mean of 58.3 seconds and a sample standard deviation of 8.4 sec.
-
-<ol>
-
-<li>Find the best point estimate of the mean time for all statistic students.
-  <p class="solution">\( \overline{x} \) is your best estimate about \(\mu \)
+<li>Calculate the Margin of Error
+  <br>
+  
+  <img src="images/u3s5intro1.png" alt="A normal curve with three blanks at the bottom along the horizontal axis representing the mean and one standard deviation to the right and to the left of the mean. CL = blank is written above the curve and alpha divided by 2 equals blank is written to the left and to the right of the curve. So, this is just a sample of the types of curves and labeling that you will construct in this section.">
+  <p class="solution"><img src="images/u3s6p1ak.png" alt="A normal curve. The labels on the horizontal axis are .7510, .85 and .9490. The other labels are CL = 95% and alpha divided by 2 equals .025"></p>
+  <p>CL = 
+    <inline class="solution">95%</inline>
+    <inline>&nbsp;&nbsp;&nbsp;&nbsp;\( \alpha = \)</inline>
+    <inline class="solution">.05</inline>
+    <inline>&nbsp;&nbsp;&nbsp;&nbsp;\( z_\frac{\alpha}{2} = \)</inline>
+    <inline class="solution">1.96</inline>
   </p>
-  <p class="solution">This is your best starting point in making the confidence interval.</p>
-  <p class="solution">Best guess about \(\begin{equation}
-    \mu : \overline{x}=58.3
-    \end{equation}\) seconds</p>
+<p>\( \hat{p} = \)
+  <inline class="solution">.85</inline>
+  <inline>&nbsp;&nbsp;&nbsp;&nbsp;\( \hat{q} = \)</inline>
+  <inline class="solution">.15</inline>
+  <inline>&nbsp;&nbsp;&nbsp;&nbsp; n = </inline>
+  <inline class="solution">50</inline>
+</p>
+<p>Critical value: 
+  <inline class="solution">1.96</inline>
+</p>
+<p>\(E=z_{\alpha / 2}\left(\sqrt{\frac{\hat{p} \hat{q}}{n}}\right)=\)
+  <inline class="solution">\(1.96 \sqrt{\frac{(.85)(.15)}{50}}=.0990\)</inline>
+</p>
 </li>
 
-<li>At a 95% confidence level, what is the critical value?
-  <p class="solution">Critical value is  \(t_\frac{\alpha}{2}\)</p>
-  <p class="solution">Area to right .025	</p>
-  <p class="solution">degrees of freedom 39	</p>
-  <p class="solution">\(\begin{equation}
-    t_{025(39)}=2.0227
-    \end{equation}\)</p>
+<li>Calculate the Confidence Interval
+  <p class="solution">Lower limit = \(\hat{p}-E=.85-.0990=.7510\)</p>
+  <p class="solution">Upper limit = \(\hat{p}+\mathrm{E}=.85+.0990=.9490\)</p>
+  <p class="solution">Sample: \(\hat{p}=.85\), Population: \(.7510 \lt \mathrm{p} \lt .9490\)</p>
+ 
+  <p class="solution">\(.85 \pm .0990\)</p>
+  <p class="solution">\((.7510, .9490)\)</p>
 </li>
 
-<li>Construct a 95% confidence interval estimate of the population mean of all statistic students.
-  <p class="solution">Calculate the Margin of Error</p>
-  <p class="solution">\(\begin{equation}
-    E=t_{\alpha / 2}\left(\frac{s}{\sqrt{n}}\right)=2.0227\left(\frac{8.4}{\sqrt{40}}\right)=2.6864 \text{ sec} \approx 2.7 \text{ sec}
-    \end{equation}\)</p>
-  <p class="solution">Construct the Confidence Interval:  Apply the margin of error to the best point estimate to create the interval.</p>
-  <p class="solution">\(\begin{equation}
-    58.3 \pm 2.7
-    \end{equation}\)</p>
-  <p class="solution">\(\text{Min}=\overline{x}+\mathrm{E}=58.3-2.7=55.6 \text{ seconds}\)</p>
-  <p class="solution">\(\text{Max}=\overline{x}+\mathrm{E}=58.3+2.7=61\)</p>
-  <p class="solution">\((55.6,61)\)</p>
-  <p class="solution">\(55.6 \lt \mu<61\)</p>
-  <p>Based on the results, is it likely that their estimates have a mean that is reasonably close to 60 seconds?  </p>
-  <p class="solution">Yes. We are 95% confident the mean time is between 55.6 seconds and 61 seconds.  60 is in the interval.</p>
+<li>Write your statement:
+  <p>We are
+    <inline class="solution"> 95%</inline>
+    <inline> confident that the true proportion of</inline>
+    <inline class="solution"> all children who receive at least one dose of the measles vaccine</inline>
+    <inline> is between</inline>
+    <inline class="solution"> .7510</inline>
+    <inline> and</inline>
+    <inline class="solution"> .9490</inline>
+    <inline> or</inline>
+    <inline class="solution"> 75.1%</inline>
+    <inline> and</inline>
+    <inline class="solution"> 94.9%.</inline>
+  </p>
+</li>
+<li>Analyze your results - Compare a population percentage with the Confidence Interval:
+    Is it correct for a newspaper reporter to report that “over 95% of children in the world are vaccinated against measles”?  Why or why not? 
+  <inline class="solution">It is not correct to report it because .95 is not in the interval (.7510, .9490) </inline>
+  </li>
+
+</ol>
+
+</li>
+
+<li>In a survey of 150 senior executives, 47% said that the most common job interview mistake is to have little or no knowledge of the company.  Construct a 99% confidence interval estimate of the proportion of all senior executives who have that same opinion.  Is it possible that exactly half of all senior executives believe that the most common job interview mistake is to have little or no knowledge of the company”?  Why or why not?
+
+<ol>
+
+<li>Calculate the Margin of Error:
+  <br>
+  <img src="images/u3s5intro1.png" alt="A normal curve with three blanks at the bottom along the horizontal axis representing the mean and one standard deviation to the right and to the left of the mean. CL = blank is written above the curve and alpha divided by 2 equals blank is written to the left and to the right of the curve. So, this is just a sample of the types of curves and labeling that you will construct in this section.">
+    <p class="solution"><img src="images/u3s6p2ak.png" alt="A normal curve. The labels on the horizontal axis are .365, .47 and .575. The other labels are CL = 99% and alpha divided by 2 equals .005"></p>
+    <p>CL = 
+        <inline class="solution">99%</inline>
+        <inline>&nbsp;&nbsp;&nbsp;&nbsp;\( \alpha = \)</inline>
+        <inline class="solution">.01</inline>
+        <!-- <inline>&nbsp;&nbsp;&nbsp;&nbsp;\( z_\frac{\alpha}{2} = \)</inline>
+        <inline class="solution">2.575</inline> -->
+      </p>
+    <p>\( \hat{p} = \)
+      <inline class="solution">.47</inline>
+      <inline>&nbsp;&nbsp;&nbsp;&nbsp;\( \hat{q} = \)</inline>
+      <inline class="solution">.53</inline>
+      <!-- <inline>&nbsp;&nbsp;&nbsp;&nbsp; n = </inline>
+      <inline class="solution">150</inline> -->
+    </p>
+    <!-- <p>Critical value: 
+      <inline class="solution">2.575</inline>
+    </p>
+    <p>\(E=z_{\alpha / 2}\left(\sqrt{\frac{\hat{p} \hat{q}}{n}}\right)=\)
+      <inline class="solution">\(2.575 \sqrt{\frac{(.47)(.53)}{150}}=.1050\)</inline>
+    </p> -->
+</li>
+
+<li>Construct the Confidence Interval:
+    <!-- <p class="solution">Lower limit = \(\hat{p}-E=.47-.1050=.365\)</p>
+    <p class="solution">Upper limit = \(\hat{p}+\mathrm{E}=.47+.1050=.575\)</p> -->
+    <p class="solution">Sample&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\hat{p}=.47\)</p>
+    <p class="solution">Population&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(.365 \lt \mathrm{p} \lt .575\)</p>
+    <p class="solution">\(.47 \pm .1050\)</p>
+    <p class="solution">\((.365, .575)\)</p> 
+</li>
+
+<li>We are
+    <inline class="solution"> 99%</inline>
+    <inline> confident that the true proportion of</inline>
+    <inline class="solution"> all senior executives who have the opinion that the most common interview mistake is lack of knowledge about the company</inline>
+    <inline> is between</inline>
+    <inline class="solution"> .365</inline>
+    <inline> and</inline>
+    <inline class="solution"> .575</inline>
+    <inline> or</inline>
+    <inline class="solution"> 36.5%</inline>
+    <inline> and</inline>
+    <inline class="solution"> 57.5%.</inline>
+
+</li>
+
+<li>Compare a population percentage with the Confidence Interval:
+  <p>Is it possible that exactly half of all senior executives believe that the most common job interview mistake is to have little or no knowledge of the company”?  Why or why not?</p>
+  <p class="solution">Yes, because 0 .5 is the interval (.365 , .575)</p>
 </li>
 
 </ol>
 
 </li>
 
-<li>The braking distance (dry pavement, 60mph) for a simple random sample of 32 Model X cars has a mean of 137 feet and sample standard deviation of 5 ft.
+<li>For a class project, a political science student at a large university wants to estimate the percent of students who are registered voters.  The student surveys 500 students and finds that 300 are registered voters.  Compute a 90% confidence interval estimate for the true percent of students who are registered voters, and interpret you results.
 
 <ol>
 
-<li>Find the best point estimate of the mean braking distance for all Model X cars.
-  <p class="solution"> \( \overline{x} \) is your best estimate about \( \mu \) </p>
-  <p class="solution">This is your best starting point in making the confidence interval.</p>
-  <p class="solution">Best guess about \(\mu : \overline{x}=137\) feet</p>
+<li>What is the best point estimate of the population proportion of students who are registered voters?
+  <p class="solution">\(\hat{p}=\frac{x}{n}=\frac{300}{500}=0.60\)</p>
+  <p>Use the sample data to construct a 90% confidence interval estimate of the percentage of students who are registered voters.</p>
 </li>
 
-<li>At a 99% confidence level, what is the critical value?
-  <p class="solution">Critical value is  \( t_\frac{\alpha}{2} \)</p>
-  <p class="solution">Area to right .005</p>
-  <p class="solution">degrees of freedom 31	</p>
-  <p class="solution">\(t_{005(31)}=2.7440\)</p>
+<li>Construct the Margin of Error 
+  <br>
+
+  <img src="images/u3s5intro1.png" alt="A normal curve with three blanks at the bottom along the horizontal axis representing the mean and one standard deviation to the right and to the left of the mean. CL = blank is written above the curve and alpha divided by 2 equals blank is written to the left and to the right of the curve. So, this is just a sample of the types of curves and labeling that you will construct in this section.">
+
+   <p class="solution"> <img src="images/u3s6p3bk.png" alt="A normal curve. The labels on the horizontal axis are .8917, .9146 and .9375. The other labels are CL = .95 and alpha divided by 2 equals .025"></p>
+
+<p>CL = 
+  <inline class="solution">90</inline>
+  <inline>&nbsp;&nbsp;&nbsp;&nbsp;\( \alpha = \)</inline>
+  <inline class="solution">.10</inline>
+  <inline>&nbsp;&nbsp;&nbsp;&nbsp;\( z_\frac{\alpha}{2} = \)</inline>
+  <inline class="solution">1.645</inline>
+</p>
+<p>\( \hat{p} = \)
+<inline class="solution">.60</inline>
+<inline>&nbsp;&nbsp;&nbsp;&nbsp;\( \hat{q} = \)</inline>
+<inline class="solution">.40</inline>
+<inline>&nbsp;&nbsp;&nbsp;&nbsp; n = </inline>
+<inline class="solution">500</inline>
+</p>
+<!-- <p>\(E=z_{\alpha / 2}\left(\sqrt{\frac{\hat{p} \hat{q}}{n}}\right)=\)
+<inline class="solution">\(1.645 \sqrt{\frac{(.60)(.40)}{500}}=.0360\)</inline>
+</p> -->
+
 </li>
 
-<li>Construct a 99% confidence interval estimate of the population mean braking distance for all Model X cars. 
-  <p class="solution">   Calculate the Margin of Error</p>
-  <p class="solution">\(E=t_{\alpha / 2}\left(\frac{s}{\sqrt{n}}\right)=2.7440\left(\frac{5}{\sqrt{32}}\right)=2.42537 \text { feet } \approx 2.4\) feet</p>
-  <p class="solution">Construct the Confidence Interval:  Apply the margin of error to the best point estimate to create the interval.</p>
-  <p class="solution">\(137 \pm 2.4\)</p>
-  <p class="solution">\(\mathrm{Min}=\overline{x}+\mathrm{E}=137-2.4=134.6 \text{ feet}\)</p>
-  <p class="solution">\(\mathrm{Max}=\overline{x}+\mathrm{E}=137+2.4=139.4\) feet</p>
-  <p class="solution">\((134.6,139.4)\)</p>
-  <p class="solution">\(134.6 \text { feet } \lt \mu \lt 139.4\) feet</p>
+<li>Construct the Confidence Interval
+  <!-- <p class="solution">\(\hat{p} \pm \mathrm{E}\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(.5640,.6360) by hand</p> -->
+  <p class="solution">\(.6000 \pm .0360\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(0.5640, 0.6360)</p>
 </li>
+
+<li>We are
+    <inline class="solution"> 90%</inline>
+    <inline> confident that the true proportion of</inline>
+    <inline class="solution"> students who are registered to vote </inline>
+    <inline> is between</inline>
+    <inline class="solution"> 56.4%</inline>
+    <inline> and</inline>
+    <inline class="solution"> 63.6%.</inline>
+</li>
+
+<li>Compare a population percentage with the Confidence Interval:
+    Based on the results, are a majority of students registered to vote?  Why or why not?
+<p class="solution">We can be 90% confident that the majority of students are registered to vote since the minimum value of the confidence interval is greater than 50%.</p>  
+  </li>
 
 </ol>
 
 </li>
-<p style="page-break-before: always"></p>
-<li>A random sample of fifteen 8th grade band students yielded the following heights (in inches):
 
-  <style type="text/css">
-    .tg  {border-collapse:collapse;border-spacing:0;}
-    .tg td{font-family:Arial, sans-serif;font-size:14px;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-    .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:11px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-    .tg .tg-13pz{text-align:center;vertical-align:top}
-    </style>
-    <table class="tg" summary="Table with one row 15 data values.  There are no headers for this table.">
-        <tr>
-          <td class="tg-13pz">66.4</td>
-          <td class="tg-13pz">59.6</td>
-          <td class="tg-13pz">59.8</td>
-          <td class="tg-13pz">67.9</td>
-          <td class="tg-13pz">64.8</td>
-          <td class="tg-13pz">66.7</td>
-          <td class="tg-13pz">64.7</td>
-          <td class="tg-13pz">63.4</td>
-          <td class="tg-13pz">62.6</td>
-          <td class="tg-13pz">58.6</td>
-          <td class="tg-13pz">67.6</td>
-          <td class="tg-13pz">62.7</td>
-          <td class="tg-13pz">63.2</td>
-          <td class="tg-13pz">65.0</td>
-          <td class="tg-13pz">61.8</td>
-        </tr>
-      </table>
+<h5>Point Estimate and Margin of Error from an Interval</h5>
 
-<ol>
+<p>Given the confidence interval, evaluate </p>
+<ul>
+<li>the Best Point Estimate,</li>
+<li>the Sample Proportion,</li>
+<li>and the Margin of Error:</li>
+</ul>
 
-<li>Use technology to calculate the mean and standard deviation for this sample.
-  <p>\(\bullet\) \(\overline{x} = \)
-    <inline class="solution">63.65 in.</inline>
-    <inline><i>Round each to the 2nd decimal place.</i></inline>
-  </p>
-  <p>\( \bullet \) s = 
-    <inline class="solution">2.89 in.</inline>
-  </p>
-  <p>\( \bullet \) Best Point Estimate for the Population Mean:  
-    <inline class="solution">63.65 in.</inline>
-  </p>
-  <p class="solution"><i> The best estimate for the population mean is the sample mean.</i></p>
+<li>(0.30, 0.50)
+  <inline class="solution">same as \( .3 \lt \mathrm{p} \lt .5\)</inline>
+  <p class="solution">What is \( \hat{p} \)? \(\hat{p}=\frac{.3+.5}{2}=\frac{.8}{2}=.4\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\( \hat{p} \) is average (mean) between min and max</p>
+  <p class="solution">What is E?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.4 - .3 = .1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E is the distance between the mean and the min (or the mean and the max) of the interval</p>
+  <p class="solution">Best point estimate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\( \hat{p} \) = .4</p>
+  <p class="solution">Sample proportion&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\( \hat{p} \) = .4</p>
+  <p class="solution">Margin of error	E = .1	</p>
+  <p class="solution">Check your answer:  Does the following give you the max and min of the interval:</p>
+  <p class="solution">\(.4 \pm .1 \quad \text { Which is } \hat{p} \pm E\)</p>
 </li>
 
-<li>Construct (using the formula) the 95% confidence interval for the mean height of all 8th grade band students. Assume the heights of 12-14 year old students are normally distributed. Draw and label a bell curve to illustrate your work.
-  <p>\( \bullet \) Critical Values: 
-    <inline class="solution"> \(t_{\alpha / 2}=t_{0.025(14)}=2.1448\)</inline>
-  </p>
-  <p>\( \bullet \) Margin of Error: 
-    <inline class="solution"> \(E=t_{\alpha / 2}\left(\frac{s}{\sqrt{n}}\right)=2.1448\left(\frac{2.89}{\sqrt{15}}\right)=1.6004 \text{ in.} \approx 1.60 \text{ in.}\)</inline>
-  </p>
-
-<div class="row">
-  <div class="col-sm-6">
-<p class="solution">\(63.65 \pm 1.60\)</p>
-<p class="solution">\(\mathrm{Min}=\overline{x}-E=63.65-1.60=62.05\) in.</p>
-<p class="solution">\(\mathrm{Max}=\overline{x}+E=63.65+1.60=65.25\) in.</p>
-<p class="solution">\((62.05,65.25)\)</p>
-<p class="solution">\(62.05 \lt \mu \lt 65.25\)</p>
-</div>
-<div class="col-sm-6">
-  <img src="images/u3s5intro1.png" alt="A normal curve whose area under the curve is shaded between 2 standard deviations to the left and 2 standard deviations to the right of the mean. CL equals blank, Alpha divided by 2 equals blank are written to the side of the graph." width=120% height=50%>
-  </div>
-  </div>
+<li>(0.2973, 0.5864)
+    <p class="solution">Best point estimate:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(\hat{p}=\frac{0.2973+0.5864}{2}=0.44185\)</p>
+    <p class="solution">Sample proportion&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\( \hat{p} \) = .44185</p>
+    <p class="solution">Margin of error	E = .44185 - .2973 = .14455	</p>
+    <p class="solution">Check your answer:  Does the following give you the max and min of the interval:</p>
+    <p class="solution">\(.44185 \pm .14455 \text { Which is } \hat{p} \pm E\)</p>
 </li>
 
-<li>Use technology to confirm the Confidence interval:   
-  <inline class="solution">\((62.05,65.25)\)</inline>
+<h5>Calculating the Minimum Sample Size for a Confidence Interval</h5>
+<p>\(n=\hat{p} \hat{q}\left[\frac{\mathbf{Z}_{\alpha / 2}}{E}\right]^{2}\)</p>
+
+<li>Suppose an internet marketing company wants to determine the current percentage of customers who click on ads on their smartphones. How many customers should the company survey in order to be 90% confident that the estimated proportion is within five percentage points of the true population proportion of customers who click on ads on their smartphones? Assume a previous study showed that 12% of customers click on ads. <i> Modified from OpenStax</i>
+<p class="solution">We know \( \hat{p} \)</p>
+<p class="solution">CL = 90%, \(z_\frac\alpha2=1.645\), 	E = .05,	\( \hat{p} = .12\), \(\widehat q=.88\),  estimate of population	n = 115 customers</p>
+<p class="solution">In order to be 90% confident our sample proportion is within 5% of the actual population proportion. We need to survey 115 adults.</p>
+
 </li>
 
-<li>Based upon this confidence interval, does it appear as though the mean height of 8th grade band students could be 63.6 inches? Explain why or why not.  
-  <inline  class="solution">Yes.  We are 95% confident the population mean height is between 62.05 inches and 65.25 inches.  63.6 inches is in that interval.</inline>
+<li>Suppose an internet marketing company wants to determine the current percentage of customers who click on ads on their smartphones. How many customers should the company survey in order to be 90% confident that the estimated proportion is within five percentage points of the true population proportion of customers who click on ads on their smartphones?&nbsp;&nbsp;&nbsp;&nbsp;<i>  OpenStax</i>
+<p class="solution">We do not know \( \hat{p} \) so we will have to assume \( \hat{p} \) = .50   </p>
+<p class="solution">CL = 90%, \(z_\frac\alpha2=1.645\), 	E = .05, \( \hat{p}== .50 \), 	\( \hat{q}== .50 \),   	n = 271 adults</p>
+<p class="solution">In order to be 90% confident our sample proportion is within 5% of the actual population proportion. We need to survey 271 adults. </p>
 </li>
 
 </ol>
 
-</li>
-<p style="page-break-before: always"></p>
-<h5>Calculating the Minimum Sample Size for a Confidence Interval  
-</h5>
-
-<li>We want to estimate the mean weight loss of people one year after using the Atkins weight loss program. How many people on that program must be surveyed if we want to be 95% confident that the sample mean is within 0.25 lbs of the true population mean? Assume that the population standard deviation is known to be 10.6 lb.
-<p>Use the formula to evaluate the minimum sample size . </p>
-<p>\(n=\left[\frac{z_{\alpha / 2} \sigma}{E}\right]^{2} \)</p>
-  <p class="solution">\(=\left[\frac{(1.96)(10.6)}{0.25}\right]^{2}=6906.27\) <i>always round up</i>
-</p>
-<br>
-<p>n = 
-  <inline  class="solution">6907 people</inline>
-</p>
-<p>Confirm with technology</p>
-</li>
-
-<li>We want to estimate the mean weight loss of people one year after using the Atkins weight loss program. How many people on that program must be surveyed if we want to be 90% confident that the sample mean is within 0.5 lbs of the true population mean? Assume that the population standard deviation is known to be 10.6 lb.
-<p>Use the formula to evaluate the minimum sample size . 	</p>
-<p>\(n=\left[\frac{z_{\alpha / 2} \sigma}{E}\right]^{2}\)</p>
-  <p class="solution">\(=\left[\frac{(1.644852)(10.6)}{0.5}\right]^{2}=1215.977\)</p>
-<br>
-<p>n = 
-  <inline class="solution">1216 people</inline>
-</p>
-<p>Confirm with technology</p>
-</li>
-
-</ol>
 
 
 
