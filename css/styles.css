@@ -24,6 +24,9 @@ html {
     .solution {
         color: #b30000 !important;
     }
+    .solutioncollapse {
+        color: #b30000 !important;
+    }
 
     html{
         font-family: -apple-system, Lato, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
