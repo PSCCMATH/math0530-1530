@@ -77,8 +77,9 @@
           <a class="dropdown-item" href="u3s2.html" target="_blank">5.2 Normal Distributions: Finding Probabilities</a>
           <a class="dropdown-item" href="u3s3.html" target="_blank">5.3 Normal Distributions: Finding Values</a>
           <a class="dropdown-item" href="u3s4.html" target="_blank">5.4 Sampling Distributions and the Central Limit Theorem</a>
-          <a class="dropdown-item" href="u3s5.html" target="_blank">6.2 Confidence Intervals for the Mean</a>
-          <a class="dropdown-item" href="u3s6.html" target="_blank">6.3 Confidence Intervals for Population Proportions</a>
+          <a class="dropdown-item" href="u3s5.html" target="_blank">6.3 Confidence Intervals for Population Proportions</a>
+          
+          <a class="dropdown-item" href="u3s6.html" target="_blank">6.2 Confidence Intervals for the Mean</a>
          
           <a class="dropdown-item" href="u3review.html" target="_blank">Unit 3 Review</a>
         
@@ -156,65 +157,44 @@
 
 <ol>
 
-<li>The distribution of IQ scores is normally distributed with a mean of 100 and a standard deviation of 15.  Find the probability that a randomly selected score will be below 125.	
+<li>The distribution of IQ scores is normally distributed with a mean of 100 and a standard deviation of 15.  An Oregon couple claimed their two children were taken away from them because they scored too low on an IQ test.  She scored 72 and he scored 66.  Find the probability that a randomly selected IQ score will be below 73	
 <p>\(\mu = \)
-<inline class="solution">100</inline>
-<inline>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\sigma = \)</inline>
-<inline class="solution">15</inline>
-<inline class="solution">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(z_{125}=\frac{125-100}{15}=1.666667 \approx 1.67\)</inline></p>
-<p class="solution">\(P(x \lt 125)=P(z \lt 1.67)=0.9522\)</p>
-<div class="row">
-        <div class="col-sm-6">
-<p class="solution"><img src="images/u3s2p1ak.png" alt="A normal curve with the mean of 100 at the highest point of the curve. The horizontal axis is labeled with the mean and 3 standard deviations to the left and to the right of the mean. They are 55, 70, 85, 100, 115, 130, and 145. The area under the curve is shaded to the left of 125."></p>
-</div>
-<div class="col-sm-6">
-        <p class="solution"><img src="images/u3s2p1bk.png"alt="A standard normal curve with the mean of 0 at the highest point of the curve. The horizontal axis is labeled with the mean and 3 standard deviations to the left and to the right of the mean. They are -3, -2, -1, 0, 1, 2, and 3. The area under the curve is shaded to the left of 1.67."></p>
-        </div>
-        </div>   
-<p class="solution">If one person’s IQ score is randomly selected, the probability their score is less than 125 is approximately equal to 0.9522 or 95.22%.</p>
+<inline class="solution">100</inline></p>
+<p>\(\sigma = \)
+<inline class="solution">15</inline></p>
+<p class="solution">\(z_{73}=\frac{73-100}{15}=-1.8\)</inline></p>
+<p class="solution">\(P(x \lt 73)=P(z \lt -1.8)=0.0359\)</p>
+  
+<p class="solution">If one person’s IQ score is randomly selected, the probability their score is less than 73 is approximately equal to 0.0359 or 3.59%.</p>
 </li>
+<li>Are the IQ scores of the couple unusual? (Hint: Calculate z-score for each.)</li>
+<p class="solution">\(z_{72}=\frac{72-100}{15}=-1.87\)</p>
+<p class="solution">\(z_{66}=\frac{66-100}{15}=-2.27\)</p>
+<p class="solution">Her IQ is not unusual, but his is unusual.</p>
+<li>To determine the average wait time at Taco Bell in the Miami area, 16 graduate students randomly selected 16 taco bell stores.  Each student visited a Taco Bell store at 12:15 pm and ordered a crunchy beef taco, a burrito supreme, and a soda.  The wait time to receive the meal was recorded for each restaurant.  The distribution is normal with a mean of 22.4 minutes and a standard deviation of 6.2 minutes.
 
-<li>Scores on a history exam are normally distributed with a mean of 73 points and a standard deviation of 8 points.  If one exam is randomly selected, what is the probability the score will be between 70 and 85 points?
-<p>\(\mu = \)
-    <inline class="solution">73 pts</inline>
-    <inline>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\sigma =\) </inline>
-    <inline class="solution">8 pts</inline>
-    <inline class="solution">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(z_{70}=\frac{70-73}{8}=-0.375\)</inline>
-    <inline class="solution">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(z_{85}=\frac{85-73}{8}=1.5\)</inline>
-</p>
-<p class="solution">\(P(70 \lt x \lt 85)=P(-0.375 \lt z \lt 1.5)\)</p>
-<p class="solution">\( \quad 1-.353830-.066807=0.5794\)</p>
-<div class="row">
-        <div class="col-sm-6">
-<p class="solution"><img src="images/u3s2p2ak.png" alt="A normal curve with the mean of 73 at the highest point of the curve. The horizontal axis is labeled with the mean and 3 standard deviations to the left and to the right of the mean. They are 49, 57, 65, 73, 81, 89, and 97. The area under the curve is shaded between 70 and 85."></p>
-</div>
-<div class="col-sm-6">
-<p class="solution"><img src="images/u3s2p2bk.png" alt="A standard normal curve with the mean of 0 at the highest point of the curve. The horizontal axis is labeled with the mean and 3 standard deviations to the left and to the right of the mean. They are -3, -2, -1, 0, 1, 2, and 3. The area under the curve is shaded between -.375 and 1.5."></p>
-</div>
-</div>
-<p class="solution">If one exam is randomly selected, the probability the score will be between 70 points and 85 points is approximately equal to 0.5794 or 57.94%.</p>
+    <ol>
+    
+    <li>If one Taco Bell is randomly selected, what is the probability the wait time will be more than 20 minutes?
+      <p class="solution">\(z=\frac{20-22.4}{6.2}=-0.387\)</p>
+      <p class="solution">\(P(x>20)=P(z>-0.387)=.6506\)</p>
+    </li>
+    
+    <li>If one Taco Bell is randomly selected, what is the probability the wait time will be between 25 minutes and 35 minutes?
+      <p class="solution">\(z_{25}=\frac{25-22.4}{6.2} \approx 0.4194\)</p>
+      <p class="solution">\(z_{35}=\frac{35-22.4}{6.2} \approx 2.032\)</p>
+      <p class="solution">\(P(25 \lt x \lt 35)=P(.419 \lt z \lt 2.032)=.3165\)</p>
+    </li>
+    
+    </ol>
+    
+    </li>
 
-</li>
 
-<li>The distribution of IQ scores is normally distributed with a mean of 100 and a standard deviation of 15.  Find the probability one randomly selected IQ score will be between 90 and 120.		
-    <p>\(\mu = \)
-        <inline class="solution">100</inline>
-        <inline>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\sigma = \)</inline>
-        <inline class="solution">15</inline>
-        <inline class="solution">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(z_{90}=\frac{90-100}{15} \approx-0.6667\)</inline>
-        <inline class="solution">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(z_{120}=\frac{120-100}{15} \approx 1.3333\)</inline>
-    </p>
-    <p class="solution">\(P(90 \lt x \lt 120)=P(-0.6667 \lt z \lt 1.3333)=0.6563\)</p>
-    <div class="row">
-            <div class="col-sm-6">
-    <p class="solution"><img src="images/u3s2p3ak.png" alt="A normal curve with the mean of 100 at the highest point of the curve. The horizontal axis is labeled with the mean and 3 standard deviations to the left and to the right of the mean. They are 55, 70, 85, 100, 115, 130, and 145. The area under the curve is shaded between 90 and 120."></p>
-    </div>
-    <div class="col-sm-6">
-    <p class="solution"><img src="images/u3s2p3bk.png" alt="A standard normal curve with the mean of 0 at the highest point of the curve. The horizontal axis is labeled with the mean and 3 standard deviations to the left and to the right of the mean. They are -3, -2, -1, 0, 1, 2, and 3. The area under the curve is shaded between -..6667 and 1.3333."></p>
-    </div>
-    </div> 
-<p class="solution">If one person’s IQ score is randomly selected, the probability their score is between 90 and 120 is approximately equal to 0.6563 or 65.63%.</p>  
-</li>
+
+
+
+
 
 </ol>        
 

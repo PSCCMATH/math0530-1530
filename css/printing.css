@@ -13,6 +13,14 @@ html{
 .solution {
     color: #b30000 !important;
 }
+
+.solutioncollapse {
+    color: #b30000 !important;
+}
+     
+
+
+
  .solution, .answer, nav{
       visibility: hidden;
   }
