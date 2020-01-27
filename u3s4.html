@@ -77,8 +77,9 @@
           <a class="dropdown-item" href="u3s2.html" target="_blank">5.2 Normal Distributions: Finding Probabilities</a>
           <a class="dropdown-item" href="u3s3.html" target="_blank">5.3 Normal Distributions: Finding Values</a>
           <a class="dropdown-item" href="u3s4.html" target="_blank">5.4 Sampling Distributions and the Central Limit Theorem</a>
-          <a class="dropdown-item" href="u3s5.html" target="_blank">6.2 Confidence Intervals for the Mean</a>
-          <a class="dropdown-item" href="u3s6.html" target="_blank">6.3 Confidence Intervals for Population Proportions</a>
+          <a class="dropdown-item" href="u3s5.html" target="_blank">6.3 Confidence Intervals for Population Proportions</a>
+          
+          <a class="dropdown-item" href="u3s6.html" target="_blank">6.2 Confidence Intervals for the Mean</a>
          
           <a class="dropdown-item" href="u3review.html" target="_blank">Unit 3 Review</a>
         
@@ -127,7 +128,18 @@
 
 <h3>5.4 Sampling Distributions and the Central Limit Theorem</h3>
 
-<h5>Central Limit Theorem Normal Bell Curve: a distribution of sample means</h5>
+
+<p>ACT scores for high school seniors at a large school district are normally distributed with a mean of 22 and a standard deviation of 4.  Compare the two distribution curves given below.</p>
+  <p>Description of Curve A:  Every student is represented on the curve as an individual and the entire population is represented.</p>
+  <p>Description of Curve B:  Groups of 25 students are randomly selected from the population and the mean ACT of each group is represented on the curve.  </p>
+
+  <img src="images/u3s1p3.png" alt="Curve A and Curve B are both normal curves. The horizontal axis represents the ACT scores and is numbered from 0 to 40, counting by 10. The vertical axis represents the number of students who earned each of the possible ACT scores. Curve A represents the graph of every student in the population and it is wide and short. It goeas from 10 to 36 with a mean of 22. Curve B represents the mean ACT score for each of the groups of 25 students. It is tal and narrow. It goes from about 18 to about 24, with a mean of 22. ">
+
+
+<br>
+
+<h4>Central Limit Theorem Normal Bell Curve: a distribution of sample means</h4>
+
 
 <p>The Central Limit Theorem states that the sampling distribution of sample means approaches a normal distribution as the sample size gets larger — no matter what the shape of the population distribution. This fact holds especially true for sample sizes over 30. All this is saying is that as you take more samples, especially large ones, your graph of the sample means will look more like a normal distribution. </p>
 
@@ -144,10 +156,28 @@
 <p><i>Requirements for CLT:	 </i></p>
 <p><i>Sample is from <b>normally distributed population</b> OR Sample size is greater than 30 <b>(n > 30)</b></i></p>
 
-<img src="images/u3s4intro.png" alt="">
+<img src="images/u3s4intro.png" alt="Two normal curves on a graph. The horizontal axis is labeled Distributions of Individuals versus Means.  One curve is taller and skinner, and the other is shorter and wider. The short, wide curve is labeled distribution of individuals and includes the sigma symbol.  The tall, skinny curve is labeled normal distribution of sample means and includes the formula sigma sub x bar equals sigma divided by the square root of n. ">
 <p style="page-break-before: always"></p>
+
+  
+
 <ol>
 
+<li>Identify the mean of Curve A and the mean of Curve B.  What do you notice?
+    <p class="solution">\(\mu_{A}=22\)</p>
+    <p class="solution">\(\mu_{B}=22\)</p>
+    <p class="solution">Both curves have the same mean.</p>
+</li>
+
+<li>Identify the standard deviation of Curve A and Curve B.  What do you notice?
+    <p class="solution">\(\sigma_{A}=4\)</p> 
+    <p class="solution">\(\sigma_{B}<4\)</p>
+    <p class="solution">The standard deviation for the distribution of sample means is less than the standard deviation of the population the samples were selected from.</p>
+</li>
+
+<li>Give an explanation for your observations in the previous two questions. 
+<p class="solution">The means are the same in the two curves because the mean of each sample will be close to the mean of the population.  The standard deviation for the distribution of sample means is less than the distribution of the population because an extreme value randomly selected from one of the tails of the population curve is averaged together with 24 other values to produce the mean of the sample.  Each sample mean will be close to the population mean and so the spread of sample means is less than the spread of individuals. </p>    
+</li>
 <li>The mean amount of cash students at Pellissippi carry in their pocket is $15.00 and the standard deviation is $9.00.  If 40 students are randomly selected, what is the probability the mean amount of cash in their pocket is greater than $18.00?
     <p>We can adjust the standard deviation and use the CLT because 
         <inline class="solution">the sample size is greater than 30 and this is a distribution of means.</inline></p>

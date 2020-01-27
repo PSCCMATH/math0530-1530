@@ -77,8 +77,9 @@
           <a class="dropdown-item" href="u3s2.html" target="_blank">5.2 Normal Distributions: Finding Probabilities</a>
           <a class="dropdown-item" href="u3s3.html" target="_blank">5.3 Normal Distributions: Finding Values</a>
           <a class="dropdown-item" href="u3s4.html" target="_blank">5.4 Sampling Distributions and the Central Limit Theorem</a>
-          <a class="dropdown-item" href="u3s5.html" target="_blank">6.2 Confidence Intervals for the Mean</a>
-          <a class="dropdown-item" href="u3s6.html" target="_blank">6.3 Confidence Intervals for Population Proportions</a>
+          <a class="dropdown-item" href="u3s5.html" target="_blank">6.3 Confidence Intervals for Population Proportions</a>
+          
+          <a class="dropdown-item" href="u3s6.html" target="_blank">6.2 Confidence Intervals for the Mean</a>
          
           <a class="dropdown-item" href="u3review.html" target="_blank">Unit 3 Review</a>
         
@@ -265,7 +266,25 @@
 </ol>
 
 </li>
+<h5>Calculating the area under the curve:</h5>
+<p>The Empirical Rule is an estimate of probability and is limited to questions involving values with z scores of whole numbers.   We need to use technology to accurately calculate probabilities (areas) for other z-scores.</p>
 
+<li>If z = -1.32, what is area to the left of the z score?
+    <p>Mathematical Translation: \(P(z \lt-1.32)=\)
+    <inline class="solution">0.0934175089935</inline></p>
+    <p class="solution"> <img src="images/u3s1p5.png" alt="A normal curve with a mean of 0 and a standard deviation of 1. The area under the curve is shaded to the left of -1.32."></p>
+</li>
+<p style="page-break-before: always"></p>
+<li>If z = 0.82, what is area to the right of the z score?
+        <p>Mathematical Translation: \(P(z>0.82)=\)
+            <inline class="solution">0.20610805</inline></p> 
+            <p class="solution"> <img src="images/u3s1p6.png" alt="A normal curve with a mean of 0 and a standard deviation of 1. The area under the curve is shaded to the right of 0.82."></p>
+</li>
+<li>If \(z_1 = -1.25\)  and \(z_2 = 0.9\), what is area between the two z scores?
+    <p>Mathematical Translation: \(P(-1.25\lt z \lt 0.9)=\)
+     <inline class="solution">0.7102901</inline></p> 
+     <p class="solution"> <img src="images/u3s1p8.png" alt="A normal curve with a mean of 0 and a standard deviation of 1. The area under the curve is shaded between -1.25 and 0.9."></p>
+</li>
 <li>Frequency Table Review
 
   <style type="text/css">
@@ -359,25 +378,52 @@
 </li>
 
 <h5>Normal Distributions: Probabilities and Percentiles</h5>
+<li>Scores on a history exam are normally distributed with a mean of 73 points and a standard deviation of 8 points.  If one exam is randomly selected, what is the probability the score will be between 70 and 85 points?
+    <p>\(\mu = \)
+        <inline class="solution">73 pts</inline>
+        <inline>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\sigma =\) </inline>
+        <inline class="solution">8 pts</inline>
+        <inline class="solution">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(z_{70}=\frac{70-73}{8}=-0.375\)</inline>
+        <inline class="solution">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(z_{85}=\frac{85-73}{8}=1.5\)</inline>
+    </p>
+    <p class="solution">\(P(70 \lt x \lt 85)=P(-0.375 \lt z \lt 1.5)\)</p>
+    <p class="solution">\( \quad 1-.353830-.066807=0.5794\)</p>
+    <div class="row">
+            <div class="col-sm-6">
+    <p class="solution"><img src="images/u3s2p2ak.png" alt="A normal curve with the mean of 73 at the highest point of the curve. The horizontal axis is labeled with the mean and 3 standard deviations to the left and to the right of the mean. They are 49, 57, 65, 73, 81, 89, and 97. The area under the curve is shaded between 70 and 85."></p>
+    </div>
+    <div class="col-sm-6">
+    <p class="solution"><img src="images/u3s2p2bk.png" alt="A standard normal curve with the mean of 0 at the highest point of the curve. The horizontal axis is labeled with the mean and 3 standard deviations to the left and to the right of the mean. They are -3, -2, -1, 0, 1, 2, and 3. The area under the curve is shaded between -.375 and 1.5."></p>
+    </div>
+    </div>
+    <p class="solution">If one exam is randomly selected, the probability the score will be between 70 points and 85 points is approximately equal to 0.5794 or 57.94%.</p>
+    
+    </li>
 
-<li>To determine the average wait time at Taco Bell in the Miami area, 16 graduate students randomly selected 16 taco bell stores.  Each student visited a Taco Bell store at 12:15 pm and ordered a crunchy beef taco, a burrito supreme, and a soda.  The wait time to receive the meal was recorded for each restaurant.  The distribution is normal with a mean of 22.4 minutes and a standard deviation of 6.2 minutes.
+    <li>The distribution of IQ scores is normally distributed with a mean of 100 and a standard deviation of 15.  Find the probability one randomly selected IQ score will be between 90 and 120.		
+        <p>\(\mu = \)
+            <inline class="solution">100</inline>
+            <inline>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\sigma = \)</inline>
+            <inline class="solution">15</inline>
+            <inline class="solution">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(z_{90}=\frac{90-100}{15} \approx-0.6667\)</inline>
+            <inline class="solution">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(z_{120}=\frac{120-100}{15} \approx 1.3333\)</inline>
+        </p>
+        <p class="solution">\(P(90 \lt x \lt 120)=P(-0.6667 \lt z \lt 1.3333)=0.6563\)</p>
+        <div class="row">
+                <div class="col-sm-6">
+        <p class="solution"><img src="images/u3s2p3ak.png" alt="A normal curve with the mean of 100 at the highest point of the curve. The horizontal axis is labeled with the mean and 3 standard deviations to the left and to the right of the mean. They are 55, 70, 85, 100, 115, 130, and 145. The area under the curve is shaded between 90 and 120."></p>
+        </div>
+        <div class="col-sm-6">
+        <p class="solution"><img src="images/u3s2p3bk.png" alt="A standard normal curve with the mean of 0 at the highest point of the curve. The horizontal axis is labeled with the mean and 3 standard deviations to the left and to the right of the mean. They are -3, -2, -1, 0, 1, 2, and 3. The area under the curve is shaded between -..6667 and 1.3333."></p>
+        </div>
+        </div> 
+    <p class="solution">If one person’s IQ score is randomly selected, the probability their score is between 90 and 120 is approximately equal to 0.6563 or 65.63%.</p>  
+    </li>
 
-<ol>
 
-<li>If one Taco Bell is randomly selected, what is the probability the wait time will be more than 20 minutes?
-  <p class="solution">\(z=\frac{20-22.4}{6.2}=-0.387\)</p>
-  <p class="solution">\(P(x>20)=P(z>-0.387)=.6506\)</p>
-</li>
 
-<li>If one Taco Bell is randomly selected, what is the probability the wait time will be between 25 minutes and 35 minutes?
-  <p class="solution">\(z_{25}=\frac{25-22.4}{6.2} \approx 0.4194\)</p>
-  <p class="solution">\(z_{35}=\frac{35-22.4}{6.2} \approx 2.032\)</p>
-  <p class="solution">\(P(25 \lt x \lt 35)=P(.419 \lt z \lt 2.032)=.3165\)</p>
-</li>
 
-</ol>
 
-</li>
 <p style="page-break-before: always"></p>
 <li>If z follows the standard normal distribution (so μ=0, and σ=1), draw a normal curve, shade the appropriate area, and find the following: 
 

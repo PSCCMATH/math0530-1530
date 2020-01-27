@@ -77,8 +77,9 @@
           <a class="dropdown-item" href="u3s2.html" target="_blank">5.2 Normal Distributions: Finding Probabilities</a>
           <a class="dropdown-item" href="u3s3.html" target="_blank">5.3 Normal Distributions: Finding Values</a>
           <a class="dropdown-item" href="u3s4.html" target="_blank">5.4 Sampling Distributions and the Central Limit Theorem</a>
-          <a class="dropdown-item" href="u3s5.html" target="_blank">6.2 Confidence Intervals for the Mean</a>
-          <a class="dropdown-item" href="u3s6.html" target="_blank">6.3 Confidence Intervals for Population Proportions</a>
+          <a class="dropdown-item" href="u3s5.html" target="_blank">6.3 Confidence Intervals for Population Proportions</a>
+          
+          <a class="dropdown-item" href="u3s6.html" target="_blank">6.2 Confidence Intervals for the Mean</a>
          
           <a class="dropdown-item" href="u3review.html" target="_blank">Unit 3 Review</a>
         
@@ -177,27 +178,27 @@
 
 <h5>Finding a z-Score given an Area</h5>
 
-<li>The distribution of IQ scores is normally distributed with a mean of 100 and a standard deviation of 15.  If the probability of randomly selecting someone with a score less than d is equal to 0.6026, what is d? 
-    <p class="solution">For point d, the cumulative area from the left is equal to 0.6026.  </p>
-    <p class="solution">\(z_{d}=.2601\)</p>
-    <p class="solution">\(d=100+(0.2601)(15)=103.9\)</p>
-    <p class="solution">The probability of randomly selecting someone with an IQ score less than 103.9 (104) is approximately 0.6026 or 60.26%</p>
+<li>The length of elephant pregnancies from conception to birth varies according to a distribution that is approximately normal with mean 525 days and standard deviation 32 days.  If the probability of randomly selecting an elephant whose pregnancy lasted less than d days is 10%, what is d?
+    <p class="solution">For point d, the cumulative area from the left is equal to 0.10.  </p>
+    <p class="solution">\(z_{d}=-1.2816\)</p>
+    <p class="solution">\(d=525+(-1.2816)(32)=484\)</p>
+    <p class="solution">The probability of ramdomly selecting an elephant whose pregnancy lasted less than 484 days is approximately 0.10 or 10%</p>
 </li>
 
-<li>The distribution of IQ scores is normally distributed with a mean of 100 and a standard deviation of 15.  If the probability of getting a score less than d is equal to 0.0793, what is d?
-    <p class="solution">For point d, the cumulative area from the left is equal to 0.0793.  </p>
-    <p class="solution">\(z_{d}=-1.4098\)</p>
-    <p class="solution">\(d=100+(-1.4098)(15)=78.85\)</p>
-    <p class="solution">The probability of randomly selecting someone with an IQ score less than 78.85 (79) is approximately 0.0793 or 7.93%</p>
+<li>At two years of age, sardines inhabiting Japanese waters have a length length distribution that is approximately normal with a mean of 20.20 cm and standard deviation 0.65 cm.  If the probability of randomly selecting a two-year old sardine measuring longer than x is 15%, find x.
+    <p class="solution">For point x, the cumulative area from the right is equal to 0.15.  </p>
+    <p class="solution">\(z_{d}=1.0364\)</p>
+    <p class="solution">\(d=20.20+(1.0364)(0.65)=20.87\)</p>
+    <p class="solution">The probability of randomly selecting a two-year old sardine longer than 20.87 cm is approximately 0.15 or 15%</p>
 </li>
 
-<li>IQ scores are normally distributed with a mean of 100 and a standard deviation of 15.  If the probability of getting a score greater than d is equal to 0.9345, what is d? 
-    <p class="solution">Area to the right is 0.9345</p>
-    <p class="solution">Area to the left is \(1-0.9345=0.0655\)</p>
-    <p class="solution">\(z_{d}=-1.5102\)</p>
-    <p class="solution">\(d=100+(-1.5102)(15)=77.3\)</p>
+<li>A manufacturer of bulbs for movie projectors finds that the lives of the bulbs are normally distributed with a mean of 61 hours and standard deviation of 6.3 hours.  The manufacturer will guarantee the bulbs so that only 3% will be replaced because of failure before the guaranteed number of hours.  For how many hours should the bulbs be guaranteed? 
+    <p class="solution">For the number of hours, the cumulative area from the left is equal to 0.03.  </p>
+
+    <p class="solution">\(z_{d}=-1.8808\)</p>
+    <p class="solution">\(d=61+(-1.8808)(6.3)=49.15\)</p>
     <p class="solution">
-            The probability of randomly selecting someone with an IQ score greater than 77.3 (round to 77 or 78) is approximately 0.9345 or 93.45%
+            The bulbs should be guaranteed for 49.15 hours.
             </p>
 </li>
 
@@ -208,6 +209,80 @@
     <p class="solution">\(d_{M A X}=73+(1.4051)(8)=84.2 \mathrm{bpm}\)</p>
     <p class="solution">The applicants with pulse rates between 56.6 bpm and 84.2 bpm will not be rejected on the basis of pulse rate.</p>
 </li>
+<li>
+  Binomial vs. Normal Distributions
+  <p>Consider the two following scenarios. Select which one involves a binomial distribution and which one involves a normal distribution. </p>
+  <p> Scenario 1:  An Applied Statistics teacher gave a midterm exam to a class of 25 students and graded it on an approximately normal curve such that about 7.5% of the students make an A. What is the probability that 10 or more students make an A? </p>
+  <p>  Scenario 2:  An Applied Statistics teacher gave a midterm exam to a class of 25 students and graded it on an approximately normal curve such that the mean score is 75 and the standard deviation is 8 points. What is the probability that a randomly selected student makes an A (90 – 100 points). </p>
+  <ol>
+    <li>Which scenerio is using a binomial distribution?
+      <p class="solution">Scenerio 1</p>
+    </li>
+    <li>Which one is using a normal distribution?
+      <p class="solution">Scenerio 2</p>
+    </li>
+    <li>What are the clues>
+      <p class="solution">Scenerio 1 has only 2 possible outcomes, fixed number of trials, each trial is independent of the others, the probability of each outcome remains constant from trial to trial.  These are all criterial for a binomial distribution.</p>
+    </li>
+  </ol>
+</li>
+
+<li>
+  <img src="images/u3s3p8.png" alt="Two normal density curves--one solid line and one dashed line. The standard normal density curve is the solid curve. It represents the normal distribution with mean µ = 0 and standard deviation σ = 1. A vertical line has been drawn at µ = 0 , which marks the curve’s line of symmetry. The dashed line is shorter and wider than the solid line.  The dashed curve is a normal density curve with the same mean as the standard normal density curve but a different standard deviation.">
+
+  <ol>
+    <li>Between what two values on the horizontal axis would you expect nearly all data from the standard normal distribution to fall?
+      <p class="solution">-3 and 3</p>
+    </li>
+    <li>Between what two values would you expect nearly all of the lower 50% of standard normal data to fall? 
+      <p class="solution">-3 and 0</p>
+    </li>
+    <li>The dashed curve is a normal density curve with the same mean as the standard normal density curve but a different standard deviation. Is the standard deviation larger or smaller than the standard normal? How can you tell from the graphs of the two density curves?
+      <p class="solution">Larger because the curve is wider.</p>
+    </li>
+    <li>To estimate the standard deviation for the dashed normal curve, start at the top of the curve and follow the curve down along its right side. Above what value on the horizontal axis does the curve switch from bending downward to bending upward? Use this point to estimate the standard deviation for the dashed normal density curve.
+      <p class="solution">-2</p>
+    </li>
+  </ol>
+</li>
+
+
+<li>
+  <img src="images/u3s3p9.png" alt="The figure above shows two normal density curves, the standard normal density curve (solid curve) and another normal density curve (dashed curve) with the same standard deviation but a different mean.">
+<p>The figure above shows two normal density curves, the standard normal density curve (solid curve) and another normal density curve (dashed curve) with the same standard deviation but a different mean.</p>
+<ol>
+  <li>What is the mean of the normal distribution represented by the dashed curve? How did you determine your answer from the graph?
+    <p class="solution">2.5  I looked at the peak at the middle of the graph.</p>
+  </li>
+  <li>Between what two values would you expect nearly all the data from the normal distribution shown by the dashed curve to fall? How are these numbers related to the curve’s mean and standard deviation?
+    <p class="solution">-0.5 and 5.5  These represent 3 standard deviations above and below the mean.</p>
+  </li>
+</ol>
+</li>
+
+<li>
+  <img src="images/u3s3p10.png" alt="Four normal density graphs (a-d).  The vertical axis on all four graphs is labeled Proportio. There are only number on all the horizontal axes.  In graph a, the horizontal axis is labeled from 6 to 24 with intervals of 3.  The vertical axis is labeled from 0 to 0.14 with intervals of 0.02. In graph b, the horizontal axis is labeled from -1 to 211 with intervals of 2.  The vertical axis is labeled from 0 to 0.20with intervals of 0.05.  In graph c, the horizontal axis is labeled from 2.5 to 5.5 with intervals of0.5.  The vertical axis is labeled from 0 to 0.9 with intervals of 0.1.  In graph d, the horizontal axis is labeled from 1 to 7 with intervals of 1.  The vertical axis is labeled from 0 to 0.4 with intervals of 0.1.  ">
+
+<p>Figures (a – d) show four normal density curves. Match the density curves with each of the following means and standard deviations. Explain how you were able to match each density curve to its mean and standard deviation</p>
+
+<ol>
+  <li>µ = 4, σ = 1
+    <p class="solution">D</p>
+  </li>
+  <li>µ = 15, σ = 3
+    <p class="solution">A</p>
+  </li>
+  <li>µ = 4, σ = 0.5
+    <p class="solution">C</p>
+  </li>
+  <li>µ = 5, σ = 2
+    <p class="solution">B</p>
+  </li>
+</ol>
+
+</li>
+
+
 
 </ol>
 
