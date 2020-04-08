@@ -127,219 +127,465 @@
       <h2>Unit 4 Hypothesis Testing</h2>
   
 
-      <h3>7.4 Hypothesis Testing for Proportions </h3>
+      <h3>7.3 Hypothesis Testing for the Mean </h3>
 
      
       <br>
-     <h4>Requirements for Testing Claims about a Population Proportion p</h4>
-     <ol>
-         <li>The sample observations are a simple random sample.</li>
-         <li>The conditions for a binomial distribution are satisfied.</li>
-         <li>The conditions  \(n p \geq 5\)    and  \(n q \geq 5\)   are both satisfied, so the binomial distribution of sample proportions can be approximated by a normal distribution with  \(\mu=n p\)      and  \(\sigma=\sqrt{n p q}\).  (Note:   \(p\) is the assumed proportion not the sample proportion.)</li>
-     </ol>
-     
+     <h4>Step 4:</h4>
+     <h4> Identify Level of Significance and Degrees of Freedom</h4>
+     <ul>
+         <li>Level of Significance: α</li>
+         <li>Degrees of Freedom: n-1</li>
+     </ul>
+     <h4>Identify Test Statistic for Mean Claim: </h4>
+    <ul>
+        <li>n = sample size </li>
+        <li>s = sample standard deviation</li>
+        <li>Degrees of freedom: n -1	</li>
+        <li>\(\overline{x}\) = sample mean</li>
+        <li>\(\mu\) = population mean</li>
+        <li>\(t=\frac{\overline{x}-\mu_{\overline{x}}}{\frac{s}{\sqrt{n}}}\)</li>
+    </ul>
 
-     <h4>Calculate the Test Statistic for a Claim about the Proportion</h4>
-
-    <ol>
-        <li>Test Statistic for Proportion Claim:  
-        <ul>
-            <li>n = sample size	</li>
-            <li>p = population proportion	q = 1 – p	</li>
-            <li>\(\hat{p}=\frac{x}{n}=\) sample proportion</li>
-            <li>\(z=\frac{\hat{p}-p}{\sqrt{\frac{p q}{n}}}\)</li>
-        </ul>    
-        </li>
-        <li>Use P-value to Evaluate the Null Hypothesis:
-            <p>(Will use NORMAL Calculator to get Critical Values)</p>
-            <ul>
-                <li>Definition of  P-value: The probability of being as extreme, or more extreme, than your data, assuming H<sub>0</sub> is correct.</li>
-                <li>Making a decision about the null hypothesis based on the P-value</li>
-               <ol>
-                   <li>If  P-value \(\leq \alpha\),  (Or TS is in the rejection area) reject \(H_0\) .	</li>
-                   <li>If  P-value \(> \alpha\),  (Or TS is NOT in the rejection area) fail to reject \(H_0\) .</li>
-               </ol>
-            </ul>
-        </li>
-        <li>Formulate a Conclusion About the Claim	
-        <p>Use your decision about the null to make a statement about the claim:</p>
-        <style type="text/css">
-          .tg  {border-collapse:collapse;border-spacing:0;}
-          .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-          .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-          .tg .tg-0lax{text-align:left;vertical-align:top}
-          </style>
-          <table class="tg" summary="Table of the correct format for the wording of the statement about the claim.  The correct wording is based on the decision about the null and whether the null or the alternate hypothesis is the claim. Column headers are Null Hypothesis is the claim and Alternate Hypothesis is the claim. Row headers are reject the null and fail to reject the null.  Use JAWS table navigation keystrokes to identify cell locations.">
-            <tr>
-              <th class="tg-0lax"></th>
-              <th class="tg-0lax" scope="col">Null is the Claim</th>
-              <th class="tg-0lax" scope="col">Alternate is the Claim</th>
-            </tr>
-            <tr>
-              <th class="tg-0lax" scope="row">Reject the Null</th>
-              <td class="tg-0lax" >“There is sufficient sample evidence to reject the claim that…”</td>
-              <td class="tg-0lax" >“There is sufficient sample evidence to support the claim that…”</td>
-            </tr>
-            <tr>
-              <th class="tg-0lax" scope="row">Fail to Reject the Null</th>
-              <td class="tg-0lax">“There is not sufficient sample evidence to reject the claim that…”</td>
-              <td class="tg-0lax">“There is not sufficient sample evidence to support the claim that…”</td>
-            </tr>
-          </table>
-        </li>
-    </ol>
+<h4>Step 5: Using the P-value to Evaluate the Null Hypothesis</h4>
+<b>Definition of  P-value: </b>
+The probability of being as extreme, or more extreme, than your data, assuming H<sub>0</sub> is correct.
 
 
+<br>
+<br>
 
 
-<h4>Problems</h4>
+<h4>Step 6: Determine the Rejection Region  </h4>
+<h4>Step 7: Make One of Two Decisions About the Null Hypothesis</h4>
+<br>
+
 
 <ol>
-    <li><b>Driving and Texting: </b>In a survey, 1864 out of 2246 randomly selected adults in the U.S. said that texting while driving should be illegal (based on data from Zogby International). Consider a hypothesis test that uses a 0.05 significance level to test the claim that more than 80% of adults believe that texting while driving should be illegal.
-        <p class="solution">Sample proportion:  \(\hat{p}=\frac{1864}{2246}=.8299\)</p>
+    <li>If  P-value \(\leq \alpha\):  
+        <ul>
+            <li>reject \(H_0\)</li>
+            <li>Type I error: rejecting \(H_0\)  when it is actually true</li>
+        </ul>
+    </li>
+    <li>If  P-value \(> \alpha\): 
+        <ul>
+            <li>fail to reject \(H_0\)</li>
+            <li>Type II error: failing to reject \(H_0\)  when it is actually false</li>
+        </ul>
+    </li>
+</ol>
+
+
+<h4>Step 8: Formulate a Conclusion About the Claim </h4>
+
+
+<style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+    .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+    .tg .tg-0lax{text-align:left;vertical-align:top}
+    </style>
+    <table class="tg" summary="Table of the correct format for the wording of the statement about the claim.  The correct wording is based on the decision about the null and whether the null or the alternate hypothesis is the claim. Column headers are Null Hypothesis is the claim and Alternate Hypothesis is the claim. Row headers are reject the null and fail to reject the null.  Use JAWS table navigation keystrokes to identify cell locations.">
+      <tr>
+        <th class="tg-0lax"></th>
+        <th class="tg-0lax" scope="col">Null is the Claim</th>
+        <th class="tg-0lax" scope="col">Alternate is the Claim</th>
+      </tr>
+      <tr>
+        <th class="tg-0lax" scope="row">Reject the Null</th>
+        <td class="tg-0lax" >“There is sufficient sample evidence to reject the claim that…”</td>
+        <td class="tg-0lax" >“There is sufficient sample evidence to support the claim that…”</td>
+      </tr>
+      <tr>
+        <th class="tg-0lax" scope="row">Fail to Reject the Null</th>
+        <td class="tg-0lax">“There is not sufficient sample evidence to reject the claim that…”</td>
+        <td class="tg-0lax">“There is not sufficient sample evidence to support the claim that…”</td>
+      </tr>
+    </table>
+
+
+<br>
+<br>
+<p style="page-break-before: always"></p>
+<ol>
+    <li><b>Changing a Tire:</b> The length of time to change a tire is normally distributed.  A random sample of ten tire changes is taken with a mean of 22.63 minutes and a standard deviation of 2.98 minutes. Use a 0.05 significance level to test the claim that the mean time to change a tire is less than 25 minutes.
     
     <ol>
         <li>Design the Study
         <ol>
-            <li>The original Claim: <inline class="solution"> \(p>0.8\)</inline> </li>
-            <li>\(H_0\): <inline class="solution"> \(p \leq 0.8\)</inline> &nbsp;&nbsp;&nbsp; assume \(H_0\): <inline class="solution">\(p = 0.8\)</inline> </li>
-            <li>\(H_A\): <inline class="solution">\(p > 0.8\)</inline></li>
-            <li>Type of Test: <inline class="solution">Right-tailed test</inline></li>
+            <li>The original Claim: <inline class="solution"> \(\mu < 25\)</inline> </li>
+            <li>\(H_0\): <inline class="solution"> \(\mu \geq 25\) </inline>assume \(H_0\): <inline class="solution"> \(\mu = 25\)</inline> </li>
+            <li>\(H_A\): <inline class="solution">\(\mu < 25\)</inline></li>
+            <li>Type of Test: <inline class="solution">Left-tailed test</inline></li>
             <li>Level of Significance: <inline class="solution">\(\alpha =.05\)</inline> </li>
-            
-            <li>Critical Value(s):  <inline class="solution">\(z=1.645\) (Determines shaded area(s))</inline></li>
+            <li>Degrees of Freedom: <inline class="solution">\(10-1=9\)</inline> </li>
+            <li>Critical Value(s):  <inline class="solution">\(t=-1.8331\) Determines shaded area(s)</inline></li>
         </ol>
-        <p class="solution"><img src="images/u4s3p1ak.png" alt="Graph of a normal curve.  The x-axis is labeled from -3 to 3 in intervals of 1.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The area under the curve is shaded for all x values greater than 1.645.  Under the graph, there are three boxes: First box: Mean:0, Second Box: Std. Dev.:1, Third box P(x>=1.6448536)=.05" width="35%" height="35%"></p>
+        <p class="solution"><img src="images/u4s2p1ak.png" alt=" T calculator with the graph of a normal curve.  The x-axis is labeled from -6 to 6 in intervals of 2.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The area under the curve is shaded for all x values less than -1.8331129.  Under the graph, there is a box with df:9 and under that a box with P(x<=-1.8331129)=.05 " width="35%" height="35%"></p>
     </li>
         <li>Results
 
             <ol>
                 <li>Test Statistic: A standardized value based on the sample data, assuming the null is true.
-                    <p class="solution">  \(z=\frac{\hat{p}-p}{\sqrt{\frac{p q}{n}}} \quad=\frac{8299-.8}{\sqrt{\frac{(.8)(.2)}{2246}}}=3.5426\)</p> 
-                    <p class="solution">\(z=3.5449 \quad \text{from StatCrunch}\) </p>
+                    <p class="solution">  \(t=\frac{\overline{x}-\mu}{\left(\frac{s}{\sqrt{n}}\right)}=\frac{22.63-25}{\left(\frac{2.98}{\sqrt{10}}\right)}=-2.5150\)</p> 
                 </li>
-                <li>p-value: <inline class="solution">0.0002</inline></li>
-                <li>Rejection Criteria: Reject \(H_0\) if <inline class="solution">p value \(< \alpha\)  and the test statistic (z) is in the rejection region.</inline> </li>
+                <li>p-value: <inline class="solution">0.0165</inline></li>
+                <li>Rejection Criteria: Reject \(H_0\) if <inline class="solution">p value \(< \alpha\)  and the test statistic (t) is in the rejection region.</inline> </li>
                 <li>Decision about the null: <inline class="solution">Reject \(H_0\) </inline>
-                <p class="solution">Reason 1:  0.0002 < .05  or  Reason 2: 3.5426 is in the rejection region</p>
-              
+                <p class="solution">Reason 1:  0.0165 < .05 or Reason 2: -2.5150 is in the rejection region </p>
+                
                 </li>
-                <li>Concluding statement about the claim: <inline class="solution">There is sufficient evidence to support the claim more than 80% of adults believe texting while driving should be illegal. </inline> </li>
+                <li>Concluding statement about the claim: <inline class="solution">There is sufficient evidence to support the claim the mean time to change a tire is less than 25 minutes. </inline> </li>
             </ol>
-            <p class="solutioncollapse"><img src="images/u4s3p1bk.png" alt="One sample proportion summary hypothesis test: P: proportion of successes, H_O: p=0.8, H_A: p>0.8.
+            <p class="solutioncollapse"><img src="images/u4s2p1bk.png" alt=" One sample T summary hypothesis test: mu: mean of the population, H_O: mu = 25, H_A: mu < 25.
               Hypothesis Test results: 
-              Proportion: p
-              Count: 1864
-              Total: 2246
-              Sample Prop.: 0.82991986
-              Std. Err.: 0.0084402462
-              z-Stat: 3.5449034
-              p-value: 0.0002"></p>
-            <p class="solutioncollapse"><img src="images/u4s3p1ck.png" alt="Graph of Standard Normal Distribution with z-stat=3.54449, and p-value: 0.0002.  The x-axis is labeled from -4 to 4 in intervals of 2.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The z-stat of 3.5449 is marked with a vertical line on the graph and the graphs is shaded to the end of the graph on the right."></p>
+              Mean: mu
+              Sample Mean: 22.63
+              Std. Err.: 0.94235874
+              DF: 9
+              T-Stat: -2.5149658
+              p-value: 0.0165 " ></p>
+            <p class="solutioncollapse"><img src="images/u4s2p1ck.png" alt="Graph of t-distribution with DF=9, T-stat=-2.515, p-value: 0.0165. T calculator with the graph of a normal curve.  The x-axis is labeled from -6 to 6 in intervals of 2.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The area under the curve is shaded for all x values less than -2.515."></p>
         </li>
     </ol>
     
     </li>
-    <li><b>Cell phone and Cancer:</b> In a study of 420,095 Danish cell phone users, 135 subjects developed cancer of the brain or nervous system (based on data from the Journal of the National Cancer Institute as reported in USA Today). Test the claim of a once popular belief that such cancers are affected by cell phone use. That is, test the claim that cell phone users develop cancer of the brain or nervous system at a rate that is different from the rate of 0.0340% for people who do not use cell phones. Because this issue has such great importance, use a 0.01 significance level.
-        <p class="solution">Sample proportion:  \(\hat{p}=\frac{135}{420095} \approx 0.000321\)</p>
-
+    <li><b>Age of Cars:</b> The mean age of cars driven by Pellissippi State students is seven years. The Dean of Students claims that this is an accurate statement for his students. A random sample of 31 cars in the East Parking Lot on campus showed a mean age of 8.1 years with a standard deviation of 5.1 years. Test the Dean’s claim at the 0.01 significance level.
         <ol>
                 <li>Design the Study
                 <ol>
-                    <li>The original Claim: <inline class="solution"> \(p \neq 0.00034\)</inline> </li>
-                    <li>\(H_0\): <inline class="solution"> \(p = 0.00034\)</inline><  assume \(H_0\): <inline class="solution">\(p = 0.00034\)</inline> </li>
-                    <li>\(H_A\): <inline class="solution">\(p \neq 0.00034\)</inline></li>
+                    <li>The original Claim: <inline class="solution"> \(\mu = 7\)</inline> </li>
+                    <li>\(H_0\): <inline class="solution"> \(\mu = 7\)</inline> assume \(H_0\): <inline class="solution">\(\mu = 7\)</inline> </li>
+                    <li>\(H_A\): <inline class="solution">\(\mu \neq 7\)</inline></li>
                     <li>Type of Test: <inline class="solution">Two-tailed test</inline></li>
-                    <li>Level of Significance: <inline class="solution">\(\alpha =0.1\)</inline> </li>
-                  
-                    <li>Critical Value(s):  <inline class="solution">\(z=\pm 2.576\)  (Determines shaded area(s))</inline></li>
+                    <li>Level of Significance: <inline class="solution">\(\alpha =.01\)</inline> </li>
+                    <li>Degrees of Freedom: <inline class="solution">\(31-1=30\)</inline> </li>
+                    <li>Critical Value(s):  <inline class="solution">\(t=\pm 2.750\) Determines shaded area(s)</inline></li>
                 </ol>
-                <p class="solution"><img src="images/u4s3p2ak.png" alt="Graph of a normal curve.  The x-axis is labeled from -3 to 3 in intervals of 1.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The area under the curve is shaded for all x values between -2.576 and +2.576.  Under the graph, there are three boxes: First box: Mean:0, Second Box: Std. Dev.:1, Third box P(-2.5758<=x<=2.5758)=.99" width="20%" height="20%"></p>
+                <p class="solution"><img src="images/u4s2p2ak.png" alt=" T calculator with the graph of a normal curve.  The x-axis is labeled from -4 to 4 in intervals of 2.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The area under the curve is shaded for all x values between -2.75 and +2.75.  Under the graph, there is a box with df:30 and under that a box with P(-2.75<=x<=2.75)=.99" width="35%" height="35%"></p>
             </li>
+            <p style="page-break-before: always"></p>
                 <li>Results
         
                     <ol>
                         <li>Test Statistic: A standardized value based on the sample data, assuming the null is true.
-                            <p class="solution">  \(z=\frac{\hat{p}-p}{\sqrt{\frac{p q}{n}}}=\frac{.000321-.00034}{\sqrt{\frac{(.00034)(.99966)}{420095}}}=0.6680\)</p> 
-                            <p class="solution">\(z=-0.6555  \quad \text{from StatCrunch}\) </p>
+                            <p class="solution">  \(\mathrm{t}=\frac{\overline{x}-\mu}{\left(\frac{s}{\sqrt{n}}\right)}=\frac{8.1-7}{\left(\frac{5.1}{\sqrt{31}}\right)}=1.20089\)</p> 
                         </li>
-                        <li>p-value: <inline class="solution">0.5122</inline></li>
-                        <li>Rejection Criteria: Reject \(H_0\) if <inline class="solution">p value \(< \alpha\)  and the test statistic (z) is in the rejection region.</inline> </li>
+                        <li>p-value: <inline class="solution">0.2392</inline></li>
+                        <li>Rejection Criteria: Reject \(H_0\) if <p class="solution">p value \(< \alpha\)  and the test statistic (t) is in the rejection region.</p> </li>
                         <li>Decision about the null: <inline class="solution">Fail to reject \(H_0\) </inline>
-                        <p class="solution">Reason 1:  0.5122 > .01 or Reason 2: -0.6680 (StatCrunch -0.6555) is not in the rejection region  </p>
-                       
+                        <p class="solution">Reason 1:  0.2392 > .01   </p>
+                        <inline class="solution">Reason 2: 1.20089 is not in the rejection region</inline>
                         </li>
-                        <li>Concluding statement about the claim: <inline class="solution">There is not sufficient evidence to support the claim phone users develop cancer at a rate different than .00034 which is the rate for non cell phone users.  </inline> </li>
+                        <li>Concluding statement about the claim: <inline class="solution">There is not sufficient evidence to reject the claim the mean age of cars driven by PSCC students is 7 years. </inline> </li>
                     </ol>
-                    <p class="solutioncollapse"><img src="images/u4s3p2bk.png" alt="One sample proportion summary hypothesis test: P: proportion of successes, H_O: p=0.00034, H_A: p is not equal to 0.00034.
+                    <p class="solutioncollapse"><img src="images/u4s2p2bk.png" alt="One sample T summary hypothesis test: mu: mean of the population, H_O: mu = 7, H_A: mu does not equal 7.
                       Hypothesis Test results: 
-                      Proportion: p
-                      Count: 135
-                      Total: 420095
-                      Sample Prop.: 0.00032135588
-                      Std. Err.: 0.000028444078
-                      z-Stat: -0.65546566
-                      p-value: 0.5122"></p>
-                    <p class="solutioncollapse"><img src="images/u4s3p2ck.png" alt="Graph of Standard Normal Distribution with z-stat=-0.6555, and p-value: 0.5122.  The x-axis is labeled from -4 to 4 in intervals of 2.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The graph is shaded for all values of x less than -0.6555 and greater than 0.6555."></p>
+                      Mean: mu
+                      Sample Mean: 8.1
+                      Std. Err.: 0.91598704
+                      DF: 30
+                      T-Stat: 1.2008904
+                      p-value: 0.2392"></p>
+                    <p class="solutioncollapse"><img src="images/u4s2p2ck.png" alt="Graph of t-distribution with DF=30, T-stat=1.2009, p-value: 0.2392. T calculator with the graph of a normal curve.  The x-axis is labeled from -4 to 4 in intervals of 2.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The area under the curve is shaded for all x values less than -1.2009 and greater than +1.2009."></p>
                 </li>
             </ol>
     </li>
-    <li><b>Flu:</b>  In a clinical trial, 28 out of 800 patients taking a prescription drug complained of flulike symptoms.  Suppose that it is known that 2.2% of patients taking competing drugs complain of flulike symptoms.  Test the claim that more than 2.2% of this drug’s users experience flulike symptoms as a side effect at the 0.1 significance level.
+    
+    <li><b>Sugars in Cereal: </b> In a sample of 16 cereals, the mean sugar content was measured at .295g and the standard deviation was .1677g.  Use a .01 significance level to test the claim the true population mean sugar content (grams of sugar per gram of cereal) for all cereals is equal to 0.3g.
         <ol>
                 <li>Design the Study
                 <ol>
-                    <li>The original Claim: <inline class="solution"> \(p > 0.022\)</inline> </li>
-                    <li>\(H_0\): <inline class="solution"> \(p \leq 0.022\)</inline>< &nbsp;&nbsp;&nbsp; assume \(H_0\): <inline class="solution">\(p = 0.022\)</inline> </li>
-                    <li>\(H_A\): <inline class="solution">\(p > 0.022\)</inline></li>
-                    <li>Type of Test: <inline class="solution">Right-tailed test</inline></li>
+                    <li>The original Claim: <inline class="solution"> \(\mu = 0.3\)</inline> </li>
+                    <li>\(H_0\): <inline class="solution"> \(\mu = 0.3\)</inline> assume \(H_0\): <inline class="solution">\(\mu = 0.3\)</inline> </li>
+                    <li>\(H_A\): <inline class="solution">\(\mu \neq 0.3\)</inline></li>
+                    <li>Type of Test: <inline class="solution">Two-tailed test</inline></li>
                     <li>Level of Significance: <inline class="solution">\(\alpha =0.01\)</inline> </li>
-                   
-                    <li>Critical Value(s):  <inline class="solution">\(z=1.282\) (Determines shaded area(s))</inline></li>
+                    <li>Degrees of Freedom: <inline class="solution">\(16-1=15\)</inline> </li>
+                    <li>Critical Value(s):  <inline class="solution">\(t=\pm 2.947\) Determines shaded area(s)</inline></li>
                 </ol>
-                <p class="solution"><img src="images/u4s3p3ak.png" alt="Graph of a normal curve.  The x-axis is labeled from -3 to 3 in intervals of 1.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The area under the curve is shaded for all x values greater than 1.282.  Under the graph, there are three boxes: First box: Mean:0, Second Box: Std. Dev.:1, Third box P(x>=1.2815516)=0.1" width="35%" height="35%"></p>
+                <p class="solution"><img src="images/u4s2p3ak.png" alt=" T calculator with the graph of a normal curve.  The x-axis is labeled from -4 to 4 in intervals of 2.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The area under the curve is shaded for all x values between -2.947 and +2.947.  Under the graph, there is a box with df:15 and under that a box with P(-2.9467<=x<=2.9467)=.99 " width="35%" height="35%"></p>
             </li>
                 <li>Results
         
                     <ol>
                         <li>Test Statistic: A standardized value based on the sample data, assuming the null is true.
-                            <p class="solution">  \(z=\frac{\hat{p}-p}{\sqrt{\frac{p q}{n}}} = \frac{.035-.022}{\sqrt{\frac{(.022)(.978)}{800}}}=2.5067\)</p> 
+                            <p class="solution">  \(t= \frac{\overline{x}-\mu}{\left(\frac{s}{\sqrt{n}}\right)} = \frac{.295-.3}{\left(\frac{.1677}{\sqrt{16}}\right)}  =-0.1193\)</p> 
                         </li>
-                        <li>p-value: <inline class="solution">0.0061</inline></li>
-                        <li>Rejection Criteria: Reject \(H_0\) if <inline class="solution">p value \(< \alpha\)  and the test statistic (z) is in the rejection region.</inline> </li>
-                        <li>Decision about the null: <inline class="solution">Reject \(H_0\) </inline>
-                        <p class="solution">Reason 1:  0.0061 < .01 or Reason 2: 2.5067 is in the rejection region </p>
-                      
+                        <li>p-value: <inline class="solution">0.9067</inline></li>
+                        <li>Rejection Criteria: Reject \(H_0\) if <inline class="solution">p value \(< \alpha\)  and the test statistic (t) is in the rejection region.</inline> </li>
+                        <li>Decision about the null: <inline class="solution">Fail to reject \(H_0\) </inline>
+                        <p class="solution">Reason 1:  0.9067 > .01   </p>
+                        <p class="solution">Reason 2: -0.1193 is not in the rejection region</p>
                         </li>
-                        <li>Concluding statement about the claim: <inline class="solution">There is sufficient evidence to support the claim more than 2.2% of the drug’s users experience flu like symptoms. </inline> </li>
+                        <li>Concluding statement about the claim: <inline class="solution">There is not sufficient evidence to reject the claim the true mean sugar content for all cereals is equal to 0.3g. </inline> </li>
                     </ol>
-                    <p class="solutioncollapse"><img src="images/u4s3p3bk.png" alt="One sample proportion summary hypothesis test: P: proportion of successes, H_O: p=0.022, H_A: p>0.022.
+                    <p class="solutioncollapse"><img src="images/u4s2p3bk.png" alt="One sample T summary hypothesis test: mu: mean of the population, H_O: mu = 0.3, H_A: mu does not equal 0.3.
                       Hypothesis Test results: 
-                      Proportion: p
-                      Count: 28
-                      Total: 800
-                      Sample Prop.: 0.035
-                      Std. Err.: 0.005186039
-                      z-Stat: 2.5067301
-                      p-value: 0.0061"></p>
-                    <p class="solutioncollapse"><img src="images/u4s3p3ck.png" alt="Graph of Standard Normal Distribution with z-stat=2.5067, and p-value: 0.0061.  The x-axis is labeled from -4 to 4 in intervals of 2.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The z-stat of 2.5067 is marked with a vertical line on the graph and the graphs is shaded to the end of the graph on the right."></p>
+                      Mean: mu
+                      Sample Mean: 0.295
+                      Std. Err.: 0.041925
+                      DF: 15
+                      T-Stat: -0.11926058
+                      p-value: 0.9067"></p>
+                    <p class="solutioncollapse"><img src="images/u4s2p3ck.png" alt="Graph of t-distribution with DF=15, T-stat=-0.1193, p-value: 0.9067. T calculator with the graph of a normal curve.  The x-axis is labeled from -4 to 4 in intervals of 2.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The area under the curve is shaded for all x values less than -0.1193 and greater than +0.1193."></p>
                 </li>
             </ol>
     </li>
-    <li>Determine the minimum sample size needed if you wish to estimate the proportion of community members who favor a tax increase for more local school funding. You want the margin of error to be &PlusMinus; 2 % at the 95% confidence level.
+    <p style="page-break-before: always"></p>
+    <li><b></b>Class Size: </b> You receive a brochure from a large university.  The brochure indicates that the mean class size for full-time faculty is fewer than 31 students.  You want to test this claim.  You randomly select 18 classes taught by full-time faculty and determine the class size of each.  The results are shown in the table below.  At a 0.01 significance level, can you support the university’s claim?
+        <style type="text/css">
+            .tg  {border-collapse:collapse;border-spacing:0;}
+            .tg td{font-family:Arial, sans-serif;font-size:20px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+            .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+            .tg .tg-zv4m{border-color:#ffffff;text-align:left;vertical-align:top}
+            </style>
+            <table class="tg" summary="Table of 18 Class Size data values in two rows with 9 values on each row.  The table has no headers.  It is simply 18 values housed in 18 cells.  You can use JAWS to hear the table but standard navigtion of identifying cell loction by header names will not be available">
+              <tr>
+                <td class="tg-zv4m">34</td>
+                <td class="tg-zv4m">26</td>
+                <td class="tg-zv4m">28</td>
+                <td class="tg-zv4m">33</td>
+                <td class="tg-zv4m">32</td>
+                <td class="tg-zv4m">37</td>
+                <td class="tg-zv4m">28</td>
+                <td class="tg-zv4m">25</td>
+                <td class="tg-zv4m">29</td>
+              </tr>
+              <tr>
+                <td class="tg-zv4m">26</td>
+                <td class="tg-zv4m">28</td>
+                <td class="tg-zv4m">37</td>
+                <td class="tg-zv4m">30</td>
+                <td class="tg-zv4m">31</td>
+                <td class="tg-zv4m">25</td>
+                <td class="tg-zv4m">29</td>
+                <td class="tg-zv4m">31</td>
+                <td class="tg-zv4m">28</td>
+              </tr>
+            </table>
+            
 
-    <p class="solution">The minimum sample size needed is 2401 participants.</p>
-   
-    <p class="solutioncollapse"><img src="images/u4s3p4k.png" alt="Graph of Standard Confidence Interval for a proportion. The x-axis is labeled from 0 to 3500 in intervals of 500.  The y-axis is labeled from 0 to 0.06 in intervals of 0.01.  The minimum sample size is marked on the graphed at 2401 when the width is 0.04. The confidence interval that is entered is 0.95, the entered width is 0.04, and the target population is 0.5."></p>
+            <inline class="solution"> Sample Statistics: \(\overline{x}=29.8333333 \quad s=3.666221 \quad n=18\)</inline>
 
-    </li>
-    <li>Suppose that it is known in the scenario in #4 that 35% of the community's population will favor a tax increase. What is the minimum sample size needed if the margin of error is &PlusMinus;2% at the 95% confidence level.
+            <br>
 
-      <p class="solution">The minimum sample size needed is 2185 participants.</p>
-
-      <p class="solutioncollapse"><img src="images/u4s3p5k.png" alt="Graph of Standard Confidence Interval for a proportion. The x-axis is labeled from 0 to 3000 in intervals of 500.  The y-axis is labeled from 0 to 0.06 in intervals of 0.01.  The minimum sample size is marked on the graphed at 2185 when the width is 0.04. The confidence interval that is entered is 0.95, the entered width is 0.04, and the target population is 0.35."></p>
-
+            <ol>
+                    <li>Design the Study
+                    <ol>
+                        <li>The original Claim: <inline class="solution"> \(\mu < 31\)</inline> </li>
+                        <li>\(H_0\): <inline class="solution"> \(\mu \geq 31\)</inline> assume \(H_0\): <inline class="solution">\(\mu = 31\)</inline> </li>
+                        <li>\(H_A\): <inline class="solution">\(\mu < 31\)</inline></li>
+                        <li>Type of Test: <inline class="solution">Left-tailed test</inline></li>
+                        <li>Level of Significance: <inline class="solution">\(\alpha =0.01\)</inline> </li>
+                        <li>Degrees of Freedom: <inline class="solution">\(18-1=17\)</inline> </li>
+                        <li>Critical Value(s):  <inline class="solution">\(t=-2.5669\) Determines shaded area(s)</inline></li>
+                    </ol>
+                    <p class="solution"><img src="images/u4s2p4ak.png" alt="T calculator with the graph of a normal curve.  The x-axis is labeled from -4 to 4 in intervals of 2.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The area under the curve is shaded for all x values less than -2.5669.  Under the graph, there is a box with df:17 and under that a box with P(x<=-2.566934)=.01"></p>
+                </li>
+                
+                    <li>Results
+            
+                        <ol>
+                            <li>Test Statistic: A standardized value based on the sample data, assuming the null is true.
+                                <p class="solution">  \(t =\frac{\overline{x}-\mu}{\left(\frac{s}{\sqrt{n}}\right)} = \frac{29.833333-31}{\left(\frac{3.66621}{\sqrt{18}}\right)}=-1.3501\)</p> 
+                            </li>
+                            <li>p-value: <inline class="solution">0.0973</inline></li>
+                            <li>Rejection Criteria: Reject \(H_0\) if <inline class="solution">p value \(< \alpha\)  and the test statistic (t) is in the rejection region.</inline> </li>
+                            <li>Decision about the null: <inline class="solution">Fail to reject \(H_0\) </inline>
+                            <p class="solution">Reason 1:  0.0973 > .01   </p>
+                            <p class="solution">Reason 2: -1.3051 is not in the rejection region</p>
+                            </li>
+                            <li>Concluding statement about the claim: <inline class="solution">There is not sufficient evidence to support the claim the mean class size for full time faculty is fewer than 31 students. </inline> </li>
+                        </ol>
+                        <p class="solutioncollapse"><img src="images/u4s2p4bk.png" alt="One sample T summary hypothesis test: mu: mean of the population, H_O: mu = 31, H_A: mu < 31.
+                          Hypothesis Test results: 
+                          Mean: mu
+                          Sample Mean: 29.833333
+                          Std. Err.: 0.86413658
+                          DF: 17
+                          T-Stat: -1.3500952
+                          p-value: 0.0973"></p>
+                        <p class="solutioncollapse"><img src="images/u4s2p4ck.png" alt="Graph of t-distribution with DF=17, T-stat=-1.3501, p-value: 0.0973. T calculator with the graph of a normal curve.  The x-axis is labeled from -4 to 4 in intervals of 2.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The area under the curve is shaded for all x values less than -1.3501."></p>
+                    </li>
+                </ol>
     </li>
 </ol>
+<p style="page-break-before: always"></p>
+<h3>Concluding Activity</h3>
+<h4>Goldfish Smile Hypothesis Testing</h4>
+
+<p><b>Claim: The proportion of all goldfish with smiles is "less than, equal to, or greater than" 50% (choose one)</b></p>
+
+<p>Your claim: _________________________</p>
+<p class="solution">One possible choice is to claim that p > .50. The solutions on the rest of the activity will be based on this claim. However, this is not what you are required to choose when you complete this in class. </p>
+
+<h4>Sample Data</h4>
+
+<p>Number of goldfish: n = _______________
+<inline class="solution">100</inline></p>
+
+<p> Number of SMILING goldfish: x = _______________
+<inline class="solution">35</inline> </p>
+
+<p>\( \hat{p} \) = _______________
+<inline class="solution">.35</inline> </p>
+
+<p>H<sub>0</sub>: _______________
+<inline class="solution">\( p \leq .50 \)</inline>
+<inline>assume H<sub>0</sub>: _______________</inline>
+<inline class="solution">p = .50</inline>
+</p>
+
+<p>H<sub>a</sub>: _______________
+<inline class="solution">\( p > 0.50</inline></p>
+
+<p> \( \alpha = .05\)</p>
+
+<h4>Test Statistic</h4>
+<p>z = General Formula = Specific Formula = Numeric Value</p>
+<p class="solution"> \( z = \frac{ \hat{p} - p}{\sqrt{\frac{pq}{n}}} = \frac{.35-.5}{ \sqrt{ \frac{(.5)(.5)}{100}}} = -3 \) </p>
+
+<p>p-value: _______________
+  <inline class="solution">.9987</inline>
+</p>
+
+<p>Rejection Criteria: Reject H<sub>0</sub> if _____________________________________________
+<inline class="solution">p-value < .05 z > 1.64</inline>
+</p>
+
+<p>Decision: __________________________________________________
+<inline class="solution">Fail to reject the null hypothesis</inline>
+
+</p>
+
+<p>Concluding Statement:</p>
+<p>_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+<p>______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________-</p>
+<p>______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+
+<p class="solution">There is not sufficient evidence to support the claim that the proportion of all goldfish with smiles is greater than 50%.</p>
+
+<p><b>Use the sample to construct a 95% confidence interval for the proportion of smiling goldfish.</b></p>
+
+<p>Best point esitmate: _______________
+  <inline class="solution">.35</inline>
+</p>
+
+
+<p>Find the margin of error E that corresponds to a 95% confidence level.
+  
+</p>
+
+<p>E = _______________
+<inline class="solution">.0935</inline></p>
+
+<p>Find the 95% confidence interval estimate of the population proportion p.
+  <inline class="solution"> \( .2565 \leq p \leq .4435 \)</inline>
+</p>
+
+<P>How does your confidence interval indicate the decision you should make about whether or not you should reject H<sub>0</sub>?
+</P>
+<p class="solution">.50 is within the confidence interval, so fail to reject H<sub>0</sub>.</p>
+<p style="page-break-before: always"></p>
+
+<h3>Comparing Hypothesis Testing for the Mean and Hypothesis Testing for a Proportion</h3>
+
+<style type="text/css">
+  .tg  {border-collapse:collapse;border-spacing:0;}
+  .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+  .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+  .tg .tg-0lax{text-align:left;vertical-align:top}
+  </style>
+  <table class="tg" summary="A table comparing one hypothesis test for the mean and one hypothesis test for a proportion. Column headers are Mean T-test and Proportion Z-test. Row headers are Question, Hypothesis, Critical values, Test Statistic, Sketch the graph, label test statitistic, critical value, shade rejection region, P-value, Decision, and Conclusion.">
+    <tr>
+      <th class="tg-0lax"></th>
+      <th class="tg-0lax" scope="col">Mean T-test</th>
+      <th class="tg-0lax" scope="col">Proportion Z-test</th>
+     
+    </tr>
+    <tr>
+      <th class="tg-0lax" scope="row">Question</th>
+      <td class="tg-0lax" >It is claimed that the average time it takes to eat an apple is less than 4 minutes. A random sample of 25 apple eaters takes an average of 3.8 minutes to eat an apple with a standard deviation of 2.1 minutes. Test the claim using a 0.05 significance level.</td>
+      <td class="tg-0lax" >It is claimed that more than 15% of sneakers that are sold attach with Velcro. A sample of 135 sneakers finds that 26 of them attache with Velcro. Thest the claim using a 0.10 significance level.</td>
+    </tr>
+    <tr>
+      <th class="tg-0lax" scope="row">Hypothesis</th>
+      <td class="tg-0lax">Claim:
+        <inline class="solution"> \( \mu < 4 \) </inline>
+        <p>H<sub>0</sub>:
+        <inline class="solution"> \( \mu \geq 4 \)</inline>
+        </p>
+        <p>H<sub>A</sub>:
+          <inline class="solution"> \( \mu < 4 \)</inline>
+        </p>
+      </td>
+      <td class="tg-0lax">Claim:
+        <inline class="solution"> \( p > .15 \)</inline>
+        <p>H<sub>0</sub>:
+        <inline class="solution"> \( p \leq .15 \)</inline>
+        </p>
+        <p>H<sub>A</sub>:
+          <inline class="solution"> \( p > .15 \)</inline>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <th class="tg-0lax" scope="row">Critical Value(s)</th>
+      <th class="tg-0lax" scope="row"><p class="solution">-1.71</p></th>
+      <th class="tg-0lax" scope="row"><p class="solution">1.28</p></th>
+    </tr>
+    <tr>
+      <th class="tg-0lax" scope="row">Test Statistic</th>
+      <th class="tg-0lax" scope="row"> \( t = \frac{\bar{x} - \mu}{ \frac{s}{ \sqrt{n}}} = \) 
+        <inline class="solution">-.48</inline>
+      </th>
+      <th class="tg-0lax" scope="row"> \( z = \frac{ \hat{p} - p}{ \sqrt{ \frac{pq}{n}}} = \) 
+        <inline  class="solution">1.39</inline>
+      </th>
+    </tr>
+    <tr>
+      <th class="tg-0lax" scope="row">Sketch the graph, label TS, CV, shade rejection region
+        
+      </th>
+      <th class="tg-0lax" scope="row">
+        <p class="solution"><img src="images/u4s3compare1k.png" alt="A standard normal distribution graph. The area under the curve is shaded to the left of the critical value, -1.71. A line is drawn to show the test statistic at -0.48. Becasue the test statistic is not in the shaded rejection region, we fail to reject the null hypothesis.  "></p>  </th>
+      <th class="tg-0lax" scope="row">
+        <p class="solution"><img src="images/u4s3compare2k.png" alt="A standard normal distribution graph. The area under the curve is shaded to the right of the critical value, 1.28. A line is drawn to show the test statistic at 1.39.  Since the test statistic is in the shaded rejection region, we reject the null hypothesis. "></p>  
+      </th>
+    </tr>
+
+    <tr>
+      <th class="tg-0lax" scope="row">P-Value</th>
+      <th class="tg-0lax" scope="row">  
+        <inline  class="solution">0.3191</inline>
+      </th>
+      <th class="tg-0lax" scope="row">  
+        <inline  class="solution">0.0829</inline>
+      </th>
+    </tr>
+
+    <tr>
+      <th class="tg-0lax" scope="row">Decision (circle one)</th>
+      <th class="tg-0lax" scope="row">Reject H<sub>0</sub>
+      <p>Fail to Reject H<sub>0</sub></p>
+      <p class="solution">Fail to reject H<sub>0</sub></p>
+      </th>
+      <th class="tg-0lax" scope="row">Reject H<sub>0</sub>
+        <p>Fail to Reject H<sub>0</sub></p>
+    <p class="solution">Reject H<sub>0</sub></p>  
+    </th>
+    </tr>
+
+    <tr>
+      <th class="tg-0lax" scope="row">  Conclusion</th>
+      <th class="tg-0lax" scope="row"><p class="solution">There is not sufficient evidence to support the claim that the mean time to eat an apple is less than 4 minutes.</p></th>
+      <th class="tg-0lax" scope="row">  <p class="solution">There is sufficient evidence to support the claim that more than 15% of sneakers attach with Velcro.</p></th>
+    </tr>
+
+  </table>
+
 
 
 
