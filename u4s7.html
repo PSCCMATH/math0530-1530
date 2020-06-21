@@ -130,9 +130,9 @@
      
      
      <h3>Correlation  </h3>
-     <br><br>
+     <br>
      <b>Correlation</b> is the relationship between 2 variables. 
-<br><br>
+<br>
 <p><img src="images/u4s4intro4.png" alt="image with 7 scatter plots all in first quadrant coordinate planes with correlation coefficients labeled underneath.  1st: dots are basically in a straight line sloping down from left to right. This graph is labeled -1 .  2nd: dots are still sloping down from left to right but they are more scattered than the 1st plot.  This graph is labeled -0.8 (weak negative correlation).  3rd:Random scattering of points but still largely decreasing from left to right--labeled -0.3.  4th: randomly scattered points with no clear direction--labeled 0.  5th: Random scattering of points but  largely increasing from left to right--labeled 0.3. 6th:  dots are still increasing from left to right but they are more linear than the previous graph.  This graph is labeled 0.8.  7th: The dots are basically in a straight line sloping up from left to right. This graph is labeled 1.  "></p>
 
 
@@ -142,24 +142,19 @@
 
 
 
-<h3>Linear Regression</h3>
+<h3>Linear Regression</h3>  <b>\(\hat y=b+mx\)</b>
 
 <br>
-<p>The regression equation expresses a relationship between x (the independent variable) and y (the dependent variable).</p>
-
-<br>
-            <p>\(\hat y=b+mx\)</p>
-          
+The regression equation expresses a relationship between x (the independent variable) and y (the dependent variable).</p>
 
 
-<br>
 
 
 
 
 <ol>
     <li><b>Cricket Chirping Frequency and Temperature:</b>  Load the chirping frequency data for the striped ground cricket at various ground temperatures.  Construct a scatterplot, and run a Regression and Correlation Test using α = 0.01.  Determine whether there is sufficient evidence to support a claim of a linear correlation between chirping frequency and ground temperature.
-    <br>
+    
    
      
 
@@ -167,32 +162,32 @@
             <li>The original claim:  <inline class="solution">\(\rho \neq 0\) There exists a linear correlation between chirping frequency and ground temperature.</inline> </li>
             <li>\(H_0\) : <inline class="solution">\(\rho = 0\) There is no linear correlation in the population	</inline></li>
             <li>\(H_A\) :<inline class="solution">\(\rho \neq 0\) There is some linear correlation in the population</inline></li>
-<br><br>
+<br>
 <p><b>The null and alternative hypotheses are the same for every regression test</b></p>
 <ul>
   <li>\(\rho = 0\) There is no linear correlation in the population</li>
   <li>\(\rho \neq 0\) There is some linear correlation in the population</li>
 </ul>
-<br><br>
+<br>
 
-            <li>Correlation Coefficient \(r\): (Stat ~ Regression ~ Simple Linear)<inline class="solution"> \(r = 0.8319\)	</inline> </li>
+            <li>Correlation Coefficient \(r\): (Stat ~ Regression ~ Simple Linear)<p class="solution"> \(r = 0.8319\)	</p> </li>
             <li>Pearson  Correlation Critical Values  <a href="u4fs.html" target="_blank"> (from chart):</a> <inline class="solution">\(r_{cv}= ±0.641\) 	</inline></li> 
-            <br><br>
+            <br>
             <p><img src="images/u4s4intro5.png" alt="image with 5 scatter plots all in first quadrant coordinate planes with correlation labeled underneath.  1st: dots are basically in a straight line sloping down from left to right--strong negative correlation .  2nd: Random scattering of points but still largely decreasing from left to right--weak negative correlation  3rd: randomly scattered points with no clear direction--no correlation.  4th: Random scattering of points but  largely increasing from left to right--weak positive correlation.   5th: The dots are basically in a straight line sloping up from left to right--strong positive correlation. 
               In the scatterplots with either weak or strong correlation, there is a line of best fit drawn on the graph.
               Underneath the 5 scatterplots is a number line from -1 to 1. The far left of the number line is labeled r=-1, r=0 is in the middle, and r=1 is on the far right of the number line.  There are shaded rectangles at each end of the graph designating the area between the ends of the number line and the critical values.  The critical values are also marked with dotted vertical lines that separate the strong correlations on each end from the weak and no correlation scatterplots in the middle."></p>
-              <br><br>
+              <br>
             <li>Decision: Reject the null hypothesis \(H_0\) if \(r\) is in the critical region.
              
            <br>
-        <br>
+      
       
     
             <li> p-value for slope: <inline class="solution">\(p=0.00012\)</inline>
               <p>
-                <br>
+               
             Reject the null hypothesis \(H_0\) if the p-value < \(\alpha\)</p></li>
-            <br>
+           
           
                     <li>Decision:<inline class="solution"> \(0.00012 < 0.01\) so  Reject \(H_0\)	</inline> </li>
              
@@ -211,7 +206,7 @@
       <inline class="solution">There is sufficient evidence to support the claim a linear correlation exists between chirping frequency of the Striped Ground Cricket and ground temperature.	</inline> </li>
 
 
-    <li>Regression Equation:  <inline class="solution">\(\hat{y}=26.30789+3.22393 x\)	</inline> </li>
+    <li>Regression Equation:  <p class="solution">\(\hat{y}=26.30789+3.22393 x\)	</p> </li>
     <li>Good predictor? <inline class="solution">Yes, rejected \(H_0\).	</inline></li>
 
     <ul>
