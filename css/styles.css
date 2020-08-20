@@ -166,6 +166,6 @@ table td {
             margin-left: 2.2em;
         }
     } */
- .solution, .answer{
+ .solution, .answer, .nav{
       visibility: hidden;
   }
