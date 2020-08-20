@@ -167,6 +167,6 @@ table td {
         }
     } */
 
-.solution, .answer, nav{
+.solution, .solutioncollapse, .answer, nav{
       visibility: hidden;
   }
