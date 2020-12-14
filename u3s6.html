@@ -69,18 +69,19 @@
           Unit 3 Normal Distributions and Confidence Intervals
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="u3fs.html" target="_blank">Unit 3 Formula Sheet</a> 
+          <a class="dropdown-item" href="u3fs.html" target="_blank">Unit 3 Formula Sheet</a> 
           <a class="dropdown-item" href="u3s1.html" target="_blank">3.1 Solving Proportions</a>
           
           <a class="dropdown-item" href="u3s2.html" target="_blank">3.2 Solving Equations</a>
           <a class="dropdown-item" href="u3s3.html" target="_blank">3.3 Ordering Numbers</a>
-          <a class="dropdown-item" href="u3s4.html" target="_blank">3.4 Empirical Rule and z-scores</a>
-          <a class="dropdown-item" href="u3s5.html" target="_blank">3.5 Normal Distribution</a>
+          <a class="dropdown-item" href="u3s4.html" target="_blank">3.4 Perimeter and Area</a>
+          <a class="dropdown-item" href="u3s5.html" target="_blank">3.5 Empirical Rule and z-scores</a>
+          <a class="dropdown-item" href="u3s6.html" target="_blank">3.6 Normal Distribution</a>
           
-          <a class="dropdown-item" href="u3s6.html" target="_blank">3.6 Central Limit Theorem</a>
+          <a class="dropdown-item" href="u3s7.html" target="_blank">3.7 Central Limit Theorem</a>
          
-          <a class="dropdown-item" href="u3s7.html" target="_blank">3.7 Confidence Intervals: Proportions</a>
-          <a class="dropdown-item" href="u3s8.html" target="_blank">3.8 Confidence Intervals: Means</a>
+          <a class="dropdown-item" href="u3s8.html" target="_blank">3.8 Confidence Intervals: Proportions</a>
+          <a class="dropdown-item" href="u3s9.html" target="_blank">3.9 Confidence Intervals: Means</a>
           <a class="dropdown-item" href="u3review.html" target="_blank">Unit 3 Review</a>
         
       
@@ -123,154 +124,209 @@
 
 
     <main>
-      <h2>3.6 Central Limit Theorem</h2>
+      <h2>3.5 Normal Distributions</h2>
 
+     <p> In the previous unit we studied discrete probability distributions, such as the distribution for the number of people in a family.</p>
+     <h3> The Normal Distribution is a continuous probability distribution with the following properties:</h3>
+        <ul>
+     <li>The mean, median and mode are equal.</li>
+     <li>The normal curve is bell shaped and is symmetric about the mean.</li>
+     <li>The total area underneath the curve is equal to 1.</li>
+     <li>The normal curve approaches, but never touches, the x-axis as it extends away from the mean.</li>
+     <li>Between z=-1 and z=1, the graph curves downward.  Everywhere else, the graph curves upward.</li>
+     <li>The probability that a random variable assumes a value between a and b is equal to the area under the curve bounded by a and b.</li>
+        </ul>
+
+
+
+<ol>
+
+<li>Identify the following variables/distributions as discrete or continuous:
+  <ol>
+<li>The weight of fire fighters in a large fire department
+  <p class="solution">Continuous</p>
+</li>
+<li>The number of heads tossed when tossing a coin 30 times
+  <p class="solution">Discrete</p>
+</li>
+  </ol>
+</li>
+
+<li>Estimate the standard deviation of the distribution:
+  <br>
+      <img src="images/u3s1p4a.png" alt="A graph of a normal curve. The mean is at the highest point on the curve. The horizontal axis is numbered from 4 to 10, counting by 2. The curve is almost at the horizontal axis at 6 and 8. The line that is drawn vertically to the top of the curve is at 7.">
+      <p class="solution">\(\sigma \approx 0.5\)</p>
+   
+</li>
+
+
+
+
+<p style="page-break-before: always"></p>
+
+<h3>Standard Normal Bell Curve 
+is a distribution of z scores with a mean of 0 and a standard deviation of 1.</h3>
+
+
+
+
+
+<li>If z = -2.17, what is area to the right of the z score?
+  <p>Mathematical Translation: \(P(z>-2.17)=\)
+          <inline class="solution">0.98499658</inline></p>  
+</li>
+
+
+
+<li>Recall that to join the Boston Beanstalks, women must have a height with a z-score of 1.48 and men must have a height with a 0.98 z-score.
+  <ol>
+    <li> Approximately what percentage of American men are tall enough to join the Boston Beanstalks?
+      <inline class="solution">approximately 16%</inline>
+  </li>
   
-      <p>ACT scores for high school seniors at a large school district are normally distributed with a mean of 22 and a standard deviation of 4.  Compare the two distribution curves given below.</p>
-      <p>Description of Curve A:  Every student is represented on the curve as an individual and the entire population is represented.</p>
-      <p>Description of Curve B:  Groups of 25 students are randomly selected from the population and the mean ACT of each group is represented on the curve.
+  <li>Approximately what percentage of American women are tall enough to join the club?
+      <inline  class="solution">approximately 10.5%</inline>
+  </li>
+  </ol>
+</li>
 
-      <p>  <img src="images/u3s1p3.png" alt="Curve A and Curve B are both normal curves. The horizontal axis represents the ACT scores and is numbered from 0 to 40, counting by 10. The vertical axis represents the number of students who earned each of the possible ACT scores. Curve A represents the graph of every student in the population and it is wide and short. It goeas from 10 to 36 with a mean of 22. Curve B represents the mean ACT score for each of the groups of 25 students. It is tal and narrow. It goes from about 18 to about 24, with a mean of 22. "></p>
+<br><br>
+<h3>The Normal bell curve is a distribution of individual x values which are measures for each member of a population.  The mean and standard deviation will vary for each population.</h3>
 
 
-        <br>
+<li>The distribution of IQ scores is normally distributed with a mean of 100 and a standard deviation of 15.  An Oregon couple claimed their two children were taken away from them because they scored too low on an IQ test.  She scored 72 and he scored 66.  Find the probability that a randomly selected IQ score will be below 73	
+  <p>\(\mu = \)
+  <inline class="solution">100</inline></p>
+  <p>\(\sigma = \)
+  <inline class="solution">15</inline></p>
+  <p class="solution">\(z_{73}=\frac{73-100}{15}=-1.8\)</inline></p>
+  <p class="solution">\(P(x \lt 73)=P(z \lt -1.8)=0.0359\)</p>
+    
+  <b>Writing your final statement:  </b>
+
+  <p>If one  __________ is randomly selected, the probability the/their __________ is
+          <b>lessthan/greaterthan/between</b>____________is approximately equal to ______.	
+          </p>
+  
+
+  <p class="solution">If one person’s IQ score is randomly selected, the probability their score is less than 73 is approximately equal to 0.0359 or 3.59%.</p>
+  </li>
+
+
+  <li>Are the IQ scores of the couple unusual? (Hint: Calculate z-score for each.)
+  <p class="solution">\(z_{72}=\frac{72-100}{15}=-1.87\)</p>
+  <p class="solution">\(z_{66}=\frac{66-100}{15}=-2.27\)</p>
+  <p class="solution">Her IQ is not unusual, but his is unusual.</p>
+</li>
+
+
+<li>To determine the average wait time at Taco Bell in the Miami area, 16 graduate students randomly selected 16 taco bell stores.  Each student visited a Taco Bell store at 12:15 pm and ordered a crunchy beef taco, a burrito supreme, and a soda.  The wait time to receive the meal was recorded for each restaurant.  The distribution is normal with a mean of 22.4 minutes and a standard deviation of 6.2 minutes.
+
+  <ol>
+  
+  <li>If one Taco Bell is randomly selected, what is the probability the wait time will be more than 20 minutes?
+    <p class="solution">\(z=\frac{20-22.4}{6.2}=-0.3871\)</p>
+    <p class="solution">\(P(x>20)=P(z>-0.3871)=.6506\)</p>
+    <p class="solution">If one Taco Bell is randomly selected, the probability the student's wait time was more than 20 minutes is approximately equal to 0.6506 or 65.06%.</p>
+  </li>
+  
+  <li>If one Taco Bell is randomly selected, what is the probability the wait time will be between 25 minutes and 35 minutes?
+    <p class="solution">\(z_{25}=\frac{25-22.4}{6.2} \approx 0.4194\)</p>
+    <p class="solution">\(z_{35}=\frac{35-22.4}{6.2} \approx 2.0322\)</p>
+    <p class="solution">\(P(25 \lt x \lt 35)=P(.419 \lt z \lt 2.0322)=.3164\)</p>
+    <p class="solution">If one Taco Bell is randomly selected, the probability the student's wait time was between 25 and 35 minutes is approximately equal to 0.3164 or 31.64%.</p>
+  </li>
+</ol>
+</li>
+
+
+
+<li>IQ scores are normally distributed with a mean of 100 and a standard deviation of 15. 
+
+    <ol>
+    
+    <li>What IQ score separates the bottom 20% from the top 80%?  
+        <p class="solution">20% cumulative area to the left</p>
+        <p class="solution">\(z=-0.84162\)</p>
+        <p class="solution">\(P_{20}=87.38\)</p>
+    <p class="solution"><img src="images/u3s3p1ak.png" alt="A normal curve with the mean of 100 at the highest point of the curve. The horizontal axis is labeled with 3 standard deviations to the left and to the right of the mean. The labels are 55, 70, 85, 100, 115, 130, and 145. In the left margin of the graph it is stated that p=.2, mean = 100 and standard deviation = 15. The calculated z value is -0.84162. The calculated x value is 87.38. The area under the curve is shaded to the left of the x value. "></p>
+    </li>
+    
+    <li>What IQ score separates the top 15% from the bottom 85%?  
+        <p class="solution">85% cumulative area to the left.</p>
+        <p class="solution">\(z=1.036433\)</p>
+        <p class="solution">\(P_{85}=115.55\)</p>
+        <p class="solution"><img src="images/u3s3p1bk.png" alt="A normal curve with the mean of 100 at the highest point of the curve. The horizontal axis is labeled with 3 standard deviations to the left and to the right of the mean. The labels are 55, 70, 85, 100, 115, 130, and 145. In the left margin of the graph it is stated that p=.85, mean = 100 and standard deviation = 15. The calculated z value is 1.036433. The calculated x value is 115.15. The area under the curve is shaded to the left of the x value."></p>
+    </li>
+    
+    </ol>    
+    
+    </li>
+
+
+    <li>Weights of a breed of dog are normally distributed with a mean of 73 lbs and a standard deviation of 8 lbs.
 
         <ol>
-
-            <li>Identify the mean of Curve A and the mean of Curve B.  What do you notice?
-                <p class="solution">\(\mu_{A}=22\)</p>
-                <p class="solution">\(\mu_{B}=22\)</p>
-                <p class="solution">Both curves have the same mean.</p>
-            </li>
-            
-            <li>Identify the standard deviation of Curve A and Curve B.  What do you notice?
-                <p class="solution">\(\sigma_{A}=4\)</p> 
-                <p class="solution">\(\sigma_{B}<4\)</p>
-                <p class="solution">The standard deviation for the distribution of sample means is less than the standard deviation of the population the samples were selected from.</p>
-            </li>
-            
-            <li>Give an explanation for your observations in the previous two questions. 
-            <p class="solution">The means are the same in the two curves because the mean of each sample will be close to the mean of the population.  The standard deviation for the distribution of sample means is less than the distribution of the population because an extreme value randomly selected from one of the tails of the population curve is averaged together with 24 other values to produce the mean of the sample.  Each sample mean will be close to the population mean and so the spread of sample means is less than the spread of individuals. </p>    
-            </li>
-
-
-
-<h3>The Central Limit Theorem:</h3>
-
-<ul>
-    <li>A distribution of sample means approaches a normal distribution.</li>
-    <li>Samples must be from a normally distributed population, or the sample size must be greater than 30 (n > 30).</li>
-    <li>The distribution of sample means has the same mean as the population.</li>
-    <li>The standard deviation for the distribution of sample means is always less than the standard deviation population.</li>
-    <li>The standard deviation for the distribution of sample means is \(\frac{\sigma}{\sqrt{n}}\).</li>
-</ul>
-
-
-<p><img src="images/u3s4intro.png" alt="Two normal curves on a graph. The horizontal axis is labeled Distributions of Individuals versus Means.  One curve is taller and skinner, and the other is shorter and wider. The short, wide curve is labeled distribution of individuals and includes the sigma symbol.  The tall, skinny curve is labeled normal distribution of sample means and includes the formula sigma sub x bar equals sigma divided by the square root of n. ">
-    <p style="page-break-before: always"></p></p>
-
-
-
-
-
-
-
-    <li>Birth weights in the United States have a distribution that is approximately normal with a mean of 3369g and a standard deviation of 567g (American Journal of Epidemiology).  
-   <ol>    
         
-<li>If one baby is randomly selected, find the probability that its birth weight is between 3360 grams and 3400 grams.
-    <p class="solution">\(P(3360\leq x\leq3400)=0.0281\) or 2.81%</p>
-</li>
-
-
-
-
-    <li>   If 25 babies are randomly selected, find the probability that their mean birth weight is between 3360g and 3400g.
-       
-<p>\(\mu = \)
-    <inline class="solution">3369</inline>
-    <inline>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\sigma = \)</inline>
-    <inline class="solution">\(\frac{567}{\sqrt{25}}=113.4\)</inline>
-    <inline class="solution">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(z_{3360}=\frac{3360-3369}{113.4} \approx-0.0794\)</inline>
-    <inline class="solution">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(z_{3400}=\frac{3400-3369}{113.4} \approx 0.2734\)</inline>
-</p>
-<p class="solution">\(P(3360 \lt x \lt 3400)=P(-0.08 \lt z \lt 0.27)=0.1393\)</p>
-<div class="row">
-        <div class="col-sm-6">
-<p class="solution"><img src="images/u3s4p2ak.png" alt="A normal curve labeled with the mean and 3 standard deviations to the left and 2 standard deviations to the right of the mean on the horizontal axis. They are: 3028.8, 3142.2, 3255.6, 3369, 3482.4, and 3595.8. The area under the curve is shaded between 3360 and 3400."></p>
-</div>
-<div class="col-sm-6">
-        <p class="solution"><img src="images/u3s4p2bk.png" alt="A standard normal curve labeled with the mean and 3 standard deviations to the left and to the right of the mean on the horizontal axis. They are: -3, -2, -1, 0, 1, 2, and 3. The area under the curve is shaded between -.08 and 0.27"></p>
-        </div>
-        </div>
-<p class="solution">If 25 babies are randomly selected, the probability their mean birth weight is between 3360g and 3400g  is approximately equal to 0.1393 or 13.93%.</p>
-</li>
-</ol>
-</li>
-
-
-
-
-
-
-
-<li>Pulse Rates of adult men are normally distributed with a mean of 73 bpm and a standard deviation of 8 bpm. 
-    <ol>
-        <li>If one man is randomly selected, find the probability that his pulse rate is less than 72.5 beats per minute.
-            <p class="solution">\(P( x < 72.5)=0.4751\) or 47.51%</p>
+        <li>What weight separates the smallest 60% of the dogs from the heavier 40%?  
+            <p class="solution">60% cumulative area to the left.</p>
+            <p class="solution">\(z=0.253347\)</p>
+            <p class="solution">\(P_{60}=75.03 \) lbs</p>
+            <p class="solution"><img src="images/u3s3p2ak.png" alt="A normal curve with the mean of 73 at the highest point of the curve. The horizontal axis is labeled with 3 standard deviations to the left and to the right of the mean. The labels are 49, 57, 65, 73, 81, 89, and 97. In the left margin of the graph it is stated that p=.6, mean = 73 and standard deviation = 8. The calculated z value is 0.253347. The calculated x value is 75.03 pounds. The area under the curve is shaded to the left of the x value."></p>
+        </li>
+        
+        <li>What weight separates the heavier 55% from the lightest 45%?  
+            <p class="solution">45% cumulative area to the left.</p>
+            <p class="solution">\(z=-0.125661\)</p>
+            <p class="solution">\(P_{45}=71.99\) lbs</p>
+            <p class="solution"><img src="images/u3s3p2bk.png" alt="A normal curve with the mean of 100 at the highest point of the curve. The horizontal axis is labeled with 3 standard deviations to the left and to the right of the mean. The labels are 49, 57, 65, 73, 81, 89, and 97. In the left margin of the graph it is stated that p=.45, mean = 73 and standard deviation = 8. The calculated z value is -0.125661. The calculated x value is 71.99 pounds. The area under the curve is shaded to the left of the x value."></p>
+        </li>
+        
+        </ol>
+        
         </li>
 
-     <li>  If 10 adult males are randomly selected, what is the probability their mean pulse rate will be less than 72.5 bpm.
-<p>\(\mu = \)
-    <inline class="solution">73 bpm</inline>
-    <inline>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\sigma = \)</inline>
-    <inline class="solution">\(\frac{8}{\sqrt{10}} \approx 2.53 \text{ bpm}\)</inline>
-    <inline class="solution">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(z_{72.5}=\frac{72.5-73}{\left(\frac{8}{\sqrt{10}}\right)} \approx-0.1976\)</inline>
-</p>
-<p class="solution">\(P(\overline{x} \lt 72.5)=P(z \lt -0.1976)=0.4217\)</p>
 
-<div class="row">
-        <div class="col-sm-6">
-<p class="solution"><img src="images/u3s4p3ak.png" alt="A normal curve labeled with the mean and 3 standard deviations to the left and to the right of the mean on the horizontal axis. They are: 65.41, 67.94, 70.47, 73, 75.53, 78.06, and 80.59. The area under the curve is shaded to the left of 72.5."></p>
-</div>
-<div class="col-sm-6">
-        <p class="solution"><img src="images/u3s4p3bk.png" alt="A standard normal curve labeled with the mean and 3 standard deviations to the left and to the right of the mean on the horizontal axis. They are: -3, -2, -1, 0, 1, 2, and 3. The area under the curve is shaded to the left of -0.1976."></p>
-        </div>
-        </div>
-<p class="solution">If 10 adult males are randomly selected, the probability their mean pulse rate is less than 72.5 bpm is approximately equal to 0.4217 or 42.17%.</p>
-</li> 
+
+        <p style="page-break-before: always"></p>
+
+
+<li>A manufacturer of bulbs for movie projectors finds that the lives of the bulbs are normally distributed with a mean of 61 hours and standard deviation of 6.3 hours.  The manufacturer will guarantee the bulbs so that only 3% will be replaced because of failure before the guaranteed number of hours.  For how many hours should the bulbs be guaranteed? 
+  <p class="solution">For the number of hours, the cumulative area from the left is equal to 0.03.  </p>
+
+  <p class="solution">\(z_{d}=-1.8808\)</p>
+  <p class="solution">\(d=61+(-1.8808)(6.3)=49.15\)</p>
+  <p class="solution">
+          The bulbs should be guaranteed for 49.15 hours.
+          </p>
+</li>
+
+
+
+<li>Pulse Rates of adults are normally distributed with a mean of 73 bpm and a standard deviation of 8 bpm.  According to one company’s health screening criteria, 8%of adults would be rejected because they have readings that are too high and 2% would be rejected because they have readings that are too low.  Find the two readings that are the cutoff values separating the rejected applicants from the others.
+  <p class="solution">\(z_{d_{MIN}}=-2.0537\)</p>
+  <p class="solution">\(d_{M I N}=73+(-2.0537)(8)=56.6 \) bpm </p>
+  <p class="solution">\(z_{d_{M A X}}=1.4051\)</p>
+  <p class="solution">\(d_{M A X}=73+(1.4051)(8)=84.2 \)bpm</p>
+  <p class="solution">The applicants with pulse rates between 56.6 bpm and 84.2 bpm will not be rejected on the basis of pulse rate.</p>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </ol>
-</li>
+ 
 
-
-
-
-<li>The mean amount of cash students at Pellissippi carry in their pocket is $15.00 and the standard deviation is $9.00.  If 40 students are randomly selected, what is the probability the mean amount of cash in their pocket is greater than $18.00?
-    <p>We can adjust the standard deviation and use the CLT because 
-        <inline class="solution">the sample size is greater than 30 and this is a distribution of means.</inline></p>
-<p>\(\mu = \)
-    <inline class="solution">15 dollars</inline>
-    <inline>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\sigma = \)</inline>
-    <inline class="solution">\(\frac{9}{\sqrt{40}} \approx 1.4\) dollars</inline>
-    <inline class="solution">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(z_{18.00}=\frac{18.00-15.00}{\left(\frac{9}{\sqrt{40}}\right)}=2.108185 \approx 2.11\)</inline>
-</p>
-<p class="solution">\(P(\overline{x}>18.00)=P(z>2.11)=0.0175\)</p>
-
-<div class="row">
-        <div class="col-sm-6">
-<p class="solution"><img src="images/u3s4p1ak.png" alt="A normal curve labeled with the mean and 3 standard deviations to the left and to the right of the mean on the horizontal axis. They are: 10.8, 12.2, 13.6, 15, 16.4, 17.8, and 19.2. The area under the curve is shaded to the right of 18."></p>
-</div>
-<div class="col-sm-6">
-        <p class="solution"><img src="images/u3s4p1bk.png" alt="A standard normal curve labeled with the mean and 3 standard deviations to the left and to the right of the mean on the horizontal axis. They are: -3, -2, -1, 0, 1, 2, and 3. The area under the curve is shaded to the right of 2.11"></p>
-        </div>
-        </div>
-<p class="solution">If 40 students are randomly selected, the probability their mean amount of cash in their pockets is greater than $18.00 is approximately equal to 0.0175 or 1.75%.</p>
-</li>
-
-
-
-
-        </ol>
+     
    </main>
 
 
