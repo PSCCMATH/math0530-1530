@@ -55,11 +55,11 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="u2fs.html" target="_blank">Unit 2 Formula Sheet</a>
-          <a class="dropdown-item" href="u2s1.html" target="_blank">2.1 Basic Probability and Counting</a>
-          <a class="dropdown-item" href="u2s2.html" target="_blank">2.2 Conditional Probability</a>
-          <a class="dropdown-item" href="u2s3.html" target="_blank">2.3 The Addition Rule</a>
-          <a class="dropdown-item" href="u2s4.html" target="_blank">2.4 Discrete Probability Distributions</a>
-          <a class="dropdown-item" href="u2s5.html" target="_blank">2.5 Binomial Distributions</a>
+          <a class="dropdown-item" href="u2s1.html" target="_blank">2.1 Basic Probability and the Addition Rule</a>
+          <a class="dropdown-item" href="u2s2.html" target="_blank">2.2 Conditional Probability and the Multiplication Rule</a>
+          <!-- <a class="dropdown-item" href="u2s3.html" target="_blank">2.3 The Addition Rule</a> -->
+          <a class="dropdown-item" href="u2s4.html" target="_blank">2.3 Discrete Probability Distributions</a>
+          <a class="dropdown-item" href="u2s5.html" target="_blank">2.4 Binomial Distributions</a>
           <a class="dropdown-item" href="u2review.html" target="_blank">Unit 2 Review</a>
       
         </div>
@@ -148,8 +148,8 @@
             <li>\(\frac{3}{4} \times \frac{2}{7}\)
               <p class="solution">\(\frac3{14}\)</p>
             </li>
-            <li>\(9 \times \frac{2}{3}\)
-              <p class="solution">\(6\)</p>
+            <li>\(\frac{18}{25} \times \frac{17}{24}\times \frac{16}{23}\)
+              <p class="solution">\(\frac{204}{575}\)</p>
             </li>
             <li>\(2 \frac{1}{2} \times 3 \frac{1}{4}\)
               <p class="solution">\(\frac{65}{8}\)</p>
@@ -324,13 +324,115 @@
   <li>is from Knox County?<inline class="solution">\(\frac{87,592}{113,845}= 0.7694\)</inline></li> 
    <li>recovered from COVID-19?<inline class="solution">\(\frac{107,565}{113,845}= 0.9448\)</inline></li>
   <li>is currently infected with COVID-19?<inline class="solution">\(\frac{4947}{113,845}= 0.0435\)</inline></li>
-  <li>lives in Blount County and is currently infected?<inline class="solution">\(\frac{921}{113,845}= 0.0081\)</inline></li>
+  <li>is a currently infected Blount County resident?<inline class="solution">\(\frac{921}{113,845}= 0.0081\)</inline></li>
   <li>is a Knox County resident who recovered from Covid-19? <inline class="solution">\(\frac{82,558}{113,845}= 0.7252\)</inline></li>
-  <li>recovered from Covid-19 given that they live in Knox County?<inline class="solution">\(\frac{82,558}{87,592}= 0.9425\)</inline></li>
+  <li>did not die from Covid?<inline class="solution"> &nbsp;\(1-\frac{1333}{113,845}= 0.9883\)</inline></li>
 </ol>
 
 </li>
 
+
+<h3>The Addition Rule:  Probability of Event A <b>OR</b> Event B occurring.</h3>
+<br>
+<p><b>\(P(A \text { or } B)=P(A)+P(B)-P(A \text { and } B)\)</b></p>
+
+<br>
+
+<h3>Using the Addition Rule with a Contingency Table</h3>
+
+<li>The following table gives the number of people with health insurance coverage in the U.S. in 2022.  Note that the numbers are in millions of people.  </p>
+
+<a href="https://www.census.gov/library/publications/2022/demo/p60-278.html" target="_blank">Source of data</a>
+
+<style type="text/css">
+  .tg  {border-collapse:collapse;border-spacing:0;}
+  .tg td{font-family:Arial, sans-serif;font-size:14px;padding:11px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+  .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:11px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+  .tg .tg-13pz{text-align:center;vertical-align:top}
+  </style>
+    <table summary="Number of people with various types of health insurance by age.  Column headers are type of insurance and total.  Row headers are age group and total." class="tg">
+      <tr>
+        <th scope="col" class="tg-13pz">(In millions)</th>
+        <th scope="col" class="tg-13pz">Private insurance</th>
+        <th scope="col" class="tg-13pz">Public Insurance</th>
+        <th scope="col" class="tg-13pz">Uninsured</th>
+        <th scope="col" class="tg-13pz">Total Number</th>
+      </tr>
+
+      <tr>
+        <th scope="row" class="tg-13pz">Children age 0-17</th>
+        <td class="tg-13pz">44.6</td>
+        <td class="tg-13pz">27.5</td>
+  
+        <td class="tg-13pz">4.1</td>
+        <td class="tg-13pz"><p class="solution">76.2</p></td>
+      </tr>
+      <tr>
+        <th scope="row" class="tg-13pz">Adults age 18-64</th>
+        <td class="tg-13pz">137.3</td>
+        <td class="tg-13pz">37.4</td>
+        <td class="tg-13pz">21.2</td>
+       
+        <td class="tg-13pz"><p class="solution">195.9</p></td>
+      </tr>
+     
+      <tr>
+        <th scope="row" class="tg-13pz">Adults age 65 and older</th>
+        <td class="tg-13pz">3.1</td>
+        <td class="tg-13pz">54.2</td>
+  
+        <td class="tg-13pz">0.6</td>
+        <td class="tg-13pz"><p class="solution">57.9</p></td>
+      </tr>
+      <tr>
+        <th scope="row" class="tg-13pz">Total Number</th>
+        <td class="tg-13pz"><p class="solution">185</p></td>
+        <td class="tg-13pz"><p class="solution">119.1</p></td>
+        <td class="tg-13pz"><p class="solution">25.9</p></td>
+        <td class="tg-13pz"><p class="solution">330</p></td>
+      </tr>
+    </table>
+<br><br>
+    <p>Find the probabilities if you randomly select one person:</p>
+
+    <ol>
+<li>P(Child) =  
+    <p class="solution">\(\frac{n(E)}{n(S)}=\frac{76.2}{330}=0.2309\)</p>
+</li>
+
+<li>P(Public Insurance) =  
+    <p class="solution">\(\frac{119.1}{330}=0.3609\)</p>
+</li>
+
+<li>P(Child with Public Insurance) =  
+    <p class="solution">\(\frac{27.5}{330}=.0833\) </p>
+   
+</li>
+
+<li>P(Child or Public Insurance) = 
+    <p class="solution">\(P(\text {child})+P(\text {public})-P(\text { child AND public})=\frac{76.2}{330}+\frac{119.1}{330}-\frac{27.5}{330}=\frac{167.8}{330}=0.5085\)</p>
+</li>
+
+
+
+
+<li>P(Public Insurance or Private Insurance) =  
+    <p class="solution"> These events are mutually exclusive.  \(\frac{119.1}{330}+\frac{185}{330}=\frac{304.1}{330}=0.9215\)</p>
+</li>
+
+<li>P(Adult Age 18-64 or Private Insurance) =  
+    <p class="solution">\(\frac{195.9}{330}+\frac{185}{330}-\frac{137.3}{330}=\frac{243.6}{330}=0.7382\)</p>
+</li>
+
+<li>P(Uninsured or not a Child) 
+    <p class="solution">\(P(\text {uninsured}) + P(\text {not a child}) - P(\text {uninsured AND not a child}) =\frac{25.9}{330}+\frac{195.9}{330}+\frac{57.9}{330}-\frac{21.2}{330}-\frac{0.6}{330}=\frac{257.9}{330}=0.7815\)</p>
+</li>
+
+
+
+    </ol>
+  </li>
+  </ol>
 
 <!-- <p style="page-break-before: always"></p>
 
@@ -369,7 +471,7 @@
 
 
 
-</ol>
+
 
    </main>
 

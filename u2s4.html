@@ -55,11 +55,11 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="u2fs.html" target="_blank">Unit 2 Formula Sheet</a>
-          <a class="dropdown-item" href="u2s1.html" target="_blank">2.1 Basic Probability and Counting</a>
-          <a class="dropdown-item" href="u2s2.html" target="_blank">2.2 Conditional Probability</a>
-          <a class="dropdown-item" href="u2s3.html" target="_blank">2.3 The Addition Rule</a>
-          <a class="dropdown-item" href="u2s4.html" target="_blank">2.4 Discrete Probability Distributions</a>
-          <a class="dropdown-item" href="u2s5.html" target="_blank">2.5 Binomial Distributions</a>
+          <a class="dropdown-item" href="u2s1.html" target="_blank">2.1 Basic Probability and the Addition Rule</a>
+          <a class="dropdown-item" href="u2s2.html" target="_blank">2.2 Conditional Probability and the Multiplication Rule</a>
+          <!-- <a class="dropdown-item" href="u2s3.html" target="_blank">2.3 The Addition Rule</a> -->
+          <a class="dropdown-item" href="u2s4.html" target="_blank">2.3 Discrete Probability Distributions</a>
+          <a class="dropdown-item" href="u2s5.html" target="_blank">2.4 Binomial Distributions</a>
           <a class="dropdown-item" href="u2review.html" target="_blank">Unit 2 Review</a>
       
         </div>
@@ -127,7 +127,7 @@
 
 
     <main>
-<h2>2.4 Discrete Probability Distributions</h2>
+<h2>2.3 Discrete Probability Distributions</h2>
   
 <h3>Translating Word to Symbols</h3>
 <br><br>
@@ -225,12 +225,18 @@ Human blood comes in different types. Each person has a specific ABO type (A, B,
 <li>What is the probability that a randomly chosen person has blood type A?</li>
 <p class="solution">\(P(A+\text { or } A-)=P(A+)+P(A-)=0.357+0.063=0.420\)</p>
 <p class="solution">Hence, roughly 42% of residents in the U.S. have ABO-type A blood.</p>
+
 <li>What is the probability that two randomly chosen U.S. residents both have type A blood?</li>
 <p class="solution">\(\text { P(Person 1 is type A and Person 2 is type A) = }(0.420)(0.420)=0.1764\)</p>
 <p class="solution">Hence, there is roughly an 18% chance that two randomly selected U.S. residents will both have type A blood. </p>
-<li>What is the probability that at least one of the two people does not have type A blood?</li>
-<p class="solution">\( \text {P(at least one not A)}=1-P(\text { both A } )=1-0.1764=0.8236\)</p>
-<p class="solution">Therefore, in random samples of size two, we expect at least one of the two people not to be type A about 82% of the time.</p>
+
+<li>What is the probability that two U.S. residents are randomly chosen and neither has Type A blood?
+  <p class="solution">\((0.58)(0.58)=0.3364\)</p>
+</li>
+
+<li>What is the probability that at least one of the two people has type A blood?</li>
+<p class="solution">\( \text {P(at least one has A)}=1-P(\text { neither A } )=1-0.3364=0.6636\)</p>
+
 </li>
 </ol>
 

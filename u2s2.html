@@ -55,11 +55,11 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="u2fs.html" target="_blank">Unit 2 Formula Sheet</a>
-          <a class="dropdown-item" href="u2s1.html" target="_blank">2.1 Basic Probability and Counting</a>
-          <a class="dropdown-item" href="u2s2.html" target="_blank">2.2 Conditional Probability</a>
-          <a class="dropdown-item" href="u2s3.html" target="_blank">2.3 The Addition Rule</a>
-          <a class="dropdown-item" href="u2s4.html" target="_blank">2.4 Discrete Probability Distributions</a>
-          <a class="dropdown-item" href="u2s5.html" target="_blank">2.5 Binomial Distributions</a>
+          <a class="dropdown-item" href="u2s1.html" target="_blank">2.1 Basic Probability and the Addition Rule</a>
+          <a class="dropdown-item" href="u2s2.html" target="_blank">2.2 Conditional Probability and the Multiplication Rule</a>
+          <!-- <a class="dropdown-item" href="u2s3.html" target="_blank">2.3 The Addition Rule</a> -->
+          <a class="dropdown-item" href="u2s4.html" target="_blank">2.3 Discrete Probability Distributions</a>
+          <a class="dropdown-item" href="u2s5.html" target="_blank">2.4 Binomial Distributions</a>
           <a class="dropdown-item" href="u2review.html" target="_blank">Unit 2 Review</a>
       
         </div>
@@ -183,7 +183,9 @@
 <li>If someone is diagnosed with hypertension, what is the probability they are a smoker?
     <p class="solution">P(smoker, given diagnosed with hypertension) = 48/74 = 0.6486 = 64.86%</p>
 </li>
-
+<li>Given that someone does not have hypertension, what is the probability they are not a smoker? 
+  <p class="solution">P(not a smoker, given do not have hypertension) = 50/74 = 25/37 = 0.6757 = 67.57%</p>
+</li>
 
 </ol>
 </li>
@@ -269,8 +271,15 @@
 
 <li>\(P(\text { Both Blue })\) without replacement
     <p class="solution">\(\left(\frac{183}{1673}\right)\left(\frac{182}{1672}\right)=0.011907\) dependent events</p>
+
+</li>
+<li>\(P(\text { Green then Red })\) with replacement
+  <p class="solution">\(\frac{287}{1673} \times \frac{311}{1673}=0.0319\) independent events</p>
 </li>
 
+<li>\(P(\text { Green then Red })\) without replacement
+  <p class="solution">\(\left(\frac{287}{1673}\right)\left(\frac{311}{1672}\right)=0.0319\) dependent events</p>
+</li>
 <li>\(P(\text { Both Orange Skittles })\) with replacement
     <p class="solution">\(\left(\frac{154}{1673}\right)\left(\frac{154}{1673}\right)=0.008473\) independent events</p>
 </li>
@@ -343,70 +352,53 @@
 </li>
 </ol>
 </li>
-<li>Randomly select 2 people:
+<li>Randomly select 2 different people:
 <ol>
-<li> P (Both 18-60 Years Old) with replacement 
-    <p class="solution">\(\frac{14}{100} \times \frac{14}{100}=.0196\)</p>
-</li>
 
-<li>P (Both 18-60 Years Old) without replacement 
+<li>P (Both 18-60 Years Old)
     <p class="solution">\(\frac{14}{100} \times \frac{13}{99}=.0184\)</p>
 </li>
 
-<li>P (Both Democrat) with replacement 
-    <p class="solution">\(\frac{48}{100} \times \frac{48}{100}=.2304\)</p>
-</li>
 
-<li>P (Both Democrat) without replacement 
+<li>P (Both Democrat) 
     <p class="solution">\(\frac{48}{100} \times \frac{47}{99}=.2279\)</p>
 </li>
 
-<li>P(Democrat then Republican) without replacement 
+<li>P(Democrat then Republican) 
     <p class="solution">\(\frac{48}{100} \times \frac{51}{99}=.2473\)</p>
 </li>
+</ol>
+</li>
 
-<li>P(Democrat then Republican) with replacement 
-    <p class="solution">\(\frac{48}{100} \times \frac{51}{100}=.2448\)</p>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-<!-- <li>Two cards are drawn from a deck of 52 cards. Determine the following probabilites. 
-  <img src="images/deckofcards.png" alt="Deck of playing cards.  From left to right Ace, 2,3,4,5,6,7,8,9,10, jack, queen, king.  From top to bottom spades, hearts, diamonds, clubs.">
-<ol>
-  <li>P(2nd card is a heart | the first is a spade) 
-    <p class="solution">\(13/51\)</p>
-  </li>
-  <li>P(2nd card is a jack | the first is a queen)
-    <p class="solution">\(4/51\)</p>
-  </li>
-  <li>P(the 2nd card is a face card | the first card is the queen of hearts)
-    <p class="solution">\(11/51\)</p>
-  </li>
-</ol>
-  
-</li> -->
-<!-- <li><b>Example with Scientific Notation:</b>
+
+<li> Randomly select 3 different people
   <ol>
-<li>You have 20,000 CD’s in a warehouse.  2% are defective.  You choose 3 CD’s from the 20,000. 
-<p class="solution">.02(20000) = 400; 2% of the 20000 are defective</li>
+    <li>P(none over 60 years old)
+      <p class="solution">\(\frac{14}{100} \times \frac{13}{99} \times \frac{12}{98}=0.0023\)</p>
+    </li>
+    <li>P(at least one over 60 years old)
+      <p class="solution">\(1-0.0023=0.9977\)</p>
+    </li>
+    <li>P(no Republicans)
+      <p class="solution">\(\frac{49}{100} \times \frac{48}{99} \times \frac{47}{98}=0.1139\)</p>
+    </li>
+  </ol>
 
-<li>P (3 CD’s are defective) with replacement = 
-<p class="solution">\(\frac{400}{20000} \times \frac{400}{20000} \times \frac{400}{20000}=8 E-6=8 \times 10^{-6}=.000008\)</p>
-
-<p class="solution">Another notation when you have an independent multiplication probability: \((.02)^3 = 0.000008\)</li>
-
-<li>P (3 CD’s are defective) without replacement = 
-<p class="solution">\(\frac{400}{20000} \times \frac{399}{19999} \times \frac{398}{19998}=7.94 \times 10^{-6}=0.00000794\)</p>
 </li>
+
+
 </ol>
-</li> -->
-</ol>
+</li>
+
+
+
 
 <p><b>The 5% Guideline for Cumbersome Calculations:</b> If a sample size is no more than 5% of the size of the population, treat the selections as being independent (even if the selections are made without replacement, so they are technically dependent).  </p>
 
+<li>As of 2022, 29% of households in the United States own cats.  If you pick two households at random, what is the probability they both own a cat?
+  <p class="solution">\((0.29)(0.29)=0.0841)\)</p>
 
+</li>
 
 </ol>  
    </main>
