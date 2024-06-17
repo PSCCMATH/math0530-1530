@@ -128,249 +128,257 @@
 
 
     <main>
-<h2>2.4 Binomial Probability Distributions</h2>
+        <h2>2.5 Empirical Rule</h2>
+       
+        <h3>Calculating z-scores</h3>
+        <br>
+        <p>What is a z-score?</p> <inline class="solution">the number of standard deviations a given value of x is above or below the mean. </inline> 
+        
+       <!-- <p><strong>Sample:</strong>  &nbsp; \(z=\frac{x-\overline{x}}{s}\)</p> -->
+       <br><br>
+       <p>What is the formula for calculating the z-score within a normally distributed population? </p>
+       <inline class="solution">  \(Z=\frac{x-\mu}{\sigma}\)</inline>
   
-
-
-
-
-
-<p><b>Binomial Probability Distributions result from a procedure that meets all the following requirements:</b></p>
-
-<ul>
-<li>The procedure has a FIXED number of trials</li>
-<li>The trials are INDEPENDENT <i>(the outcome of any individual trial does not affect the probabilities in the other trials.)</i></li>
-<li>All trial outcomes can be classified into TWO CATEGORIES (success and failure).</li>
-<li>The probability of success REMAINS THE SAME throughout the trials.</li>
-</ul>
-
-<br><br>
-
-
-<ol>
-
-
-  <li>In a region, 80% of the population has red hair.  If 30 people are randomly selected, find the following probabilities for red hair and identify the unusual events. Use a significance level of 0.05.
-<br>
-<br>
+        <ol>
+          
+       
    
-    
-    <style type="text/css">
-      .tg  {border-collapse:collapse;border-spacing:0;}
-      .tg td{font-family:Arial, sans-serif;font-size:14px;padding:11px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-      .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:11px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-      .tg .tg-13pz{text-align:center;vertical-align:center}
-      </style>
-      <table summary="Probabilities of various numbers of people of a group having red hair.  Column headers are words, statement, probability, and unusual.  Row headers are events." class="tg">
-        <tr>
-          <th scope="col" class="tg-13pz">Words</th>
-          <th scope="col" class="tg-13pz">Probability Statement</th>
-          <th scope="col" class="tg-13pz">Calculated Probability</th>
-          <th scope="col" class="tg-13pz">Unusual (Yes or No)</th>
-        </tr>
-        <tr>
-          <th scope="row" class="tg-13pz">Probability of at least 27 out of 30</th>
-          <td class="tg-13pz"><p class="solution">\(P(x \geq 27)\)</p></td>
-          <td class="tg-13pz"><p class="solution">.1227</p></td>
-          <td class="tg-13pz"><p class="solution">no</p></td>
-        </tr>
-        <tr>
-          <th scope="row"  class="tg-13pz">Probability of less than 25 out of 30</th>
-          <td class="tg-13pz"><p class="solution">\(P(x&lt;25)\)</p></td>
-          <td class="tg-13pz"><p class="solution">.5725</p></td>
-          <td class="tg-13pz"><p class="solution">no</p></td>
-        </tr>
-        <tr>
-          <th scope="row"  class="tg-13pz">Probability of no more than 18 out of 30</th>
-          <td class="tg-13pz"><p class="solution">\(P(x \leq 18)\)</p></td>
-          <td class="tg-13pz"><p class="solution">.0095</p></td>
-          <td class="tg-13pz"><p class="solution">yes</p></td>
-        </tr>
-        <tr>
-          <th scope="row"  class="tg-13pz">Probability of more than 21 out of 30</th>
-          <td class="tg-13pz"><p class="solution">\(P(x>21)\)</p></td>
-          <td class="tg-13pz"><p class="solution">.8713</p></td>
-          <td class="tg-13pz"><p class="solution">no</p></td>
-        </tr>
-        <tr>
-          <th scope="row"  class="tg-13pz">Probability of at least 26 out of 30</th>
-          <td class="tg-13pz"><p class="solution">\(P(x \geq 26)\)</p></td>
-          <td class="tg-13pz"><p class="solution">.2552</p></td>
-          <td class="tg-13pz"><p class="solution">no</p></td>
-        </tr>
-        <tr>
-          <th scope="row"  class="tg-13pz">Probability of 16 out of 30</th>
-          <td class="tg-13pz"><p class="solution">\(P(x=16)\)</p></td>
-          <td class="tg-13pz"><p class="solution">.0007</p></td>
-          <td class="tg-13pz"><p class="solution">yes</p></td>
-        </tr>
-        <tr>
-          <th scope="row"  class="tg-13pz">Probability of less than 4 out of 30</th>
-          <td class="tg-13pz"><p class="solution">\(P(x&lt;4)\)</p></td>
-          <td class="tg-13pz"><p class="solution">.0000<sup>+</sup></p></td>
-          <td class="tg-13pz"><p class="solution">yes</p></td>
-        </tr>
-      </table>
-    
-    </li>
-<br>
+           <li><strong>Compare the following z-scores and interpret the results.</strong>  The mean ACT score at Lincoln High School is 24 with a standard deviation of 4.  The mean SAT score is 1100 with a standard deviation of 80.  If Alice scores 32 on the ACT and Bob scores 1200 on the SAT, which has a better score, relative to the sample data?
+          <ol>
+            <li> Alice's score on the ACT
+              <ol>
+                <li>Alice's z-score:
+                    <p> \(\mu=24 ; \quad \sigma=4 ;\quad  x=32 ;\quad  Z=\frac{x-\mu}{\sigma}\)</p>
+                    <p class="solution"> \(Z_{32}=\frac{32-24}{4}=2.00\)</p>
+                   </li>
+                <li>What does this z score mean (in words)?
+                    <p class="solution"> Alice’s ACT score of 32 is 2 standard.deviations above the population mean of 24.</p>
+                </li>
+                <li>Sketch a bell curve and mark the score on the curve
+                    <p class="solution"><img src="images/u1s8p4ak.png" alt="A bell curve with a mean of 0.    Three standard deviations above and below the mean are also marked   Alice's z-score of 2 is marked with a the area below shaded in red under the curve. ">  </p>
+                </li>
+              </ol>
+            </li>
+     
 
 
 
-
-<p style="page-break-before: always"></p>
-
-<li>In 2017, 92% of American children were vaccinated against measles. <a href="https://data.worldbank.org/indicator/sh.imm.meas" target="blank"> https://data.worldbank.org/indicator/sh.imm.meas</a> 
+            <li> Bob's score on the SAT
+              <ol>
+                
+                <li>Bob's z-score: <p class="solution"></p>\(\mu=1100 ; \quad \sigma=80 ; \quad x=1200\)<p>
+                    <p class="solution"> \(Z_{1200}=\frac{1200-1100}{80}=1.25\)</p>
+                </li>
+                <li>What does this z score mean (in words)?
+                    <p class="solution">  Bob’s SAT score of 1200 is 1.25 standard deviations above the population mean of 1100.</p>
+                </li>
+                <li>Sketch a bell curve and mark the score on the curve
+                    <p class="solution"><img src="images/u1s8p4bk.png" alt="A bell curve with a mean of 0.  Three standard deviations above and below the mean are also marked   Bob's z-score of 1.25 is marked with a vertical line that is 1.25 standard deviations above the mean and the area under the curve is shaded red below 1.25. ">  </p>
+                </li>
+              </ol>
+            </li>
+            <li>Relative to other students in the population, which score is better?
+                <p class="solution"> Alice’s relative score is better. She is 2 standard deviations above the mean. Bob’s score is only 1.25 standard deviations above the mean.</p> </li>
+          </ol>      
+          </li>
   
-  <p>A health worker wants to gather some data to see if the vaccination rate may have changed recently.  She randomly selects 30 children for her study.</p>
-  
-  <p>n = <inline class="solution">30</inline></p> 
-  <p>p = <inline class="solution">.92</inline></p> 
-  <p>q = <inline class="solution">.08</inline></p>
-  
-  <ol>
-  
-  <li>Find the probability that <b><u>all</u></b> of the children are vaccinated.
-    <inline class="solution">\(P(x=30)=.082\)</inline>
-  </li>
-  
-  <li>Find the probability that exactly <b><u>half</u></b> of the children are vaccinated.
-    <inline class="solution">\(P(x=15)=.00000000156\)</inline>
-  </li>
-  
-  <li>Find the probability that <b><u>at least half</u></b> of the children are vaccinated.
-    <inline class="solution">\(P(x \geq 15) \approx 1\)</inline>
-  </li>
-  
-  <li>Find the probability that <b><u>at most 25</u></b> of the children are vaccinated.
-  <inline class="solution">\(P(x \leq 25)=.087\)</inline>
-  </li>
-  <li>Find the probability that between 25 and 30 children, inclusive, are vaccinated.
-      <inline class="solution">\(P(25 \leq x \leq 30)=.9707\)</inline>
-  </li>
-  <li>Find the probability that between 25 and 30 children are vaccinated.
-      <inline class="solution">\(P(26 \leq x \leq 29)=.8307\)</inline>
-  </li>
-  <li>If at most 25 of the children are vaccinated, does it appear that the 92% vaccination rate is wrong?<p class="solution">\(.087>.05\)</p>  
-  <p class="solution">Not unusual, so probably not wrong.</p>
-  </li>
-  
-  <li>Would 24 children out of the 30 being vaccinated be unusual? Why or why not?
-  <p class="solution">Yes, it is unusual.</p>
-  <p class="solution">\(P(x=24)=.021\)</p>
-  <p class="solution">\(.021<.05\)</p>
-  </li>
-  
-  </ol>
-  
-  </li>
+          <p style="page-break-before: always"></p>
 
 
+          <h3><strong>The Empirical Rule for Bell Shaped Distributions</strong></h3>
+          <p>In a bell-shaped distribution of data:</p>
+          <br>
+          <p>What percent of the values fall within 1 standard deviation of the mean?
+            <inline class="solution">68%</inline>
+          </p>
+          <br>
+        
+          <p>What percent of the values fall within 2 standard deviations of the mean?  <inline class="solution">95%</inline></p>
+          <br>
+          <p>What percent of the values fall within 3 standard deviations of the mean?  <inline class="solution">99.7%</inline></p>
+          <br>
+          <p>Label the percentages on the bell-shaped distribution:</p>
+          <br>
+          <img src="images/empiricalruleblank.png" alt="A picture of a bell shaped curve. The mean is at the highest point of the curve, the top of the bell with 0 labeled underneath.  Three standard deviations below the mean are marked to the left with -3, -2, -1 and three standard deviations above the mean are marked to the right with 1, 2, 3. ">
+          <!-- <p><b>ABOUT 68% </b> of all the values fall within <b>1 standard deviation of the mean. &nbsp;<font color="red">\(\mu \pm \sigma \)</font></b></p>
+      
+          <p><b>ABOUT 95%</b> of all the values fall within <b>2 standard deviations</b> of the mean. <i> &nbsp;(the other 5% are unusual)</i>&nbsp;<font color="red">\(\mu \pm 2 \sigma\)</font></p>
+      
+          <p><b>ABOUT 99.7%</b> of all the values fall within <b>3 standard deviations</b> of the mean. &nbsp; <font color="red">\(\mu \pm 3 \sigma\)</font></p> -->
+      
+          <p class="solution"><img src="images/u1s7emprule.png" alt="A picture of a bell shaped curve. The mean is at the highest point of the curve, the top of the bell. 34% of the area under the curve is one standard deviation to the left of the mean and one standard deviation to the right of the mean. One standard deviation to the left of the mean is labeled mu minus sigma. One standard deviation to the right of the mean is labeled mu plus sigma. 13.5% of the area under the curve is between one standard deviation and two standard deviations to the left of the mean and to the right of the mean. Two standard deviations are labeled mu minus two times sigma and mu plus two times sigma. 2.35% of the area under the curve is between two standard deviations and three standard deviations to the left of the mean and to the right of the mean. Three standard deviations from the mean are labeled mu minus three times sigma and mu plus three times sigma. 0.15% of the area under the curve is more than three standard deviations from the mean. Usual data is between two standard deviations to the left of the mean and two standard deviations to the right of the mean. Unusual data is more than two standard deviations from the mean. "></p>
+      
+          <!-- <p><font color="red">Using ACT scores an example, assume \(\mu=24 \text { and } \sigma=4\)</font></p>
+      
+          <p><font color="red">Maximum usual value \(=\mu+2 \sigma=24+2(4)=32\)</font></p>
+      
+          <p><font color="red">Minimum usual value \(=\mu-2 \sigma=24-2(4)=16\)</font></p> -->
+         
+          <li>
+      
+             <b>IQ SCORES: </b>IQ scores have a bell-shaped distribution with a mean of 100 (<font color="red">\(\mu = 100\)</font>) and a standard deviation of 15 (<font color="red">\(\sigma = 15\)</font>). What percentage of IQ scores are:
+             <br>
+             <img src="images/u1s7p9.png" alt="A picture of a bell shaped curve. The mean is at the highest point of the curve, the top of the bell.  34% of the area under the curve is one standard deviation to the left of the mean and one standard deviation to the right of the mean.  13.5% of the area under the curve is between one standard deviation and two standard deviations to the left of the mean and to the right of the mean.  2.35% of the area under the curve is between two standard deviations and three standard deviations to the left of the mean and to the right of the mean.  0.15% of the area under the curve is more than three standard deviations from the mean."> 
+          
+             <ol>
+                 <li><b>Between</b> 70 and 130?
+              <inline class="solution">\(13.5+34+34+13.5=95 \%\)</inline>
+      
+      
+              </li>
+      <li><b>Below</b> 115?
+      <inline class="solution">\(0.15+2.35+13.5+34+34=84 \%\)</inline>
+      </li>
+      
+      <li><b>Above</b> 70?
+          <inline class="solution">\(13.5+34+34+13.5+2.35+0.15=97.5 \%\)</inline>
+      
+      </li>
+      
+      <li><b>Between</b> 85 and 130?
+          <inline class="solution">\(34+34+13.5=81.5 \%\)</inline>
+      
+      </li>
 
-
-  <p style="page-break-before: always"></p>
-
-  <!-- <li>A quiz has two multiple choice questions each with four answer choices.  
-    <ol>
-   <li> Create a probability distribution table for the number of correct answers if a student randomly selects answers.
-  
-  <p>n = <inline class="solution">2</inline></p>
-  <p>p = <inline class="solution">\(\frac{1}{4}=.25\)</inline></p> 
-  <p>q = <inline class="solution">\(\frac{3}{4}=.75\)</inline> 
-    <p>x = number correct</p>
-  
-  <style type="text/css">
-    .tg  {border-collapse:collapse;border-spacing:0;}
-    .tg td{font-family:Arial, sans-serif;font-size:14px;padding:11px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-    .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:11px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-    .tg .tg-13pz{text-align:center;vertical-align:center}
-    </style>
-      <table summary="Table of x values and associated probabilities.  Column headers are x and P(x).  Row headers are x-values" class="tg">
-        <tr>
-          <th scope="col" class="tg-13pz">x values</th>
-          <th scope="cols" class="tg-13pz">Probability P(x)</th>
-        </tr>
-        <tr>
-          <th scope="row" class="tg-13pz">0</th>
-          <td class="tg-13pz"><p class="solution">.5625</p></td>
-        </tr>
-        <tr>
-          <th scope="row" class="tg-13pz">1</th>
-          <td class="tg-13pz"><p class="solution">.375</p></td>
-        </tr>
-        <tr>
-          <th scope="row" class="tg-13pz">2</th>
-          <td class="tg-13pz"><p class="solution">.0625</p></td>
-        </tr>
-      </table>
-  
-    </li>
-  
-  <li>What is the probability you get NO MORE THAN 1 correct?  <inline class="solution">\(P(x \leq 1)=.9375\)</inline>
-  </li>
-  
-  <li>What is the probability you get AT LEAST 1 correct?<inline class="solution">\(P(x \geq 1)=.4375\)</inline>
-  </li>
-  
-  </ol>
-  
-  </li>
-   -->
-  <br><br>
-  <li>McDonald’s has a 95% recognition rate.  A special focus group consists of 12 randomly selected adults.  
-
-    <ol>
-    
-    <li>For such a group, find the mean, variance, and standard deviation.
-    <p><b>Mean: </b>\(\mu=n \cdot p\) <inline class="solution">\(=12 \cdot(0.95)=11.4\)</inline></p>
-    
-    <p><b>Variance: </b>\(\sigma^{2}=n \cdot p \cdot q\) <inline class="solution">\(=(12)(0.95)(0.05)=0.57\)</inline></p>
-    
-    <p><b>Standard Deviation: </b>\(\sigma=\sqrt{\text { variance }}\) <inline class="solution">\(= \sqrt{0.57} \approx 0.75498\)</inline></p>
-    
-    </li>
-    
-    <li>Use the range rule of thumb to find the minimum and maximum usual number of people who would recognize McDonald’s.
-      <p>Minimum: \(\mu-2 \sigma = \) <inline class="solution">\(11.4-2(.755)=9.89\)</inline></p>
-      <p>Maximum: \(\mu+2 \sigma=\) <inline class="solution">\(11.4+2(.755)=12.91\)</inline></p>
-    <p class="solution">According to the range rule of thumb, it would not be unusual for 10, 11 or 12 people out 12 to recognize McDonalds.  It would be unusual for 9 or fewer out of 12.</p>
-    </li>
-    
-    </ol>
+      <li><b>Below</b> 145?
+        <inline class="solution">\(0.15+2.35+1.35+34+34+13.5+2.35=99.85 \%\)</inline>
     
     </li>
 
+      
+      <li><b>Usual Values</b> are between <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> and <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>.   <inline class="solution">\(70 \text { and } 130\)</inline></li>
+        <li><b>Unusual Values</b> are below <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> or above <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>.  <inline class="solution">\(70 \text { and } 130\)</inline>  </li>
+       <p> An unusual event has less than a 5% chance of occurring.  Events that fall more than two standard deviations away from the mean are considered unusual.</p>
+         <p>Give the formulas for the following:</p>
+      <p>Mimimum usual value:</p><inline class="solution"> \(\mu-2 \sigma=100-2(15)=70\)</inline>
+      <p>Maximum usual value: </p><inline class="solution">\(\mu+2 \sigma=100+2(15)=130\)</inline>
+     
+             </ol>
+          </li>
+     
+          
 
 
-    
-    <li>Suppose that Bayanisthol, a new drug, is effective for 65% of the participants in clinical trials. If a group of fifteen patients take this new drug,
-    
-    <ol>
-    
-    <li>What is the expected number of patients for whom the drug will be effective?
-    <inline class="solution">We expect the mean.</inline>
-    <inline class="solution">Expected number = mean = \(\mu=n \cdot p=15 \cdot(0.65)=9.75\)</inline>
-    <p class="solution">We would expect 9.75 patients to have positive effects.</p>
-    </li>
-    
-    <li>What is the probability that the drug will be effective for less than half of them?
-      <inline class="solution">n=15, p=0.65  </inline>
-      <p class="solution">\(P(7 \text { or fewer })=P(x \leq 7)=0.11323\)</p>
-    </li>
-    
-    </ol>
-    
-    </li>
+          <li><b>Sketchy Milk Company:</b>  A dairy fills gallons of milk with a mean of 125.0 fluid ounces and a standard deviation of 0.3 fluid ounces.  The volumes have a bell-shaped distribution.  Using the empirical rule, what is the approximate percentage of milk amounts:
+            <img src="images/u1s7p9.png" alt="A picture of a bell shaped curve. The mean is at the highest point of the curve, the top of the bell.  34% of the area under the curve is one standard deviation to the left of the mean and one standard deviation to the right of the mean.  13.5% of the area under the curve is between one standard deviation and two standard deviations to the left of the mean and to the right of the mean.  2.35% of the area under the curve is between two standard deviations and three standard deviations to the left of the mean and to the right of the mean.  0.15% of the area under the curve is more than three standard deviations from the mean."> 
+            <p class="solution">
+              <img src="images/u1s7p10.png" alt="A picture of a bell shaped curve. The mean is at the highest point of the curve, the top of the bell. The mean is 125.0. 34% of the area under the curve is one standard deviation to the left of the mean and one standard deviation to the right of the mean. One standard deviation to the left of the mean is 124.7. One standard deviation to the right of the mean is 125.3. 13.5% of the area under the curve is between one standard deviation and two standard deviations to the left of the mean and to the right of the mean. Two standard deviations to the left of the mean is 124.4 and two standard deviations to the right of the mean is 125.6. 2.35% of the area under the curve is between two standard deviations and three standard deviations to the left of the mean and to the right of the mean. Three standard deviations to the left of the mean is 124.1 and three standard deviations to the right of the mean is 125.9. 0.15% of the area under the curve is more than three standard deviations from the mean.">  
+            </p>
+              <ol>
+      <li><b>Between</b> 124.4 fluid ounces and 125.6 fluid ounces?
+      <inline class="solution">\(13.5+34+34+13.5=95 \%\)</inline>
+      </li>
+      
+      <li><b>Below</b> 124.7 fluid ounces?
+      <inline class="solution">\(0.15+2.35+13.5=16 \%\)</inline>
+      </li>
+      
+      <li><b>Above</b> 124.7 fluid ounces?
+      <inline class="solution">\(34+34+13.5+2.35+0.15=84 \%\)</inline>
+      </li>
+      
+      <li><b>Between</b> 125.0 fluid ounces and 125.9 fluid ounces?
+      <inline class="solution">\(34+13.5+2.35=49.85 \%\)</inline>
+      </li>
+      
+      <li><b>Usual values</b> are between <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> and <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>?
+      <inline class="solution">\(124.4 \text { and } 125.6\)</inline>
+      
+      <p class="solution">Minimum usual value: \(\mu-2 \sigma=125.0-2(0.3)=124.4\) fluid ounces</p>
+      
+      <p class="solution">Maximum usual value: \(\mu+2 \sigma=125.0+2(0.3)=125.6\) fluid ounces</p>
+      </li>
+      <li><b>Unusual Values</b> are below <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> or above <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>.  <inline class="solution">\(124.4 \text { and } 125.6\)</inline>  </li>
+              </ol>
+          
+          </li>
 
+  <li>Giraffes have a mean height of 18 feet with a standard deviation of 0.8 feet.  African elephants have a mean height of 10.6 feet with a standard deviation of 1.2 feet.
+<ol>
+  <li>Calculate the z-score for a giraffe that is 15 feet tall.  
+    <p class="solution">\(z=\frac{15-18}{0.8}=-3.75\)</p>
+  </li>
+ 
+  <li> What does this z-score tell you about the height of a 15-foot giraffe?  
+    <p class="solution">It is unusually short. The height is 3.75 standard deviations below the mean.</p>
+  </li>
+ 
+  <li> Calculate the z-score for an elephant that is 15 feet tall.  
+<p class="solution">\(z=\frac{15-10.6}{1.2}=3.67\)</p>
+  </li>
+ 
+  <li> What does this z-score tell you about the height of a 15-foot elephant?  
+    <p class="solution"> It is unusually tall.  The height is 3.67 standard deviations above the mean.</p>
+  </li>
+ 
+  <li> Calculate the height of a giraffe whose height is 2.3 standard deviations above the mean.  
+    <p class="solution">\(x=18+(2.3)(0.8)=19.84\) &nbsp;feet</p>
+  </li>
+  
+  <li> Calculate the height of an elephant whose height has a z-score of -1.6.
+    <p class="solution">\(x=10.6+(-1.6)(1.2)=8.68\) &nbsp;feet</p>
+  </li>
 
-
-
-
-
-
+  <li> Is a 16.5-foot tall giraffe considered unusual?  
+    <p class="solution">No.  The minimum usual value is 18 - 2(0.8) = 16.4 feet.</p>
+  </li>
+ 
+  <li> What is the range for usual heights of African elephants?  
+    <p class="solution">8.2 feet to 13 feet</p>
+  </li>
 </ol>
+  </li>
 
-   </main>
+
+<!-- <li>
+          The distribution of the height of women in the United States can be described by a normal curve with a mean \(\mu=63.8\) inches and a standard deviation \(\sigma=4.2\) inches.  The distribution for men has a mean \(\mu=69.4\) inches and a standard deviation \(\sigma=4.7\) inches.
+          <br> 
+          <br>
+          Label the curves with x values and z-scores.
+          <div class="row">
+              <div class="col-sm-6">
+                  <img src="images/u3s1p1.png" alt="A blank normal curve. ">
+                 <p class="solution"> <img src="images/u3s1p1wk.png" alt="A normal curve with mu marked in the middle of the horizontal axis under the curve.  Three negative standard deviations (-1 sigma, -2 sigma, and -3 sigma) are marked to the left of mu, and three positive standard deviations (1 sigma, 2 sigma, and 3 sigma) are marked to the right of mu. Under the mu and sigmas are the z-score values that correspond to each for the population of women in the United States.  From left to right, the numbers are 51.2, 55.4, 59.6, 63.8 (mean), 68, 72.2, 76.4. "></p>
+              </div>
+              <div class="col-sm-6">
+                  <img src="images/u3s1p1.png" alt="A blank normal curve. ">
+                  <p class="solution"><img src="images/u3s1p1mk.png" alt="A normal curve with mu marked in the middle of the horizontal axis under the curve.  Three negative standard deviations (-1 sigma, -2 sigma, and -3 sigma) are marked to the left of mu, and three positive standard deviations (1 sigma, 2 sigma, and 3 sigma) are marked to the right of mu. Under the mu and sigmas are the z-score values that correspond to each for the population of men in the United States.  From left to right, the numbers are 55.3, 60, 64.7, 69.4 (mean), 74.1, 78.8, 83.5."></p>
+              </div>
+          </div>
+          
+           
+            <br>
+
+            
+            
+            <p>To join the Boston Beanstalks, a social club for tall people, women must be at least 5 feet 10 inches (70 inches) and men at least 6 feet 2 inches (74 inches).  </p>
+            <br>
+            <ol>
+              <li>Calculate the z-score for the qualifying height for women to join the Boston Beanstalks.
+                <p class="solution">\(z=\frac{70-63.8}{4.2}=1.4762\)</p>
+              </li>
+              <li>Calculate the z-score for the qualifying height for men.
+                  <p class="solution">\(z=\frac{74-69.4}{4.7}=0.9787\)</p>
+              </li>
+              <li>Calculate the height of a woman whose height is 2.3 standard deviations above the mean.
+                <p class="solution">73.46 inches or 6  feet 1.46 inches</p>
+            </li>
+            <li>Calculate the height of a man whose height has a z-score of -1.6.  
+                <p class="solution">61.88 inches or 5 feet 1.88 inches</p>
+            </li>
+            
+          </ol>
+          </li> -->
+
+
+
+
+  
+        </ol>
+      </main>
+  
+
+  
 
 
 
