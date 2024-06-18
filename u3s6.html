@@ -126,215 +126,319 @@
 
 
     <main>
-      <h2>3.6 Normal Distributions</h2>
+      <h2>3.6 Confidence Intervals for Means</h2>
+<br>
+<br>
+<br>
+     
+      
+      <p>When constructing a confidence interval, we use data from a sample to estimate information about the population.  For a population mean, we use the student-t distribution to construct the confidence interval because we do not know the standard deviation of the population.  (If we know the standard deviation of the population, then we use the normal distribution and z-scores instead.)  Requirements include a random sample and a normally distributed population or sample size greater than 30. </p>
+<br>
+      <!-- <p><b>Given</b> the mean of the <b>sample, \(\overline{x}\)</b> </p>
+      <br>
+      <p><b>Estimate</b> the mean for the <b>population, \(\mu\)</b> </p>
 
-     <p> In the previous unit we studied discrete probability distributions, such as the distribution for the number of people in a family.</p>
-     <h3> The Normal Distribution is a continuous probability distribution with the following properties:</h3>
-        <ul>
-     <li>The mean, median and mode are equal.</li>
-     <li>The normal curve is bell shaped and is symmetric about the mean.</li>
-     <li>The total area underneath the curve is equal to 1.</li>
-     <li>The normal curve approaches, but never touches, the x-axis as it extends away from the mean.</li>
-     <li>Between z=-1 and z=1, the graph curves downward.  Everywhere else, the graph curves upward.</li>
-     <li>The probability that a random variable assumes a value between a and b is equal to the area under the curve bounded by a and b.</li>
+<br>
+<br>
+
+      <h4>Requirements:</h4>
+<br>
+      <ul>
+
+        <li>Random Sample</li>
+        <br>
+        <li>Normally distributed population or sample size greater than 30  \((n > 30)\) </li>
+      
+        
         </ul>
+<br>
+<br>
+<br>
+<h4>Margin of Error:</h4>
+<br>
+<p>\(E=t_{\alpha / 2} * \frac{s}{\sqrt{n}} \quad d f=n-1\)</p>
 
+<br><br>
+<p style="page-break-before: always"></p> -->
 
 
 <ol>
 
-<li>Identify the following variables/distributions as discrete or continuous:
-  <ol>
-<li>The weight of fire fighters in a large fire department
-  <p class="solution">Continuous</p>
-</li>
-<li>The number of heads tossed when tossing a coin 30 times
-  <p class="solution">Discrete</p>
-</li>
-  </ol>
-</li>
-
-<li>Estimate the standard deviation of the distribution:
-  <br>
-      <img src="images/u3s1p4a.png" alt="A graph of a normal curve. The mean is at the highest point on the curve. The horizontal axis is numbered from 4 to 10, counting by 2. The curve is almost at the horizontal axis at 6 and 8. The line that is drawn vertically to the top of the curve is at 7.">
-      <p class="solution">\(\sigma \approx 0.5\)</p>
-   
-</li>
 
 
-
-
-<p style="page-break-before: always"></p>
-
-<h3>Standard Normal Bell Curve 
-is a distribution of z scores with a mean of 0 and a standard deviation of 1.</h3>
-
-
-
-
-
-<li>If z = -2.17, what is area to the right of the z score?
-  <p>Mathematical Translation: \(P(z>-2.17)=\)
-          <inline class="solution">0.98499658</inline></p>  
-</li>
-
-
-
-<li>Recall that to join the Boston Beanstalks, women must have a height with a z-score of 1.48 and men must have a height with a 0.98 z-score.
-  <ol>
-    <li> Approximately what percentage of American men are tall enough to join the Boston Beanstalks?
-      <inline class="solution">approximately 16%</inline>
-  </li>
-  
-  <li>Approximately what percentage of American women are tall enough to join the club?
-      <inline  class="solution">approximately 7%</inline>
-  </li>
-  </ol>
-</li>
-
-<br><br>
-<h3>The Normal bell curve is a distribution of individual x values which are measures for each member of a population.  The mean and standard deviation will vary for each population.</h3>
-
-
-<li>The distribution of IQ scores is normally distributed with a mean of 100 and a standard deviation of 15.  An Oregon couple claimed their two children were taken away from them because they scored too low on an IQ test.  She scored 72 and he scored 66.  Find the probability that a randomly selected IQ score will be below 73	
-  <p>\(\mu = \)
-  <inline class="solution">100</inline></p>
-  <p>\(\sigma = \)
-  <inline class="solution">15</inline></p>
-  <p class="solution">\(z_{73}=\frac{73-100}{15}=-1.8\)</inline></p>
-  <p class="solution">\(P(x \lt 73)=P(z \lt -1.8)=0.0359\)</p>
-    
-  <b>Writing your final statement:  </b>
-
-  <p>If one  __________ is randomly selected, the probability the/their __________ is
-          <b>lessthan/greaterthan/between</b>____________is approximately equal to ______.	
-          </p>
-  
-
-  <p class="solution">If one person’s IQ score is randomly selected, the probability their score is less than 73 is approximately equal to 0.0359 or 3.59%.</p>
-  </li>
-
-
-  <li>Are the IQ scores of the couple unusual? (Hint: Calculate z-score for each.)
-  <p class="solution">\(z_{72}=\frac{72-100}{15}=-1.87\)</p>
-  <p class="solution">\(z_{66}=\frac{66-100}{15}=-2.27\)</p>
-  <p class="solution">Her IQ is not unusual, but his is unusual.</p>
-</li>
-
-
-<li>To determine the average wait time at Taco Bell in the Miami area, 16 graduate students randomly selected 16 Taco Bell stores.  Each student visited a Taco Bell store at 12:15 pm and ordered a crunchy beef taco, a burrito supreme, and a soda.  The wait time to receive the meal was recorded for each restaurant.  The distribution is normal with a mean of 22.4 minutes and a standard deviation of 6.2 minutes.
-
-  <ol>
-  
-  <li>If one Taco Bell is randomly selected, what is the probability the wait time will be more than 20 minutes?
-    <p class="solution">\(z=\frac{20-22.4}{6.2}=-0.3871\)</p>
-    <p class="solution">\(P(x>20)=P(z>-0.3871)=.6506\)</p>
-    <p class="solution">If one Taco Bell is randomly selected, the probability the student's wait time was more than 20 minutes is approximately equal to 0.6506 or 65.06%.</p>
-  </li>
-  
-  <li>If one Taco Bell is randomly selected, what is the probability the wait time will be between 25 minutes and 35 minutes?
-    <p class="solution">\(z_{25}=\frac{25-22.4}{6.2} \approx 0.4194\)</p>
-    <p class="solution">\(z_{35}=\frac{35-22.4}{6.2} \approx 2.0322\)</p>
-    <p class="solution">\(P(25 \lt x \lt 35)=P(.419 \lt z \lt 2.0322)=.3164\)</p>
-    <p class="solution">If one Taco Bell is randomly selected, the probability the student's wait time was between 25 and 35 minutes is approximately equal to 0.3164 or 31.64%.</p>
-  </li>
-</ol>
-</li>
-
-
-
-<li>IQ scores are normally distributed with a mean of 100 and a standard deviation of 15. 
-
-    <ol>
-    
-    <li>What IQ score separates the bottom 20% from the top 80%?  
-        <p class="solution">20% cumulative area to the left</p>
-        <p class="solution">\(z=-0.84162\)</p>
-        <p class="solution">\(P_{20}=87.38\)</p>
-    <p class="solution"><img src="images/u3s3p1ak.png" alt="A normal curve with the mean of 100 at the highest point of the curve. The horizontal axis is labeled with 3 standard deviations to the left and to the right of the mean. The labels are 55, 70, 85, 100, 115, 130, and 145. In the left margin of the graph it is stated that p=.2, mean = 100 and standard deviation = 15. The calculated z value is -0.84162. The calculated x value is 87.38. The area under the curve is shaded to the left of the x value. "></p>
-    </li>
-    
-    <li>What IQ score separates the top 15% from the bottom 85%?  
-        <p class="solution">85% cumulative area to the left.</p>
-        <p class="solution">\(z=1.036433\)</p>
-        <p class="solution">\(P_{85}=115.55\)</p>
-        <p class="solution"><img src="images/u3s3p1bk.png" alt="A normal curve with the mean of 100 at the highest point of the curve. The horizontal axis is labeled with 3 standard deviations to the left and to the right of the mean. The labels are 55, 70, 85, 100, 115, 130, and 145. In the left margin of the graph it is stated that p=.85, mean = 100 and standard deviation = 15. The calculated z value is 1.036433. The calculated x value is 115.15. The area under the curve is shaded to the left of the x value."></p>
-    </li>
-    
-    </ol>    
-    
-    </li>
-
-
-    <li>Weights of a breed of dog are normally distributed with a mean of 73 lbs and a standard deviation of 8 lbs.
+    <li> Randomly selected statistics students participated in an experiment to test their ability to determine when 60 seconds had passed. The statistics students were not allowed to look at a clock or timer.  Forty students yielded a sample mean of 58.3 seconds and a sample standard deviation of 8.4 seconds.
 
         <ol>
-        
-        <li>What weight separates the smallest 60% of the dogs from the heavier 40%?  
-            <p class="solution">60% cumulative area to the left.</p>
-            <p class="solution">\(z=0.253347\)</p>
-            <p class="solution">\(P_{60}=75.03 \) lbs</p>
-            <p class="solution"><img src="images/u3s3p2ak.png" alt="A normal curve with the mean of 73 at the highest point of the curve. The horizontal axis is labeled with 3 standard deviations to the left and to the right of the mean. The labels are 49, 57, 65, 73, 81, 89, and 97. In the left margin of the graph it is stated that p=.6, mean = 73 and standard deviation = 8. The calculated z value is 0.253347. The calculated x value is 75.03 pounds. The area under the curve is shaded to the left of the x value."></p>
+        <li> What is the population of the study?  
+          <p class="solution">All statistics students</p>
+        </li>
+        <li> What is the sample for the study?  
+          <p class="solution">40 statistics students</p>
+        </li>
+        <li> What is the best point estimate of the mean time for all statistics students to determine when 60 seconds had passed?  
+          <p class="solution">58.3 seconds</p>
         </li>
         
-        <li>What weight separates the heavier 55% from the lightest 45%?  
-            <p class="solution">45% cumulative area to the left.</p>
-            <p class="solution">\(z=-0.125661\)</p>
-            <p class="solution">\(P_{45}=71.99\) lbs</p>
-            <p class="solution"><img src="images/u3s3p2bk.png" alt="A normal curve with the mean of 100 at the highest point of the curve. The horizontal axis is labeled with 3 standard deviations to the left and to the right of the mean. The labels are 49, 57, 65, 73, 81, 89, and 97. In the left margin of the graph it is stated that p=.45, mean = 73 and standard deviation = 8. The calculated z value is -0.125661. The calculated x value is 71.99 pounds. The area under the curve is shaded to the left of the x value."></p>
+        <li> Using the formula, find the margin of error in the study at the 95% confidence level.  
+          <p>\(E=t_\frac\alpha2\ast\frac s{\sqrt n}\\\) and \(df=n-1\)</p>
+          <p class="solution"> \(E=2.0227\ast\frac{8.4}{\sqrt{40}}=2.7\\\) seconds</p>
+         
         </li>
         
+    <p><b>Note:</b> Use the T calculator to find the critical value t-score used in the formula.</p>  
+    <p>For 95% confidence with df = 39, the critical value \(t_\frac{\alpha}{2} =  2.0227\)</p> 
+    <br><br> 
+        
+<li> Use the sample data to construct a 90% confidence interval estimate of mean time for all statistics students. What are the lower and upper limits of the confidence interval?  
+        
+          <p class="solution">58.3 – 2.7 = 55.6 seconds and 58.3 + 2.7 = 61.0 seconds</p>
+       
+</li>
+        
+
+<li> Graph the confidence interval on a number line and label the best point estimate and the margin of error.
+  <img src="images/u3s4p4c.png" alt="A blank number line"></p>
+  <p class="solution">  <img src="images/u3s6p1fk.png" alt="A number line with 55.6, 58.3, and 61.0 labeled.  58.3 is marked as the best point estimate.  The distance from 58.3 to 61.0 is labeled margin of error."></p>
+
+</li>
+
+<li> Write the confidence interval using interval notation.  
+    <p class="solution">(55.6, 61.0)</p>
+</li>
+<li> Write the confidence interval in the form \(\bar{x}\pm E\).  
+  <p class="solution">58.3 ± 2.7</p>
+</li>
+<li> Write the confidence interval using inequality notation.  
+  <p class="solution">55.6 < µ < 61.0</p>
+</li>
+<li>What does the confidence interval tell us?  Complete this sentence:  “We are 90% confident that 
+  <p class="solution">the true mean time for statistics students who estimate when one minute has passed is between 55.6 and 61.0 seconds."</p>
+</li>
+<li> Based on the results, is it likely that statistics students can estimate the time for a minute reasonably close to 60 seconds on average?  How do you know?  
+  <p class="solution">Yes, because 60 seconds is within the confidence interval between 55.6 and 61 seconds.</p>
+</li>
+
         </ol>
         
         </li>
 
+<li> A hospital is trying to cut down on emergency room wait times.  It is interested in the amount of time patients must wait before being called back to be examined.  An investigation committee randomly surveyed 70 patients and asked them how long they waited in the lobby of the emergency room.  The sample mean was 1.5 hours with a sample standard deviation of 0.5 hours.
+<ol>
+ 	  
 
+  <li> What is the population of the study?
+<inline class="solution">All emergency room patients at this hospital</inline>
+  </li>
+  <li> What is the sample in the study?
+    <inline class="solution">70 emergency room patients at this hospital</inline>
+  </li>
+  <li> What is the best point estimate for the mean time that all emergency room patients had to wait?
+    <inline class="solution">1.5 hours</inline>
+  </li>	
+  
 
-        <p style="page-break-before: always"></p>
+  <li> Use StatCrunch to construct a 98% confidence interval estimate for the population mean time spent waiting.  What are the lower and upper limits of the confidence interval?
+    <p class="solution">1.36 hours and 1.64 hours</p>
+  </li>
+  <li> Write the confidence interval using interval notation.
+    <p class="solution"> (1.36, 1.64)</p>
+  </li>
+  <li> Graph the confidence interval on a number line and label the best point estimate and the margin of error.
+    <img src="images/u3s4p4c.png" alt="A blank number line"></p>
+    <p class="solution">  <img src="images/u3s6p2fk.png" alt="A number line with 1.36, 1.5, and 1.64 labeled.  1.5 is marked as the best point estimate.  The distance from 1.5 to 1.64 is labeled margin of error."></p>
+  </li>
 
+	 
 
-<li>A manufacturer of bulbs for movie projectors finds that the lives of the bulbs are normally distributed with a mean of 61 hours and standard deviation of 6.3 hours.  The manufacturer will guarantee the bulbs so that only 3% will be replaced because of failure before the guaranteed number of hours.  For how many hours should the bulbs be guaranteed? 
-  <p class="solution">For the number of hours, the cumulative area from the left is equal to 0.03.  </p>
-
-  <p class="solution">\(z_{d}=-1.8808\)</p>
-  <p class="solution">\(d=61+(-1.8808)(6.3)=49.15\)</p>
-  <p class="solution">
-          The bulbs should be guaranteed for 49.15 hours.
-          </p>
+  <li> What is the margin of error for this confidence interval?
+<p class="solution"> 1.64 – 1.5 = 0.14 hours</p>
+  </li>
+  <li> Write the confidence interval in the form \(\bar{x}\pm E\).
+    <p class="solution">1.5 ± 0.14</p>
+  </li>
+  <li> What does the confidence interval tell us?  Complete this sentence:  “We are 98% confident that
+    <p class="solution">the true mean wait time for all emergency room patients at this hospital is between 1.36 and 1.64 hours."</p>
+  </li>
+  <li> Is it likely that the average wait time in the emergency room at this hospital exceeds 2 hours?  How do you know?
+    <p class="solution">No, because the upper limit of the confidence interval for the true mean wait time is 1.64 hours which is less than  2 hours.</p>
+  </li>
+</ol>
 </li>
 
+<li> Fifty randomly selected Americans were surveyed to determine their average screen time each day.  It was revealed that they looked at a screen an average of 7 hours per day with a standard deviation of 1.8 hours.
+  <ol>
+    <li> Construct a 90% confidence interval estimate for the mean screen time per day of all Americans.  
+<ip class="solution">(6.6, 7.4)</p>
+    </li>
+    <li> Calculate the margin of error.  (Draw a graph to help find this.)  
+      <img src="images/u3s4p4c.png" alt="A blank number line"></p>
+      <p class="solution">  <img src="images/u3s6p3bknew.png" alt="A number line with 6.6, 7, and 7.4labeled.  7 is marked as the best point estimate.  The distance from 7 to 7.4 is labeled margin of error."></p>
+      <p class="solution">7.4 – 7 = 0.4 hours</p>
+    </li>
+    <li> Complete the statement:  “We are 90% confident that 
+<p class="solution">the true average amount of screen time for Americans is between 6.6 and 7.4 hours per day."</p>
+    </li>
+    <li> Is it possible for an American in the study to have reported only 1 hour of screen time per day?  
+      <p class="solution">It is possible, since there might have been another American in the study who reported a lot of screen time per day, such as 13 hours, and we are looking at the average.</p>
+    </li>
+  </ol>
 
-
-<li>Pulse Rates of adults are normally distributed with a mean of 73 bpm and a standard deviation of 8 bpm.  According to one company’s health screening criteria, 8% of adults would be rejected because they have readings that are too high and 2% would be rejected because they have readings that are too low.  Find the two readings that are the cutoff values separating the rejected applicants from the others.
-  <p class="solution">\(z_{d_{MIN}}=-2.0537\)</p>
-  <p class="solution">\(d_{M I N}=73+(-2.0537)(8)=56.6 \) bpm </p>
-  <p class="solution">\(z_{d_{M A X}}=1.4051\)</p>
-  <p class="solution">\(d_{M A X}=73+(1.4051)(8)=84.2 \)bpm</p>
-  <p class="solution">The applicants with pulse rates between 56.6 bpm and 84.2 bpm will not be rejected on the basis of pulse rate.</p>
 </li>
 
+<li>You conduct a study of hypnotherapy to determine its effectiveness in increasing the number of hours of sleep subjects get each night.  You measure hours of sleep for 12 subjects with the following results.
+  <p>8.2</p>
+  <p>9.1</p>
+  <p>7.7</p>
+  <p>8.6</p>
+  <p>6.9</p>
+  <p>11.2</p>
+  <p>10.1</p>
+  <p>9.9</p>
+  <p>8.9</p>
+  <p>9.2</p>
+  <p>7.5</p>
+  <p>10.5</p>
+  <ol>
+    <li> Construct a 95% confidence interval for the mean sleep time for all hypnotherapy subjects.  Assume sleep time is normally distributed.  
+<p class="solution">(8.1, 9.8)</p>
+    </li>
+    <li> What is the sample mean?  
+      <p class="solution">8.98 hours</p>
+    </li>
+    <li> What is the margin of error?  
+      <p class="solution">9.8 – 8.98 = 0.82 hours</p>
+    </li>
+    <li> Graph the confidence interval on a number line and label the best point estimate and the margin of error.
+      <img src="images/u3s4p4c.png" alt="A blank number line"></p>
+      <p class="solution">  <img src="images/u3s6p3bknew.png" alt="A number line with 8.1, 8.98, and 9.8 labeled.  8.98 is marked as the best point estimate.  The distance from 8.98 to 9.8 is labeled margin of error."></p>
+    </li>
+    <li> Based on this data, does it appear as though the mean sleep time for hypnotherapy patients could be 9 hours?  How do you know?  
+      <p class="solution">Yes, because 9 hours is within the confidence interval between 8.1 and 9.8 hours.</p>
+    </li>
+  </ol>
+</li>
+
+        <!-- <li>A random sample of fifteen 8th grade band students yielded the following heights (in inches):
+
+            <style type="text/css">
+              .tg  {border-collapse:collapse;border-spacing:0;}
+              .tg td{font-family:Arial, sans-serif;font-size:14px;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+              .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:11px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+              .tg .tg-13pz{text-align:center;vertical-align:top}
+              </style>
+              <table class="tg" summary="Table with one row 15 data values.  There are no headers for this table.">
+                  <tr>
+                    <td class="tg-13pz">66.4</td>
+                    <td class="tg-13pz">59.6</td>
+                    <td class="tg-13pz">59.8</td>
+                    <td class="tg-13pz">67.9</td>
+                    <td class="tg-13pz">64.8</td>
+                    <td class="tg-13pz">66.7</td>
+                    <td class="tg-13pz">64.7</td>
+                    <td class="tg-13pz">63.4</td>
+                    <td class="tg-13pz">62.6</td>
+                    <td class="tg-13pz">58.6</td>
+                    <td class="tg-13pz">67.6</td>
+                    <td class="tg-13pz">62.7</td>
+                    <td class="tg-13pz">63.2</td>
+                    <td class="tg-13pz">65.0</td>
+                    <td class="tg-13pz">61.8</td>
+                  </tr>
+                </table>
+          
+          <ol>
+          
+          <li>Use technology to calculate the mean and standard deviation for this sample.  Round each to the 2nd decimal place.
+            <p>\(\bullet\) \(\overline{x} = \)
+              <inline class="solution">63.65 in.</inline>
+           
+            </p>
+            <p>\( \bullet \) s = 
+              <inline class="solution">2.89 in.</inline>
+            </p>
+            <p>\( \bullet \) Best Point Estimate for the Population Mean:  
+              <inline class="solution">63.65 in.</inline>
+            </p>
+            <p class="solution"><i> The best estimate for the population mean is the sample mean.</i></p>
+          </li>
+          
+          <li>Construct the 95% confidence interval for the mean height of all 8th grade band students. Assume the heights of 12-14 year old students are normally distributed. 
+        
+          <p class="solution">\(62.05 \lt \mu \lt 65.25\)</p>
+         
+          </li>
+          
+          
+          
+          <li>Based upon this confidence interval, does it appear as though the mean height of 8th grade band students could be 63.6 inches? Explain why or why not.  
+            <inline  class="solution">Yes.  We are 95% confident the population mean height is between 62.05 inches and 65.25 inches.  63.6 inches is in that interval.</inline>
+          </li>
+          
+          </ol>
+          
+          </li> -->
+
+          <p style="page-break-before: always"></p>
+<!-- 
+          <li>We want to estimate the mean weight loss of people one year after using the Atkins weight loss program. How many people on that program must be surveyed if we want to be 95% confident that the sample mean is within 0.25 lbs of the true population mean? Assume that the population standard deviation is known to be 10.6 lb.
+
+            <ul>Use: 
+              <li> Stat Crunch:  Stats ~ z Stats ~ One Sample ~ Width/Sample Size  
+                (remember that the width of the confidence interval is twice the margin of error)
+              </li>
+                OR
+                <li>The formula \(\boldsymbol{n}=\left[\frac{z_{\alpha / 2} \sigma}{E}\right]^{2}\)</li>
+
+            </ul>
+            <p class="solution">\(n=\left[\frac{(1.96)(10.6)}{0.25}\right]^{2}=6906.27\) <i>always round up</i>
+            </p>
+            <p>n = 
+              <inline  class="solution">6907 people</inline>
+            </p>
+           
+            </li>
 
 
 
+            <li>We want to estimate the mean weight loss of people one year after using the Atkins weight loss program. How many people on that program must be surveyed if we want to be 90% confident that the sample mean is within 0.5 lbs of the true population mean? Assume that the population standard deviation is known to be 10.6 lb.
+                <ul>Use: 
+                    <li> Stat Crunch:  Stats ~ z Stats ~ One Sample ~ Width/Sample Size  
+                      (remember that the width of the confidence interval is twice the margin of error)
+                    </li>
+                      OR
+                      <li>The formula \(\boldsymbol{n}=\left[\frac{z_{\alpha / 2} \sigma}{E}\right]^{2}\)</li>
+      
+                  </ul>
+                  <p class="solution">\(n=\left[\frac{(1.644852)(10.6)}{0.5}\right]^{2}=1215.977\)</p>
+                <br>
+                <p>n = 
+                  <inline class="solution">1216 people</inline>
+                </p>
+          
+                </li>
 
 
 
-
-
+ -->
 
 
 
 
 </ol>
- 
 
-     
+
+
+
+
+
+  
    </main>
 
 
+ 
 
 
-
+   
 
 
     <!--end of container div -->

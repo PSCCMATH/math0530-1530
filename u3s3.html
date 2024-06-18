@@ -112,6 +112,7 @@
     </ul>
   </div>
 </nav>
+
 <body>
 
 
@@ -123,86 +124,143 @@
       <hr>
     </header>
 
-   
-
 
     <main>
-        <h2>3.3 Ordering Numbers</h2>
-       
-  
-  
-        <ol>
-          
-          <li>Sort the teams according to their 2019-2020 win/loss ratios.  List from best to worst. 
-  
-              
-            <style type="text/css">
-                .tg  {border-collapse:collapse;border-spacing:0;}
-                .tg td{font-family:Arial, sans-serif;font-size:14px;padding:11px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-                .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:11px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-                .tg .tg-13pz{text-align:center;vertical-align:center}
-                </style>
-                <table summary="NBA teams wins and losses.    Column headers are NBA teams, wins, and losses.  Row headers are team names." class="tg">
-                  <tr>
-                    <th scope="col" class="tg-13pz">NBA Team</th>
-                    <th scope="col" class="tg-13pz">Wins</th>
-                    <th scope="col" class="tg-13pz">Losses</th>
-                 
-                  </tr>
-                  <tr>
-                    <th scope="row" class="tg-13pz">Boston Celtics</th>
-                    <td class="tg-13pz">43</td>
-                    <td class="tg-13pz">21</td>
-                 
-                  </tr>
-                  <tr>
-                    <th scope="row"  class="tg-13pz">Denver Nuggets</th>
-                    <td class="tg-13pz">43</td>
-                    <td class="tg-13pz">22</td>
-                 
-                  </tr>
-                  <tr>
-                    <th scope="row"  class="tg-13pz">LA Clippers</th>
-                    <td class="tg-13pz">44</td>
-                    <td class="tg-13pz">20</td>
-                 
-                  </tr>
-                  <tr>
-                    <th scope="row"  class="tg-13pz">Los Angeles Lakers</th>
-                    <td class="tg-13pz">49</td>
-                    <td class="tg-13pz">14</td>
-                   
-                  </tr>
-                  <tr>
-                    <th scope="row"  class="tg-13pz">Milwaukee Bucks</th>
-                    <td class="tg-13pz">53</td>
-                    <td class="tg-13pz">12</td>
-                
-                  </tr>
-                  <tr>
-                    <th scope="row"  class="tg-13pz">Toronto Raptors</th>
-                    <td class="tg-13pz">46</td>
-                    <td class="tg-13pz">18</td>
-               
-                  </tr>
-                  
-                </table>
-         
-            <inline class="solution">Milwaukee Bucks, LA Lakers, Toronto Raptors, LA Clippers, Boston Celtics, Denver Nuggets</inline>
-        </li>
-          
-  
+      <h2>3.3 Central Limit Theorem</h2>
+      <br>
+      <ol>
+<li> Use a <a href="https://www.calculator.net/random-number-generator.html?clower=1&cupper=5000&cnums=9&cdup=n&csort=n&cnumt=i&cprec=50&ctype=2&s=33702.3044&x=Generate#comprehensive">random number generator</a>  or go to <a href="https://www.random.org/">random.org</a> and use their true random number generator to generate 9 random numbers between 1-5000.  List your random numbers here:  
+<br><br><br><br><br><br>
+</li>
+ 
+<p><b>At a cola bottling plant, a machine fills 2-liter soda bottles.  The machine is calibrated to dispense 2.02 liters in each bottle. Actual quantities dispensed vary and the amounts are normally distributed with a standard deviation of 0.05 liters.</b></p>   
 
-        <li>
-            Graph each number in the list on the given number line.  List the numbers from smallest to largest.
-          <p>\(375 \%,-\frac{42}{11}, \sqrt{33},-0.19, \frac{9}{8}\)</p>
-          
+<br>
+<li> Extra room is left at the top of each bottle for a maximum of 2.25 liters of soda before the bottle overflows and causes a sticky mess on the assembly line.  What percent of the bottles will be overfilled by a correctly calibrated machine?  
+<p>\(P(x>2.25)=\) <inline class="solution">0.00000211</inline></p>
+<p>Write as a percentage: <inline class="solution">0.000211%</inline></p>
+</li>
+<br>
+<li> If the plant produces 1,500,000 bottles per year, how many times per year do you expect to clean up a spill from a correctly calibrated machine?  
+  <inline class="solution">0.00000211(1,500,000)=3.315</inline> <inline class="solution"> We expect to clean up a spill 3 times per year.</inline>
+</li>
+<br>
+<li> The company prefers that their 2-liter bottles contain at least 1.95 liters of soda.  You are in charge of quality control.  You take sample bottles off the assembly line to measure the amount of soda and decide if the machine needs to be recalibrated.  The assembly line must be shut down for several hours in order to recalibrate the machine.  If you select one bottle from the assembly line with a correctly calibrated machine, what is the probability it will contain less than 1.95 liters?
+  <p>\(P(x<1.95>)=\) <inline class="solution">0.0808</inline></p>
+</li>
+<br>
+<li> Load the data set “Cola Bottling Company” from My Group in StatCrunch.  Look at the row number that matches your first random number.  Record the data value in that row for the amount of cola in liters from column 1.  __________
+
+</li>
+
+<br>
+<li> The plant foreman says you must recalibrate the machine if the sample bottle contains less than 1.95 liters.  Based on your randomly selected “bottle,” do you need to recalibrate the dispensing machine?  Yes or No?  ______________________
+
+</li>
+
+<br>
+<li> Add your data value for the amount of cola in one randomly selected bottle to the class dot plot.
+
+</li>
+<br>
+<li> If the bottling plant is open 300 days per year and you randomly select 1 bottle each day to decide whether to recalibrate that day, how many times per year would you expect to have to recalibrate a correctly calibrated machine?  _______________________________
+
+</li>
+
+<br>
+<li> You decide it might be better to take a larger sample of bottles off the assembly line to decide whether to recalibrate.  Look at the rows corresponding to your first four random numbers in column 1 of the “Cola Bottling Company” data set.  Find the average amount of cola in liters for those 4 “bottles.” Round to two decimal places.
+
+ <p> Mean amount in 4 random bottles:  __________________________</p>
+</li>
+ <br>
+
+ <li> Add your sample mean for the amount of cola in 4 randomly selected bottles to the class dot plot.
+
+ </li>
+<br>
+<li> What is the mean and standard deviation for the Distribution of Sample Means when the sample size (n) is 4 bottles?  Mean: _______________  Standard deviation:  _____________
+
+</li>
+<br>
+<li> If you select four bottles from the assembly line with a correctly calibrated machine, what is the probability the mean amount of cola will be less than 1.95 liters?  _________________________
+
+</li>
+<br>
+<li> You decide to randomly select a sample of 9 bottles off the assembly line and test if their mean is less than 1.95 liters.  Look at the rows corresponding to your nine random numbers in column 1 of the “Cola Bottling Company” data set.  Find the average amount of cola in liters for those 9 “bottles.” Round to two decimal places.
+
+ <p> Mean amount in 9 random bottles:  _________________________</p>
+</li>
+  <br>
+  <li> What is the mean and standard deviation for the Distribution of Sample Means when the sample size (n) is 9 bottles?  Mean: _______________  Standard deviation:  __________________
+
+  </li>
+  <br>
+  <li> If you select nine bottles from the assembly line with a correctly calibrated machine, what is the probability the mean amount of cola will be less than 1.95 liters?  ________________________
+
+  </li>
+
+<br>
+<li> If the bottling plant operates 300 days per year, and you sample the 2-liter bottles once a day, how often would you have to unnecessarily recalibrate a correctly calibrated dispensing machine if you randomly select 
+  
+  <p>1 bottle per day? </p>
+  <p>4 bottles per day?</p>
+  <p>9 bottles per day?</p>
+
+</li>
+
+<br>
+<li> If you select a sample of 4 bottles and the mean amount of cola is 1.95 liters, do you think the machine needs recalibrating?  Yes or No?  ____________
+  <p>Explain:  </p>
+  
+<br>
+<li> What do you think is the best sampling method for making a decision about machine recalibrating?  Why?
+
+</li>
+
+<br><br><br><br><br><br>
+</li>
+      <p>ACT scores for high school seniors at a large school district are normally distributed with a mean of 22 and a standard deviation of 4.  Compare the two distribution curves given below.</p>
+      <p>Description of Curve A:  Every student is represented on the curve as an individual and the entire population is represented.</p>
+      <p>Description of Curve B:  Groups of 25 students are randomly selected from the population and the mean ACT of each group is represented on the curve.
+
+      <p>  <img src="images/u3s1p3.png" alt="Curve A and Curve B are both normal curves. The horizontal axis represents the ACT scores and is numbered from 0 to 40, counting by 10. The vertical axis represents the number of students who earned each of the possible ACT scores. Curve A represents the graph of every student in the population and it is wide and short. It goeas from 10 to 36 with a mean of 22. Curve B represents the mean ACT score for each of the groups of 25 students. It is tal and narrow. It goes from about 18 to about 24, with a mean of 22. "></p>
+
+
+        <br>
+
+ 
+
+            <li>Identify the mean of Curve A and the mean of Curve B.  What do you notice?
+                <p class="solution">\(\mu_{A}=22\)</p>
+                <p class="solution">\(\mu_{B}=22\)</p>
+                <p class="solution">Both curves have the same mean.</p>
+            </li>
             
-            <p><img src="images/u2s1p11.png" alt="A number line numbered from -7 to 7 with two intervals between integers."></p>
+            <li>Compare the standard deviation of Curve A and Curve B.  What do you notice?
+                <p class="solution">The standard deviation of Curve A is greater than the standard deviation of Curve B.</p> 
+                
+                <p class="solution">The standard deviation for the distribution of sample means is less than the standard deviation of the population the samples were selected from.</p>
+            </li>
             
-            
-            <p class="solution"><img src="images/u2s1p11k.png" alt="-42/11 is to the right of the -4 scale mark. -0.19 is to the left of the zero scale mark. 9/8 is to the right of the 1 scale mark. 375% is to the right of the scale mark between 3 and 4. The square root of 33 is to the left of the -6 scale mark."></p>
-  </li> 
+            <li>Give an explanation for your observations in the previous two questions. 
+            <p class="solution">The means are the same in the two curves because the mean of each sample will be close to the mean of the population.  The standard deviation for the distribution of sample means is less than the distribution of the population because an extreme value randomly selected from one of the tails of the population curve is averaged together with 24 other values to produce the mean of the sample.  Each sample mean will be close to the population mean and so the spread of sample means is less than the spread of individuals. </p>    
+            </li>
+
+
+
+<h3>The Central Limit Theorem:</h3>
+
+<ul>
+    <li>A distribution of sample means approaches a normal distribution.</li>
+    <li>Samples must be from a normally distributed population, or the sample size must be greater than 30 (n > 30).</li>
+    <li>The distribution of sample means has the same mean as the population.</li>
+    <li>The standard deviation for the distribution of sample means is always less than the standard deviation population.</li>
+    <li>The standard deviation for the distribution of sample means is \(\frac{\sigma}{\sqrt{n}}\).</li>
+</ul>
+
+
+<p><img src="images/u3s4intro.png" alt="Two normal curves on a graph. The horizontal axis is labeled Distributions of Individuals versus Means.  One curve is taller and skinner, and the other is shorter and wider. The short, wide curve is labeled distribution of individuals and includes the sigma symbol.  The tall, skinny curve is labeled normal distribution of sample means and includes the formula sigma sub x bar equals sigma divided by the square root of n. ">
+    <p style="page-break-before: always"></p></p>
 
 
 
@@ -210,34 +268,39 @@
 
 
 
-  <li>
-    Graph each number in the list on the given number line. List the numbers from smallest to largest.
-    <p>\(-0.45, \frac{4}{5},-1 \frac{3}{10},-\frac{7}{4}, \frac{\pi}{6}\)</p>
-              
-                
-                <p><img src="images/u2s1p12.png" alt="A number line numbered from -2 to 1 with ten intervals between integers."></p>
-                
-                
-                <p class="solution"><img src="images/u2s1p12k.png" alt="-7/4 is between the second and third scale marks to the right of -2. -1 and 3/10 is at the third scale mark left of -1. -0.45 is midway between the fourth and fifth scale marks left of zero. Pi divided by 6 is between the fifth and sixth scale marks right of zero, but closer to the fifth scale mark. 4/5 is at the eighth scale mark to the right of zero."></p>
-      </li>
-
-     
-     
-      <p style="page-break-before: always"></p>      
-
-      <li> Graph each number in the list on the given number line. List the numbers from smallest to largest.
-        <div class="row">
-            <div class="col-sm-2">A = -1.4</div>
-            <div class="col-sm-2">B = -2.8</div>
-            <div class="col-sm-2">C = -2.6</div>
-            <div class="col-sm-2">D = -1.2</div>
-        </div>
+    <li>Birth weights in the United States have a distribution that is approximately normal with a mean of 3369g and a standard deviation of 567g (American Journal of Epidemiology).  
+   <ol>    
         
-          
-          <p><img src="images/u2s1p6.png" alt="A number line numbered from -3 to -1 with five intervals between integers."></p>
-          
-          
-          <p class="solution"><img src="images/u2s1p6k.png" alt="Point D=-1.2 is graphed at one scale mark to the left of -1. Point A=-1.4 is two scale marks to the left of -1. Point C=-2.6 is three scale marks to the left of -2. Point B=-2.8 is four scale marks to the left of -2."></p>
+<li>If one baby is randomly selected, find the probability that its birth weight is between 3360 grams and 3400 grams.
+    <p>\(\mu = \) <inline class="solution">3369</inline><inline>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\sigma = \)</inline>
+      <inline class="solution">\(567\)</inline>
+      <p class="solution">\(P(3360\leq x\leq3400)=0.0281\) or 2.81%</p>
+</li>
+
+
+
+
+    <li>   If 25 babies are randomly selected, find the probability that their mean birth weight is between 3360g and 3400g.
+       
+<p>\(\mu = \)
+    <inline class="solution">3369</inline>
+    <inline>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\sigma = \)</inline>
+    <inline class="solution">\(\frac{567}{\sqrt{25}}=113.4\)</inline>
+    <inline class="solution">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(z_{3360}=\frac{3360-3369}{113.4} \approx-0.0794\)</inline>
+    <inline class="solution">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(z_{3400}=\frac{3400-3369}{113.4} \approx 0.2734\)</inline>
+</p>
+<p class="solution">\(P(3360 \lt \overset-x \lt 3400)=P(-0.08 \lt z \lt 0.27)=0.1393\)</p>
+<div class="row">
+        <div class="col-sm-6">
+<p class="solution"><img src="images/u3s4p2ak.png" alt="A normal curve labeled with the mean and 3 standard deviations to the left and 2 standard deviations to the right of the mean on the horizontal axis. They are: 3028.8, 3142.2, 3255.6, 3369, 3482.4, and 3595.8. The area under the curve is shaded between 3360 and 3400."></p>
+</div>
+<div class="col-sm-6">
+        <p class="solution"><img src="images/u3s4p2bk.png" alt="A standard normal curve labeled with the mean and 3 standard deviations to the left and to the right of the mean on the horizontal axis. They are: -3, -2, -1, 0, 1, 2, and 3. The area under the curve is shaded between -.08 and 0.27"></p>
+        </div>
+        </div>
+<p class="solution">If 25 babies are randomly selected, the probability their mean birth weight is between 3360g and 3400g  is approximately equal to 0.1393 or 13.93%.</p>
+</li>
+</ol>
 </li>
 
 
@@ -246,37 +309,68 @@
 
 
 
-       <li>Identify the largest number in each pair.  Compare the numbers using <, >, or =.
-<ol>
-    <li>4.1667  &nbsp &nbsp   4.167
-        <p class="solution"><</p>
-    </li>
-    <li>-5.234 &nbsp &nbsp    -5.2345
-        <p class="solution">></p>
-    </li>
-    <li>5/8 &nbsp &nbsp    7/11
-        <p class="solution"><</p>
-    </li>
-    <li>3/4   &nbsp &nbsp  -3/8
-        <p class="solution">></p>
-    </li>
+<li>Pulse Rates of adult men are normally distributed with a mean of 73 bpm and a standard deviation of 8 bpm. 
+    <ol>
+        <li>If one man is randomly selected, find the probability that his pulse rate is less than 72.5 beats per minute.
+          <p>\(\mu = \)
+            <inline class="solution">73 bpm</inline>
+            <inline>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\sigma = \)</inline>
+            <inline class="solution">\(8\)</inline>
+            <p class="solution">\(P( x < 72.5)=0.4751\) or 47.51%</p>
+        </li>
+
+     <li>  If 10 adult males are randomly selected, what is the probability their mean pulse rate will be less than 72.5 bpm.
+<p>\(\mu = \)
+    <inline class="solution">73 bpm</inline>
+    <inline>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\sigma = \)</inline>
+    <inline class="solution">\(\frac{8}{\sqrt{10}} \approx 2.53 \text{ bpm}\)</inline>
+    <inline class="solution">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(z_{72.5}=\frac{72.5-73}{\left(\frac{8}{\sqrt{10}}\right)} \approx-0.1976\)</inline>
+</p>
+<p class="solution">\(P(\overline{x} \lt 72.5)=P(z \lt -0.1976)=0.4217\)</p>
+
+<div class="row">
+        <div class="col-sm-6">
+<p class="solution"><img src="images/u3s4p3ak.png" alt="A normal curve labeled with the mean and 3 standard deviations to the left and to the right of the mean on the horizontal axis. They are: 65.41, 67.94, 70.47, 73, 75.53, 78.06, and 80.59. The area under the curve is shaded to the left of 72.5."></p>
+</div>
+<div class="col-sm-6">
+        <p class="solution"><img src="images/u3s4p3bk.png" alt="A standard normal curve labeled with the mean and 3 standard deviations to the left and to the right of the mean on the horizontal axis. They are: -3, -2, -1, 0, 1, 2, and 3. The area under the curve is shaded to the left of -0.1976."></p>
+        </div>
+        </div>
+<p class="solution">If 10 adult males are randomly selected, the probability their mean pulse rate is less than 72.5 bpm is approximately equal to 0.4217 or 42.17%.</p>
+</li> 
 </ol>
-       </li>
+</li>
 
-  
-          
-          </ol>
-  
-    
-          <p><a href="http://www.math-play.com/Comparing-Rational-Numbers/comparing-rational-numbers-jeopardy-game_html5.html" target="_blank">Jeopardy Game for Ordering Numbers</a> </p> 
-  
-  
-  
-  
-      </main>
-  
 
-  
+
+
+<!-- <li>The mean amount of cash students at Pellissippi carry in their pocket is $15.00 and the standard deviation is $9.00.  If 40 students are randomly selected, what is the probability the mean amount of cash in their pocket is greater than $18.00?
+    <p>
+        <inline class="solution">We can adjust the standard deviation and use the CLT because the sample size is greater than 30 and this is a distribution of means.</inline></p>
+<p>\(\mu = \)
+    <inline class="solution">15 dollars</inline>
+    <inline>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\sigma = \)</inline>
+    <inline class="solution">\(\frac{9}{\sqrt{40}} \approx 1.4\) dollars</inline>
+    <inline class="solution">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(z_{18.00}=\frac{18.00-15.00}{\left(\frac{9}{\sqrt{40}}\right)}=2.108185 \approx 2.11\)</inline>
+</p>
+<p class="solution">\(P(\overline{x}>18.00)=P(z>2.11)=0.0175\)</p>
+
+<div class="row">
+        <div class="col-sm-6">
+<p class="solution"><img src="images/u3s4p1ak.png" alt="A normal curve labeled with the mean and 3 standard deviations to the left and to the right of the mean on the horizontal axis. They are: 10.8, 12.2, 13.6, 15, 16.4, 17.8, and 19.2. The area under the curve is shaded to the right of 18."></p>
+</div>
+<div class="col-sm-6">
+        <p class="solution"><img src="images/u3s4p1bk.png" alt="A standard normal curve labeled with the mean and 3 standard deviations to the left and to the right of the mean on the horizontal axis. They are: -3, -2, -1, 0, 1, 2, and 3. The area under the curve is shaded to the right of 2.11"></p>
+        </div>
+        </div>
+<p class="solution">If 40 students are randomly selected, the probability their mean amount of cash in their pockets is greater than $18.00 is approximately equal to 0.0175 or 1.75%.</p>
+</li> -->
+
+
+
+
+        </ol>
+   </main>
 
 
 
