@@ -127,59 +127,72 @@
       <h2>4.3 Hypothesis Testing for Means</h2>
 
    
-      <p><i>Realistically, if we are testing a claim about the mean of a population, we do not know the standard deviation of the population.  Therefore, we must use the student t-distribution when hypothesis testing for means.</i></p>
-           
-          
-       
+      <p>Realistically, if we are testing a claim about the mean of a population, we do not know the standard deviation of the population.  Therefore, we must use the student t-distribution when hypothesis testing for means.</p>
+         <br><br> 
+       <p>StatCrunch → Stats → T Stats → One Sample → With Summary (or With Data)</p>
+      
+      <br><br>
       
       
       
       
-      
-      
-      <br>
-      <br>
       
       <ol>
           <li><b>Changing a Tire:</b> The length of time to change a tire is normally distributed.  A random sample of ten tire changes is taken with a mean of 22.63 minutes and a standard deviation of 2.98 minutes. Use a 0.05 significance level to test the claim that the mean time to change a tire is less than 25 minutes.
           
          <ol>
-                  <li>The original Claim: <inline class="solution"> \(\mu < 25\)</inline> </li>
+          <li> Put a box around the statement of the claim in the problem.  
+            <inline class="solution">
+              The mean time to change a tire is less than 25 minutes.
+            </inline>
+          </li>
+                  <li> Claim: <inline class="solution"> \(\mu < 25\)</inline> </li>
                   <li>\(H_0\): <inline class="solution"> \(\mu \geq 25\)  </li>
                   <li>\(H_A\): <inline class="solution">\(\mu < 25\)</inline></li>
                   <li>Type of Test: <inline class="solution">Left-tailed test</inline></li>
-                  <li>Level of Significance: <inline class="solution">\(\alpha =.05\)</inline> </li>
-                  <li>Degrees of Freedom (n-1): <inline class="solution">\(10-1=9\)</inline> </li>
-                  <li>Critical Value(s) (use T calculator in Stat Crunch with area \(\alpha\)  )::  <inline class="solution">\(t=-1.8331\) 
-      
-      <div class="row">
-        <div class="column">  <img src="images/u4s1step5a.png" alt="A normal curve with a critical value marked with a vertical line alpha units from the left end of the graph.  The area to the left of the critical value is shaded and labeled critical region.  The area to the right of the critical value is not shaded and is labeled non-critical region."></div>
-        <div class="column">   <p class="solution"><img src="images/u4s2p1ak.png" alt=" T calculator with the graph of a normal curve.  The x-axis is labeled from -6 to 6 in intervals of 2.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The area under the curve is shaded for all x values less than -1.8331129.  Under the graph, there is a box with df:9 and under that a box with P(x<=-1.8331129)=.05 " width="35%" height="35%"></p></div>
-      </div>
-                   
+                  <li> Draw a graph of the critical/rejection region  
+                    <p class="solution">  <img src="images/u4s1step5a.png" alt="A normal curve with a critical value marked with a vertical line alpha units from the left end of the graph.  The area to the left of the critical value is shaded and labeled critical region.  The area to the right of the critical value is not shaded and is labeled non-critical region."></p>
                   </li>
-              
-           
-        
-                      <li>Test Statistic: 
-                          <p class="solution">  \(t=\frac{\overline{x}-\mu}{\left(\frac{s}{\sqrt{n}}\right)}=\frac{22.63-25}{\left(\frac{2.98}{\sqrt{10}}\right)}=-2.5150\)</p> 
-                          <p class="solutioncollapse"><img src="images/u4s2p1bk.png" alt=" One sample T summary hypothesis test: mu: mean of the population, H_O: mu = 25, H_A: mu < 25.
-                            Hypothesis Test results: 
-                            Mean: mu
-                            Sample Mean: 22.63
-                            Std. Err.: 0.94235874
-                            DF: 9
-                            T-Stat: -2.5149658
-                            p-value: 0.0165 " ></p>
-                   
-                      </li>
+                  <li> Significance Level: <inline class="solution">\(\alpha =0.05\)</inline> </li>
+                  <li> Underline the sample mean and sample standard deviation  
+                    <inline class="solution"> sample mean 22.63 minutes and sample standard deviation 2.98 minutes</inline>
+                  </li>
                       <li>p-value: <inline class="solution">0.0165</inline></li>
                    
-                      <li>Decision about the null: <inline class="solution">Reject \(H_0\) </inline>
-                      <p class="solution">Reason 1:  0.0165 < .05 or Reason 2: -2.5150 is in the rejection region </p>
+                      <li>Decision about the null: <inline class="solution">Since 0.015 is less than 0.05 we reject the null hypothesis </inline>
+                    
                       
                       </li>
-                      <li>Concluding statement about the claim: <inline class="solution">There is sufficient evidence to support the claim the mean time to change a tire is less than 25 minutes. </inline> </li>
+                      <li>Concluding statement: <inline class="solution">There is sufficient evidence to support the claim that the mean time to change a tire is less than 25 minutes. </inline> </li>
+
+                      <br>  <style type="text/css">
+                        .tg  {border-collapse:collapse;border-spacing:0;}
+                        .tg td{font-family:Arial, sans-serif;font-size:18px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+                        .tg th{font-family:Arial, sans-serif;font-size:18px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+                        .tg .tg-0lax{text-align:left;vertical-align:top}
+                        </style>
+                        <table class="tg" summary="Table of the correct format for the wording of the statement about the claim.  The correct wording is based on the decision about the null and whether the null or the alternate hypothesis is the claim. Column headers are Null Hypothesis is the claim and Alternate Hypothesis is the claim. Row headers are reject the null and fail to reject the null.  Use JAWS table navigation keystrokes to identify cell locations.">
+                          <tr>
+                            <th class="tg-0lax"></th>
+                            <th class="tg-0lax" scope="col">Claim has  \( =,\ \ \le,\ \ \geq \) </th>
+                            <th class="tg-0lax" scope="col">Claim has  \( \neq,\ <,\ \ > \) </th>
+                          </tr>
+                          <tr>
+                            <th class="tg-0lax"></th>
+                            <td class="tg-0lax" scope="col">Claim is null hypothesis</td>
+                            <td class="tg-0lax" scope="col">Claim is alternate hypothesis</td>
+                          </tr>
+                          <tr>
+                            <th class="tg-0lax" scope="row">Reject the null hypothesis</th>
+                            <td class="tg-0lax" >“There is sufficient sample evidence to reject the claim that…”</td>
+                            <td class="tg-0lax" >“There is sufficient sample evidence to support the claim that…”</td>
+                          </tr>
+                          <tr>
+                            <th class="tg-0lax" scope="row">Fail to reject the null hypothesis</th>
+                            <td class="tg-0lax">“There is not sufficient sample evidence to reject the claim that…”</td>
+                            <td class="tg-0lax">“There is not sufficient sample evidence to support the claim that…”</td>
+                          </tr>
+                        </table><br>   
                 
           </ol>
           
@@ -190,37 +203,59 @@
           
           <li><b>Age of Cars:</b> The mean age of cars driven by Pellissippi State students is seven years. The Dean of Students claims that this is an accurate statement for his students. A random sample of 31 cars in the East Parking Lot on campus showed a mean age of 8.1 years with a standard deviation of 5.1 years. Test the Dean’s claim at the 0.01 significance level.
               <ol>
-                      
-                          <li>The original Claim: <inline class="solution"> \(\mu = 7\)</inline> </li>
+                      <li> Put a box around the statement of the claim in the problem.  
+                        <inline class="solution">The mean age of car driven by PSCC students is 7 years.</inline>
+                      </li>
+                          <li>Claim: <inline class="solution"> \(\mu = 7\)</inline> </li>
                           <li>\(H_0\): <inline class="solution"> \(\mu = 7\)</inline> </li>
                           <li>\(H_A\): <inline class="solution">\(\mu \neq 7\)</inline></li>
                           <li>Type of Test: <inline class="solution">Two-tailed test</inline></li>
-                          <li>Level of Significance: <inline class="solution">\(\alpha =.01\)</inline> </li>
-                          <li>Degrees of Freedom: <inline class="solution">\(31-1=30\)</inline> </li>
-                          <li>Critical Value(s):  <inline class="solution">\(t=\pm 2.750\) Determines shaded area(s)</inline></li>
-                   
-                      <p class="solution"><img src="images/u4s2p2ak.png" alt=" T calculator with the graph of a normal curve.  The x-axis is labeled from -4 to 4 in intervals of 2.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The area under the curve is shaded for all x values between -2.75 and +2.75.  Under the graph, there is a box with df:30 and under that a box with P(-2.75<=x<=2.75)=.99" width="35%" height="35%"></p>
+                          <li> Draw a graph of the critical/rejection region  
+                            <p class="solution"><img src="images/u4s1step5c.png" alt="A normal curve with two critical values marked with  vertical lines alpha divided by 2 units from each end of the graph.  The area to the left and right of the 2 critical values are shaded to the ends of the curve and labeled critical regions.  The area between the critical values is not shaded and is labeled non-critical region.">
+                            </p>
+                          <li>Significance Level: <inline class="solution">\(\alpha =0.01\)</inline> </li>
+                          <li> Underline the sample mean and sample standard deviation  
+                            <inline class="solution">sample mean 8.1 years and sample standard deviation 5.1 years</inline> </li>
+                          
+                       
                
-                              <li>Test Statistic: 
-                                  <p class="solution">  \(\mathrm{t}=\frac{\overline{x}-\mu}{\left(\frac{s}{\sqrt{n}}\right)}=\frac{8.1-7}{\left(\frac{5.1}{\sqrt{31}}\right)}=1.20089\)</p> 
-                                  <p class="solutioncollapse"><img src="images/u4s2p2bk.png" alt="One sample T summary hypothesis test: mu: mean of the population, H_O: mu = 7, H_A: mu does not equal 7.
-                                    Hypothesis Test results: 
-                                    Mean: mu
-                                    Sample Mean: 8.1
-                                    Std. Err.: 0.91598704
-                                    DF: 30
-                                    T-Stat: 1.2008904
-                                    p-value: 0.2392"></p>
-                                  <p class="solutioncollapse"><img src="images/u4s2p2ck.png" alt="Graph of t-distribution with DF=30, T-stat=1.2009, p-value: 0.2392. T calculator with the graph of a normal curve.  The x-axis is labeled from -4 to 4 in intervals of 2.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The area under the curve is shaded for all x values less than -1.2009 and greater than +1.2009."></p>
-                              </li>
                               <li>p-value: <inline class="solution">0.2392</inline></li>
                         
-                              <li>Decision about the null: <inline class="solution">Fail to reject \(H_0\) </inline>
-                              <p class="solution">Reason 1:  0.2392 > .01   </p>
-                              <inline class="solution">Reason 2: 1.20089 is not in the rejection region</inline>
+                              <li>Decision about the null: 
+                              <p class="solution">Since 0.2392 is greater than 0.01 we fail to reject the null hypothesis  </p>
+                            
                               </li>
-                              <li>Concluding statement about the claim: <inline class="solution">There is not sufficient evidence to reject the claim the mean age of cars driven by PSCC students is 7 years. </inline> </li>
+                              <li>Concluding statement: <inline class="solution">There is not sufficient sample evidence to reject the claim that the mean age of cars driven by PSCC students is 7 years. </inline> </li>
                          
+                              <br>  <style type="text/css">
+                                .tg  {border-collapse:collapse;border-spacing:0;}
+                                .tg td{font-family:Arial, sans-serif;font-size:18px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+                                .tg th{font-family:Arial, sans-serif;font-size:18px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+                                .tg .tg-0lax{text-align:left;vertical-align:top}
+                                </style>
+                                <table class="tg" summary="Table of the correct format for the wording of the statement about the claim.  The correct wording is based on the decision about the null and whether the null or the alternate hypothesis is the claim. Column headers are Null Hypothesis is the claim and Alternate Hypothesis is the claim. Row headers are reject the null and fail to reject the null.  Use JAWS table navigation keystrokes to identify cell locations.">
+                                  <tr>
+                                    <th class="tg-0lax"></th>
+                                    <th class="tg-0lax" scope="col">Claim has  \( =,\ \ \le,\ \ \geq \) </th>
+                                    <th class="tg-0lax" scope="col">Claim has  \( \neq,\ <,\ \ > \) </th>
+                                  </tr>
+                                  <tr>
+                                    <th class="tg-0lax"></th>
+                                    <td class="tg-0lax" scope="col">Claim is null hypothesis</td>
+                                    <td class="tg-0lax" scope="col">Claim is alternate hypothesis</td>
+                                  </tr>
+                                  <tr>
+                                    <th class="tg-0lax" scope="row">Reject the null hypothesis</th>
+                                    <td class="tg-0lax" >“There is sufficient sample evidence to reject the claim that…”</td>
+                                    <td class="tg-0lax" >“There is sufficient sample evidence to support the claim that…”</td>
+                                  </tr>
+                                  <tr>
+                                    <th class="tg-0lax" scope="row">Fail to reject the null hypothesis</th>
+                                    <td class="tg-0lax">“There is not sufficient sample evidence to reject the claim that…”</td>
+                                    <td class="tg-0lax">“There is not sufficient sample evidence to support the claim that…”</td>
+                                  </tr>
+                                </table><br>
+
                   </ol>
           </li>
           
@@ -262,16 +297,16 @@
                   </table>
                   
       
-                  <inline class="solution"> Sample Statistics: \(\overline{x}=29.8333333 \quad s=3.666221 \quad n=18\)</inline>
+                  <!-- <inline class="solution"> Sample Statistics: \(\overline{x}=29.8333333 \quad s=3.666221 \quad n=18\)</inline> -->
       
                   <br>
       
                   <ol>
-                              <li>The original Claim: <inline class="solution"> \(\mu < 31\)</inline> </li>
+                              <li>Claim: <inline class="solution"> \(\mu < 31\)</inline> </li>
                               <li>\(H_0\): <inline class="solution"> \(\mu \geq 31\)</inline>  </li>
                               <li>\(H_A\): <inline class="solution">\(\mu < 31\)</inline></li>
                               <li>Type of Test: <inline class="solution">Left-tailed test</inline></li>
-                              <li>Level of Significance: <inline class="solution">\(\alpha =0.01\)</inline> </li>
+                              <!-- <li>Level of Significance: <inline class="solution">\(\alpha =0.01\)</inline> </li>
                               <li>Degrees of Freedom: <inline class="solution">\(18-1=17\)</inline> </li>
                               <li>Critical Value(s):  <inline class="solution">\(t=-2.5669\) Determines shaded area(s)</inline></li>
                         
@@ -288,26 +323,230 @@
                                         T-Stat: -1.3500952
                                         p-value: 0.0973"></p>
                                    
-                                  </li>
+                                  </li> -->
+                              <li> Draw a graph of the critical/rejection region  
+                                <p class="solution">  <img src="images/u4s1step5a.png" alt="A normal curve with a critical value marked with a vertical line alpha units from the left end of the graph.  The area to the left of the critical value is shaded and labeled critical region.  The area to the right of the critical value is not shaded and is labeled non-critical region."></p>
+                              </li>    
                                   <li>p-value: <inline class="solution">0.0973</inline></li>
                              
-                                  <li>Decision about the null: <inline class="solution">Fail to reject \(H_0\) </inline>
-                                  <p class="solution">Reason 1:  0.0973 > .01   </p>
-                                  <p class="solution">Reason 2: -1.3051 is not in the rejection region</p>
+                                  <li>Decision about the null: <inline class="solution">Since 0.0973 is greater than 0.01 we fail to reject the null hypothesis. </inline>
+                                
                                   </li>
-                                  <li>Concluding statement about the claim: <inline class="solution">There is not sufficient evidence to support the claim the mean class size for full time faculty is fewer than 31 students. </inline> </li>
+                                  <li>Concluding statement: <inline class="solution">There is not sufficient sample evidence to support the claim that the mean class size for full-time faculty is fewer than 31 students. </inline> </li>
                              
+                                  <br>  <style type="text/css">
+                                    .tg  {border-collapse:collapse;border-spacing:0;}
+                                    .tg td{font-family:Arial, sans-serif;font-size:18px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+                                    .tg th{font-family:Arial, sans-serif;font-size:18px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+                                    .tg .tg-0lax{text-align:left;vertical-align:top}
+                                    </style>
+                                    <table class="tg" summary="Table of the correct format for the wording of the statement about the claim.  The correct wording is based on the decision about the null and whether the null or the alternate hypothesis is the claim. Column headers are Null Hypothesis is the claim and Alternate Hypothesis is the claim. Row headers are reject the null and fail to reject the null.  Use JAWS table navigation keystrokes to identify cell locations.">
+                                      <tr>
+                                        <th class="tg-0lax"></th>
+                                        <th class="tg-0lax" scope="col">Claim has  \( =,\ \ \le,\ \ \geq \) </th>
+                                        <th class="tg-0lax" scope="col">Claim has  \( \neq,\ <,\ \ > \) </th>
+                                      </tr>
+                                      <tr>
+                                        <th class="tg-0lax"></th>
+                                        <td class="tg-0lax" scope="col">Claim is null hypothesis</td>
+                                        <td class="tg-0lax" scope="col">Claim is alternate hypothesis</td>
+                                      </tr>
+                                      <tr>
+                                        <th class="tg-0lax" scope="row">Reject the null hypothesis</th>
+                                        <td class="tg-0lax" >“There is sufficient sample evidence to reject the claim that…”</td>
+                                        <td class="tg-0lax" >“There is sufficient sample evidence to support the claim that…”</td>
+                                      </tr>
+                                      <tr>
+                                        <th class="tg-0lax" scope="row">Fail to reject the null hypothesis</th>
+                                        <td class="tg-0lax">“There is not sufficient sample evidence to reject the claim that…”</td>
+                                        <td class="tg-0lax">“There is not sufficient sample evidence to support the claim that…”</td>
+                                      </tr>
+                                    </table><br>
+
+
                       </ol>
           </li>
-      </ol>
+      
       <p style="page-break-before: always"></p>
       
-     
-  
+  <h3>In a hypothesis test for a mean, we can also calculate a critical value and a test statistic.</h3>  
+  <br> 
+  <ul>
+    <li> The critical value is the z-score associated with the significance level α. It defines the critical region.</li>
+    <li> The test statistic is the z-score associated with the p-value. The test statistic is a standardized value calculated from the sample.  If the test statistic is in the critical region, then we reject the null hypothesis.</li>
+  </ul>
+  <br><br>
+  <li>It is claimed that the average time it takes to eat an apple is less than 4 minutes. A random sample of 25 apple eaters takes an average of 3.8 minutes to eat an apple with a standard deviation of 2.1 minutes. Test the claim using a 0.05 significance level.
+    <ol>
+      <li> Put a box around the statement of the claim in the problem.  
+        <inline class="solution">The average time it takes to eat an apple is less than 4 minutes.</inline>
+      </li>
+          <li>Claim: <inline class="solution"> \(\mu < 4\)</inline> </li>
+          <li>\(H_0\): <inline class="solution"> \(\mu \geq 4\)</inline> </li>
+          <li>\(H_A\): <inline class="solution">\(\mu < 4\)</inline></li>
+          <li>Type of Test: <inline class="solution">Left-tailed</inline></li>
+          <li> Draw a graph of the critical/rejection region  
+            <p class="solution">  <img src="images/u4s1step5a.png" alt="A normal curve with a critical value marked with a vertical line alpha units from the left end of the graph.  The area to the left of the critical value is shaded and labeled critical region.  The area to the right of the critical value is not shaded and is labeled non-critical region."></p>
+            </p>
+          <li>Significance Level: <inline class="solution">\(\alpha =0.05\)</inline> </li>
+          <li> Underline the sample mean and sample standard deviation  
+            <inline class="solution">sample mean is 3.8 minutes and sample standard deviation is 2.1 minutes</inline> </li>
+          
+       
+
+              <li>i.	Critical value (label this on your graph): <inline class="solution">-1.71</inline></li>
+        <li> Test statistic (label this on your graph):  
+          <p><i>If the test statistic is in the critical region, then reject the null hypothesis.</i></p>
+<inline class="solution">-0.48</inline>
+        </li>
+              <li>Decision about the null: 
+              <p class="solution">Fail to reject the null hypothesis </p>
+            
+              </li>
+              <li>There is not sufficient sample evidence to support the claim that the mean time to eat an apple is less than 4 minutes. </inline> </li>
+         
+              <br>  <style type="text/css">
+                .tg  {border-collapse:collapse;border-spacing:0;}
+                .tg td{font-family:Arial, sans-serif;font-size:18px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+                .tg th{font-family:Arial, sans-serif;font-size:18px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+                .tg .tg-0lax{text-align:left;vertical-align:top}
+                </style>
+                <table class="tg" summary="Table of the correct format for the wording of the statement about the claim.  The correct wording is based on the decision about the null and whether the null or the alternate hypothesis is the claim. Column headers are Null Hypothesis is the claim and Alternate Hypothesis is the claim. Row headers are reject the null and fail to reject the null.  Use JAWS table navigation keystrokes to identify cell locations.">
+                  <tr>
+                    <th class="tg-0lax"></th>
+                    <th class="tg-0lax" scope="col">Claim has  \( =,\ \ \le,\ \ \geq \) </th>
+                    <th class="tg-0lax" scope="col">Claim has  \( \neq,\ <,\ \ > \) </th>
+                  </tr>
+                  <tr>
+                    <th class="tg-0lax"></th>
+                    <td class="tg-0lax" scope="col">Claim is null hypothesis</td>
+                    <td class="tg-0lax" scope="col">Claim is alternate hypothesis</td>
+                  </tr>
+                  <tr>
+                    <th class="tg-0lax" scope="row">Reject the null hypothesis</th>
+                    <td class="tg-0lax" >“There is sufficient sample evidence to reject the claim that…”</td>
+                    <td class="tg-0lax" >“There is sufficient sample evidence to support the claim that…”</td>
+                  </tr>
+                  <tr>
+                    <th class="tg-0lax" scope="row">Fail to reject the null hypothesis</th>
+                    <td class="tg-0lax">“There is not sufficient sample evidence to reject the claim that…”</td>
+                    <td class="tg-0lax">“There is not sufficient sample evidence to support the claim that…”</td>
+                  </tr>
+                </table><br>
+
+  </ol>
+
+  </li>
       
+    <h3>Reading for Claims and Test Type (problems 5-9)</h3>  
+<br>
+    <p><b>Draw a box around the claim in the problem.  Write the claim in words.  Then write the claim in symbols.</b></p>
+
+    <p><b>Circle the little words that have big meaning when deciding which type of hypothesis test to perform</b></p>
+    <br><br>
+    <li> The Cell Phone Market Research Company conducted a national survey in 2010 and found that 30% of households in the United States owned at least three cell phones. Michele, a statistics student, decides to replicate this study where she lives. She conducts a random survey of 150 households in her town and finds that 53 own at least three cell phones. Is this strong evidence that the proportion of households in Michele’s town that own at least three cell phones is more than the national percentage? Test at a 5% significance level.
+      <ul>
+        <li> Claim in words:
+        </li><br><br>
+        <li>Claim in symbols:</li>
+        <br>
+        <li>Type of hypothesis test (Proportion – Proportion Stats or Mean – T Stats): </li>
+        <br>
+        <li>What is your evidence to know the type of hypothesis test? </li>
+        <br><br><br>
+      </ul>
+
+    </li>
+    <li> A class of statistics students believe that the mean score on the first statistics test is 65. A statistics instructor thinks the mean score is lower than 65. He randomly samples 10 statistics student scores and obtains the scores [62, 54, 64, 58, 70, 67, 63, 59, 69, 64]. The instructor tests his claim using a 5% level of significance.
+      <ul>
+        <li> Claim in words:
+        </li><br><br>
+        <li>Claim in symbols:</li>
+        <br>
+        <li>Type of hypothesis test (Proportion – Proportion Stats or Mean – T Stats): </li>
+        <br>
+        <li>What is your evidence to know the type of hypothesis test? </li>
+        <br><br><br>
+      </ul>
+
+    </li>
+
+    <li> An engineer measured the Brinell hardness of 25 pieces of ductile iron. The sample mean was 172.5 and the sample standard deviation was 10.3.  The engineer hypothesized that the mean Brinell hardness of <i>all</i> such ductile iron pieces is greater than 170.   Test this claim using a significance level of 0.01.
+      <ul>
+        <li> Claim in words:
+        </li><br><br>
+        <li>Claim in symbols:</li>
+        <br>
+        <li>Type of hypothesis test (Proportion – Proportion Stats or Mean – T Stats): </li>
+        <br>
+        <li>What is your evidence to know the type of hypothesis test? </li>
+        <br><br><br>
+      </ul>
+
+    </li>
+
+
+    <li> A certain soft drink bottler claims that less than 20% of its customers drink another brand of soft drink on a regular basis. A random sample of 100 customers yielded 18 who did in fact drink another brand of soft drink on a regular basis. Do these sample results support the bottler’s claim? (Use a level of significance of 0.05.)
+      <ul>
+        <li> Claim in words:
+        </li><br><br>
+        <li>Claim in symbols:</li>
+        <br>
+        <li>Type of hypothesis test (Proportion – Proportion Stats or Mean – T Stats): </li>
+        <br>
+        <li>What is your evidence to know the type of hypothesis test? </li>
+        <br><br><br>
+      </ul>
+
+    </li>
+    
+
+
+
+    <li> Weight losses of 12 persons in an experimental one-week diet program are given below: 
+
+      Weight Loss in Pounds 
+      <br>  <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{font-family:Arial, sans-serif;font-size:18px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg th{font-family:Arial, sans-serif;font-size:18px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg .tg-0lax{text-align:left;vertical-align:top}
+        </style>
+        <table class="tg" summary="Table weights.  No header rows or columns.  Use JAWS table navigation keystrokes to identify cell locations.">
+          <tr>
+            <td class="tg-0lax" scope="col">3.0</td>
+            <td class="tg-0lax" scope="col">1.4 </td>
+            <td class="tg-0lax" scope="col">0.2</td>
+            <td class="tg-0lax" scope="col">-1.2</td>
+            <td class="tg-0lax" scope="col">5.3</td>
+            <td class="tg-0lax" scope="col">1.7</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax" scope="col">3.7</td>
+            <td class="tg-0lax" scope="col">5.9</td>
+            <td class="tg-0lax" scope="col">0.2</td>
+
+            <td class="tg-0lax" scope="col">3.6</td>
+            <td class="tg-0lax" scope="col">3.7</td>
+            <td class="tg-0lax" scope="col">2.0</td>
+          </tr>
+          
+        </table><br>
+      Do these results indicate that a mean weight loss of more than 1 pound was achieved? (Assume that the population is normally distributed and use α = 0.05.)
       
-      
-      <h3>Comparing Hypothesis Testing for the Mean and Hypothesis Testing for a Proportion</h3>
+      <ul>
+        <li> Claim in words:
+        </li><br><br>
+        <li>Claim in symbols:</li>
+        <br>
+        <li>Type of hypothesis test (Proportion – Proportion Stats or Mean – T Stats): </li>
+        <br>
+        <li>What is your evidence to know the type of hypothesis test? </li>
+        <br><br><br>
+      </ul>
+
+    </li>
+      <!-- <h3>Comparing Hypothesis Testing for the Mean and Hypothesis Testing for a Proportion</h3>
       <style type="text/css">
         .tg  {border-collapse:collapse;border-spacing:0;}
         .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
@@ -402,7 +641,7 @@
             <th class="tg-0lax" scope="row">  <p class="solution">There is sufficient evidence to support the claim that more than 15% of sneakers attach with Velcro.</p></th>
           </tr>
       
-        </table>
+        </table> -->
       
 
 

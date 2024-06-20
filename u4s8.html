@@ -126,283 +126,198 @@
 
 
     <main>
-      <h2>4.8 Goodness of Fit</h2>
-      <p><b>Test the hypothesis that an observed frequency distribution fits or conforms to a claimed distribution.</b></p>
-      <br><br>
+      <h2>4.8 Paired T-test</h2>
+   <br>
 
+   <p>Use a paired t-test when each subject has a pair of measurements, such as before and after scores.  A paired t-test determines whether the mean change for these pairs is significantly different from zero.</p>
+   <br>
+   <p>In StatCrunch enter sample data in two columns, then select Stat → T Stats → Paired</p>
 
-     
-     
-     <h3>Notations:  </h3>
-     <br>
-     <p>O - Observed Frequency of a category is the frequency for the category observed in the sample data.</p>
-     <p>E - Expected Frequency of a category is the claimed frequency for the category – a calculated value.</p>
-     <p>K - Number of Different Categories or outcome</p>
-     <p>n - Total Number of Trials (the sample size)</p>
-     
+<br><br>
 
-
-
-<br>
-
-
-
-
-
-
-
-
-<h3>Requirements:</h3>
-
-
-<br>
 <ol>
-    <li>The data have been randomly selected.    </li>
-    <li>The sample data consist of frequency counts for each of the different categories.</li>
-    <li>For each category, the expected frequency is at least 5. (The expected frequency for a category is the frequency
-        that would occur if the data actually have the distribution that is being claimed. No requirement that the
-        observed frequency for each category must be at least 5.)
-        </li>
-</ol>
-
-
-<h3>Test Statistic for a Goodness of Fit Test</h3>
-<p>We will get this value from StatCrunch, but it can be calculated by hand:</p>
-<p>\(\chi^{2}=\sum \frac{(O-E)^{2}}{E}\)</p>
-
-<h4>Calculating Expected Frequencies (E) </h4>
-
-<ul>
-    <li>Expected frequencies are equal: \(E=n/k\)</li>
-    <li>Expected frequencies are not equal: \(E=np\) (for each category)</li>
-</ul>
-<p style="page-break-before: always"></p>
-         
-   <h3>Null and Alternative Hypotheses</h3>   
-
-<ul>
-    <li>Null, \(H_0\)
-        <p>The distribution of ___________ is the same as the expected distribution.</p>
-        <p> For each category, the observed value is equal to the expected value. </p>
-        <br>
-        <p>Mathematically:</p>
-        <p> \(p_1=p_2=p_3...\) for an expected uniform distribution</p>
-        <p>  \(p_1=\_\_\_,\;p_2=\_\_\_,\;p_3=\_\_\_...\) for any non-uniform expected distribution.
-            </p>
-    </li>
-    <br>
-    <li>Alternative, \(H_A\)
-        <p>The distribution of _____________ differs from the expected distribution.</p>
-        <p> In the categories, at least one observed value is NOT equal to the expected value.</p>
-    </li>
-</ul>
-
-
-<h3>Using StatCrunch for a Goodness of Fit Test:</h3>
-<ol>
-    <li>Identify the <b>critical chi-squared value</b>, \(\lambda_{c v}^{2}\) in order to shade your curve.
-    <p><b>STAT - Calculators - Chi-Square</b></p>
-    <ol>
-        <li>Enter degrees of freedom, DF = k – 1</li>
-        <li>Area to the right (always a right-tail test, use ≥) is the significance level</li>
-    </ol>
-</li>
-    <li>Run the test and record the important information:
-        <p><b>STAT – Goodness of Fit – Chi Square Test</b> – fill in information about your observed and expected values –</p>
-        <p>Identify</p>
+    <li>You are a bean sorter in a bean-sorting facility.  Your pay is dependent on how many beans you can sort during your shift.  One day, evaluators from OSHA visit the facility and discover that you are sorting beans without wearing gloves!
         <ol>
-            <li>Test Statistic (Chi-Square)
+            <li> Do you think wearing gloves will make a difference in your bean-sorting speed?  How?</li>
+            <br><br>
+            <li> Claim: 
+<inline class="solution">Workers will sort beans slower when wearing gloves.</inline
             </li>
-            <li>P-value</li>
+            <li>\(H_0\):
+<inline class="solution">\(\mu_D=0\)</inline>
+            </li>
+            <li>\(H_A\):
+                <inline class="solution">\(\mu_D < 0\)</inline>
+            </li>
+            <li> How many beans did you sort in the allotted time while wearing gloves?</li>
+            <li> How many beans did you sort in the allotted time while not wearing gloves?</li>
+            <li> Compile your classroom data and run a paired t-test using a significance level of 0.05.  What is the p-value?</li>
+            <li> Decision about the null hypothesis:</li>
+            <li> Concluding statement about your claim:</li>
+            <li> Should you approach your boss with a request for a pay rate increase now that you have to wear gloves?  Why or why not?</li>
         </ol>
     </li>
-    <li>Mark your curve with your test statistic. Is it in the shaded rejection region in the right tail?
+<br>
+
+    <li>A researcher conducts an investigation to see how effective a new diet is in lowering cholesterol.  Cholesterol level is measured before and after participants follow a special diet for 3 months.  Are the subjects’ cholesterol levels lower on average after the diet?  Test at the 0.05 significance level.
+
+        <br>
+ 
+        <style type="text/css">
+          .tg  {border-collapse:collapse;border-spacing:0;}
+          .tg td{font-family:Arial, sans-serif;font-size:14px;padding:15px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+          .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:15px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+          .tg .tg-0lax{text-align:center;vertical-align:top;font-family:Arial, sans-serif;font-size:16px;font-weight:normal;padding:15px 19px}
+          .tg .tg-seal{text-align:center;vertical-align:top;font-family:Arial, sans-serif;font-size:20px;font-weight:normal;padding:15px 19px}
+          </style>
+          <table class="tg" summary="Table of the people in the diet study.  Subjects are labeled as letters and cholesterol level is listed for before and after the diet.  Row headers are in column 1 and column headers are in row 1.  Use JAWS table navigation keystrokes to identify cell locations.">
+            <tr>
+              <th class="tg-seal" scope="row">Subject</th>
+              <th class="tg-0lax">A</th>
+              <th class="tg-0lax">B</th>
+              <th class="tg-0lax">C</th>
+              <th class="tg-0lax">D</th>
+              <th class="tg-0lax">E</th>
+          
+              <th class="tg-0lax">F</th>
+              <th class="tg-0lax">G</th>
+              <th class="tg-0lax">H</th>
+              <th class="tg-0lax">I</th>
+             
+            </tr>
+            <tr>
+              <th class="tg-seal"scope="row">Before</th>
+              <td class="tg-0lax">209</td>
+              <td class="tg-0lax">210</td>
+              <td class="tg-0lax">205</td>
+              <td class="tg-0lax">198</td>
+              <td class="tg-0lax">216</td>
+              <td class="tg-0lax">217</td>
+            
+              <td class="tg-0lax">238</td>
+              <td class="tg-0lax">240</td>
+              <td class="tg-0lax">222</td>
+             
+            </tr>
+
+            <tr>
+                <th class="tg-seal"scope="row">After</th>
+                <td class="tg-0lax">199</td>
+                <td class="tg-0lax">207</td>
+                <td class="tg-0lax">189</td>
+                <td class="tg-0lax">209</td>
+                <td class="tg-0lax">217</td>
+                <td class="tg-0lax">202</td>
+                <td class="tg-0lax">211</td>
+                <td class="tg-0lax">223</td>
+                <td class="tg-0lax">201</td>
+                
+              </tr>
+          </table>
+           
+      <br>
+
+        <ol>
+            
+            <li> Claim: 
+<inline class="solution">Cholesterol levels are lower after the special diet.</inline
+            </li>
+            <li>\(H_0\):
+<inline class="solution">\(\mu_D=0\)</inline>
+            </li>
+            <li>\(H_A\):
+                <inline class="solution">\(\mu_D > 0\)</inline>
+            </li>
+            <li> What is the p-value in the paired t-test for the researcher’s claim? <inline class="solution">0.013</inline> </li>
+           
+            <li> Decision about the null hypothesis? <inline class="solution">Reject \(H_0\)</inline> </li>
+            <li> f.	What should the researcher conclude about the new diet’s effectiveness in lowering cholesterol?  <inline class="solution">There is sufficient sample evidence to support the claim that cholesterol levels are lower after the special diet.</inline> </li>
+            <li> Construct a 95% confidence interval for the mean change in cholesterol level.  
+                <inline class="solution">(1.7, 19.9)</inline>
+            </li>
+            <li> What does the confidence interval tell us about the average change in cholesterol level for people following the special diet for 3 months?  
+                <inline class="solution">We are 95% confident that the mean change in cholesterol levels for people on the special diet for 3 months is between 1.7 and 19.9 lower.</inline>
+            </li>
+            <li> After the special diet, subject G’s cholesterol level was 27 points lower.  Would it be prudent for an advertisement to say that this special diet will lower your cholesterol level by at least 20 points?  Why or why not?  
+                <inline class="solution">It would not be advisable since the upper limit of the confidence interval for the mean change in cholesterol level is only 19.9 points.</inline>
+            </li>
+          
+        </ol>
     </li>
-    <li>Make your decision about the null. Was p-value < alpha?</li>
-</ol>
-
-<p style="page-break-before: always"></p>
-
-<h3>The Chi-Square Curve for a Goodness of Fit Test</h3>
-  <br>
- <p>Goodness-of-Fit is always a right-tailed test. Large values of \(\chi^{2}\)
-    result from significant differences
-    between observed and expected frequencies. When the test statistic falls in the critical region in
-    the right tail, we know that our observed frequencies are too different from the claimed
-    distribution for it to be a good fit.</p>
-
-
-
-    <p><img src="images/u4s8chisquarecurve.png" alt="Chi-square distribution: non-symmetric curve that starts at the origin, rises quickly to a max valueand then more slowly decreases in a concave shape until it skims the x-axis."></p>
 <br>
-    <p><img src="images/u4s8chisquarecv.png" alt="Critical value marked by vertical line near the middle of the graph.  Arrow points to the area under the curve to the left of the critical value and says Small TS, large p-value, Fail to reject null, good fit.  A second arrow points to the area under the curve to the right of the critical value.  Note says Large TS, small p-value, reject null, not a good fit."></p>
-    <p style="page-break-before: always"></p>
-<ol>
-    <li><b>College Dining:</b> The college dining service claims there is no difference in student preferences among the following
-        four entrees: pizza, cheeseburgers, chicken strips, and salad. A sample of 200 students showed that 61 preferred
-        pizza, 49 preferred cheeseburgers, 54 preferred chicken, and 36 preferred salad. Use a 0.10 significance level to test
-        the dining services claim that there is no difference in student preferences.
-<br>
-<style type="text/css">
-  .tg  {border-collapse:collapse;border-spacing:0;}
-  .tg td{font-family:Arial, sans-serif;font-size:14px;padding:15px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-  .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:15px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-  .tg .tg-0lax{text-align:center;vertical-align:top;font-family:Arial, sans-serif;font-size:16px;font-weight:normal;padding:15px 19px}
-  .tg .tg-seal{text-align:center;vertical-align:top;font-family:Arial, sans-serif;font-size:20px;font-weight:normal;padding:15px 19px}
-  </style>
-  <table class="tg" summary="Table of entrees served in the cafeteria.  Table has 2 rows of values.  Row 1 has the number observed in columns 2 through 5.  Row 2 has the number expected in columns 2 through 5.  The row headers are in column 1.  Use JAWS table navigation keystrokes to identify cell locations.">
-    <tr>
-      <th class="tg-seal" scope="row">Entree</th>
-      <td class="tg-0lax">Pizza</td>
-      <td class="tg-0lax">Cheeseburger</td>
-      <td class="tg-0lax">Chicken Strips</td>
-      <td class="tg-0lax">Salad</td>
-    
-    </tr>
-    <tr>
-      <th class="tg-seal"scope="row">Number Observed</th>
-      <td class="tg-0lax">61</td>
-      <td class="tg-0lax">49</td>
-      <td class="tg-0lax">54</td>
-      <td class="tg-0lax">36</td>
-  
-    </tr>
-    <tr>
-      <th class="tg-seal"scope="row">Number Expected</th>
-      <td class="tg-0lax"><inline class="solution">50</inline></td>
-      <td class="tg-0lax"><inline class="solution">50</inline></td>
-      <td class="tg-0lax"><inline class="solution">50</inline></td>
-      <td class="tg-0lax"><inline class="solution">50</inline></td>
-  
-    </tr>
-  </table>
-  <br>
+    <li>Five ball players think they can throw just as far with their off-hand (catching hand) as their dominant hand (throwing hand).  Data was collected for the number of feet players threw the ball with each hand.  Conduct a hypothesis test to determine whether the mean difference in distances is significant.  Test at the 5% level.
 
-<p>The original claim: <inline class="solution">There is no difference in student preferences among the four entrees—the preferences
-  follow a uniform distribution.</inline></p>
-<p>\(H_0\): <inline class="solution">p1 = p2 = p3 = p4 The distribution of the four entrees is the same as the expected uniform distribution.</inline></p>
-<p>\(H_A\): <inline class="solution">The distribution of the four entrees differs from the expected uniform distribution.</inline>
-</p>
-<p>\(\alpha =\) <inline class="solution">\(0.10\)</inline></p>
-<p>\(\chi_{C V}^{2}=\)<inline class="solution">\(6.251\)</inline></p>
-<p>\(\chi_{T S}^{2}=\)<inline class="solution">\(6.680\)</inline></p>
-<p>p-value: <inline class="solution">\(0.0828\)</inline></p>
-<p>Rejection Criteria: Reject \(H_0\) if <inline class="solution">p-value < 0.10</inline></p>
-<p>Decision: <inline class="solution">Reject \(H_0\)</inline></p>
-<p>Concluding Statement: <inline class="solution">There is sufficient evidence to reject the claim that there is no difference in student
-  preference between pizza, cheeseburgers, chicken strips, and salad.</inline></p>
-<p>Describe the claimed distribution: <inline class="solution">Uniform</inline> </p>
-<p>Was it a good fit? <inline class="solution">No</inline></p>
+        <br><br>
+ 
+        <style type="text/css">
+          .tg  {border-collapse:collapse;border-spacing:0;}
+          .tg td{font-family:Arial, sans-serif;font-size:14px;padding:15px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+          .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:15px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+          .tg .tg-0lax{text-align:center;vertical-align:top;font-family:Arial, sans-serif;font-size:16px;font-weight:normal;padding:15px 19px}
+          .tg .tg-seal{text-align:center;vertical-align:top;font-family:Arial, sans-serif;font-size:20px;font-weight:normal;padding:15px 19px}
+          </style>
+          <table class="tg" summary="Table of how far pitchers threw with their dominant hand and their off hand.  Use JAWS table navigation keystrokes to identify cell locations.">
+            <tr>
+              <th class="tg-seal" scope="row"></th>
+              <th class="tg-0lax">Player 1</th>
+              <th class="tg-0lax">Player 2</th>
+              <th class="tg-0lax">Player 3</th>
+              <th class="tg-0lax">Player 4</th>
+              <th class="tg-0lax">Player 5</th>
+          
+             
+             
+            </tr>
+            <tr>
+              <th class="tg-seal"scope="row">Dominant Hand</th>
+              <td class="tg-0lax">120</td>
+              <td class="tg-0lax">111</td>
+              <td class="tg-0lax">135</td>
+              <td class="tg-0lax">140</td>
+              <td class="tg-0lax">125</td>
+             
+            
+              
+             
+            </tr>
 
+            <tr>
+                <th class="tg-seal"scope="row">Off hand</th>
+                <td class="tg-0lax">105</td>
+                <td class="tg-0lax">109</td>
+                <td class="tg-0lax">98</td>
+                <td class="tg-0lax">111</td>
+                <td class="tg-0lax">99</td>
+           
+                
+              </tr>
+          </table>
+           
+      <br>
+      <ol>
+            
+        <li> Claim: 
+<inline class="solution">Players can throw the same distance with their dominant hand and off hand.</inline
         </li>
-        <p style="page-break-before: always"></p>
-    <li><b>Ice-Cream Store (Different Expected Values for Each Category):</b> An ice-cream store manager predicts the following distribution for the daily sale of the 6 flavors offered at his store
-      in the month of January. 
-
- <div class="row">
-                                <div class="col-sm-4">
-                                    <p>Strawberry: 10%</p>
-                                    <p>Cookie Dough: 20%</p>
-                                    
-                                </div>
-                                <div class="col-sm-4">
-                                    <p>Vanilla: 30%</p>
-                                    <picture>Mint Chocolate Chip: 10%</p>
-                                     
-                                </div>
-                                <div class="col-sm-4">
-                                  <p>Orange Sherbert: 10%</p>
-                                    <p>Chocolate: 20%</p>
-                              </div>
-                            </div>
-<p>On January 10, his store sold the following scoops of ice-cream. </p>
-<div class="row">
-  <div class="col-sm-4">
-      <p>Strawberry: 25 scoops</p>
-      <p>Cookie Dough: 35 scoops</p>
+        <li>\(H_0\):
+<inline class="solution">\(\mu_D=0\)</inline>
+        </li>
+        <li>\(H_A\):
+            <inline class="solution">\(\mu_D \neq 0\)</inline>
+        </li>
+        <li> What is the p-value in the paired t-test for the researcher’s claim? <inline class="solution">0.023</inline> </li>
+       
+        <li> Decision about the null hypothesis? <inline class="solution">Reject \(H_0\)</inline> </li>
+        <li> What should the researcher conclude about the new diet’s effectiveness in lowering cholesterol?    <inline class="solution">There is sufficient sample evidence to reject the claim that players can throw the same distance with their dominant hand and off hand.</inline> </li>
+     
+        
       
-  </div>
-  <div class="col-sm-4">
-      <p>Vanilla: 50 scoops</p>
-      <picture>Mint Chocolate Chip: 30 scoops</p>
-      
-  </div>
-  <div class="col-sm-4">
-    <p>Orange Sherbert: 20 scoops</p>
-  
-      <p>Chocolate: 40 scoops</p>
-</div>
-</div>
-
-<p>Use a 0.05 significance level to test the store manager’s claim that the distribution of sales of the six flavors are his predicted values.</p>
-
-<style type="text/css">
-  .tg  {border-collapse:collapse;border-spacing:0;}
-  .tg td{font-family:Arial, sans-serif;font-size:14px;padding:15px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-  .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:15px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-  .tg .tg-0lax{text-align:center;vertical-align:top;font-family:Arial, sans-serif;font-size:16px;font-weight:normal;padding:15px 19px}
-  .tg .tg-seal{text-align:center;vertical-align:top;font-family:Arial, sans-serif;font-size:20px;font-weight:normal;padding:15px 19px}
-  </style>
-  <table class="tg" summary="Table of ice cream flavors.  Table has 2 rows of values.  Row 1 has the number observed in columns 2 through 5.  Row 2 has the number expected in columns 2 through 5.  The row headers are in column 1.  Use JAWS table navigation keystrokes to identify cell locations.">
-    <tr>
-      <th class="tg-seal" scope="row">Flavor</th>
-      <td class="tg-0lax">Strawberry</td>
-      <td class="tg-0lax">Cookie Dough</td>
-      <td class="tg-0lax">Orange Sherbert</td>
-      <td class="tg-0lax">Vanilla</td>
-      <td class="tg-0lax">Mint Choc Chip</td>
-      <td class="tg-0lax">Chocolate</td>
-    
-    </tr>
-    <tr>
-      <th class="tg-seal"scope="row">Observed</th>
-      <td class="tg-0lax"><inline class="solution">25</inline></td>
-      <td class="tg-0lax"><inline class="solution">35</inline></td>
-      <td class="tg-0lax"><inline class="solution">20</inline></td>
-      <td class="tg-0lax"><inline class="solution">50</inline></td>
-      <td class="tg-0lax"><inline class="solution">30</inline></td>
-      <td class="tg-0lax"><inline class="solution">40</inline></td>
-  
-    </tr>
-    <tr>
-      <th class="tg-seal"scope="row">Expected</th>
-      <td class="tg-0lax"><inline class="solution">20</inline></td>
-      <td class="tg-0lax"><inline class="solution">40</inline></td>
-      <td class="tg-0lax"><inline class="solution">20</inline></td>
-      <td class="tg-0lax"><inline class="solution">60</inline></td>
-      <td class="tg-0lax"><inline class="solution">20</inline></td>
-      <td class="tg-0lax"><inline class="solution">40</inline></td>
-  
-    </tr>
-  </table>
-
-<p>The original claim: <inline class="solution">The distribution of sales in the month of January is 10% Strawberry, 20% Cookie dough,
-  10% Orange Sherbet, 30% Vanilla, 10% Mint Chocolate chip, and 20% Chocolate.</inline></p>
-
-<p>\(H_0\): <inline class="solution">The distribution of flavors is the same as the expected distribution. \(\mathrm{p}_{1}=.10, \mathrm{p}_{2}=.20, \mathrm{p}_{3}=.10, \mathrm{p}_{4}=.30, \mathrm{p}_{5}=.10, \mathrm{p}_{6}=.20\)</inline></p>
-
-<p>\(H_A\): <inline class="solution">The distribution of flavors differs from the expected distribution.</inline>
-</p>
-<p>\(\alpha =\) <inline class="solution">\(0.05\)</inline></p>
-<p>\(\chi_{C V}^{2}=\)<inline class="solution">\(11.1\)</inline></p>
-<p>\(\chi_{T S}^{2}=\)<inline class="solution">\(8.54\)</inline></p>
-<p>p-value: <inline class="solution">\(0.1288\)</inline>
-Rejection Criteria: Reject \(H_0\) if <inline class="solution">p-value < 0.05</inline></p>
-<p>Decision: <inline class="solution">Fail to Reject \(H_0\)</inline></p>
-<p>Concluding Statement: <inline class="solution"> There is not sufficient evidence to reject the claimed distribution of ice cream sales.
-</inline></p>
-
+    </ol>
     </li>
-    <p style="page-break-before: always"></p>
-    <li><b>Flat Tire and Missed Class:</b> A classic tale involves four carpooling students who missed a test and gave as an
-      excuse a flat tire. On the makeup test, the instructor asked the students to identify the particular tire that went flat.
-      If they really didn’t have a flat tire, would they be able to identify the same tire? The author asked 41 other student
-      to identify the tire they would select. The results are listed in the following table (except for one student who
-      selected the spare). Use a 0.05 significance level to test the author’s claim that the results fit a uniform distribution.
-      What does the result suggest about the ability of the four students to select the same tire when they really didn’t
-      have a flat?
-      <br>
-      <br>
+<br>
+    <li>Students in a statistics class thought they could do better on an exam if they were allowed to refer to their class notes during the exam.  The teacher gave two exams on the same unit.  On one exam the students got to use notes and on the other they didn’t.  Students were randomly assigned to the exam where they got to use notes.  Conduct a hypothesis test using a 0.10 significance level to determine whether students did better on an exam when they were allowed to use class notes.
+      <br><br>
+ 
       <style type="text/css">
         .tg  {border-collapse:collapse;border-spacing:0;}
         .tg td{font-family:Arial, sans-serif;font-size:14px;padding:15px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
@@ -410,68 +325,430 @@ Rejection Criteria: Reject \(H_0\) if <inline class="solution">p-value < 0.05</i
         .tg .tg-0lax{text-align:center;vertical-align:top;font-family:Arial, sans-serif;font-size:16px;font-weight:normal;padding:15px 19px}
         .tg .tg-seal{text-align:center;vertical-align:top;font-family:Arial, sans-serif;font-size:20px;font-weight:normal;padding:15px 19px}
         </style>
-        <table class="tg" summary="Table of which tire picked.  Table has 2 rows of values.  Row 1 has the number observed in columns 2 through 5.  Row 2 has the number expected in columns 2 through 5.  The row headers are in column 1.  Use JAWS table navigation keystrokes to identify cell locations.">
+        <table class="tg" summary="Table of students and their test scores with and without using notes on the test.  Use JAWS table navigation keystrokes to identify cell locations.">
           <tr>
-            <th class="tg-seal" scope="row">Tire</th>
-            <td class="tg-0lax">Left Front</td>
-            <td class="tg-0lax">Right Front</td>
-            <td class="tg-0lax">Left Rear</td>
-            <td class="tg-0lax">Right Rear</td>
-          
+            <th class="tg-seal" scope="row">Student</th>
+            <th class="tg-0lax">Exam score using notes</th>
+            <th class="tg-0lax">Exam score without using notes</th>
+          </tr>
+
+          <tr>
+            <th class="tg-seal"scope="row">Liam</th>
+            <td class="tg-0lax">85</td>
+            <td class="tg-0lax">83</td>
           </tr>
           <tr>
-            <th class="tg-seal"scope="row">Observed (# of students who selected)</th>
-            <td class="tg-0lax">11</td>
-            <td class="tg-0lax">15</td>
-            <td class="tg-0lax">8</td>
-            <td class="tg-0lax">6</td>
+            <th class="tg-seal"scope="row">Olivia</th>
+            <td class="tg-0lax">77</td>
+            <td class="tg-0lax">80</td>
+          </tr>
+          <tr>
+            <th class="tg-seal"scope="row">Noah</th>
+            <td class="tg-0lax">93</td>
+            <td class="tg-0lax">90</td>
+          </tr>
+          <tr>
+            <th class="tg-seal"scope="row">Emma</th>
+            <td class="tg-0lax">78</td>
+            <td class="tg-0lax">72</td>
+          </tr>
+          <tr>
+            <th class="tg-seal"scope="row">Mateo</th>
+            <td class="tg-0lax">84</td>
+            <td class="tg-0lax">75</td>
+          </tr>
+          <tr>
+            <th class="tg-seal"scope="row">Mia</th>
+            <td class="tg-0lax">73</td>
+            <td class="tg-0lax">73</td>
+          </tr>
+          <tr>
+            <th class="tg-seal"scope="row">William</th>
+            <td class="tg-0lax">89</td>
+            <td class="tg-0lax">85</td>
+          </tr>
+          <tr>
+            <th class="tg-seal"scope="row">Luna</th>
+            <td class="tg-0lax">65</td>
+            <td class="tg-0lax">71</td>
+          </tr>
+          <tr>
+            <th class="tg-seal"scope="row">Lucas</th>
+            <td class="tg-0lax">89</td>
+            <td class="tg-0lax">95</td>
+          </tr>
+          <tr>
+            <th class="tg-seal"scope="row">Evelyn</th>
+            <td class="tg-0lax">76</td>
+            <td class="tg-0lax">77</td>
+          </tr>
+
         
-          </tr>
-          <tr>
-            <th class="tg-seal"scope="row">Expected</th>
-            <td class="tg-0lax"><inline class="solution">10</inline></td>
-            <td class="tg-0lax"><inline class="solution">10</inline></td>
-            <td class="tg-0lax"><inline class="solution">10</inline></td>
-            <td class="tg-0lax"><inline class="solution">10</inline></td>
-        
-          </tr>
         </table>
-        <br>
+         
+    <br>
+    <ol>
+            
+      <li> Claim: 
+<inline class="solution">Statistics students do better on exams when they can refer to class notes during the exam.</inline
+      </li>
+      <li>\(H_0\):
+<inline class="solution">\(\mu_D=0\)</inline>
+      </li>
+      <li>\(H_A\):
+          <inline class="solution">\(\mu_D > 0\)</inline>
+      </li>
+      <li> What is the p-value in the paired t-test for the researcher’s claim? <inline class="solution">0.3112</inline> </li>
+     
+      <li> Decision about the null hypothesis? <inline class="solution">Fail to Reject \(H_0\)</inline> </li>
+      <li> What should the researcher conclude about the new diet’s effectiveness in lowering cholesterol?    <inline class="solution">There is not sufficient sample evidence to support the claim that statistics students do better on exams when they can refer to class notes during the exam.</inline> </li>
+   
+      
+
     
-        <p>The original claim: <inline class="solution">There is a uniform distribution—each tire is equally likely to be selected.</inline></p>
-        
-        <p>\(H_0\): <inline class="solution">The distribution of the tire selection is the same as the expected uniform distribution.
-          \(\mathrm{p}_{1}=\mathrm{p}_{2}=\mathrm{p}_{3}=\mathrm{p}_{4}\)</inline></p>
-        
-        <p>\(H_A\): <inline class="solution">The distribution of the tire selection differs from the expected uniform distribution.</inline>
-        </p>
-        <p>\(\alpha =\) <inline class="solution">\(0.05\)</inline></p>
-        <p>\(\chi_{C V}^{2}=\)<inline class="solution">\(7.8\)</inline></p>
-        <p>\(\chi_{T S}^{2}=\)<inline class="solution">\(4.6\)</inline></p>
-        <p>p-value: <inline class="solution">\(0.2035\)</inline></p>
-        <p>Rejection Criteria: Reject \(H_0\) if <inline class="solution">p-value < 0.05</inline></p>
-        <p>Decision: <inline class="solution">Fail to Reject \(H_0\)</inline></p>
-        <p>Concluding Statement: <inline class="solution"> There is not sufficient evidence to reject the claim of a uniform distribution where each
-          tire is equally likely to be selected.
-        </inline></p>
-    <p>What does the result suggest about the ability of the four students to select the same tire when they really didn’t
-      have a flat?<inline class="solution">The data suggests that the four students would all pick a different tire if they were guessing—so if they said the
-        same tire, they probably weren’t lying.
-        </inline></p>
+  </ol>
     </li>
+<br><br>
 
+    <h3>Hypothesis Testing Decisions</h3>
+    <br>
+    <p><b>Put a box around the claim in the problem.  Circle the little words in each problem that have big meaning!</b></p>
+<br><br>
+   <li> 
+    <div class="row">
+      <div class="col-sm-4">
+        <p><b>Problem</b></p>
+      </div>
+      <div class="col-sm-4"><p><b>Type of Problem</b></p></div>
+      <div class="col-sm-4"><p><b>Evidence</b></p></div>
+    </div>
+      <div class="row">
+        <div class="col-sm-4">
+         
+          You believe PSCC students on average watch less television now then during the covid pandemic.  You randomly survey 90 PSCC students and ask them how many hours of television they watch per day.  The mean number of hours in your sample is 3.5, with a standard deviation of 2.2.  Can you support the claim that PSCC students watch less than 4 hours of television per day on average?
+        </div>
+        <div class="col-sm-4"> 
+        <ul>
+          <li>Hypothesis test for a population proportion – use Proportion Stats</li>
+          <br>
+          <li>Hypothesis test for a population mean – use T Stats</li>
+          <br>
+          <li>Hypothesis test for linear correlation – use Regression</li>
+          <br>
+          <li>Hypothesis test for Independence – use Tables ~ Contingency</li>
+          <br>
+          <li>Hypothesis test for mean change – use T Stats ~ Paired</li>
+        </ul></div>
+        <div class="col-sm-4"> 
+        <p>How did you know the type of hypothesis test?</p>
+        <br><br><br>
+        <p>Claim:</p>
+        <br><br>
+        <p>\(H_0\)</p>
+     <br>
+     <p>\(H_A\)</p>
+     <br><br>
+      </div>
+      </div>
+    </li>
+<br>
+<li> 
+  <div class="row">
+    <div class="col-sm-4">
+      <p><b>Problem</b></p>
+    </div>
+    <div class="col-sm-4"><p><b>Type of Problem</b></p></div>
+    <div class="col-sm-4"><p><b>Evidence</b></p></div>
+  </div>
+    <div class="row">
+      <div class="col-sm-4">
+       
+        A new prep class was designed to improve ACT scores. The scores on two practice exams for several randomly selected students were recorded, one before the class and one after the class. Are the scores, on average, higher after the class?
+        <br>
+ 
+      <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:15px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:15px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg .tg-0lax{text-align:center;vertical-align:top;font-family:Arial, sans-serif;font-size:16px;font-weight:normal;padding:15px 19px}
+        .tg .tg-seal{text-align:center;vertical-align:top;font-family:Arial, sans-serif;font-size:20px;font-weight:normal;padding:15px 19px}
+        </style>
+        <table class="tg" summary="Table of students and their pre and post test scores.  Use JAWS table navigation keystrokes to identify cell locations.">
+          <tr>
+            <th class="tg-seal" scope="row">Student</th>
+            <th class="tg-0lax">Pre</th>
+            <th class="tg-0lax">Post</th>
+          </tr>
 
+          <tr>
+            <th class="tg-seal"scope="row">1</th>
+            <td class="tg-0lax">17</td>
+            <td class="tg-0lax">19</td>
+          </tr>
+          <tr>
+            <th class="tg-seal"scope="row">2</th>
+            <td class="tg-0lax">21</td>
+            <td class="tg-0lax">22</td>
+          </tr>
+          <tr>
+            <th class="tg-seal"scope="row">2</th>
+            <td class="tg-0lax">22</td>
+            <td class="tg-0lax">25</td>
+          </tr>
+          <tr>
+            <th class="tg-seal"scope="row">2</th>
+            <td class="tg-0lax">16</td>
+            <td class="tg-0lax">20</td>
+          </tr>
+          <tr>
+            <th class="tg-seal"scope="row">2</th>
+            <td class="tg-0lax">18</td>
+            <td class="tg-0lax">16</td>
+          </tr>
+        
+        </table>
+      </div>
+      <div class="col-sm-4"> 
+      <ul>
+        <li>Hypothesis test for a population proportion – use Proportion Stats</li>
+        <br>
+        <li>Hypothesis test for a population mean – use T Stats</li>
+        <br>
+        <li>Hypothesis test for linear correlation – use Regression</li>
+        <br>
+        <li>Hypothesis test for Independence – use Tables ~ Contingency</li>
+        <br>
+        <li>Hypothesis test for mean change – use T Stats ~ Paired</li>
+      </ul></div>
+      <div class="col-sm-4"> 
+      <p>How did you know the type of hypothesis test?</p>
+      <br><br><br>
+      <p>Claim:</p>
+      <br><br>
+      <p>\(H_0\)</p>
+   <br>
+   <p>\(H_A\)</p>
+   <br><br>
+    </div>
+    </div>
+  </li>
+<br>  
+<li> 
+  <div class="row">
+    <div class="col-sm-4">
+      <p><b>Problem</b></p>
+    </div>
+    <div class="col-sm-4"><p><b>Type of Problem</b></p></div>
+    <div class="col-sm-4"><p><b>Evidence</b></p></div>
+  </div>
+    <div class="row">
+      <div class="col-sm-4">
+       
+        In a random sample of 200 Transit Railroads passengers, the travel distance and type of ticket is recorded. The railroad wants to know if a passenger’s choice in ticket class is dependent on the distance they must travel.
+        <br>
+ 
+      <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:15px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:15px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg .tg-0lax{text-align:center;vertical-align:top;font-family:Arial, sans-serif;font-size:16px;font-weight:normal;padding:15px 19px}
+        .tg .tg-seal{text-align:center;vertical-align:top;font-family:Arial, sans-serif;font-size:20px;font-weight:normal;padding:15px 19px}
+        </style>
+        <table class="tg" summary="Table of students and their pre and post test scores.  Use JAWS table navigation keystrokes to identify cell locations.">
+          <tr>
+            <th class="tg-seal" scope="row">Miles</th>
+            <th class="tg-0lax">3rd Class</th>
+            <th class="tg-0lax">2nd Class</th>
+            <th class="tg-0lax">1st Class</th>
+          </tr>
 
+          <tr>
+            <th class="tg-seal"scope="row">1-100</th>
+            <td class="tg-0lax">21</td>
+            <td class="tg-0lax">14</td>
+            <td class="tg-0lax">6</td>
+          </tr>
+          <tr>
+            <th class="tg-seal"scope="row">101-200</th>
+            <td class="tg-0lax">18</td>
+            <td class="tg-0lax">16</td>
+            <td class="tg-0lax">8</td>
+          </tr>
+          <tr>
+            <th class="tg-seal"scope="row">201-300</th>
+            <td class="tg-0lax">16</td>
+            <td class="tg-0lax">17</td>
+            <td class="tg-0lax">15</td>
+          </tr>
+          <tr>
+            <th class="tg-seal"scope="row">301-400</th>
+            <td class="tg-0lax">12</td>
+            <td class="tg-0lax">14</td>
+            <td class="tg-0lax">21</td>
+          </tr>
+          <tr>
+            <th class="tg-seal"scope="row">401-500</th>
+            <td class="tg-0lax">6</td>
+            <td class="tg-0lax">6</td>
+            <td class="tg-0lax">10</td>
+          </tr>
+          
+        
+        </table>
+      </div>
+      <div class="col-sm-4"> 
+      <ul>
+        <li>Hypothesis test for a population proportion – use Proportion Stats</li>
+        <br>
+        <li>Hypothesis test for a population mean – use T Stats</li>
+        <br>
+        <li>Hypothesis test for linear correlation – use Regression</li>
+        <br>
+        <li>Hypothesis test for Independence – use Tables ~ Contingency</li>
+        <br>
+        <li>Hypothesis test for mean change – use T Stats ~ Paired</li>
+      </ul></div>
+      <div class="col-sm-4"> 
+      <p>How did you know the type of hypothesis test?</p>
+      <br><br><br>
+      <p>Claim:</p>
+      <br><br>
+      <p>\(H_0\)</p>
+   <br>
+   <p>\(H_A\)</p>
+   <br><br>
+    </div>
+    </div>
+  </li>
+<br>
+<li> 
+  <div class="row">
+    <div class="col-sm-4">
+      <p><b>Problem</b></p>
+    </div>
+    <div class="col-sm-4"><p><b>Type of Problem</b></p></div>
+    <div class="col-sm-4"><p><b>Evidence</b></p></div>
+  </div>
+    <div class="row">
+      <div class="col-sm-4">
+       
+        About 20% of Americans over age 5 speak a language other than English at home. A politician claims that less than 20% of Knoxville residents speak a language other than English at home. The politician’s campaign randomly surveyed 430 Knoxville residents and found that 80 of them spoke a language other than English at home.  Does the sample data support the politician’s claim?
+      </div>
+      <div class="col-sm-4"> 
+      <ul>
+        <li>Hypothesis test for a population proportion – use Proportion Stats</li>
+        <br>
+        <li>Hypothesis test for a population mean – use T Stats</li>
+        <br>
+        <li>Hypothesis test for linear correlation – use Regression</li>
+        <br>
+        <li>Hypothesis test for Independence – use Tables ~ Contingency</li>
+        <br>
+        <li>Hypothesis test for mean change – use T Stats ~ Paired</li>
+      </ul></div>
+      <div class="col-sm-4"> 
+      <p>How did you know the type of hypothesis test?</p>
+      <br><br><br>
+      <p>Claim:</p>
+      <br><br>
+      <p>\(H_0\)</p>
+   <br>
+   <p>\(H_A\)</p>
+   <br><br>
+    </div>
+    </div>
+  </li>
+<br>
+<li> 
+  <div class="row">
+    <div class="col-sm-4">
+      <p><b>Problem</b></p>
+    </div>
+    <div class="col-sm-4"><p><b>Type of Problem</b></p></div>
+    <div class="col-sm-4"><p><b>Evidence</b></p></div>
+  </div>
+    <div class="row">
+      <div class="col-sm-4">
+       
+        The CEO of an online store company claims there is no correlation between advertising costs and sales. Test the CEO’s claim using the sample data from the past year for 7 online stores.  
+        <br>
+ 
+      <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:15px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:15px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg .tg-0lax{text-align:center;vertical-align:top;font-family:Arial, sans-serif;font-size:16px;font-weight:normal;padding:15px 19px}
+        .tg .tg-seal{text-align:center;vertical-align:top;font-family:Arial, sans-serif;font-size:20px;font-weight:normal;padding:15px 19px}
+        </style>
+        <table class="tg" summary="Table of advertising dollars spent and E-Commerce sales for 7 stores.  Use JAWS table navigation keystrokes to identify cell locations.">
+          <tr>
+            <th class="tg-seal" scope="row">Advertising Dollars (in 1000s)</th>
+            <th class="tg-0lax">E-Commerce Sales (in 1000s)</th>
+           
+          </tr>
 
+          <tr>
+            <td class="tg-seal"scope="row">1.7</td>
+            <td class="tg-0lax">368</td>
+            <tr>
+              <td class="tg-seal"scope="row">1.5</td>
+              <td class="tg-0lax">340</td>
+           
+            </tr>
+            <tr>
+              <td class="tg-seal"scope="row">2.8</td>
+              <td class="tg-0lax">665</td>
+           
+            </tr>
+            <tr>
+              <td class="tg-seal"scope="row">5</td>
+              <td class="tg-0lax">954</td>
+           
+            </tr>
+            <tr>
+              <td class="tg-seal"scope="row">1.3</td>
+              <td class="tg-0lax">331</td>
+           
+            </tr>
+            <tr>
+              <td class="tg-seal"scope="row">2.2</td>
+              <td class="tg-0lax">556</td>
+           
+            </tr>
+            <tr>
+              <td class="tg-seal"scope="row">1.3</td>
+              <td class="tg-0lax">376</td>
+           
+            </tr>
 
-
-
-
-
-
-
-
-
+          
+        
+        </table>
+      </div>
+      <div class="col-sm-4"> 
+      <ul>
+        <li>Hypothesis test for a population proportion – use Proportion Stats</li>
+        <br>
+        <li>Hypothesis test for a population mean – use T Stats</li>
+        <br>
+        <li>Hypothesis test for linear correlation – use Regression</li>
+        <br>
+        <li>Hypothesis test for Independence – use Tables ~ Contingency</li>
+        <br>
+        <li>Hypothesis test for mean change – use T Stats ~ Paired</li>
+      </ul></div>
+      <div class="col-sm-4"> 
+      <p>How did you know the type of hypothesis test?</p>
+      <br><br><br>
+      <p>Claim:</p>
+      <br><br>
+      <p>\(H_0\)</p>
+   <br>
+   <p>\(H_A\)</p>
+   <br><br>
+    </div>
+    </div>
+  </li>
 
 </ol>
     </main>

@@ -132,34 +132,42 @@
   
 
    <br><br>
-   <h3>Requirements for Testing Claims about a Population Proportion p</h3>
+   <!-- <h3>Requirements for Testing Claims about a Population Proportion p</h3>
    <ul>
        <li>The sample observations are a simple random sample.</li>
        <li>The conditions for a binomial distribution are satisfied.</li>
        <li>The conditions  \(n p \geq 5\)    and  \(n q \geq 5\)   are both satisfied.</li>
-   </ul>
+   </ul> -->
 
-     
-      <br>
-  <br>
+   <p>We can use StatCrunch → Stat → Proportion Stats → One Sample → With Summary (or With Data) to test a claim about a population proportion p as long as the requirements are met:
+    <ul>
+      <li> We have a simple random sample.</li>
+      <li> Each sample observation can be classified as success or failure.</li>
+      <li> The number of successes and the number of failures in the sample are each greater than or equal to 5.</li>
+    </ul>
+
+   </p>  
+   
 
 <ol>
     <li><b>Driving and Texting: </b>In a survey, 1864 out of 2246 randomly selected adults in the U.S. said that texting while driving should be illegal (based on data from Zogby International). Consider a hypothesis test that uses a 0.05 significance level to test the claim that more than 80% of adults believe that texting while driving should be illegal.
-        <p class="solution">Sample proportion:  \(\hat{p}=\frac{1864}{2246}=.8299\)</p>
+        <!-- <p class="solution">Sample proportion:  \(\hat{p}=\frac{1864}{2246}=.8299\)</p> -->
     
     <ol>
-      
+      <li> Put a box around the statement of the claim in the problem.  
+        <inline class="solution">More than 80% of adults believe that texting while driving should be illegal.</inline>
+      </li>
             <li>The original Claim: <inline class="solution"> \(p>0.8\)</inline> </li>
-            <li>\(H_0\): <inline class="solution"> \(p \leq 0.8\)</inline>  </li>
+            <li>\(H_0\): <inline class="solution"> \(p \leq 0.8\) We will assume that \(p = 0.8\)</inline>  </li>
             <li>\(H_A\): <inline class="solution">\(p > 0.8\)</inline></li>
             <li>Type of Test: <inline class="solution">Right-tailed test</inline></li>
-
-            <p><img src="images/u4s1step5b.png" alt="A normal curve with a critical value marked with a vertical line alpha units from the right end of the graph.  The area to the right of the critical value is shaded and labeled critical region.  The area to the left of the critical value is not shaded and is labeled non-critical region."></p>
+<li> Draw a graph of the critical/rejection region  </li>
+            <p class="solution"><img src="images/u4s1step5b.png" alt="A normal curve with a critical value marked with a vertical line alpha units from the right end of the graph.  The area to the right of the critical value is shaded and labeled critical region.  The area to the left of the critical value is not shaded and is labeled non-critical region."></p>
 
 
             <li>Significance Level \(\alpha\) (area of critical regions): <inline class="solution">\(\alpha =.05\)</inline> </li>
-            
-            <li>Critical Value(s) (use Normal Calculator in StatCrunch with area \(\alpha\)):  <inline class="solution">\(z=1.645\) </inline>
+            <li>Sample proportion: <inline class="solution">\(\hat{p}=\frac{1864}{2246}=.83\)</inline></li>
+            <!-- <li>Critical Value(s) (use Normal Calculator in StatCrunch with area \(\alpha\)):  <inline class="solution">\(z=1.645\) </inline>
             
             
               <p class="solutioncollapse"><img src="images/u4s3p1bk.png" alt="One sample proportion summary hypothesis test: P: proportion of successes, H_O: p=0.8, H_A: p>0.8.
@@ -171,48 +179,34 @@
                 Std. Err.: 0.0084402462
                 z-Stat: 3.5449034
                 p-value: 0.0002"></p>
-              <p class="solutioncollapse"><img src="images/u4s3p1ck.png" alt="Graph of Standard Normal Distribution with z-stat=3.54449, and p-value: 0.0002.  The x-axis is labeled from -4 to 4 in intervals of 2.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The z-stat of 3.5449 is marked with a vertical line on the graph and the graphs is shaded to the end of the graph on the right."></p>
+              <p class="solutioncollapse"><img src="images/u4s3p1ck.png" alt="Graph of Standard Normal Distribution with z-stat=3.54449, and p-value: 0.0002.  The x-axis is labeled from -4 to 4 in intervals of 2.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The z-stat of 3.5449 is marked with a vertical line on the graph and the graphs is shaded to the end of the graph on the right."></p> -->
             
             
             
             
             
-            </li>
+            <!-- </li> -->
        
        
-                <li>Test Statistic: A standardized value based on the sample data, assuming the null is true.
+                <!-- <li>Test Statistic: A standardized value based on the sample data, assuming the null is true.
                     <p class="solution">  \(z=\frac{\hat{p}-p}{\sqrt{\frac{p q}{n}}} \quad=\frac{8299-.8}{\sqrt{\frac{(.8)(.2)}{2246}}}=3.5426\)</p> 
                     <p class="solution">\(z=3.5449 \quad \text{from StatCrunch}\) </p>
                     <br>
                     <p><b>Reject the null hypothesis \(H_0\) if the test statistic is in the critical region.</p></b>
                 </li>
-                <li>p-value:  The probability of being as extreme, or more extreme, than your sample data, assuming the null hypothesis \(H_0\) is correct. 
+                <li>p-value:  The probability of being as extreme, or more extreme, than your sample data, assuming the null hypothesis \(H_0\) is correct.  -->
                 
-                <p>  p-value: <inline class="solution">0.0002</inline>
-                </p>
+                <li>  p-value: <inline class="solution">0.0002</inline>
+                </li>
               
-                <br> 
-                  <p><b>Reject the null hypothesis \(H_0\) if the p-value is less than or equal to the significance level  \(\alpha\)</b></p>
-                  <br>
-              
-              </li>
+            
                
-                <li>Decision about the null: These are your only two options for a decision:
-                  <ul>
-                    <li>Reject the null hypothesis \(H_0\)</li>
-                    <li>Fail to reject the null hypothesis \(H_0\)</li>
-                  </ul>
-                  
-                  <p class="solution">Reject \(H_0\) </p>
-                <p class="solution">Reason 1:  0.0002 < .05  or  Reason 2: 3.5426 is in the rejection region</p>
+                <li>Decision about the null: 
+                <p class="solution">Since 0.0002 is less than 0.05, we reject the null hypothesis.</p>
               
                 </li>
-                <li>Concluding statement about the claim: 
-                  
-                  <br>
-                  <br>
-
-                  <style type="text/css">
+                <li>Concluding statement:  <p class="solution">There is sufficient sample evidence to support the claim that more than 80% of adults believe texting while driving should be illegal.</p>
+                  <br>  <style type="text/css">
                     .tg  {border-collapse:collapse;border-spacing:0;}
                     .tg td{font-family:Arial, sans-serif;font-size:18px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
                     .tg th{font-family:Arial, sans-serif;font-size:18px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
@@ -221,33 +215,36 @@
                     <table class="tg" summary="Table of the correct format for the wording of the statement about the claim.  The correct wording is based on the decision about the null and whether the null or the alternate hypothesis is the claim. Column headers are Null Hypothesis is the claim and Alternate Hypothesis is the claim. Row headers are reject the null and fail to reject the null.  Use JAWS table navigation keystrokes to identify cell locations.">
                       <tr>
                         <th class="tg-0lax"></th>
-                        <th class="tg-0lax" scope="col">Null is the Claim</th>
-                        <th class="tg-0lax" scope="col">Alternate is the Claim</th>
+                        <th class="tg-0lax" scope="col">Claim has  \( =,\ \ \le,\ \ \geq \) </th>
+                        <th class="tg-0lax" scope="col">Claim has  \( \neq,\ <,\ \ > \) </th>
                       </tr>
                       <tr>
-                        <th class="tg-0lax" scope="row">Reject the Null</th>
+                        <th class="tg-0lax"></th>
+                        <td class="tg-0lax" scope="col">Claim is null hypothesis</td>
+                        <td class="tg-0lax" scope="col">Claim is alternate hypothesis</td>
+                      </tr>
+                      <tr>
+                        <th class="tg-0lax" scope="row">Reject the null hypothesis</th>
                         <td class="tg-0lax" >“There is sufficient sample evidence to reject the claim that…”</td>
                         <td class="tg-0lax" >“There is sufficient sample evidence to support the claim that…”</td>
                       </tr>
                       <tr>
-                        <th class="tg-0lax" scope="row">Fail to Reject the Null</th>
+                        <th class="tg-0lax" scope="row">Fail to reject the null hypothesis</th>
                         <td class="tg-0lax">“There is not sufficient sample evidence to reject the claim that…”</td>
                         <td class="tg-0lax">“There is not sufficient sample evidence to support the claim that…”</td>
                       </tr>
-                    </table>
-
-
-
-
-
+                    </table><br> 
+                  
                   <br>
                   <br>
+
+              
                   
                   
                   
                   
                   
-                  <inline class="solution">There is sufficient evidence to support the claim more than 80% of adults believe texting while driving should be illegal. </inline> </li>
+                  
             </ol>
        
         </li>
@@ -257,25 +254,27 @@
         <p style="page-break-before: always"></p>
 
 
-    <li><b>Cell phone and Cancer:</b> In a study of 420,095 Danish cell phone users, 135 subjects developed cancer of the brain or nervous system (based on data from the Journal of the National Cancer Institute as reported in USA Today). Test the claim of a once popular belief that such cancers are affected by cell phone use. That is, test the claim that cell phone users develop cancer of the brain or nervous system at a rate that is different from the rate of 0.0340% for people who do not use cell phones. Because this issue has such great importance, use a 0.01 significance level.
-        <p class="solution">Sample proportion:  \(\hat{p}=\frac{135}{420095} \approx 0.000321\)</p>
+    <li><b>Cell phone and Cancer:</b> In a study of 420,095 Danish cell phone users, 135 subjects developed cancer of the brain or nervous system (based on data from the Journal of the National Cancer Institute as reported in USA Today). Test the claim of a once popular belief that such cancers are affected by cell phone use. That is, test the claim that cell phone users develop cancer of the brain or nervous system at a rate that is different from the rate of 0.034% for people who do not use cell phones. Because this issue has such great importance, use a 0.01 significance level.
+      
 
         <ol>
-                
+                <li> Put a box around the statement of the claim in the problem.  <inline class= "solution">Cell phone users develop cancer of the brain or nervous system at a rate that is different from the rate of 0.034% for people who do not use cell phones.</inline>
+                </li>
                     <li>The original Claim: <inline class="solution"> \(p \neq 0.00034\)</inline> </li>
                     <li>\(H_0\): <inline class="solution"> \(p = 0.00034\)</inline>  </li>
                     <li>\(H_A\): <inline class="solution">\(p \neq 0.00034\)</inline></li>
                     <li>Type of Test: <inline class="solution">Two-tailed test</inline>
-                      <p><img src="images/u4s1step5c.png" alt="A normal curve with two critical values marked with  vertical lines alpha divided by 2 units from each end of the graph.  The area to the left and right of the 2 critical values are shaded to the ends of the curve and labeled critical regions.  The area between the critical values is not shaded and is labeled non-critical region."></p>
+                      <li> Draw a graph of the critical/rejection region  </li>
+                      <p class="solution"><img src="images/u4s1step5c.png" alt="A normal curve with two critical values marked with  vertical lines alpha divided by 2 units from each end of the graph.  The area to the left and right of the 2 critical values are shaded to the ends of the curve and labeled critical regions.  The area between the critical values is not shaded and is labeled non-critical region."></p>
                     </li>
                     <li>Significance Level \(\alpha\) (area of critical regions): <inline class="solution">\(\alpha =0.01\)</inline> </li>
                   
-                    <li>Critical Value(s):  <inline class="solution">\(z=\pm 2.576\)  (Determines shaded area(s))</inline>
+                    <!-- <li>Critical Value(s):  <inline class="solution">\(z=\pm 2.576\)  (Determines shaded area(s))</inline>
                 
                 <p class="solution"><img src="images/u4s3p2ak.png" alt="Graph of a normal curve.  The x-axis is labeled from -3 to 3 in intervals of 1.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The area under the curve is shaded for all x values between -2.576 and +2.576.  Under the graph, there are three boxes: First box: Mean:0, Second Box: Std. Dev.:1, Third box P(-2.5758<=x<=2.5758)=.99" width="20%" height="20%"></p>
             </li>
-                
-                        <li>Test Statistic: A standardized value based on the sample data, assuming the null is true.
+                 -->
+                        <!-- <li>Test Statistic: A standardized value based on the sample data, assuming the null is true.
                             <p class="solution">  \(z=\frac{\hat{p}-p}{\sqrt{\frac{p q}{n}}}=\frac{.000321-.00034}{\sqrt{\frac{(.00034)(.99966)}{420095}}}=0.6680\)</p> 
                             <p class="solution">\(z=-0.6555  \quad \text{from StatCrunch}\) </p>
                             <p class="solutioncollapse"><img src="images/u4s3p2bk.png" alt="One sample proportion summary hypothesis test: P: proportion of successes, H_O: p=0.00034, H_A: p is not equal to 0.00034.
@@ -288,33 +287,65 @@
                               z-Stat: -0.65546566
                               p-value: 0.5122"></p>
                             <p class="solutioncollapse"><img src="images/u4s3p2ck.png" alt="Graph of Standard Normal Distribution with z-stat=-0.6555, and p-value: 0.5122.  The x-axis is labeled from -4 to 4 in intervals of 2.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The graph is shaded for all values of x less than -0.6555 and greater than 0.6555."></p>
-                        </li>
+                        </li> -->
+                      <li>Sample proportion:  <inline class="solution">\(\hat{p}=\frac{135}{420095} \approx 0.00032\)</inline></li> 
                         <li>p-value: <inline class="solution">0.5122</inline></li>
                       
-                        <li>Decision about the null: <inline class="solution">Fail to reject \(H_0\) </inline>
-                        <p class="solution">Reason 1:  0.5122 > .01 or Reason 2: -0.6680 (StatCrunch -0.6555) is not in the rejection region  </p>
+                        <li>Decision about the null: <inline class="solution">Since 0.5122 is greater than 0.01, we fail to reject the null hypothesis </inline>
+                      
                        
                         </li>
-                        <li>Concluding statement about the claim: <inline class="solution">There is not sufficient evidence to support the claim phone users develop cancer at a rate different than .00034 which is the rate for non cell phone users.  </inline> </li>
+                        <li>Concluding statement: <inline class="solution">There is not sufficient sample evidence to support the claim that cell phone users develop cancer of the brain/nervous system at a rate different from non-cell phone users.  </inline> </li>
                     
-                 
+                        <br>  <style type="text/css">
+                          .tg  {border-collapse:collapse;border-spacing:0;}
+                          .tg td{font-family:Arial, sans-serif;font-size:18px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+                          .tg th{font-family:Arial, sans-serif;font-size:18px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+                          .tg .tg-0lax{text-align:left;vertical-align:top}
+                          </style>
+                          <table class="tg" summary="Table of the correct format for the wording of the statement about the claim.  The correct wording is based on the decision about the null and whether the null or the alternate hypothesis is the claim. Column headers are Null Hypothesis is the claim and Alternate Hypothesis is the claim. Row headers are reject the null and fail to reject the null.  Use JAWS table navigation keystrokes to identify cell locations.">
+                            <tr>
+                              <th class="tg-0lax"></th>
+                              <th class="tg-0lax" scope="col">Claim has  \( =,\ \ \le,\ \ \geq \) </th>
+                              <th class="tg-0lax" scope="col">Claim has  \( \neq,\ <,\ \ > \) </th>
+                            </tr>
+                            <tr>
+                              <th class="tg-0lax"></th>
+                              <td class="tg-0lax" scope="col">Claim is null hypothesis</td>
+                              <td class="tg-0lax" scope="col">Claim is alternate hypothesis</td>
+                            </tr>
+                            <tr>
+                              <th class="tg-0lax" scope="row">Reject the null hypothesis</th>
+                              <td class="tg-0lax" >“There is sufficient sample evidence to reject the claim that…”</td>
+                              <td class="tg-0lax" >“There is sufficient sample evidence to support the claim that…”</td>
+                            </tr>
+                            <tr>
+                              <th class="tg-0lax" scope="row">Fail to reject the null hypothesis</th>
+                              <td class="tg-0lax">“There is not sufficient sample evidence to reject the claim that…”</td>
+                              <td class="tg-0lax">“There is not sufficient sample evidence to support the claim that…”</td>
+                            </tr>
+                          </table><br>    
                 
             </ol>
     </li>
-    <li><b>Flu:</b>  In a clinical trial, 28 out of 800 patients taking a prescription drug complained of flulike symptoms.  Suppose that it is known that 2.2% of patients taking competing drugs complain of flulike symptoms.  Test the claim that more than 2.2% of this drug’s users experience flulike symptoms as a side effect at the 0.1 significance level.
+    <li><b>Flu:</b>  In a clinical trial, 28 out of 800 patients taking a new prescription drug complained of flulike symptoms. Suppose that it is known that 2.2% of patients taking competing drugs complain of flulike symptoms. The company marketing the new drug is concerned about the rate of side effects.  Test the claim that no more than 2.2% of the new drug’s users experience flulike symptoms as a side effect at the 0.1 significance level.  
         <ol>
-               
-                    <li>The original Claim: <inline class="solution"> \(p > 0.022\)</inline> </li>
+               <li>Put a box around the statement of the claim in the problem.  
+                <inline class="solution">No more than 2.2% of this drug’s users experience flu-like symptoms as a side effect.</inline></li>
+                    <li>Claim: <inline class="solution"> \(p \leq 0.022\)</inline> </li>
                     <li>\(H_0\): <inline class="solution"> \(p \leq 0.022\)</inline> </li>
                     <li>\(H_A\): <inline class="solution">\(p > 0.022\)</inline></li>
                     <li>Type of Test: <inline class="solution">Right-tailed test</inline></li>
+                    <li> Draw a graph of the critical/rejection region 
+                      <p class="solution"><img src="images/u4s1step5b.png" alt="A normal curve with a critical value marked with a vertical line alpha units from the right end of the graph.  The area to the right of the critical value is shaded and labeled critical region.  The area to the left of the critical value is not shaded and is labeled non-critical region."></p>
+                     </li>
                     <li>Significance Level \(\alpha\) (area of critical regions):  <inline class="solution">\(\alpha =0.1\)</inline> </li>
                    
-                    <li>Critical Value(s):  <inline class="solution">\(z=1.282\) (Determines shaded area(s))</inline></li>
+                    <!-- <li>Critical Value(s):  <inline class="solution">\(z=1.282\) (Determines shaded area(s))</inline></li>
               
-                <p class="solution"><img src="images/u4s3p3ak.png" alt="Graph of a normal curve.  The x-axis is labeled from -3 to 3 in intervals of 1.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The area under the curve is shaded for all x values greater than 1.282.  Under the graph, there are three boxes: First box: Mean:0, Second Box: Std. Dev.:1, Third box P(x>=1.2815516)=0.1" width="35%" height="35%"></p>
+                <p class="solution"><img src="images/u4s3p3ak.png" alt="Graph of a normal curve.  The x-axis is labeled from -3 to 3 in intervals of 1.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The area under the curve is shaded for all x values greater than 1.282.  Under the graph, there are three boxes: First box: Mean:0, Second Box: Std. Dev.:1, Third box P(x>=1.2815516)=0.1" width="35%" height="35%"></p> -->
           
-                        <li>Test Statistic: A standardized value based on the sample data, assuming the null is true.
+                        <!-- <li>Test Statistic: A standardized value based on the sample data, assuming the null is true.
                             <p class="solution">  \(z=\frac{\hat{p}-p}{\sqrt{\frac{p q}{n}}} = \frac{.035-.022}{\sqrt{\frac{(.022)(.978)}{800}}}=2.5067\)</p> 
                             <p class="solutioncollapse"><img src="images/u4s3p3bk.png" alt="One sample proportion summary hypothesis test: P: proportion of successes, H_O: p=0.022, H_A: p>0.022.
                               Hypothesis Test results: 
@@ -326,29 +357,59 @@
                               z-Stat: 2.5067301
                               p-value: 0.0061"></p>
                             <p class="solutioncollapse"><img src="images/u4s3p3ck.png" alt="Graph of Standard Normal Distribution with z-stat=2.5067, and p-value: 0.0061.  The x-axis is labeled from -4 to 4 in intervals of 2.  The top of the curve is at x=0.  The y-axis is labeled from 0 to 0.4 in intervals of 0.1.  The z-stat of 2.5067 is marked with a vertical line on the graph and the graphs is shaded to the end of the graph on the right."></p>
-                        </li>
+                        </li> -->
                         <li>p-value: <inline class="solution">0.0061</inline></li>
-                   
-                        <li>Decision about the null: <inline class="solution">Reject \(H_0\) </inline>
-                        <p class="solution">Reason 1:  0.0061 < .1 or Reason 2: 2.5067 is in the rejection region </p>
+               
+                        <li>Decision about the null: <inline class="solution">Since 0.0061 is less than 0.10, we reject the null hypothesis.</inline>
+                      
                       
                         </li>
-                        <li>Concluding statement about the claim: <inline class="solution">There is sufficient evidence to support the claim more than 2.2% of the drug’s users experience flu like symptoms. </inline> </li>
-                    </ol>
+                        <li>Concluding statement: <inline class="solution">There is sufficient sample evidence to reject the claim that no more than 2.2% of the drug’s users experience flu-like symptoms. </inline> </li>
+               
               
+                    <br>  <style type="text/css">
+                      .tg  {border-collapse:collapse;border-spacing:0;}
+                      .tg td{font-family:Arial, sans-serif;font-size:18px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+                      .tg th{font-family:Arial, sans-serif;font-size:18px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+                      .tg .tg-0lax{text-align:left;vertical-align:top}
+                      </style>
+                      <table class="tg" summary="Table of the correct format for the wording of the statement about the claim.  The correct wording is based on the decision about the null and whether the null or the alternate hypothesis is the claim. Column headers are Null Hypothesis is the claim and Alternate Hypothesis is the claim. Row headers are reject the null and fail to reject the null.  Use JAWS table navigation keystrokes to identify cell locations.">
+                        <tr>
+                          <th class="tg-0lax"></th>
+                          <th class="tg-0lax" scope="col">Claim has  \( =,\ \ \le,\ \ \geq \) </th>
+                          <th class="tg-0lax" scope="col">Claim has  \( \neq,\ <,\ \ > \) </th>
+                        </tr>
+                        <tr>
+                          <th class="tg-0lax"></th>
+                          <td class="tg-0lax" scope="col">Claim is null hypothesis</td>
+                          <td class="tg-0lax" scope="col">Claim is alternate hypothesis</td>
+                        </tr>
+                        <tr>
+                          <th class="tg-0lax" scope="row">Reject the null hypothesis</th>
+                          <td class="tg-0lax" >“There is sufficient sample evidence to reject the claim that…”</td>
+                          <td class="tg-0lax" >“There is sufficient sample evidence to support the claim that…”</td>
+                        </tr>
+                        <tr>
+                          <th class="tg-0lax" scope="row">Fail to reject the null hypothesis</th>
+                          <td class="tg-0lax">“There is not sufficient sample evidence to reject the claim that…”</td>
+                          <td class="tg-0lax">“There is not sufficient sample evidence to support the claim that…”</td>
+                        </tr>
+                      </table><br>  
+
                 </li>
             </ol>
     </li>
     
-</ol>
+
 <p style="page-break-before: always"></p>
+
 <h3><b>Goldfish Smile Hypothesis Testing</b></h3>
 <p><img src="images/u4s2goldfish.png" alt="A decorative image of 6 goldfish crackers with the words Go Fish in the middle."></p>
       
-<p><b>Claim: The proportion of all goldfish with smiles is "less than, equal to, or greater than" (choose one) ______% </b></p>
+<li><b>Claim: The proportion of all goldfish with smiles is "less than, equal to, or greater than" (choose one) ______% </b></li>
 
-<p>Your claim: _________________________</p>
-<p class="solution">One possible choice is to claim that p > .50. The solutions on the rest of the activity will be based on this claim. However, this is not what you are required to choose when you complete this in class. </p>
+<li>Your claim: _________________________</p>
+<p class="solution">One possible choice is to claim that p > .50. The solutions on the rest of the activity will be based on this claim. However, this is not what you are required to choose when you complete this in class. </li>
 
 <p>H<sub>0</sub>: _______________
   <inline class="solution">\( p \leq .50 \)</inline>
@@ -360,28 +421,30 @@
   
   <p> \( \alpha = .05\)</p>
 
-<h4>Sample Data</h4>
+<li>Sample Data
+<ol>
 
-<p>Number of goldfish in your sample: n = _______________
-<inline class="solution">100</inline></p>
+<li>Number of goldfish in your sample: n = _______________
+<inline class="solution">100</inline></li>
 
-<p> Number of <b>SMILING</b> goldfish in your sample: x = _______________
-<inline class="solution">35</inline> </p>
+<li> Number of <b>SMILING</b> goldfish in your sample: x = _______________
+<inline class="solution">35</inline> </li>
 
-<p>\( \hat{p}=\frac{x}{n} \) (the sample proportion) = _______________
-<inline class="solution">.35</inline> </p>
-
-<p>Test Statistic: _____________________</p>
+<li>\( \hat{p}=\frac{x}{n} \) (the sample proportion) = _______________
+<inline class="solution">.35</inline> </li>
+</ol>
+</li>
+<li>Test Statistic: _____________________</li>
 <br>
-<p>p-value: ______________________</p>
+<li>p-value: ______________________</li>
 <br>
 
-<p>Decision: __________________________________________________
+<li>Decision: __________________________________________________
 <inline class="solution">Fail to reject the null hypothesis</inline>
 
-</p>
+</li>
 
-<p>Concluding Statement:</p>
+<li>Concluding Statement:</li>
 <br>
 <br>
 <br>
@@ -396,18 +459,19 @@
 <h3>Confidence Intervals</h3>
 <p><img src="images/u4s2goldfish2.png" alt="A decorative image of 3 goldfish crackers."></p>
 
-<h4>Sample Data</h4>
-
-<p>Number of goldfish in your sample: n = _______________
-<inline class="solution">100</inline></p>
-
-<p> Number of <b>SMILING</b> goldfish in your sample: x = _______________
-<inline class="solution">35</inline> </p>
-
-<p>\( \hat{p}=\frac{x}{n} \) (the sample proportion) = _______________
-<inline class="solution">.35</inline> </p>
-
+<li>Sample Data
 <ol>
+<li>Number of goldfish in your sample: n = _______________
+<inline class="solution">100</inline></li>
+
+<li> Number of <b>SMILING</b> goldfish in your sample: x = _______________
+<inline class="solution">35</inline> </li>
+
+<li>\( \hat{p}=\frac{x}{n} \) (the sample proportion) = _______________
+<inline class="solution">.35</inline> </li>
+
+</ol>
+</li>
 <li>Use the sample to construct a 95% confidence interval for the proportion of smiling goldfish.
 <ol>
   <li>Best Point Estimate: _________________________</li>
@@ -419,7 +483,79 @@
   </li>
 </ol>   
 </li>
-<li>How does your confidence interval indicate the decision you should make about whether or not you should reject H<sub>0? </li>
+<li>How does your confidence interval support the conclusion you made about your claim?? </li>
+
+<p style="page-break-before: always"></p>
+
+<h3>In a hypothesis test for a proportion, we can also calculate a critical value and a test statistic.</h3>
+<ul>
+  <li> The critical value is the z-score associated with the significance level α. It defines the critical region.</li>
+  <li> The test statistic is the z-score associated with the p-value. The test statistic is a standardized value calculated from the sample.  If the test statistic is in the critical region, then we reject the null hypothesis.</li>
+</ul>
+
+<li><b>Velcro Sneakers:</b>  It is claimed that more than 15% of sneakers that are sold attach with Velcro.  A sample of 35 sneakers finds that 10 of them attach with Velcro.  Test the claim using a 0.10 significance level. 
+  <ol>
+         <li>Put a box around the statement of the claim in the problem.  
+          <inline class="solution">More than 15% of sneakers that are sold attach with Velcro.</inline></li>
+              <li>Claim: <inline class="solution"> \(p > 0.15\)</inline> </li>
+              <li>\(H_0\): <inline class="solution"> \(p \leq 0.15\)</inline> </li>
+              <li>\(H_A\): <inline class="solution">\(p > 0.15\)</inline></li>
+              <li>Type of Test: <inline class="solution">Right-tailed test</inline></li>
+              <li> Draw a graph of the critical/rejection region 
+                <p class="solution"><img src="images/u4s1step5b.png" alt="A normal curve with a critical value marked with a vertical line alpha units from the right end of the graph.  The area to the right of the critical value is shaded and labeled critical region.  The area to the left of the critical value is not shaded and is labeled non-critical region."></p>
+               </li>
+              <li>Significance Level \(\alpha\) (area of critical regions):  <inline class="solution">\(\alpha =0.10\)</inline> </li>
+             <li>Sample proportion: <inline class="solution">10/35 = 0.286</inline></li>
+             <li>Critical value (label this on your graph) <inline class="solution">1.64</inline> </li>  
+            
+                  <li>j.	Test statistic (label this on your graph)   <inline class="solution">2.25</inline>
+                  <p><i>If the test statistic is in the critical region, then reject the null hypothesis.</i></p></li>
+         
+                  <li>Decision about the null: <inline class="solution">Reject the null hypothesis.</inline>
+                
+                
+                  </li>
+                  <li>Concluding statement: <inline class="solution">There is sufficient evidence to support the claim that more than 15% of sneakers that are sold attach with Velcro. </inline> </li>
+              </ol>
+        
+              <br>  <style type="text/css">
+                .tg  {border-collapse:collapse;border-spacing:0;}
+                .tg td{font-family:Arial, sans-serif;font-size:18px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+                .tg th{font-family:Arial, sans-serif;font-size:18px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+                .tg .tg-0lax{text-align:left;vertical-align:top}
+                </style>
+                <table class="tg" summary="Table of the correct format for the wording of the statement about the claim.  The correct wording is based on the decision about the null and whether the null or the alternate hypothesis is the claim. Column headers are Null Hypothesis is the claim and Alternate Hypothesis is the claim. Row headers are reject the null and fail to reject the null.  Use JAWS table navigation keystrokes to identify cell locations.">
+                  <tr>
+                    <th class="tg-0lax"></th>
+                    <th class="tg-0lax" scope="col">Claim has  \( =,\ \ \le,\ \ \geq \) </th>
+                    <th class="tg-0lax" scope="col">Claim has  \( \neq,\ <,\ \ > \) </th>
+                  </tr>
+                  <tr>
+                    <th class="tg-0lax"></th>
+                    <td class="tg-0lax" scope="col">Claim is null hypothesis</td>
+                    <td class="tg-0lax" scope="col">Claim is alternate hypothesis</td>
+                  </tr>
+                  <tr>
+                    <th class="tg-0lax" scope="row">Reject the null hypothesis</th>
+                    <td class="tg-0lax" >“There is sufficient sample evidence to reject the claim that…”</td>
+                    <td class="tg-0lax" >“There is sufficient sample evidence to support the claim that…”</td>
+                  </tr>
+                  <tr>
+                    <th class="tg-0lax" scope="row">Fail to reject the null hypothesis</th>
+                    <td class="tg-0lax">“There is not sufficient sample evidence to reject the claim that…”</td>
+                    <td class="tg-0lax">“There is not sufficient sample evidence to support the claim that…”</td>
+                  </tr>
+                </table><br>  
+
+          </li>
+      </ol>
+</li>
+
+
+
+
+
+
 </ol>
 
 
