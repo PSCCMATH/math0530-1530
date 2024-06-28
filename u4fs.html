@@ -133,30 +133,34 @@
 <br>
 <br>
 
-<style type="text/css">
-    .tg  {border-collapse:collapse;border-spacing:0;}
-    .tg td{font-family:Arial, sans-serif;font-size:40px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-    .tg th{font-family:Arial, sans-serif;font-size:40px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-    .tg .tg-0lax{font-size:20px;text-align:left;vertical-align:top}
-    </style>
-    <table class="tg" summary="Table of the correct format for the wording of the statement about the claim.  The correct wording is based on the decision about the null and whether the null or the alternate hypothesis is the claim. Column headers are Null Hypothesis is the claim and Alternate Hypothesis is the claim. Row headers are reject the null and fail to reject the null.  Use JAWS table navigation keystrokes to identify cell locations." >
-      <tr>
-        <th class="tg-0lax"></th>
-        <th class="tg-0lax"scope="col">Null Hypothesis is the Claim</th>
-        <th class="tg-0lax"scope="col">Alternate Hypothesis is the Claim</th>
-      </tr>
-      <tr>
-        <th class="tg-0lax"scope="row">Reject the Null</th>
-        <td class="tg-0lax">“There is sufficient sample evidence to reject the claim that…”</td>
-        <td class="tg-0lax">“There is sufficient sample evidence to support the claim that…”</td>
-      </tr>
-      <tr>
-        <th class="tg-0lax"scope="row">Fail to Reject the Null</th>
-        <td class="tg-0lax">“There is not sufficient sample evidence to reject the claim that…”</td>
-        <td class="tg-0lax">“There is not sufficient sample evidence to support the claim that…”</td>
-      </tr>
-    </table>
-
+<br>  <style type="text/css">
+  .tg  {border-collapse:collapse;border-spacing:0;}
+  .tg td{font-family:Arial, sans-serif;font-size:18px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+  .tg th{font-family:Arial, sans-serif;font-size:18px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+  .tg .tg-0lax{text-align:left;vertical-align:top}
+  </style>
+  <table class="tg" summary="Table of the correct format for the wording of the statement about the claim.  The correct wording is based on the decision about the null and whether the null or the alternate hypothesis is the claim. Column headers are Null Hypothesis is the claim and Alternate Hypothesis is the claim. Row headers are reject the null and fail to reject the null.  Use JAWS table navigation keystrokes to identify cell locations.">
+    <tr>
+      <th class="tg-0lax"></th>
+      <th class="tg-0lax" scope="col">Claim has  \( =,\ \ \le,\ \ \geq \) </th>
+      <th class="tg-0lax" scope="col">Claim has  \( \neq,\ <,\ \ > \) </th>
+    </tr>
+    <tr>
+      <th class="tg-0lax"></th>
+      <td class="tg-0lax" scope="col">Claim is null hypothesis</td>
+      <td class="tg-0lax" scope="col">Claim is alternate hypothesis</td>
+    </tr>
+    <tr>
+      <th class="tg-0lax" scope="row">Reject the null hypothesis</th>
+      <td class="tg-0lax" >“There is sufficient sample evidence to reject the claim that…”</td>
+      <td class="tg-0lax" >“There is sufficient sample evidence to support the claim that…”</td>
+    </tr>
+    <tr>
+      <th class="tg-0lax" scope="row">Fail to reject the null hypothesis</th>
+      <td class="tg-0lax">“There is not sufficient sample evidence to reject the claim that…”</td>
+      <td class="tg-0lax">“There is not sufficient sample evidence to support the claim that…”</td>
+    </tr>
+  </table><br>   
 
 
  
@@ -174,9 +178,106 @@
 
 <br><br>
 
+<h2>Unit 4 StatCrunch Instructions </h2>
+<br>
+
+<div class="row">
+  <div class="col-md-6">
+<h3>Hypothesis Testing for Proportions</h3>
+<ul>
+  <li>Stat</li>
+  <li>Proportion Stats</li>
+  <li>One Sample</li>
+<li>
+  <p><b>WITH SUMMARY:</b> Enter successes, total, and sample size</p>
+<p><b>WITH DATA:</b> Select column</p>
+
+</li>
+<li>Put in Null & Alternative Hypothesis</li>
+<li>Check Show Critical Value Box</li>
+<li>Put in Significance (alpha)</li>
+<li>Compute</li>
+</ul>
+</div>
+<div class="col-md-6">
+<h3>Hypothesis Testing for the MEAN</h3>
+<ul>
+  <li>Stat</li>
+  <li>T Stat</li>
+  <li>One Sample</li>
+<li>
+  <p><b>WITH SUMMARY:</b> Enter sample mean, SD, and sample size</p>
+<p><b>WITH DATA:</b> Select column</p>
+
+</li>
+<li>Put in Null & Alternative Hypothesis</li>
+<li>Check Show Critical Value Box</li>
+<li>Put in Significance (alpha)</li>
+<li>Compute</li>
+</ul>
+
+</div>
+</div>
+
 <p style="page-break-before: always"></p>
 
-<style type="text/css">
+<h3>Hypothesis Testing for Linear Regression</h3>
+<ul>
+  <li>Stat</li>
+  <li>Regression</li>
+  <li>Simple Linear</li>
+<li>Choose x-variable
+ 
+
+</li>
+<li>Choose y-variable</li>
+<li>Put in Null & Alternative Hypothesis</li>
+
+<li>Compute</li>
+  <ul>
+    <li>r=correlation coefficient</li>
+    <li>Test Statistic is the T-Stat from <b>SLOPE</b></li>
+    <li>P-value from <b>SLOPE</b></li>
+  </ul>
+</ul>
+
+
+<br><br>
+
+<div class="row">
+  <div class="col-md-6">
+<h3>Hypothesis Testing for Test for Independence</h3>
+
+<ul>
+  <li>Stat</li>
+  <li>Tables</li>
+  <li>Contingency</li>
+<li>
+  <b>WITH SUMMARY:</b> 
+
+</li>
+<li>Select columns: Choose columns where counts are</li>
+<li>Row Labels: var1 (always)</li>
+<li>Hypothesis Tests: Chi-Square Test for Independence</li>
+<li>Compute</li>
+</ul>
+
+</div>
+<div class="col-md-6">
+<h3>Hypothesis Testing for Paired T-test</h3>
+<ul>
+  <li>Stat</li>
+  <li>T Stats</li>
+  <li>Paired</li>
+<li>Select Columns</li>
+
+<li>Compute</li>
+</ul>
+</div>
+</div>
+
+
+<!-- <style type="text/css">
   .tg  {border-collapse:collapse;border-spacing:0;}
   .tg td{font-family:Arial, sans-serif;font-size:13px;padding:6px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
   .tg th{font-family:Arial, sans-serif;font-size:13px;font-weight:normal;padding:6px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
@@ -439,7 +540,7 @@
       <td class="tg-baqh">0.113</td>
       <td class="tg-baqh">0.148</td>
     </tr>
-  </table>
+  </table> -->
 
 
 </main>

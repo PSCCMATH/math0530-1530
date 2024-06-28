@@ -126,45 +126,43 @@
     <main>
      <h2>Unit 2 Formula Sheet  </h2>
      
- 
+ <br><br>
 
-<h3>Classical (or Theoretical) Probability:</h3>  
+<h3>Probability:</h3>  
 <p style="margin-left:10%;">\(P(E)=\frac{ \text {Number of Outcomes in Event E} }{ \text {Total number of outcomes in the sample space }}\)</p>
 
-<h3>Empirical (or Statistical) Probability:</h3>
-<p style="margin-left:10%;">\(P(E)=\frac{ \text {Frequency of event E} }{ \text {Total frequency} }=\frac fn\)</p>
-
+<br><br>
 <h3>Probability of a Complement:</h3>
 <p style="margin-left:10%;">\(P(E')=1-P(E)\)</p>
-
+<br><br>
 <h3>Probability of occurrence of both events A <b>and</b> B:</h3>
 <p style="margin-left:10%;">\(P(A\; \text {and} \;B)=P(A)\cdot P(\left.B\right|A)\)</p>
 <p style="margin-left:10%;">\(P(A\; \text {and} \;B)=P(A)\cdot P(B)\) if \(A\; \text {and} \;B\) are independent</p>
-
+<br><br>
 <h3>Probability of occurrence of either A <b>or</b> B:</h3>
   <p style="margin-left:10%;">\(P(A \; \text {or} \; B)=P(A)\;+\;P(B)\;-\;P(A \; \text {and} \; B)\)</p>
 <p style="margin-left:10%;">\(P(A\; \text {or} \;B)=P(A)\;+\;P(B)\) if A and B are mutually exclusive</p>
  
 
-<br>
+<br><br>
 
 
-<h3>Mean of a Discrete Random Variable:</h3>
+<h3>Mean (Expected Value) of a Discrete Random Variable:</h3>
 
 <p style="margin-left:10%;">\(\mu=\Sigma x\;P(x)\)</p>
+<br>
 
-<h3>Variance and Standard Deviation of a Discrete Random Variable:</h3>
+<!-- <h3>Variance and Standard Deviation of a Discrete Random Variable:</h3>
 
 <p style="margin-left:10%;"> Variance: \(\sigma^2=\Sigma\left(x-\mu\right)^2\;P(x)\)</p>
 
 
-<p style="margin-left:10%;"> Standard Deviation: \(\sigma=\sqrt{\sigma^2}=\sqrt{\Sigma\left(x-\mu\right)^2\;P(x)}\)</p>
+<p style="margin-left:10%;"> Standard Deviation: \(\sigma=\sqrt{\sigma^2}=\sqrt{\Sigma\left(x-\mu\right)^2\;P(x)}\)</p> -->
 
-<h3>Expected Value:</h3>
-<p style="margin-left:10%;">\(E(x)=\mu=\Sigma x\;P(x)\)</p>
+<!-- 
 
 <h3>Binomial Probability of x successes in n trials:</h3>
-<p style="margin-left:10%;">\(P(x)={}_nC_x\;p^xq^{n-x}=\frac{n!}{(n-x)!x!}p^xq^{n-x}\)</p>
+<p style="margin-left:10%;">\(P(x)={}_nC_x\;p^xq^{n-x}=\frac{n!}{(n-x)!x!}p^xq^{n-x}\)</p> -->
 
 <h3>Population Parameters of a Binomial Distribution:</h3>
 
@@ -175,7 +173,92 @@
     <div class="col-sm-3">Standard Deviation: \(\sigma=\sqrt{npq}\)</div>
   </div>
 
+  <p style="page-break-before: always"></p>
 
+  <h2>Unit 2 StatCrunch Instructions  </h2> 
+  <br>
+
+  <div class="row">
+    <div class="col-md-6">
+<h3>Mean and Standard Deviation of Probability Distribution</h3>
+<ul>
+  <li>Stat</li>
+  <li>Calculators</li>
+  <li>Custom</li>
+  <li>Values in: Occurrences (usually var1)</li>
+  <li>Weights in: Probabilities (usually var 2)</li>
+  <li>Compute</li>
+</ul>
+</div>
+
+
+<div class="col-md-6">
+<h3>Mean and Standard Deviation of a Binomial Distribution</h3>
+<p>Can’t do in StatCrunch—have to use formulas</p>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-md-6">
+<h3>Probabilities in Probability Distributions</h3>
+<ul>
+  <li>Stat</li>
+  <li>Calculators</li>
+  <li>Custom</li>
+  <li>Values in: Occurrences (usually var1)</li>
+  <li>Weights in: Probabilities (usually var 2)</li>
+  <li>Compute</li>
+  <li>Decide if:
+    <ol>
+      <li><p>Standard (<, >, =, ≤, ≥):
+      Choose correct symbol, type in number
+       </p></li>
+      <li><p>Between: smaller # first, bigger # second</p></li>
+    </ol>
+  </li>
+  <li>Compute</li>
+</ul>
+</div>
+
+<div class="col-md-6">
+<h3>Constructing a Binomial Distributions</h3>
+<ul>
+  <li>Stat</li>
+  <li>Calculators</li>
+  <li>Binomial</li>
+  <li>n= number of times trial repeated</li>
+  <li>P: given probability</li>
+  <li>Choose Standard or Between</li>
+  <li>Enter correct symbol & type in number</li>
+
+  <li>Compute</li>
+</ul>
+</div>
+</div>
+
+<h3>z-Score:</h3>
+<div class="row">
+    <div class="col-md-6">
+      <p>Population</p>
+      <p>\(z=\frac{x-\mu}\sigma\)</p>
+    </div>
+    <div class="col-md-6">
+        <p>Sample</p>
+        <p>\(z=\frac{x-\bar{x}}{s}\)</p>
+    </div>
+  </div>
+
+
+  <h3>Transforming a z-Score to an x-Value:</h3>
+  <p style="margin-left:10%;">\(x=\mu+z \cdot \sigma\)</p>
+
+
+
+<h3>Empirical Rule:</h3>
+
+<h4>(68-95-99.7 Rule) For symmetric, bell-shaped data sets</h4>
+<img src="images/u1empiricalrule.png" alt="A normal curve with the x-axis labeled by integers from -3 to 3.  The mean is labeled in the center of the x-axis at 0.  The negative numbers to the left of the mean (-3 to -1) represent the standard deviations below the mean.  The positive numbers to the right of the mean (1 to 3) represent the standard deviations above the mean.  There are 8 shaded areas on the graph: four on each side of the mean.  The graph is symmetric so the 4 areas to the left and right of the mean are mirror images of each other.  From the left to the right of the graph the shaded areas represent the following percentages under the curve: 0.15%, 2.35%, 13.5%, 34%, 34%, 13.5%, 2.35%, and 0.15%">
 
 
 </main>
