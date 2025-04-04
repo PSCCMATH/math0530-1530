@@ -136,6 +136,18 @@ table td {
         max-height:100%;
       }
 
+      .grid {
+        border: 1px solid red;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-auto-rows: 45vh 45vh;
+      }
+      
+      .item {
+        border: 1px solid black;
+      }
+
+
     /* @media only screen and (min-width: 775px) {
         html {
         }
